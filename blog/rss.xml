@@ -4,7 +4,7 @@
         <title>This is my place, bro! Blog</title>
         <link>https://kyphan38.github.io/web/blog</link>
         <description>This is my place, bro! Blog</description>
-        <lastBuildDate>Sat, 15 Feb 2025 17:03:47 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Feb 2025 01:21:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[how to authorize github]]></title>
             <link>https://kyphan38.github.io/web/blog/netrc</link>
             <guid>https://kyphan38.github.io/web/blog/netrc</guid>
-            <pubDate>Sat, 15 Feb 2025 17:03:47 GMT</pubDate>
+            <pubDate>Wed, 19 Feb 2025 01:21:40 GMT</pubDate>
             <description><![CDATA[Context]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="context">Context<a href="https://kyphan38.github.io/web/blog/netrc#context" class="hash-link" aria-label="Direct link to Context" title="Direct link to Context">​</a></h2>
 <p>When working with GitHub, you may encounter an issue where you are prompted to enter your username and password every time you push changes</p>
