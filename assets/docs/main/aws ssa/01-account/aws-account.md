@@ -1,8 +1,8 @@
 # aws account
 
-![alt text](./img/1.png)
+![img](./img/1.png)
 
-![alt text](./img/2.png)
+![img](./img/2.png)
 
 ## Trick
 
@@ -10,7 +10,7 @@ All unique emails, no pre-setup required
 
 ## MFA
 
-![alt text](./img/3.png)
+![img](./img/3.png)
 
 We only usernames and passwords - if leaked, anyone can be you!
 
@@ -27,7 +27,7 @@ More factors means more security and harder to fake
 
 ## Secure an AWS Account
 
-![alt text](./img/4.png)
+![img](./img/4.png)
 
 ## Set up the Production AWS Account
 
@@ -53,9 +53,9 @@ Add account contacts
 
 More control over access to resources
 
-![alt text](./img/5.png)
+![img](./img/5.png)
 
-![alt text](./img/6.png)
+![img](./img/6.png)
 
 Account root user has full control over all of the AWS account and any resources created within in. The root user can’t be restricted
 
@@ -69,16 +69,16 @@ Full Trust Between AWS Account and IAM:
 
 Example:
 
-![alt text](./img/7.png)
-![alt text](./img/8.png)
+![img](./img/7.png)
+![img](./img/8.png)
 
-![alt text](./img/9.png)
+![img](./img/9.png)
 
 Main jobs of IAM
 
 - Manage identities - An ID Provider (IDP): Create, modify, and delete IDs such as users and roles
 
-![alt text](./img/10.png)
+![img](./img/10.png)
 
 Points
 
@@ -91,7 +91,7 @@ Points
 
 ### IAM Access Keys
 
-![alt text](./img/11.png)
+![img](./img/11.png)
 
 An IAM user has 1 username and 1 password
 
