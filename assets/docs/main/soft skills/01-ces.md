@@ -2,7 +2,7 @@
 
 > The core of all successful DevOps implementations is the recognition that bad communication leads to friction - Grant Fritchey
 
-## Verbal Skills
+## Verbal skills
 
 Ask yourself about 7 C's of effective verbal communication: clear, concise, correct, coherent, complete, concrete, courteous
 
@@ -69,23 +69,23 @@ Courteous
 
 > **Convey clear, correct, and concrete concepts in a concise, coherent, and courteous manner for complete comprehension**
 
-## Written Skills
+## Written skills
 
 The 7C's also apply to written communication
 
 If you can ask yourself 7 C's questions about your written communication, you're probably communicating extremely effectively
 
-Tailor the message to the mode or medium: Different communication mediums in DevOps require distinct styles and approaches
+Tailor the message to the mode or medium: Different communication mediums require distinct styles and approaches
 
 - Slack message vs design document
 
 Adjust the message to the audience: Effective communication depends on both the message and the audience
 
-![alt text](./img/1.png)
+![img](./img/1.png)
 
 Read the response before you response: Take the time to fully understand messages before responding is crucial
 
-![alt text](./img/2.png)
+![img](./img/2.png)
 
 Proofing: Grammar and spelling checks are common practices for all professional writing
 
@@ -99,7 +99,7 @@ Visual aids and formatting for readability: Visual aids in simple emails aid und
   - Message includes additional context and details, improving clarity
   - Closing is courteous and appreciative, fostering goodwill and cooperation
 
-## Nonverbal Skills
+## Nonverbal skills
 
 Non-verbal communication can often convey emotions and attitudes more accurately than words, making it essential for understanding team dynamics and managing interpersonal relationships
 
@@ -128,13 +128,13 @@ Voice tone: The tone of voice in communication can change the entire message. It
   - Focus on clear, concise communication to avoid confusion
   - Best for time-sensitive situations or when immediate action is needed
 
-Micro-expressions: Our faces often tell a story before we even speak, especially in the collaborative and often high-stress environment of DevOps
+Micro-expressions: Our faces often tell a story before we even speak, especially in the collaborative and often high-stress environment
 
 - Brief and quick
 - Involuntary
 - Honest and true emotion
 
-Eye contact: A simple yet powerful aspect of non-verbal communication, plays a crucial role in establishing connections and trust in DevOps environments
+Eye contact: A simple yet powerful aspect of non-verbal communication, plays a crucial role in establishing connections and trust
 
 - 50% of the time when speaking
 - 70% of the time when listening
@@ -147,16 +147,16 @@ Personal space management: Though often overlooked, is a critical component of n
 
 ## Professionalism
 
-In the context of DevOps, it refers to the emphasis of a "detached yet engaged" conduct, behavior, and attitude of an individual in a work environment
+It refers to the emphasis of a "detached yet engaged" conduct, behavior, and attitude of an individual in a work environment
 
-In the realm of DevOps, where communication threads the needle of success, professionalism is the fabric that holds it all together
+Communication threads the needle of success, professionalism is the fabric that holds it all together
 
-Defining behaviors in DevOps: Professional behaviors in DevOps encompass a range of actions and attitudes that collectively define how we conduct ourselves in a professional setting. Effective workplace behaviors are crucial for fostering a positive and productive environment
+Defining behaviors: Professional behaviors encompass a range of actions and attitudes that collectively define how we conduct ourselves in a professional setting. Effective workplace behaviors are crucial for fostering a positive and productive environment
 
 - Explicitly defined behaviors: Communication protocol, meeting deadlines, maintaining confidentiality
 - Implicitly defined behaviors: Showing initiative, being adaptable to change, demonstrating a positive attitude under pressure
 
-Balancing personality with impartiality: In DevOps, the art of communication often lies in striking the right balance between being personally engaged and maintaining professional detachment
+Balancing personality with impartiality: The art of communication often lies in striking the right balance between being personally engaged and maintaining professional detachment
 
 - Engaged yet impersonal
 - Focused, neutral to upbeat demeanor
@@ -164,7 +164,7 @@ Balancing personality with impartiality: In DevOps, the art of communication oft
 - Staying connected to your work and colleagues while maintaining impartiality and not letting personal issues interfere with work
 - As a DevOps engineer, one should focus on DevOps-related tasks rather than getting distracted by irrelevant personal matters
 
-How and when to apply it: Everyday communications in DevOps, from emails to team chats, are opportunities to demonstrate professionalism
+How and when to apply it: Everyday communications from emails to team chats, are opportunities to demonstrate professionalism
 
 - The 7 C’s help - clear, respectful
 - Timeliness and responsiveness
@@ -176,7 +176,7 @@ Strategies to navigate challenges
 - Problems: Conflict, stress, misunderstanding
 - Solutions: Mindfulness and meditation practices, active listening and cueing, expressing empathy, seeking feedback
 
-## Story
+## Story - Information versus story
 
 Context: Forrester provides background on an earlier presentation he gave about the value of AWS certifications to his team. In his initial presentation, he used a slide deck filled with generic data about cloud adoption and AWS, which was popular for operational offloading. However, the audience seemed disengaged, and Forrester noticed that his information was out of context, uninspiring, bland, and not framed in a way that connected with the audience emotionally or intellectually
 

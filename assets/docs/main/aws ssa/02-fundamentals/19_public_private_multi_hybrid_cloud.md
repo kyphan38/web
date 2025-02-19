@@ -1,6 +1,6 @@
 # public vs private vs hybrid vs multi cloud
 
-![alt text](./img/1.png)
+![img](./img/1.png)
 Public cloud: AWS, Azure, Google. Meet the essential characteristics of cloud computing and available for the general public
 
 - Using 1 public cloud such as AWS, Azure, Google Cloud
