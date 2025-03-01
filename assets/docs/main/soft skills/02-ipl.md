@@ -35,7 +35,7 @@ Communication in leadership: Clear and effective communication is not just a ski
 - Good communication: Face-to-face, online meetings - with camera on, written reports
 - Bad communication: Ineffective listening, not showing up, communication barriers, misconception
 
-Collaboration and teamwork: Collaboration isn’t just beneficial; it’s essential
+Collaboration and teamwork: Collaboration isn't just beneficial; it's essential
 
 - Leaders promote teamwork and collaboration
   - Encouraging open communication across teams to align on goals
@@ -76,7 +76,7 @@ Empowerment in action
 - Solutions:
   - A new leader was brought in, who had a different approach
   - This new leader focused on recognizing teams for their ability to embody company values and make different choices
-  - Rather than rewarding merely solving problems or fixing issues, the leader began rewarding innovation, experimentation, and proactive efforts that improved the company’s processes, technology, and teamwork
+  - Rather than rewarding merely solving problems or fixing issues, the leader began rewarding innovation, experimentation, and proactive efforts that improved the company's processes, technology, and teamwork
   - The leader celebrated the process-choices and principles-over just focusing on the final outcome or fixed problems
   - The new leader emphasized rewarding behaviors, choices, and effort rather than just rewarding when the problem was solved or a goal was reached
 - Result:
@@ -142,15 +142,15 @@ Acting in alignment with agreements
 
 Trust and safety in action
 
-- Context: The speaker was hired as an architect and joined a team. The team initially seemed amazing, but the dynamics shifted when one particular individual joined the group. The speaker observed that this person caused the team to behave differently—lowering their engagement, changing body language, and altering how they communicated. As the team lead, the speaker noticed that this person didn't meet expectations, missed deadlines, disregarded the company mission, and did not stay within the scope of their role. Despite attempts to enroll this individual in the company’s mission or suggest a move to another department, the situation remained unresolved until the person was eventually removed
+- Context: The speaker was hired as an architect and joined a team. The team initially seemed amazing, but the dynamics shifted when one particular individual joined the group. The speaker observed that this person caused the team to behave differently-lowering their engagement, changing body language, and altering how they communicated. As the team lead, the speaker noticed that this person didn't meet expectations, missed deadlines, disregarded the company mission, and did not stay within the scope of their role. Despite attempts to enroll this individual in the company's mission or suggest a move to another department, the situation remained unresolved until the person was eventually removed
 - Solutions
   - The speaker took on the role of observing and analyzing the team's behavior closely, noting the subtle shifts when this individual interacted with the team
-  - The speaker made several attempts to intervene by enrolling the problematic team member, trying to communicate the expectations, and suggesting they move to a different department if they weren’t aligned with the team’s goals
-  - After multiple attempts to correct the behavior, the team member was ultimately removed from the team, which restored the team’s functionality and cohesion
+  - The speaker made several attempts to intervene by enrolling the problematic team member, trying to communicate the expectations, and suggesting they move to a different department if they weren't aligned with the team's goals
+  - After multiple attempts to correct the behavior, the team member was ultimately removed from the team, which restored the team's functionality and cohesion
 - Result
   - The immediate result of removing the non-compliant team member was that trust and safety were restored within the team
   - With the problematic member gone, the team naturally reformed into a high-performing group, which suggests that the issue was significant enough to hinder their performance
-  - The speaker highlights how one individual’s behavior can disrupt the entire system, affecting not just their performance but the entire team’s dynamics
+  - The speaker highlights how one individual's behavior can disrupt the entire system, affecting not just their performance but the entire team's dynamics
 
 ## What you say vs what you do
 
@@ -211,19 +211,19 @@ Persuasion vs manipulation
 
 ## Story - the loudest promise
 
-Context: The speaker was a systems administrator at a small startup. The company was growing, and the speaker had to implement a change to adhere to a new company standard for login names, transitioning from informal usernames (like “Michael”) to a formal standard (like “M.F. Forrester”). After making this change, the CEO stormed into the speaker’s office and aggressively yelled at them, accusing them of ruining the company’s culture and potentially wrecking the organization. The CEO was furious about the decision despite it being a part of company protocol. The speaker’s boss, Joe, intervened, defended the speaker, and clarified that the decision to make the change had been directed by him, not the speaker
+Context: The speaker was a systems administrator at a small startup. The company was growing, and the speaker had to implement a change to adhere to a new company standard for login names, transitioning from informal usernames (like “Michael”) to a formal standard (like “M.F. Forrester”). After making this change, the CEO stormed into the speaker's office and aggressively yelled at them, accusing them of ruining the company's culture and potentially wrecking the organization. The CEO was furious about the decision despite it being a part of company protocol. The speaker's boss, Joe, intervened, defended the speaker, and clarified that the decision to make the change had been directed by him, not the speaker
 
 Solutions
 
 - The speaker made the change based on company policy to formalize employee logins, using data provided by HR
 - The CEO reacted with extreme anger, yelling at the speaker and physically confronting them by standing on their desk, accusing them of jeopardizing the company
-- Joe, the speaker’s boss, stepped in calmly but assertively, told the CEO to get off the desk, and explained that the decision came from him, not the speaker. Joe also stood firm in ensuring the speaker was treated with respect
-- The speaker reflected on the situation and realized the importance of psychological safety and mutual trust between leaders and their teams. This incident highlighted an invisible agreement or unwritten contract that exists between leaders and their teams — an agreement to create a safe and respectful environment where trust is upheld
+- Joe, the speaker's boss, stepped in calmly but assertively, told the CEO to get off the desk, and explained that the decision came from him, not the speaker. Joe also stood firm in ensuring the speaker was treated with respect
+- The speaker reflected on the situation and realized the importance of psychological safety and mutual trust between leaders and their teams. This incident highlighted an invisible agreement or unwritten contract that exists between leaders and their teams - an agreement to create a safe and respectful environment where trust is upheld
 
 Result
 
-- The CEO’s anger and accusation were defused by Joe’s intervention, which helped alleviate the speaker’s distress. Joe’s defense created a safe space for the speaker, reinforcing their sense of trust in their boss and the organization
-- The speaker came to understand that leadership involves an unwritten covenant with the team — a commitment to uphold certain values and behaviors, such as respect, trust, and psychological safety. This realization shaped the speaker’s views on leadership and the importance of maintaining the invisible agreement with the team
+- The CEO's anger and accusation were defused by Joe's intervention, which helped alleviate the speaker's distress. Joe's defense created a safe space for the speaker, reinforcing their sense of trust in their boss and the organization
+- The speaker came to understand that leadership involves an unwritten covenant with the team - a commitment to uphold certain values and behaviors, such as respect, trust, and psychological safety. This realization shaped the speaker's views on leadership and the importance of maintaining the invisible agreement with the team
 - Impact on Leadership
   - Leaders must ensure their actions, decisions, and communications align with the values of trust, respect, and dignity to maintain a healthy team environment
   - When this invisible agreement is broken, as it was by the CEO's outburst, it can damage relationships and undermine trust, which takes significant time and effort to rebuild

@@ -117,7 +117,7 @@ Voice tone: The tone of voice in communication can change the entire message. It
   - Use when the team faces challenges or stress, like during system outages or production issues
 - Openness
   - Use an open, enthusiastic, engaging tone with slight pitch elevation
-  - Encourage collaboration, showing genuine interest in others’ ideas
+  - Encourage collaboration, showing genuine interest in others' ideas
   - Ideal for feedback, brainstorming, or fostering open discussion
 - Boundary
   - Speak with firmness and clarity, using pauses for emphasis
@@ -166,7 +166,7 @@ Balancing personality with impartiality: The art of communication often lies in 
 
 How and when to apply it: Everyday communications from emails to team chats, are opportunities to demonstrate professionalism
 
-- The 7 C’s help - clear, respectful
+- The 7 C's help - clear, respectful
 - Timeliness and responsiveness
 - Constructive and progressive
 - Consistency in reaction and action
