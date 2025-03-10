@@ -222,7 +222,7 @@ Problem-solving - Definition
 - An expert at finding solutions through creative problem-solving
   - It is about understanding the problem, finding solutions, finding long-term solutions and potentially failing in different ways, if possible
 
-Problem-solving - techniques
+Problem-solving - Techniques
 
 - Root cause analysis (RCA)
 - DevOps practices
@@ -256,7 +256,7 @@ Being methodical - Key concepts
 Understanding needs and goals
 
 - Inquiry and clarity
-  - Asking the right questions to unveil client needs and goals by using who, when, where, what, how, or why with a lot of depth to it
+  - Asking the right questions to unveil client needs and goals by using who, when, where, what, how, or why with a lot of depths to it
 - Active listening
   - Fully understanding the client's input, not just hearing it
 - Expectation alignment
@@ -282,7 +282,9 @@ Managing expectations
 - Define change management procedures
   - Something like what happens when things go wrong or break agreement, etc.
 - Negotiate conflict resolution
+  - What do you do then? How do you get on the same page? How do you adapt what they are taking in?
 - Collaborate with clients
+  - The more they understand how you operate, the more you understand how they operate
 
 Delivering value and quality
 
@@ -306,7 +308,7 @@ Building rapport and trust
 - Exceeding expectations
   - Going beyond contractual obligations to provide exceptional service
 - Create rapport
-  - Remembering to connect as a human being in a professional setting doing work that connects with other humans - Be social, send the right signals, show engagement
+  - Remembering to connect as a human being in a professional setting doing work that connects with other humans - be social, send the right signals, show engagement
 
 **Summary**
 
@@ -320,44 +322,67 @@ Building rapport and trust
 Navigating conflict - the model - [behavioral change stairway model](https://gdt.stanford.edu/what-can-the-fbi-teach-us-about-behavior-design/)
 
 - Active listening
+  - To what's happening and observing what's occurring
 - Empathy
+  - Blending with that's going on with the person in question
 - Rapport
+  - Sending signals or actions
 - Influence
 - Behavioral change
+  - Agree to shift their expectations, sign the next contract, etc.
 
 Active listening
 
-- Foundation of conflict resolution: Present active listening as the cornerstone of resolving conflicts effectively
-- Behavioral change stairway model: Introduce this model used by hostage negotiators, which starts with active listening, followed by empathy, rapport, influence, and finally, behavioral change
+- Foundation of conflict resolution
+  - Present active listening as the cornerstone (foundation) of resolving conflicts effectively
+  - What are they telling you, both verbally, non-verbally, in expressions, micro-expressions, body language, tones, etc.
+- Behavioral change stairway model
+  - Introduce this model used by hostage negotiators, which starts with active listening, followed by empathy, rapport, influence, and finally, behavioral change
 - Differentiate between passive hearing and active listening, emphasizing the active engagement required in the latter
 
 Techniques for active listening
 
-- Mirroring: Replicating the last few words or phrases said to show understanding and encourage further conversation
-- Paraphrasing: Summarizing what's been said in your own words to confirm understanding and show engagement
-- Emotional labeling: Identifying and naming the emotions the speaker may be feeling to demonstrate empathy
-- Effective pauses: Using strategic silence to give the speaker space and indicate thoughtful processing
+- Mirroring
+  - Replicating the last few words or phrases said to show understanding and encourage further conversation
+- Paraphrasing
+  - Summarizing what's been said in your own words to confirm understanding and show engagement
+- Emotional labeling
+  - Identifying and naming the emotions the speaker may be feeling to demonstrate empathy
+- Effective pauses
+  - Using strategic silence to give the speaker space and indicate thoughtful processing
 
 Emotional intelligence
 
-- Emotional intelligence in conflict: Understanding and managing one's own emotions and the emotions of others during conflicts
-- Working with emotions: Recognizing emotions as a valid part of the workplace dynamic and learning to navigate them effectively
-- Projecting calmness: Maintaining a calm demeanor to de-escalate tense situations and facilitate a constructive dialogue
-- One-on-one conversations for de-escalation: The importance of private discussions in managing and resolving conflicts
+- Emotional intelligence in conflict
+  - Understanding and managing one's own emotions and the emotions of others during conflicts
+- Working with emotions
+  - Recognizing emotions as a valid part of the workplace dynamic and learning to navigate them effectively
+- Projecting calmness
+  - Maintaining a calm demeanor to de-escalate tense situations and facilitate a constructive dialogue
+- One-on-one conversations for de-escalation
+  - The importance of private discussions in managing and resolving conflicts
 
 Empathy and rapport in conflict resolution
 
-- Empathy in understanding: The role of empathy in truly understanding the perspectives and feelings of others in a conflict
-- Building rapport: How establishing rapport creates a foundation of trust and mutual respect, crucial in conflict resolution
-- Maintaining relationships post-conflict: Strategies for sustaining and strengthening relationships after conflicts are resolved
-- Drawing on existing relationships: Utilizing established connections with team members to navigate and resolve conflicts more effectively
+- Empathy in understanding
+  - The role of empathy in truly understanding the perspectives and feelings of others in a conflict
+- Building rapport
+  - How establishing rapport creates a foundation of trust and mutual respect, crucial in conflict resolution
+- Maintaining relationships post-conflict
+  - Strategies for sustaining and strengthening relationships after conflicts are resolved
+- Drawing on existing relationships
+  - Utilizing established connections with team members to navigate and resolve conflicts more effectively
 
 Creating agreements to solve problems
 
-- Genuine problem-solving: Engaging in authentic and constructive problem-solving rather than superficial fixes
-- Offering gestures of good faith: Demonstrating commitment to resolution through actions that build trust
-- Avoiding counterfeit agreements: Understanding the importance of reaching agreements that are meaningful and sustainable, not just immediate and convenient
-- Striving for genuine agreement: Working towards solutions that meet the needs and interests of all parties involved
+- Genuine problem-solving
+  - Engaging in authentic and constructive problem-solving rather than superficial fixes
+- Offering gestures of good faith
+  - Demonstrating commitment to resolution through actions that build trust
+- Avoiding counterfeit agreements
+  - Understanding the importance of reaching agreements that are meaningful and sustainable, not just immediate and convenient
+- Striving for genuine agreement
+  - Working towards solutions that meet the needs and interests of all parties involved
 
 **Summary**
 
@@ -366,4 +391,38 @@ Creating agreements to solve problems
 - Emotional intelligence cannot be understated as a necessary skill even in a professional environment
 - The last point was about using agreements and collusion to solve problems
 
-## Story
+## Story - Managing up, down, sideways and outside
+
+Context
+
+- The focus of speaker's talk is on managing relationships "upwards" (with bosses), "downwards" (with subordinates), "sideways" (with peers), and "outside" (with clients)
+- His key argument is that success in the workplace, especially in a leadership or consultancy role, requires an understanding of how to manage these relationships, with a particular emphasis on communication, alignment with others' needs, and the creation of mutual value
+- He uses the example of a forward-thinking architect in a company who fails to engage his colleagues, illustrating how a lack of balance in relationship management can lead to misalignment and dysfunction
+- The overarching lesson is about "client management" - treating everyone as a "client," no matter their position in the hierarchy
+
+Actions and Result
+
+- Treat everyone as a client
+  - Treat your boss, peers, subordinates, and external clients as "clients" with distinct needs and expectations. This approach prioritizes understanding and meeting their needs in a way that benefits both parties
+  - When you approach relationships from a client-centric perspective, you shift from transactional interactions (where the goal is simply to get things done) to collaborative, value-driven interactions that build long-term trust and rapport
+- Inquire and be curious about their needs
+  - Actively engage with your team members, peers, and leaders by asking questions to understand their goals, challenges, and preferences
+  - Understanding the needs of others allows you to tailor your approach and communication to resonate with them. It also signals respect for their perspectives, which fosters mutual trust and better collaboration
+- Create feedback loops
+  - Establish feedback mechanisms where others can voice their thoughts and input, and ensure you listen actively
+  - Continuous feedback promotes open communication, helps to align efforts, and fosters an environment of growth. Active listening, in particular, ensures that you're not just hearing, but understanding, which enables you to act in ways that are more beneficial to the team
+- Align actions with their needs and expectations
+  - Adjust your approach to meet the individual needs of the people you're working with, ensuring that you fulfill their expectations
+  - Aligning actions to the needs of others makes your efforts more relevant and appreciated. It leads to better outcomes because everyone feels understood and supported in their role
+- Prioritize what matters most to them
+  - Understand which needs are urgent and which are less critical, and focus on delivering what truly matters to your stakeholders
+  - Prioritization ensures that resources are allocated efficiently and that the most impactful actions are taken first. It prevents overwhelm and demonstrates that you're committed to delivering results that matter
+- Build trust through consistency
+  - Be consistent in your actions and communications. Follow through on commitments and demonstrate reliability
+  - Trust is the foundation of any successful relationship. By consistently delivering on promises and maintaining clear communication, you demonstrate integrity and reliability, which builds stronger rapport
+- Provide value to everyone
+  - Whether you're managing up, down, sideways, or outside, make sure you're delivering tangible value to everyone you interact with. This could be in the form of solving problems, offering support, or helping others achieve their goals
+  - When people feel they are receiving value from their relationship with you, they are more likely to trust and engage with you. This is particularly important in the workplace, where collaboration and alignment are essential to success
+- Continuous improvement
+  - Continuously work on improving your communication, listening, and relationship-building skills. Stay open to feedback and refine your approach as needed
+  - Relationships and work environments evolve. Regular self-reflection and improvement ensure that you remain effective in managing relationships and contributing to the team's success
