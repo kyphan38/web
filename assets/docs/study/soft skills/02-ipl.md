@@ -1,6 +1,6 @@
 # influencing persuasion leadership
 
-Leadership is not just about managing systems; it's about inspiring people
+Leadership is not just about managing systems, it's about inspiring people
 
 ## Leadership and empowerment
 
@@ -35,7 +35,7 @@ Communication in leadership: Clear and effective communication is not just a ski
 - Good communication: Face-to-face, online meetings - with camera on, written reports
 - Bad communication: Ineffective listening, not showing up, communication barriers, misconception
 
-Collaboration and teamwork: Collaboration isn't just beneficial; it's essential
+Collaboration and teamwork: Collaboration isn't just beneficial, it's essential
 
 - Leaders promote teamwork and collaboration
   - Encouraging open communication across teams to align on goals
@@ -80,7 +80,7 @@ Empowerment in action
   - The leader celebrated the process-choices and principles-over just focusing on the final outcome or fixed problems
   - The new leader emphasized rewarding behaviors, choices, and effort rather than just rewarding when the problem was solved or a goal was reached
 - Result:
-  - The team began evolving and improving, moving away from the reactive, “firefighting” approach to addressing issues
+  - The team began evolving and improving, moving away from the reactive, "firefighting" approach to addressing issues
   - Innovation, experimentation, and proactive problem-solving became more recognized and valued, leading to a healthier team dynamic
   - The system itself improved, which in turn made it more effective for the people using it
   - The overall atmosphere of the workplace shifted from critical and negative to one where people felt more empowered to contribute meaningfully to both the processes and the outcomes
@@ -90,7 +90,7 @@ Empowerment in action
 
 Trust is the foundation for effective collaboration, especially in environments where rapid decision-making and flexibility are required. Psychological safety allows team members to express ideas and concerns without fear of negative consequences, leading to more innovative and creative problem-solving
 
-Trust isn't just a value or buzzword; it's the foundation of high-performing teams
+Trust isn't just a value or buzzword, it's the foundation of high-performing teams
 
 Pillars of trust and safety
 
@@ -211,7 +211,7 @@ Persuasion vs manipulation
 
 ## Story - the loudest promise
 
-Context: The speaker was a systems administrator at a small startup. The company was growing, and the speaker had to implement a change to adhere to a new company standard for login names, transitioning from informal usernames (like “Michael”) to a formal standard (like “M.F. Forrester”). After making this change, the CEO stormed into the speaker's office and aggressively yelled at them, accusing them of ruining the company's culture and potentially wrecking the organization. The CEO was furious about the decision despite it being a part of company protocol. The speaker's boss, Joe, intervened, defended the speaker, and clarified that the decision to make the change had been directed by him, not the speaker
+Context: The speaker was a systems administrator at a small startup. The company was growing, and the speaker had to implement a change to adhere to a new company standard for login names, transitioning from informal usernames (like "Michael") to a formal standard (like "M.F. Forrester"). After making this change, the CEO stormed into the speaker's office and aggressively yelled at them, accusing them of ruining the company's culture and potentially wrecking the organization. The CEO was furious about the decision despite it being a part of company protocol. The speaker's boss, Joe, intervened, defended the speaker, and clarified that the decision to make the change had been directed by him, not the speaker
 
 Solutions
 

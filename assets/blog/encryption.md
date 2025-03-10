@@ -24,7 +24,7 @@ We need to generate a random key for encryption. The key should be 256 bits (32 
 openssl rand -out secret.key 32
 ```
 
-- `openssl rand`: OpenSSL’s random number generator to create a key
+- `openssl rand`: OpenSSL's random number generator to create a key
 - `out secret.key`: The output file where the generated key will be stored
 - `32`: The key length in bytes (32 bytes = 256 bits).
 
@@ -226,7 +226,7 @@ openssl pkeyutl -encrypt -inkey user_public_key.pem -pubin -in text.txt -out ser
 Transfer the encrypted file to User
 
 ``` bash
-scp abc@58.222.188.111:/home/abc/server_text_encrypted.dat ./server_text_encrypted.dat 
+scp abc@58.222.188.111:/home/abc/server_text_encrypted.dat ./server_text_encrypted.dat
 ```
 
 ### Step 8: User Decrypts File
