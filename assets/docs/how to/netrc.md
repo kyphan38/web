@@ -1,4 +1,4 @@
-# how to authorize github
+# authorize github
 
 <!-- truncate -->
 
