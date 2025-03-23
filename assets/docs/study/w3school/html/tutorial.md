@@ -4,7 +4,7 @@ Following to this [W3Schools](https://www.w3schools.com/html/)
 
 ## Page Structure
 
-<!-- ![img](./img/1.png) -->
+![img](./img/1.png)
 
 ## Basic
 
