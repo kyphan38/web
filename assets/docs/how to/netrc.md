@@ -1,7 +1,5 @@
 # authorize github
 
-<!-- truncate -->
-
 ## Context
 
 When working with GitHub, you may encounter an issue where you are prompted to enter your username and password every time you push changes

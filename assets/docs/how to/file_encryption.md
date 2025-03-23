@@ -1,7 +1,5 @@
 # implement file encryption
 
-<!-- truncate -->
-
 ## Requirements
 
 - OpenSSL
