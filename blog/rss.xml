@@ -4,7 +4,7 @@
         <title>This is my place, bro! Blog</title>
         <link>https://kyphan38.github.io/web/blog</link>
         <description>This is my place, bro! Blog</description>
-        <lastBuildDate>Sun, 23 Mar 2025 01:54:16 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 23 Mar 2025 01:56:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[info]]></title>
             <link>https://kyphan38.github.io/web/blog/info</link>
             <guid>https://kyphan38.github.io/web/blog/info</guid>
-            <pubDate>Sun, 23 Mar 2025 01:54:16 GMT</pubDate>
+            <pubDate>Sun, 23 Mar 2025 01:56:23 GMT</pubDate>
             <description><![CDATA[Under maintenance]]></description>
             <content:encoded><![CDATA[<p>Under maintenance</p>]]></content:encoded>
         </item>
