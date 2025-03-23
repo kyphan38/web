@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkyphan=self.webpackChunkkyphan||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"info","permalink":"/web/blog/info","unlisted":false,"date":"2025-03-23T01:56:58.000Z"}]}')}}]);
