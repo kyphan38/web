@@ -1,4 +1,4 @@
-# run a bash script from anywhere
+# implement a bash script from anywhere
 
 ## Context
 
