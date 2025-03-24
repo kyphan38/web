@@ -124,7 +124,7 @@ Techniques - Parkinson's Law
 
 ![img](./img/14.png)
 
-- Work expands to fill the time available for its completion.
+- Work expands to fill the time available for its completion
 - By setting shorter deadlines, you can increase focus and efficiency
 
 Techniques - Time Blocking
@@ -226,7 +226,7 @@ Visualization
 - Teams and individuals benefit from the consistency of sustainable and intentional ways of working
 - At a minimum, understanding that capacity planning is important and how to do it is essential
 
-## Story - when someone adds to your work
+## Story - When someone adds to your work
 
 Context
 

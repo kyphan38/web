@@ -12,7 +12,7 @@ Negotiating conflict is essential because it is rare and yet important when it a
 
 Redefining "client"
 
-- The term "client" extends far beyond external customers. It includes everyone we interact with professionally - bosses, coworkers, employees, and more.
+- The term "client" extends far beyond external customers. It includes everyone we interact with professionally - bosses, coworkers, employees, and more
 
 Managing your leaders
 
@@ -61,7 +61,7 @@ Integrating a client-centric approach
 - Practice active listening
 - Communicate and document
   - Never leave a meeting without a clear summary
-  - Never enter one without at least a loose agenda.
+  - Never enter one without at least a loose agenda
   - Example: "Here are the action items I have - does this look accurate based on our last meeting?"
 - Seek feedback and adapt to improve
   - Sharing your direction gives others a chance to confirm alignment or raise concerns
@@ -171,7 +171,7 @@ Enhancing communication
 - Clear communication
   - Use clear, concise, and jargon-free language - especially when working with non-technical stakeholders
 - Active listening
-  - Listen attentively to fully understand client concerns and feedback.
+  - Listen attentively to fully understand client concerns and feedback
 - Collect feedback
   - Use feedback mechanisms like surveys or review meetings to gather and implement client input
 

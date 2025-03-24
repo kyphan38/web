@@ -25,17 +25,19 @@ MLOps - Sep
 
 ## In progress
 
-- [ ] **Soft Skills - 15 Mar**
-- [ ] CS50 - 19 Apr
 - [ ] **LFCS - 22 Mar**
+- [ ] **Vault (Associate) - 29 Mar**
 - [ ] OS - 29 Mar
 - [ ] CCNA - 5 Apr
 - [ ] SAA - 12 Apr
+- [ ] CS50 - 19 Apr
 - [ ] Shell Scripts + Advanced Bash Scripting - 26 Apr
-- [ ] Terraform Associate + Ansible (Basics + Advanced) + Vault (Associate + Operations) - 24 May
+- [ ] Terraform Associate + Ansible (Basics + Advanced) - 24 May
 - [ ] Finish above = Mac Pro
 
 ## Complete
+
+- [x] Soft Skills - 24 Mar
 
 ## Consistent
 

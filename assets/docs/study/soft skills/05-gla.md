@@ -178,7 +178,7 @@ Exploring learning styles
 - Your personal needs and commitments will increase or ease your resistance so your foundations are in place
 - Variety and accountability help to foster a commitment to learning and growing
 
-## Story - what to learn when there is too much to know
+## Story - What to learn when there is too much to know
 
 Context
 

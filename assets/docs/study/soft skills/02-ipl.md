@@ -1,241 +1,347 @@
 # influencing persuasion leadership
 
-Leadership is not just about managing systems, it's about inspiring people
+This course starts and ends with an assessment on leadership capability
+
+The bulk of this course covers leadership, persuasion, and influencing
+
+The scenario video covers the hidden promises that leaders agree to when engaged in DevOps
+
+Next topic will be Leadership and Empowerment
 
 ## Leadership and empowerment
 
-A leader is all about guiding , supporting, and trusting team members
+Why?
 
-Leaders also encourage all team members to their best, empowering decisions, and learning from both success and failure
-
-Leadership extends beyond traditional management roles
-
-- Collaboration
-- Innovation
-- Culture
-- Adaptation
+- In the evolving landscape of DevOps, leadership extends beyond traditional management roles
+- It's about enabling, supporting, and empowering teams to thrive in dynamic, complex environments
 
 Core concepts in effective leadership
 
-- Clear communication: Ensuring transparency and clarity in all interactions &rarr; alignment
-- Collaboration: Fostering teamwork and cross-functional synergy
-- Continuous improvement: Encouraging ongoing learning and development
-- Experimentation: Promoting innovation and risk-taking
-- Recognition: Acknowledging and celebrating team achievements
+- Clear communication - Ensuring transparency and clarity in all interactions
+- Collaboration - Fostering teamwork and cross-functional synergy
+- Continuous improvement - Encouraging ongoing learning and development
+- Experimentation - Promoting innovation and responsible risk-taking
+- Recognition - Acknowledging and celebrating team achievements
 
-Empowering DevOps teams: Enable them to achieve their fullest potential
+Empowering DevOps teams
 
-- Empower and trust teams
-- Provide resources and encouragement
-- Create traditions, habits, and expectations of empowerment in the environment
+- Enable team members to reach their full potential
+- Empower and trust teams to make decisions and own outcomes
+- Provide the resources, space, and encouragement to act independently
+- Create traditions, habits, and expectations that support a culture of empowerment
 
-Communication in leadership: Clear and effective communication is not just a skill, it's a leadership imperative. It should be aligned with the vision, mission, strategy, values of the company
+Communication in leadership
 
-- Communication allows leader to do their jobs - provide support, unblocking, context, guidance, ,fostering, etc.
-- Good communication: Face-to-face, online meetings - with camera on, written reports
-- Bad communication: Ineffective listening, not showing up, communication barriers, misconception
+- Clear, effective communication is both a skill and a leadership imperative
+- Communication should align with the company's vision, mission, strategy, and values
+- It allows leaders to
+  - Provide support
+  - Remove blockers
+  - Offer context and direction
+  - Foster alignment and motivation
+- Good communication: Face-to-face interactions, online meetings with cameras on. well-written updates or reports
+- Bad communication: Ineffective listening, failing to show up or follow through, creating or allowing communication barriers, Misunderstandings due to lack of clarity or consistency
 
-Collaboration and teamwork: Collaboration isn't just beneficial, it's essential
+Collaboration and teamwork
 
-- Leaders promote teamwork and collaboration
-  - Encouraging open communication across teams to align on goals
-  - Supporting cross-functional collaboration with the right tools and resources
-  - Celebrating successes and recognizing individual contributions
-- Leaders build collaborative environments / facilitate integration among teams
-  - Creating a culture of trust where ideas can be shared freely
-  - Offering feedback and growth opportunities for everyone to contribute
-  - Facilitating regular meetings for open exchange of ideas and insights
-- Leaders help break down barriers
-  - Encouraging cross-functional training and knowledge-sharing
+- Leaders promote collaboration by
+  - Encouraging open communication to align goals across teams
+  - Supporting cross-functional collaboration with the right tools and processes
+  - Celebrating team successes and recognizing individual contributions
+- Leaders build collaborative environments by
+  - Creating a culture of trust where ideas are freely shared
+  - Offering feedback and growth opportunities for all team members
+  - Facilitating regular meetings for the open exchange of ideas and insights
+- Leaders break down barriers by
+  - Promoting cross-training and knowledge sharing
   - Removing obstacles that hinder decision-making or collaboration
-  - Promoting a "fail fast, learn faster" mentality for constructive experimentation
+  - Encouraging a "fail fast, learn faster" mentality to support experimentation
 
-Continuous improvement and learning: Leaders seek to create other leaders in their field and in other fields
+Continuous improvement and learning
 
-- Learning resources
-- Training opportunities
-- Knowledge-sharing sessions
-- Guidance
-- Insight mentorship
+- Strong leaders aim to create more leaders, not just followers
+- They invest in their teams through
+  - Access to learning resources
+  - Training and upskilling opportunities
+  - Knowledge-sharing sessions
+  - One-on-one guidance and mentorship
 
 Driving innovation as a leader
 
-- Idea generation
-- Experimentation - the fuel for innovation and growth
-- Risk assessment
-- Failure acceptance and learning
-- Success and rewards
+- Foster a culture that values
+  - Idea generation
+  - Experimentation
+  - Risk assessment
+  - Acceptance of failure as a learning process
+  - Rewarding both effort and success
 
-Enacting recognition: Recognizing and celebrating team achievements is not just about giving credit, it's about fueling motivation and fostering a positive team culture!
+Enacting recognition
 
-- Not only individuals but also teams and departments
+- Recognizing and celebrating achievements isn't just about giving credit, it's about fueling motivation, engagement, and a positive team culture
+- Recognition should go to individuals, teams, and departments
+- Reward both results and the behaviors/processes that lead to success
 
 Empowerment in action
 
-- Context: The speaker reflects on their experience working at a company where leadership was negative and critical. The leaders often focused on criticizing efforts, creating a team environment where individuals felt unempowered to improve or take initiative. Despite having a few standout engineers who received recognition for firefighting and reactive problem-solving, the overall culture was one where teams were not encouraged to be proactive or innovate
-- Solutions:
-  - A new leader was brought in, who had a different approach
-  - This new leader focused on recognizing teams for their ability to embody company values and make different choices
-  - Rather than rewarding merely solving problems or fixing issues, the leader began rewarding innovation, experimentation, and proactive efforts that improved the company's processes, technology, and teamwork
-  - The leader celebrated the process-choices and principles-over just focusing on the final outcome or fixed problems
-  - The new leader emphasized rewarding behaviors, choices, and effort rather than just rewarding when the problem was solved or a goal was reached
-- Result:
-  - The team began evolving and improving, moving away from the reactive, "firefighting" approach to addressing issues
-  - Innovation, experimentation, and proactive problem-solving became more recognized and valued, leading to a healthier team dynamic
-  - The system itself improved, which in turn made it more effective for the people using it
-  - The overall atmosphere of the workplace shifted from critical and negative to one where people felt more empowered to contribute meaningfully to both the processes and the outcomes
-  - The new leadership also showed the importance of rewarding the journey, the process, and the effort-important for infinite games (like careers or company missions) - rather than just the outcome, which contributed to a deeper sense of purpose and continuous improvement
+- Context
+  - The speaker worked in a company where leadership was mostly critical and reactive even when things were done right, feedback was negative
+  - The culture rewarded "firefighting" and urgent problem-solving, but rarely encouraged proactive thinking or innovation
+  - As a result, the teams didn't feel empowered. They didn't improve processes, systems, or collaboration because they weren't supported to do so
+  - A new leader entered the picture with a different mindset: instead of praising people just for reacting, he recognized behaviors that embodied company values like learning from failure, innovating, and improving systems so issues wouldn't repeat
+  - This shift encouraged people to stop plugging leaks and start redesigning the wall to stop surviving and start evolving
+  - Ultimately, leadership became about rewarding principles-driven effort, not just outcomes about valuing the journey, not just the finish line
+  - The story reinforces that empowerment is built on trust, support, and giving people space to grow, experiment, and contribute no matter your title or role
+- Actions and Result
+  - Empower through trust and autonomy
+    - Create space for people to experiment, make mistakes, and improve processes without fear. Trust them to understand the systems they work in and give them agency to change what's broken
+    - Teams move from reactive to proactive. They begin to take ownership of the way things work, not just what they work on. Morale improves, and so does system stability
+  - Reward the right behaviors
+    - Recognize not just the final outcome, but the choices, values, and effort that led there. Celebrate when someone prevents a problem from recurring not just when they clean up a fire
+    - People start aiming for long-term system health, not short-term applause. The culture shifts toward continuous improvement instead of constant recovery
+  - Lead without needing the title
+    - Whether you're an individual contributor or a VP, lead by modeling empowerment encourage collaboration, support growth, and be clear and authentic in communication
+    - Leadership becomes a shared responsibility. Teams become self-sustaining, resilient, and more aligned with the broader mission and values of the organization
+  - Align teams with vision and values
+    - Keep connecting daily work to the company's mission, strategy, and values. Make sure teams understand not just what they're doing but why it matters
+    - Work becomes meaningful. People aren't just shipping features or fixing bugs they're contributing to something bigger, and that clarity fuels stronger teamwork and better decision-making
+  - Encourage continuous growth
+    - Push the idea that leadership is about evolving the people, the systems, and the ways of working. Keep asking: how can we do this better? How can we fail differently next time?
+    - Teams develop a mindset of learning and adaptation. They stop fearing change and start seeking it deliberately, constructively, and together
+
+**Summary**
+
+- As covered here, communication is extremely important in DevOps Leadership
+- Empowerment is about expressing and doing actions of trust, support, and growth in your teams and your people
+- Leadership occurs no matter what position you are in or your title
+- In DevOps, a leader is focused, clear, inspiring, and authentic
 
 ## Creating safety and trust
 
-Trust is the foundation for effective collaboration, especially in environments where rapid decision-making and flexibility are required. Psychological safety allows team members to express ideas and concerns without fear of negative consequences, leading to more innovative and creative problem-solving
+Why and What?
 
-Trust isn't just a value or buzzword, it's the foundation of high-performing teams
+- Trust isn't just a value or buzzword, it's the foundation of high-performing teams
 
 Pillars of trust and safety
 
-- Trust and safety both are about agreements
-- Trust is about agreements on expectations, expressed and unexpressed
-  - We know what team members are going to do or involves confidence in their decision-making, reliability, transparency around the communication, visibility of the work, etc.
-- Safety is about an inherent agreement that a person will not be attacked or assaulted in any way
-  - Team member feel secure to express ideas, ask questions and raise concerns
+- Trust and safety are both built on agreements
+- Trust is based on shared expectations both expressed and unspoken
+  - It involves confidence in teammates' decision-making, reliability, clear communication, and transparency in work processes
+- Safety is the inherent agreement that no individual will be harmed physically, emotionally, or psychologically
+  - It ensures that team members feel secure to express ideas, ask questions, and raise concerns without fear of ridicule or punishment
 
-Building trust through agreements: Trust is built by repeated communication and action that is in alignment with agreements and expectations
+Building trust through agreements
 
-- Agreements and expectations come from all of the people that you interact with, including the people who consume your software, services, web pages
+- Trust is created through repeated communication and consistent actions that align with agreed-upon expectations
+- These agreements can come from anyone you interact with, including colleagues, cross-functional partners, and the people who consume your software, services, or content
 
-Fostering a safe environment: It is built through consistent respect of people and their contribution
+Fostering a safe environment
 
-- Expectation
-- Agreement
-- Right
-- Physical
-- Emotional
-- Mental
+- A safe environment is built on the consistent respect for people and their contributions
+- It includes clear
+  - Expectations
+  - Agreements
+  - Boundaries around physical, emotional, and mental well-being
 
-Cultivating trust and safety - If a leader value people, he/she don't want them to overwork
+Cultivating trust and safety
 
-- Open communication
-- Opportunities for growth
-- Supportive atmosphere
+- If a leader values people, they won't push them to overwork
+- Safety and trust grow from
+  - Open communication
+  - Opportunities for growth
+  - A supportive, non-punitive atmosphere
 
-Acceptable behaviors and reactions: The tone you set directly influences the behaviors and reactions within your team
+Acceptable behaviors and reactions
 
-- If you want your teams to do certain things, you have to do some version of those things
-- You want them to be methodical? You got to be methodical
+- The tone you set as a leader or team member directly influences the behavior of others
+- If you expect your team to act a certain way, you must model those behaviors yourself
+  - Want your team to be methodical? You must be methodical
+  - Want them to be open? You must show openness
 
 Establishing clear goals and boundaries
 
-- Set clear goals
-- Define boundaries
-- Establish expectations
-- Provide feedback
+- Set clear goals that everyone understands
+- Define healthy boundaries to avoid burnout and misalignment
+- Establish shared expectations for work and communication
+- Provide regular feedback to reinforce alignment
 
 Acting in alignment with agreements
 
-- One of the worst ways that you can break trust and safety inside an organization is layoffs
-
 ![img](./img/3.png)
 
-- Renegotiating agreements can break a little bit of trust, but not nearly as much trust as braking agreements
-- If you break an agreement and you don't communicate about the breaking of that agreement, you are losing the absolute maximum amount of trust and safety that you can have with the person that you are in the agreement with
+- One of the quickest ways to destroy trust and safety in an organization is through uncommunicated or poorly handled layoffs
+- RRenegotiating an agreement may reduce trust slightly but that's manageable if communicated clearly
+- Breaking an agreement without communication results in the maximum loss of trust and safety
+  - If you break a promise or change direction, explain why and what will happen next
+  - Silence or avoidance damages relationships far more than the change itself
 
 Trust and safety in action
 
-- Context: The speaker was hired as an architect and joined a team. The team initially seemed amazing, but the dynamics shifted when one particular individual joined the group. The speaker observed that this person caused the team to behave differently-lowering their engagement, changing body language, and altering how they communicated. As the team lead, the speaker noticed that this person didn't meet expectations, missed deadlines, disregarded the company mission, and did not stay within the scope of their role. Despite attempts to enroll this individual in the company's mission or suggest a move to another department, the situation remained unresolved until the person was eventually removed
-- Solutions
-  - The speaker took on the role of observing and analyzing the team's behavior closely, noting the subtle shifts when this individual interacted with the team
-  - The speaker made several attempts to intervene by enrolling the problematic team member, trying to communicate the expectations, and suggesting they move to a different department if they weren't aligned with the team's goals
-  - After multiple attempts to correct the behavior, the team member was ultimately removed from the team, which restored the team's functionality and cohesion
-- Result
-  - The immediate result of removing the non-compliant team member was that trust and safety were restored within the team
-  - With the problematic member gone, the team naturally reformed into a high-performing group, which suggests that the issue was significant enough to hinder their performance
-  - The speaker highlights how one individual's behavior can disrupt the entire system, affecting not just their performance but the entire team's dynamics
+- Context
+  - The speaker was hired as an architect and team lead for a DevOps group that initially seemed promising and high-performing
+  - But in team interactions, there was a noticeable shift in energy and behavior whenever one particular team member entered the room less talking, more tension, body language changed
+  - This individual didn't align with the team's mission or values: missed deadlines, wandered into other departments (like marketing and advertising), and didn't really engage with the DevOps work
+  - The team didn't feel safe or supported with that person around, and leadership hadn't addressed it for some reason
+  - After multiple honest attempts to align and redirect that team member offering a chance to switch departments the individual finally acknowledged they didn't want to be in DevOps and moved on
+  - The moment that person left, team trust and safety rebounded naturally. No top-down control was needed after that the team just re-centered and became high-performing again
+  - This scenario revealed how critical psychological safety and mutual respect are in team dynamics, and how even one out-of-alignment person can break that down
+- Actions and result
+  - Remove the blocker to restore trust
+    - Observed team dynamics closely, identified the individual causing trust breakdown, attempted multiple times to realign or reposition the team member before ultimately helping them transition out of the team
+    - Once the misaligned individual was removed, team trust was instantly restored. The group returned to a collaborative, engaged, high-performance state almost automatically
+  - Build trust and safety through agreements
+    - Reinforce that trust and safety aren't just abstract ideas they're based on clear, visible, and respected agreements. This includes deadlines, role clarity, communication styles, and how people show up
+    - Teams operate with more confidence and emotional security, allowing them to take risks, collaborate deeply, and focus on delivering value without fear of interpersonal disruption
+  - Communicate with consistency and respect
+    - Match words with deeds. Be consistent. Speak with dignity. Back up respect with action, not just lip service because people will notice the difference over time
+    - Authentic respect becomes a foundational layer. Team members trust each other and leadership more deeply, which strengthens team cohesion and personal accountability
+  - Set and translate expectations into agreements
+    - Define clear goals and boundaries. Make expectations visible and shared across the team, so everyone's on the same page and has something to point to when behaviors drift off-course
+    - Misunderstandings decrease. Accountability increases. Team members know what's expected and can support each other in upholding it without constant top-down management
+  - Define safety as a right, not a perk
+    - Affirm that safety emotional, psychological, physical is a non-negotiable. Set the tone that disrespect, manipulation, or harmful behavior won't be tolerated, no matter how "skilled" the individual is
+    - Teams feel protected. People are more willing to speak up, share ideas, and challenge assumptions all key behaviors in high-functioning DevOps environments
+
+**Summary**
+
+- Trust and safety are agreements that must be kept to have a high-performing team
+- Trust and safety are both built on consistency, communication, and respect
+- Trust requires setting clear goals, boundaries, and expectations that translate into agreements. Keep them
+- Safety is an agreement, an expectation, and a right to not be attacked or assaulted. Respect and dignity are required for safety
 
 ## What you say vs what you do
 
-The congruence between what we say and what we do is pivotal at any level
+Balancing communication and action
 
-Balancing communication and action: The balance and harmony between what we do and what we say, defines our success in any environment
+- The balance and harmony between what we say and what we do defines our success in any environment
+- Misalignment between words and actions undermines trust, credibility, and team cohesion
 
-Aligning words with actions: The alignment of what you say and what you do is not just influential, it's transformative
+Aligning words with actions
 
-- What you say (words): The manager instructs the team to work efficiently to meet the project deadline
-- What you do (actions): Later, a team member sees the manager procrastinating, causing project delays
-- &rarr; misalignment
+- The alignment between your words and actions is both influential and transformative
+- Example
+  - What you say (words): A manager tells the team to work efficiently to meet a project deadline
+  - What you do (actions): A team member later observes the manager procrastinating, which causes project delays
+  - &rarr; Misalignment leads to confusion, disengagement, and distrust
 
-Limitations of actions alone: Actions can speak volumes in DevOps
-
-- If you are doing things and you are not communicating about that
+Limitations of actions alone
 
 ![img](./img/4.png)
 
-- Don't know about it
-- Don't want it
-- Don't understand why you did it
+- While actions can speak volumes in DevOps, actions without communication can be misinterpreted or go unnoticed
+- If you act without communicating, others may
+  - Not know what you did
+  - Not want the outcome you delivered
+  - Not understand why you did it
 
-Achieving trust through consistency: A consistent alignment between what a person says and does is the cornerstone of building trust and achieving results
+Achieving trust through consistency
 
-- If you are just doing your own thing, not seeking feedback, not staying in alignment with the strategies, the mission, the values, and the principles of your department, org, etc. you are out of alignment and that misalignment is the number one destroyer of teams, departments, and companies
-- It would be better for all of you to fail and learn together than to have four people on a team go on one direction and one person go another direction. That person' right, the other four are wrong
+- Consistent alignment between what a person says and what they do is the cornerstone of building trust and achieving meaningful results
+- If you are
+  - Acting independently without seeking feedback
+  - Operating out of sync with your team's strategy, mission, values, or principles
+- &rarr; You are out of alignment
+- Misalignment is one of the most destructive forces in teams, departments, and organizations
+- It's better for a team to fail and learn together than for four people to go in one direction while one person goes another even if that one person is "right" and the others are "wrong."
+
+**Summary**
+
+- Align words with actions to build credibility and trust
+- Relying solely on actions will not get you the team, the agreements, and the connections that you need for DevOps teamwork
+- Consistency in communication and results is important
+- This is necessary not just for teamwork but also for the overall organizational culture
 
 ## Persuasion versus manipulation
 
-In leadership and communication, there's a fine line between persuasion and manipulation
+Why?
 
-The greatest power lies in influencing with integrity, not manipulating with deceit
-
+- The greatest power lies in influencing with integrity, not manipulating with deceit
 - Persuasion: Honesty, empathy, trustworthiness, mutual benefit
 - Manipulation: Deception, exploitation, lack of empathy, self-serving motives
 
-Persuasion vs manipulation
+A deeper definition
 
-- A deeper definition
-  - P: Ethical influence using reasoning, discussion, and moral appeal
-  - M: Unethical influence through deception or coercion, often for the manipulator's benefit
-- Positive (persuasion) vs negative (Manipulation)
-  - P: An ethical approach to influence, where the goal is to convince someone through reasoning, discussion, and moral appeal. Those are honest, transparent, respectful, mutual benefit, empathy
-  - M: An unethical form of influence that involves deceiving or coercing someone into a desired outcome, often for the manipulator's benefit. Those are deceptive, coercive, exploitative, selfish, toxic
-- Key differences
-  - P: Reason, respect for autonomy, ethical and positive, connecting
-  - M: Emotion, control, unethical and toxic, isolating
-  - Corresponding: Decision, right, behavior, action
-- Examples
-  - P: Project adoption, collaboration, adapting to change, getting buy-in
-  - M: Exploiting insecurities, misleading information, fear or guilt tactics, gaslighting or questioning views on reality
-- Cultivating ethical influence
-  - Lead by example
-  - Promote transparency
-  - Encourage data-driven informed decisions
-  - Respect and encourage team autonomy
+- Persuasion: Ethical influence that uses reasoning, discussion, transparency, and moral appeal
+- Manipulation: Unethical influence through deception, coercion, or emotional exploitation typically for the manipulator's benefit
 
-## Story - the loudest promise
+Positive (persuasion) vs negative (Manipulation)
 
-Context: The speaker was a systems administrator at a small startup. The company was growing, and the speaker had to implement a change to adhere to a new company standard for login names, transitioning from informal usernames (like "Michael") to a formal standard (like "M.F. Forrester"). After making this change, the CEO stormed into the speaker's office and aggressively yelled at them, accusing them of ruining the company's culture and potentially wrecking the organization. The CEO was furious about the decision despite it being a part of company protocol. The speaker's boss, Joe, intervened, defended the speaker, and clarified that the decision to make the change had been directed by him, not the speaker
+- Persuasion:
+  - Honest, respectful, and transparent
+  - Seeks mutual benefit
+  - Builds trust and long-term collaboration
+  - Rooted in empathy and understanding
+- Manipulation:
+  - Deceptive, coercive, and self-serving
+  - Exploits vulnerabilities
+  - Destroys trust and creates toxicity
+  - Lacks empathy and undermines autonomy
 
-Solutions
+Key differences
 
-- The speaker made the change based on company policy to formalize employee logins, using data provided by HR
-- The CEO reacted with extreme anger, yelling at the speaker and physically confronting them by standing on their desk, accusing them of jeopardizing the company
-- Joe, the speaker's boss, stepped in calmly but assertively, told the CEO to get off the desk, and explained that the decision came from him, not the speaker. Joe also stood firm in ensuring the speaker was treated with respect
-- The speaker reflected on the situation and realized the importance of psychological safety and mutual trust between leaders and their teams. This incident highlighted an invisible agreement or unwritten contract that exists between leaders and their teams - an agreement to create a safe and respectful environment where trust is upheld
+- Persuasion
+  - Core approach: Reason & logic
+  - Respect for autonomy: High
+  - Ethical stance: Ethical, transparent, connecting
+  - Outcome: Informed decision-making, mutual benefit
+- Manipulation
+  - Core approach: Emotion & control
+  - Respect for autonomy: Low
+  - Ethical stance: Unethical, secretive, isolating
+  - Outcome: Distorted reality, forced compliance
 
-Result
+Real-world examples
 
-- The CEO's anger and accusation were defused by Joe's intervention, which helped alleviate the speaker's distress. Joe's defense created a safe space for the speaker, reinforcing their sense of trust in their boss and the organization
-- The speaker came to understand that leadership involves an unwritten covenant with the team - a commitment to uphold certain values and behaviors, such as respect, trust, and psychological safety. This realization shaped the speaker's views on leadership and the importance of maintaining the invisible agreement with the team
-- Impact on Leadership
-  - Leaders must ensure their actions, decisions, and communications align with the values of trust, respect, and dignity to maintain a healthy team environment
-  - When this invisible agreement is broken, as it was by the CEO's outburst, it can damage relationships and undermine trust, which takes significant time and effort to rebuild
-  - The speaker emphasizes that the most important promises leaders make are those conveyed through their actions, decisions, and behavior, not just through words
+- Persuasion:
+  - Gaining support for a project through open dialogue
+  - Encouraging collaboration across teams`
+  - Facilitating adaptation to organizational change
+  - Getting buy-in through shared goals and mutual respect
+- Manipulation:
+  - Exploiting someone's insecurities to gain compliance
+  - Presenting misleading or partial information
+  - Using fear or guilt to influence decisions
+  - Gaslighting questioning others' perception of reality to maintain control
 
-Summary about leadership
+Cultivating ethical influence
 
-- Communicate openly and honestly - Be transparent about your decisions and your expectations
-- Listen actively and seek feedback from your team members
-- Show empathy - Consider your team's perspectives and try to reconcile them and understand them because it'll actually tell you why they are operating the way they are
-- Be consistent, trustworthy - Your actions should always align with your words, values
-- Advocate for your team - Show consistently that you are gonna stand up for them and their needs
-- Be aware of your actions - It could either reinforce or create trust, or erode that trust you have in your teams. Or, every decision you make is either expressing your values and aligning and sending messages to the team, or it is showing misalignment with our values
-- The loudest promise is not the one that we make out loud. It is the one we make every day through our actions, choices, words. It is the promise to be the leader and our team can rely on it
-- Never forget both the responsibility and the power of that invisible agreement. Nurture it, honor it, and always strive to be worthy of the trust that your team places in you
+- Lead by example, walk your talk
+- Promote transparency in intentions and communication
+- Encourage data-driven, informed decision-making
+- Respect team autonomy and diverse perspectives
+- Build trust through consistency and empathy
+
+**Summary**
+
+- Defined persuasion versus manipulation in DevOps
+- Reviewed the benefits of persuasion and the dangers of manipulation
+- Reviewed examples of both
+- Listed strategies for fostering ethical influence in teams and organizations
+
+## Story - The loudest promise
+
+Context
+
+- The speaker, working as a systems administrator at a growing startup, was asked by his boss to update local login naming conventions as part of standardizing systems
+- Believing he was doing the right thing, he implemented the change only to be aggressively confronted by the CEO, who reacted in a loud, disrespectful, and hostile way
+- The speaker was shocked not just by the confrontation itself, but by how out-of-proportion the response was especially since the directive came from his own boss
+- In that moment, his boss, Joe, stepped in, calmly took accountability, corrected the CEO's behavior, and made it clear that the team would treat each other with respect
+- This moment revealed the presence of an invisible agreement between leaders and their teams, one built on dignity, psychological safety, mutual trust, and respect
+- It also showed how easily that agreement can be broken, and how hard it can be to rebuild once trust has been breached even if apologies are made
+
+Actions and result
+
+- Uphold psychological safety through accountability
+  - Joe immediately intervened when the CEO's behavior crossed the line. He took ownership of the decision, stood up for his team member, and reinforced respectful norms
+  - Trust in Joe's leadership deepened. The speaker felt protected, valued, and safe, reinforcing the invisible agreement that leaders will advocate for their people
+- Lead with transparency and clarity
+  - Joe had consistently been clear about expectations and held team members accountable respectfully. That pattern of clarity helped reinforce trust over time
+  - Even in stressful situations, the team understood where they stood. There was no confusion around responsibilities or expectations, only growth through honest dialogue
+- Embody leadership values daily
+  - Joe's behavior wasn't a one-time thing. He lived the team's values consistently, quietly, through his actions, showing alignment between what he said and what he did
+  - His credibility grew. The team didn't just hear about values they saw them lived, which strengthened the team's cohesion and trust
+- Recognize the Weight of leadership promises
+  - The speaker reflected on how leadership isn't just about tasks, it's about promises, often unspoken, to create environments where people feel safe, respected, and heard
+  - He learned that when leaders break those invisible promises (like Patrick did), the damage can be deep and long-lasting and repairing it takes time and consistent effort
+- Create a culture of listening and integrity
+  - Leaders should communicate openly, listen actively, show empathy, and align their actions with shared values all to nurture that invisible agreement
+  - These habits build high-performing, resilient teams where people trust each other, innovate safely, and grow even through difficult situations
