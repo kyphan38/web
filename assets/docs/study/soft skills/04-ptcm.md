@@ -1,4 +1,4 @@
-# priority time capacity management (done - not learn yet)
+# priority time capacity management
 
 This section is focused on various aspects of priority, time, and capacity management
 
@@ -12,18 +12,19 @@ What you prioritize is arguably just as important as the results you produce
 
 Why?
 
-- Structuring what you work on and when is beneficial and essential for success and for signaling your team that you are working on the "right" things
+- Structuring what you work on and when is beneficial and essential for success
+- It also signals to your team and stakeholders that you're focusing on the right things
 
 Understanding prioritization
 
-- Prioritization is a task management tool and a strategic approach to achieving optimal outcomes
+- Prioritization is both a task management tool and a strategic mindset to help you achieve the best outcomes with the resources and time available
 
-Strategies for prioritization - WSJF
+Strategies for prioritization - WSJF (Weighted Shortest Job First)
 
-- Break down work
-- Identify the level of effort (time)
-- What is the level of value (impact)
-- What items will have the most impact for the least amount of time?
+- Break down the work
+- Identify the level of effort (time required)
+- Determine the level of value (impact or benefit)
+- Prioritize tasks that deliver the highest value in the shortest amount of time
 
 WSJF - Illustration
 
@@ -37,35 +38,70 @@ WSJF - Illustration
 
 Strategies for prioritization - Pareto
 
-- Commonly 80% of our effort comes from 20% of our efforts
+- This method is based on the principle that 80% of results often come from 20% of efforts
+- Focus on identifying the small number of tasks that will generate the most significant results
+- Helps reduce wasted effort and optimize focus
+
+Strategies for prioritization - FIFO
+
+- Prioritize tasks in the order they arrive - first task received is the first task completed
+- Useful in support queues or environments where fairness and order are key
+- Works well when all tasks are relatively equal in urgency and impact
+
+Strategies for prioritization - Eisenhower
+
+- Categorizes tasks based on urgency and importance into four quadrants:
+  - Urgent & Important - Do it now
+  - Important, Not Urgent - Schedule it
+  - Urgent, Not Important - Delegate it
+  - Not Urgent, Not Important - Eliminate it
+- Great for helping individuals or teams focus on what truly matters
 
 Strategies for prioritization - Experiment
 
-- Research and experiment with different prioritization techniques like Pareto, WSJF, Eisenhower Grid, and FIFO to choose a method that aligns with your outcomes
+- There's no one-size-fits-all. Experiment with different frameworks such as WSJF, Pareto, Eisenhower, or FIFO
+- Choose the method or combination that best supports your goals and team workflow
 
 Adapting to rapidly changing inputs
 
-- Stay aligned while adapting to current realities!
+- In dynamic environments, priorities shift quickly. Stay adaptable by:
+  - Re-evaluating tasks regularly
+  - Checking alignment with strategic goals
+  - Using flexible tools or boards to adjust quickly
+- Stay aligned while adapting to evolving realities!
 
 Effective communication of priority changes
 
-- Communication of priority changes is as important as the priorities themselves
+- Communicating changes in priorities is just as important as setting them
+- Changing a priority means changing an agreement and failure to inform the stakeholders breaks that agreement
+- Always clarify the why behind changes to maintain trust and alignment
 
 Project work vs interrupt-driven work
 
-- Mixing these types of work is very hard and must be communicated
-- Try to keep these workflows separate
-- Isolate different time blocks to each
-- Teams doing a high level of interrupt work (like support) will never make their deadlines
+- Mixing these two types of work can be extremely challenging. To manage effectively:
+  - Keep workflows separate where possible
+  - Block time specifically for deep-focus project work
+  - Schedule windows for handling interrupts (e.g., support issues)
+  - Use rotating team shifts for support-heavy environments
+  - Clearly communicate capacity limits with stakeholders
+- Example:
+  - Separated workflows: Support issues and project tasks are managed in different Jira boards to reduce context-switching
+  - Time blocking: Mornings (e.g., 9 AM - 12 PM) are reserved exclusively for deep-focus project work, with Slack notifications muted
+  - Interrupt windows: Afternoons (e.g., 2 PM - 4 PM) are dedicated to addressing support tickets, keeping reactive work contained
+  - Rotating on-call shifts: The team implements a rotation so only one person handles interrupts at a time, giving others space for long-term work
+  - Clear communication: The engineer proactively sets expectations with stakeholders, explaining that project progress depends on minimizing support duties
 
 The power of visualizing work
 
-- Visualizing work enhances understanding and effective management
-- To do &rarr; in progress &rarr; completed
+- Visualization helps teams and individuals understand workload, status, and blockers
+- To do &rarr; In progress &rarr; Completed
 
 Intersection of prioritization, time management, and capacity planning
 
-- Effective prioritization is deeply interconnected with time management and capacity planning
+- Prioritization helps determine what to work on
+- Time Management helps schedule when to work on it
+- Capacity Planning ensures how much you can take on without overloading
+- These elements work together to ensure focus, efficiency, and sustainable productivity
 
 **Summary**
 
@@ -78,53 +114,62 @@ Intersection of prioritization, time management, and capacity planning
 
 Why?
 
-- Time is a non-renewable resource –how we manage it determines our success
+- Time is a non-renewable resource - how we manage it directly influences our success
 
 Understanding time management
 
-- Where every second counts, mastering time management is a skill and a competitive advantage
-- DevOps tasks throughout the day: development &rarr; testing &rarr; deployment &rarr; monitoring &rarr; collaboration
+- In a world where every second counts, mastering time management is both a critical skill and a competitive advantage
 
 Techniques - Parkinson's Law
 
 ![img](./img/14.png)
 
 - Work expands to fill the time available for its completion
+- By setting shorter deadlines, you can increase focus and efficiency
 
 Techniques - Time Blocking
 
 ![img](./img/15.png)
 
+- Allocate specific time blocks for specific types of work (e.g., meetings, deep work, email)
+- Helps reduce distractions and improves focus by giving each task its own space in your calendar
+
 Techniques - Pomodoro technique
 
 ![img](./img/16.png)
 
-Tools and technologies - Calendars and scheduling tools
+- Work in focused intervals (typically 25 minutes), followed by a 5-minute break
+- After four cycles, take a longer break (15-30 minutes)
+- Enhances productivity and combats mental fatigue
 
-- Google calendar, calendly, microsoft outlook calendar, apple calendar, doodle, etc.
+Tools and technologies
 
-Tools and technologies - project management servers
+- Calendars and scheduling tools
+  - Tools: Google Calendar, Calendly, Microsoft Outlook Calendar, Apple Calendar, Doodle, etc.
+- Project management servers
+  - Tools: ClickUp, Trello, Microsoft Planner, Notion, Doodle, etc.
+- Time-tracking apps
+  - Tools: Toggl Track, HourStack, Timely, Memtime, TrackingTime, etc.
 
-- Clickup, trello, microsoft, notion, doodle, etc.
+Common challenges and solutions
 
-Tools and technologies - Time-tracking apps
-
-- toggl track, hour stack, timely, memtime, tracking time
-
-Common challenges - Context switching
-
-Common challenges - Unplanned interruptions
-
-Common challenges - Underestimating tasks
-
-Intersection with capacity and priority
-
-- Effective time management is deeply interconnected with prioritization and capacity planning
+- Context switching
+  - Group similar tasks together (batch processing)
+  - Limit the number of simultaneous tasks
+  - Use tools like focus mode or "Do Not Disturb" to maintain flow
+- Unplanned interruptions
+  - Block specific time windows for focused work
+  - Schedule time for handling ad hoc tasks or support requests
+  - Communicate availability clearly to your team
+- Underestimating / Overestimating tasks
+  - Use time-tracking data to estimate more accurately
+  - Break tasks into smaller, measurable chunks
+  - Build in buffer time for unexpected delays
 
 **Summary**
 
 - Time management is critically important to almost all aspects of DevOps, IT, and Software Delivery
-- Parkinson’s Law, Time Blocking, and other methods were covered to understand time management concepts
+- Parkinson's Law, Time Blocking, and other methods were covered to understand time management concepts
 - The Pomodoro technique, the Two-Minute Rule, and other techniques help with time management
 - Time management is essential for prioritizing the right things for whom you work
 
@@ -132,46 +177,47 @@ Intersection with capacity and priority
 
 Why?
 
-- Capacity planning is essential personally and professional in understanding how much we can handle at one time
+- Capacity planning is essential both personally and professional for understanding how much we can handle at any given time
 
 The foundation
 
-- Where agility and efficiency are paramount, capacity planning emerges as a key driver of success
-- Assessing current resources &rarr; forecasting future needs &rarr; allocating resources to projects &rarr; adjusting resources
+- In environments where agility and efficiency are paramount, capacity planning becomes a key driver of success
+- Assessing current resources &rarr; Forecasting future needs &rarr; Allocating resources to projects &rarr; Adjusting resources
 
 Problem it solves
 
-- Managing fluctuating workloads
-- Preventing burnout
-- Aligning team effort with requirements
-- Minimize waste
-- Maximize outcomes
+- Manages fluctuating workloads
+- Prevents burnout
+- Aligns team effort with organizational or project requirements
+- Minimizes waste
+- Maximizes outcomes
 
 Effective capacity planning
 
-- Understand the work and workload
-- Assess your capability and resources
-- Clarify the constraints (time, money, skills, tools, and availability)
-- Identify the risks
+- Understand the nature of the work and the total workload
+- Assess your current capability and available resources
+- Clarify all constraints (time, money, skills, tools, and availability)
+- Identify potential risks and bottlenecks
 
-Strategies - Regular workload review timeline
+Strategies
 
-- Start &rarr; initial review &rarr; first stage review &rarr; second stage review &rarr; final review &rarr; end
-
-Strategies - Historical data line graph
-
-Strategies - Capacity planning tools
+- Regular workload review timeline
+  - Start &rarr; initial review &rarr; first stage review &rarr; second stage review &rarr; final review &rarr; end
+- Historical data line graph
+  - Analyze past performance and capacity trends to inform future planning
+- Capacity planning tools
+  - Leverage digital tools for forecasting, tracking, and scenario planning (e.g., Float, Resource Guru, MS Project, Smartsheet)
 
 Benefits
 
-- Improved project workflow
-- Enhanced morale
-- Better risk management
-- Sustainable output
+- Smoother project workflows
+- Higher team morale and lower stress
+- Improved risk anticipation and mitigation
+- More sustainable and predictable output over time
 
 Visualization
 
-- A picture is worth a thousand words, and in capacity planning, visual tools can be worth even more
+- A picture is worth a thousand words, and in capacity planning, a visual tool can be worth even more
 
 **Summary**
 
@@ -180,4 +226,30 @@ Visualization
 - Teams and individuals benefit from the consistency of sustainable and intentional ways of working
 - At a minimum, understanding that capacity planning is important and how to do it is essential
 
-## Story - when someone adds to your work
+## Story - When someone adds to your work
+
+Context
+
+- You're in the middle of a well-planned DevOps sprint, resources are balanced, everyone knows what they're doing, and progress is steady
+- Then, out of nowhere, someone - usually a high-priority stakeholder drops a new task on your lap and says, "This needs to go in now."
+- In this particular story, a team was halfway through a two-week sprint when a last-minute regulatory task came in from a key stakeholder
+- The task was high priority and couldn't wait, so the team had to figure out how to deal with it without derailing their sprint or burning out
+- This situation? It's super common in DevOps and agile teams. The key is knowing how to respond with clarity, calm, and a solid plan
+
+Actions and result
+
+- Prioritize with intention
+  - Evaluate the importance, urgency, and size of the new request. Compare it against existing work. Don't just react - prioritize. Use scoring, matrices, or just a calm discussion to figure out what matters most
+  - You get clarity on whether the new task truly deserves to interrupt the sprint, and you avoid turning your sprint into chaos based on someone else's panic
+- Plan around capacity
+  - Check your team's capacity, do you actually have room? If not, what can be dropped, reduced, or pushed to make room? Use charts, past performance, or just gut-checks with your team
+  - You avoid overloading the team, and you make room for important work without sacrificing what's already been committed or at least, not without a deliberate trade-off
+- Communicate transparently
+  - Talk to your stakeholders, tell them what the impact of this new work is. Involve them in the decision. Ask, "What can we adjust to make this happen?" Don't keep things siloed
+  - Stakeholders feel involved and respected, your team gets direction without stress, and you preserve trust and alignment on both sides
+- Adapt the plan, don't panic
+  - In the story, the team trimmed the scope of one task to make space for the new one. Then they updated their sprint board and got right back to work
+  - The new high-priority task got done, the team stayed focused, and the sprint goals were still achievable with some smart adjustments
+- Stay systematic, not emotional
+  - Use structured tools, prioritization systems, capacity planning, transparent task boards to handle changes calmly and logically
+  - You protect your team's sanity, maintain momentum, and show leadership even when plans shift unexpectedly

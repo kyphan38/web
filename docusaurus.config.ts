@@ -63,7 +63,7 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/travel', label: 'Travel', position: 'left'},
       ],
     },

@@ -24,7 +24,7 @@ openssl rand -out secret.key 32
 
 - `openssl rand`: OpenSSL's random number generator to create a key
 - `out secret.key`: The output file where the generated key will be stored
-- `32`: The key length in bytes (32 bytes = 256 bits).
+- `32`: The key length in bytes (32 bytes = 256 bits)
 
 ### Step 2: Create a simple file
 

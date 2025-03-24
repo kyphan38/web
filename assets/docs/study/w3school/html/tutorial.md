@@ -4,7 +4,7 @@ Following to this [W3Schools](https://www.w3schools.com/html/)
 
 ## Page Structure
 
-<!-- ![img](./img/1.png) -->
+![img](./img/1.png)
 
 ## Basic
 
@@ -162,13 +162,13 @@ The poem problem
 
 ```html
 <pre>
-  My Bonnie lies over the ocean.
+  My Bonnie lies over the ocean
 
-  My Bonnie lies over the sea.
+  My Bonnie lies over the sea
 
-  My Bonnie lies over the ocean.
+  My Bonnie lies over the ocean
 
-  Oh, bring back my Bonnie to me.
+  Oh, bring back my Bonnie to me
 </pre>
 ```
 
