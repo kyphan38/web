@@ -10,13 +10,13 @@ A solution to this is to set up a `.netrc` file, which store your credentials fo
 
 ### Step 1: Set up the .netrc file
 
-On a Mac, UNIX, or Linux, you can create the `.netrc` file using the following command:
+On a Mac, UNIX, or Linux, you can create the `.netrc` file using the following command
 
 ``` bash
 vim ~/.netrc
 ```
 
-Inside the `.netrc` file, adding the following lines as format:
+Inside the `.netrc` file, adding the following lines as format
 
 ``` bash
 machine github.com
@@ -24,7 +24,7 @@ login <your_username>
 password <your_credentials>
 ```
 
-Example:
+Example
 
 ``` bash
 machine github.com
@@ -36,7 +36,7 @@ password ghp_lRC2nJdYVw1ws8shGfsquFIs9L1fx301VjQ1
 
 Since the .netrc file contains sensitive information, it's important to ensure that only your user has read/write access to it
 
-To set the correct permissions, use the following command:
+To set the correct permissions, use the following command
 
 ``` bash
 chmod 600 ~/.netrc

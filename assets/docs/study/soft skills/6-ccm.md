@@ -48,7 +48,7 @@ Nurturing your employees as clients
 External vs internal clients
 
 - External clients usually pay the bills while internal clients provide the service to the external ones
-- With external clients:
+- With external clients
   - Maintain the highest levels of professionalism
   - Uphold strong standards in quality, positivity, and timeliness
   - Show a can-do, positive attitude - they want to feel heard and respected

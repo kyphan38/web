@@ -1,6 +1,6 @@
 # Singapore Trip - Oct 3th to Oct 5th
 
-Pre-trip:
+Pre-trip
 
 - SG Arirval Card (SGAC)
 - Universal Studio App
@@ -21,7 +21,7 @@ Spending
 - Ez Link: 100k
 - Total: 9tr5
 
-Day 1:
+Day 1
 
 - Sân bay Changi (4, 5 hours)
   - Di chuyển qua lại các Terminal bằng Skytrain miễn phí

@@ -34,7 +34,7 @@ Coherent
 - Example structure
   - Start &rarr; Identify topic &rarr; Organize main points &rarr; Develop supporting details &rarr; Ensure logical flow &rarr; Review and edit
   - Topic: Effective Study Habits
-  - Main Points:
+  - Main Points
     - MP 1: Time management
     - MP 2: Active engagement
     - MP 3: Effective note-taking
@@ -44,7 +44,7 @@ Coherent
     - MP 2: Ask questions, participate actively
     - MP 3: Use summaries and keywords
     - MP 4: Set short- and long-term goals, track progress
-  - Ensure logical flow:
+  - Ensure logical flow
     - Arrange main points in a logical sequence
     - Use transitions to connect ideas smoothly
   - Review and edit
@@ -247,11 +247,11 @@ How and when to apply it
 
 Strategies to navigate challenges
 
-- Common challenges:
+- Common challenges
   - Conflict
   - Stress
   - Misunderstanding
-- Professional strategies:
+- Professional strategies
   - Practice mindfulness and stress-reduction techniques (e.g., meditation, breathing exercises)
   - Use active listening and emotional cueing to understand others better
   - Show empathy and compassion during tough interactions

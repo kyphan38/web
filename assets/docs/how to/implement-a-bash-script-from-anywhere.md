@@ -31,7 +31,7 @@ cd /usr/local/bin
 sudo vim getDataBaseName.sh
 ```
 
-Paste this sample script:
+Paste this sample script
 
 ```bash
 #!/bin/bash

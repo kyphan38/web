@@ -50,7 +50,7 @@ Strategies for prioritization - FIFO
 
 Strategies for prioritization - Eisenhower
 
-- Categorizes tasks based on urgency and importance into four quadrants:
+- Categorizes tasks based on urgency and importance into four quadrants
   - Urgent & Important - Do it now
   - Important, Not Urgent - Schedule it
   - Urgent, Not Important - Delegate it
@@ -64,7 +64,7 @@ Strategies for prioritization - Experiment
 
 Adapting to rapidly changing inputs
 
-- In dynamic environments, priorities shift quickly. Stay adaptable by:
+- In dynamic environments, priorities shift quickly. Stay adaptable by
   - Re-evaluating tasks regularly
   - Checking alignment with strategic goals
   - Using flexible tools or boards to adjust quickly
@@ -78,13 +78,13 @@ Effective communication of priority changes
 
 Project work vs interrupt-driven work
 
-- Mixing these two types of work can be extremely challenging. To manage effectively:
+- Mixing these two types of work can be extremely challenging. To manage effectively
   - Keep workflows separate where possible
   - Block time specifically for deep-focus project work
   - Schedule windows for handling interrupts (e.g., support issues)
   - Use rotating team shifts for support-heavy environments
   - Clearly communicate capacity limits with stakeholders
-- Example:
+- Example
   - Separated workflows: Support issues and project tasks are managed in different Jira boards to reduce context-switching
   - Time blocking: Mornings (e.g., 9 AM - 12 PM) are reserved exclusively for deep-focus project work, with Slack notifications muted
   - Interrupt windows: Afternoons (e.g., 2 PM - 4 PM) are dedicated to addressing support tickets, keeping reactive work contained
@@ -161,7 +161,7 @@ Common challenges and solutions
   - Block specific time windows for focused work
   - Schedule time for handling ad hoc tasks or support requests
   - Communicate availability clearly to your team
-- Underestimating / Overestimating tasks
+- Underestimating/Overestimating tasks
   - Use time-tracking data to estimate more accurately
   - Break tasks into smaller, measurable chunks
   - Build in buffer time for unexpected delays

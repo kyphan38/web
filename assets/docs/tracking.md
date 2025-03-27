@@ -42,5 +42,5 @@ MLOps - Sep
 ## Consistent
 
 - Leetcode
-- English / ELSA Speak / Cambridge / IELTS
+- English/ELSA Speak/Cambridge/IELTS
 - System Design

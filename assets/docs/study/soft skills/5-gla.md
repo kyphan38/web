@@ -17,7 +17,7 @@ Why?
 
 Making learning a must
 
-- Prioritizing learning supports personal growth and keeps you agile in a rapidly evolving field:
+- Prioritizing learning supports personal growth and keeps you agile in a rapidly evolving field
   - Integrating learning into your daily work
   - Creating a learning-friendly environment
   - Make learning part of workload assessment and planning
@@ -132,11 +132,11 @@ Learning to love mistakes
 
 Overcoming cognitive challenges
 
-- Cultivate:
+- Cultivate
   - The right mindset
   - A supportive environment
   - Clear, meaningful goals
-- Additional strategies:
+- Additional strategies
   - Take things slowly and in small, manageable chunks
   - Vary your learning methods to maintain engagement
   - Apply knowledge whenever possible
@@ -153,7 +153,7 @@ Persistence is key
 
 Keep it interesting!
 
-- Use a variety of learning formats:
+- Use a variety of learning formats
   - Videos
   - Books
   - Webinar

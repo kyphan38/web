@@ -19,7 +19,7 @@ Strengthening team bonds
 - The collective growth of a team is skill enhancement and forging stronger bonds and building a resilient team
 - The team is getting the same inputs, approaching the same idea about the same time, learning the same skills relevant to the team workflow
 
-Learning together:
+Learning together
 
 - Attend classes, meetups, and workshops as a group
 - Tackle proof-of-concepts (POCs) and explore new ideas collaboratively
@@ -67,7 +67,7 @@ Pair and mob programming
 
 Quality today, speed later
 
-- Collaborative approaches like pair and mob programming often lead to:
+- Collaborative approaches like pair and mob programming often lead to
   - Fewer errors
   - Less rework
   - More sustainable, high-quality solutions
@@ -95,7 +95,7 @@ Trust and informal interactions
 Understanding the "water cooler"
 
 - The "water cooler" has long symbolized a place where colleagues gather for informal chats
-- These casual conversations can lead to:
+- These casual conversations can lead to
   - Unexpected insights
   - Stronger personal bonds
   - A more connected and resilient team
@@ -108,7 +108,7 @@ Being curious about our team members
 Designing spaces for social interaction
 
 - Just as formal meeting rooms are important, so are informal spaces whether physical or virtual
-- Create opportunities for casual connection, such as:
+- Create opportunities for casual connection, such as
   - Virtual coffee breaks
   - Team-building chats
   - Social channels or informal hangouts
@@ -116,7 +116,7 @@ Designing spaces for social interaction
 Why such interactions matter of DevOps cultures
 
 - In DevOps, culture is just as critical as tooling
-- Unstructured, informal interactions often spark:
+- Unstructured, informal interactions often spark
   - Creativity
   - Problem-solving
   - Morale and cohesion
@@ -177,7 +177,7 @@ Observing how communication "lands"
 
 Observe, hypothesize, and experiment
 
-- Observation is the starting point of an iterative learning process:
+- Observation is the starting point of an iterative learning process
 - Observe &rarr; Form a Hypothesis &rarr; Take Action &rarr; Seek Feedback &rarr; Repeat
 - For example, if you notice decreased engagement in standups, hypothesize why (e.g., too long, not relevant), experiment with changes (shorter meetings, rotating facilitators), and assess results
 
@@ -202,7 +202,7 @@ Social context
 Environmental context
 
 - The setting, physical or virtual, affects how communication flows
-- For example:
+- For example
   - In-person settings allow for richer non-verbal communication but may introduce hierarchy based on seating or presence
   - Virtual environments reduce spatial dynamics but can limit subtle cues like tone, eye contact, or side conversations
 - Designing inclusive and intentional environments (e.g., cameras on/off policy, async-friendly tools) enhances communication equity
@@ -228,13 +228,13 @@ Importance of making work visible
 
 Pillars of transparency
 
-- Scrum and Kanban are two widely adopted frameworks in DevOps that promote transparency:
+- Scrum and Kanban are two widely adopted frameworks in DevOps that promote transparency
   - Scrum uses artifacts like sprint boards, standups, and retrospectives to share progress
   - Kanban boards provide real-time visualizations of work in progress, helping teams manage flow and capacity
 
 Optimizing flow through visibility
 
-- Making work visible allows for:
+- Making work visible allows for
   - Early detection of blockers
   - Clear identification of bottlenecks
   - More effective prioritization

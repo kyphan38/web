@@ -265,12 +265,12 @@ A deeper definition
 
 Positive (persuasion) vs negative (Manipulation)
 
-- Persuasion:
+- Persuasion
   - Honest, respectful, and transparent
   - Seeks mutual benefit
   - Builds trust and long-term collaboration
   - Rooted in empathy and understanding
-- Manipulation:
+- Manipulation
   - Deceptive, coercive, and self-serving
   - Exploits vulnerabilities
   - Destroys trust and creates toxicity
@@ -291,12 +291,12 @@ Key differences
 
 Real-world examples
 
-- Persuasion:
+- Persuasion
   - Gaining support for a project through open dialogue
   - Encouraging collaboration across teams`
   - Facilitating adaptation to organizational change
   - Getting buy-in through shared goals and mutual respect
-- Manipulation:
+- Manipulation
   - Exploiting someone's insecurities to gain compliance
   - Presenting misleading or partial information
   - Using fear or guilt to influence decisions

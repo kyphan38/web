@@ -8,7 +8,7 @@ Update your system
 sudo apt update && sudo apt upgrade -y
 ```
 
-Install Java because Tomcat requires it. If there is no Java currently on your server, use the following command to install OpenJDK:
+Install Java because Tomcat requires it. If there is no Java currently on your server, use the following command to install OpenJDK
 
 ```bash
 sudo apt install default-jdk -y
