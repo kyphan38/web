@@ -70,12 +70,10 @@ CLI commands for authentication
 vault auth enable approle
 ---
 Success! Enabled approle auth method at: approle/
----
 
 vault auth disable approle
 ---
 Success! Disabled the auth method (if it existed) at: approle/
----
 
 vault auth list
 ---
@@ -98,12 +96,10 @@ vault-course/  approle   auth_approle_b3f0c92d n/a
 vault auth enable approle
 ---
 Success! Enabled approle auth method at: approle/
----
 
 vault auth enable –path=vault-course approle
 ---
 Success! Enabled approle auth method at: vault-course/
----
 
 vault auth enable –path=apps –description="MyApps" approle
 
