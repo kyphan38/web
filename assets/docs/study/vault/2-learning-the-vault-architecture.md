@@ -553,7 +553,6 @@ seal "transit" {
   key_name = "unseal-key"
   mount_path = "transit"
 }
----
 
 sudo systemctl restart vault
 
@@ -607,14 +606,12 @@ seal "awskms" {
   region = "us-east-1"
   kms_key_id = "arn:..."
 }
----
 
 vim /etc/vault.d/vault.env
 ---
 AWS_ACCESS_KEY_ID="..."
 AWS_SECRET_ACCESS_KEY="..."
 AWS_REGION="us-east-1"
----
 
 sudo systemctl start vault
 
@@ -649,7 +646,6 @@ log_level = "ERROR"
 api_addr = "http://vault.gswhv.com:8200"
 cluster_name = "my-vault-cluster"
 cluster_addr = "https://vault-node-a.gswhv.com:8201"
----
 
 vault operator diagnose -config=/etc/vault.d/vault.hcl
 ```

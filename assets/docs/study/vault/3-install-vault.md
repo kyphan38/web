@@ -356,7 +356,6 @@ Install with binary
 uname -m
 ---
 aarch64
----
 
 curl -sLo /tmp/vault.zip https://releases.hashicorp.com/vault/1.19.0/vault_1.19.0_linux_arm64.zip
 
@@ -451,7 +450,6 @@ vim /lib/systemd/system/vault.service
 sudo vim /lib/systemd/system/vault.service
 ---
 ExecStart=/usr/bin/vault server -config=/etc/vault.d/vault.hcl
----
 
 sudo systemctl daemon-reload
 
