@@ -30,7 +30,7 @@ Installing Vault
 
 Running Vault dev server
 
-- Overview
+- Key features
   - Requires no configuration
   - Automatically initializes and unseals Vault
   - Enables the user interface (UI), accessible at localhost
@@ -50,7 +50,7 @@ Never use the dev server mode in a production environment due to its lack of per
   - Proof-of-concept projects
   - Developing and testing new integrations
   - Exploring and testing Vault’s new features
-  - EExperimenting with Vault functionality
+  - Experimenting with Vault functionality
 
 To start the Vault dev server, use the following command
 
@@ -63,14 +63,14 @@ vault server -dev
 Guidelines
 
 - Deploy one or more persistent Vault nodes using a configuration file
-- USelect a storage backend that meets Vault’s requirements (e.g., Consul, integrated storage, or other supported options)
-- Configure multiple Vault nodes to form a cluster for high availability
+- Select a storage backend that meets Vault’s requirements (e.g., Consul, integrated storage, or other supported options)
+- Configure multiple Vault nodes to form a cluster
 - Deploy Vault nodes close to your applications to minimize latency
 - Automate Vault provisioning for efficiency in most production scenarios
 - Start the Vault server with the command
 
 ```bash
-vault server --config=<file>
+vault server -config=<file>
 ```
 
 - Use a service manager (e.g., systemctl on Linux, Windows Service Manager) to execute and manage the Vault service in a production environment
@@ -112,7 +112,7 @@ Step-by-step manual installation
 
 ## Configuring the Consul Storage Backend
 
-Overview
+Key features
 
 - Provides durable key/value (K/V) storage for Vault data
 - Allows independent scaling of the backend
@@ -135,11 +135,11 @@ Consul cluster configuration
 In a production environment, avoid using the Consul cluster for both Vault storage and other Consul functions
 :::
 
-Architecture diagrams
+Architecture diagram
 
 ![img](./img/13.png)
 
-- Consul storage backend architecture
+- Consul storage backend communication
 
 ![img](./img/14.png)
 
@@ -178,7 +178,7 @@ ui           = true
 log_level    = "INFO"
 ```
 
-- Consul server configuration file
+- Consul server configuration file in Consul node
 
 ```bash
 {
@@ -217,7 +217,7 @@ log_level    = "INFO"
 
 ## Configuring the Integrated Storage Backend
 
-Overview
+Key features
 
 - Serves as Vault’s internal storage option
 - Utilizes the Raft consensus protocol
@@ -330,16 +330,148 @@ vault version
 
 ### Manually Installing Vault
 
+Using APT Repository
+
+- Downloads HashiCorp's GPG key, converts it to binary, and saves it to /usr/share/keyrings/ for APT verification
+- Adds HashiCorp’s APT repository to your system’s sources, specifying architecture (e.g., arm64) and Ubuntu version (e.g., focal), signed by the GPG key
+- Updates the package list and installs the latest vault package from HashiCorp’s repository
+
+```bash
+# Install
+wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+
+sudo apt update && sudo apt install vault
+
+# Uninstall
+sudo apt remove vault
+
+sudo apt autoclean && sudo apt autoremove
+```
+
+Install with binary
+
+```bash
+uname -m
+---
+aarch64
+---
+
+curl -sLo /tmp/vault.zip https://releases.hashicorp.com/vault/1.19.0/vault_1.19.0_linux_arm64.zip
+
+unzip /tmp/vault.zip -d /tmp/
+
+mv /tmp/vault /usr/local/bin/
+
+chmod +x /usr/local/bin/vault
+
+vault --version
+```
+
 ### Running Vault Dev Server
 
+```bash
+export VAULT_ADDR="http://127.0.0.1:8200"
+
+vault server -dev
+
+vault status
+
+vault secrets list
+
+vault kv put secret/vaultcourse/kyphan kyphan=kyphan1
+
+vault kv get secret/vaultcourse/kyphan
+```
+
 ### Running Vault in Production
+
+```bash
+# Step 1 - Binary
+mv /tmp/vault /usr/local/bin/
+
+# Step 2 - Service file
+sudo vim /etc/systemd/system/vault.service
+
+# Step 3 - Configuration file
+sudo vim /etc/vault.d/vault.hcl
+
+# Start service
+sudo systemctl start vault
+
+vault status
+
+sudo systemctl status vault
+
+sudo journalctl -u vault  
+```
 
 ## Lab
 
 ### Running Vault Dev Server
 
+```bash
+vault version
+
+cat /etc/vault.d/vault.hcl
+
+vault status
+
+vault server -dev &
+
+export VAULT_ADDR='http://127.0.0.1:8200'
+
+echo "<root_token>" > /home/kyphan/vault-token
+
+vault status
+
+vault login <root_token>
+
+vault secrets list
+
+ps -aux | grep vault
+
+kill -9 <pid>
+```
+
 ### Running Vault Server
+
+```bash
+vault version
+
+cat /etc/vault.d/vault.hcl 
+
+ls -lah /opt/vault/
+
+journalctl -u vault.service -b
+
+vim /lib/systemd/system/vault.service 
+
+sudo vim /lib/systemd/system/vault.service 
+---
+ExecStart=/usr/bin/vault server -config=/etc/vault.d/vault.hcl
+---
+
+sudo systemctl daemon-reload
+
+sudo systemctl start vault
+
+sudo systemctl status vault
+
+echo 'export VAULT_ADDR=http://127.0.0.1:8200' >> /home/kyphan/.bashrc
+
+source /home/kyphan/.bashrc
+
+sudo systemctl restart vault
+
+sudo systemctl stop vault
+```
 
 ### Configuring Integrated Storage Manually
 
+Later
+
 ### Configuring Auto Unseal
+
+Later

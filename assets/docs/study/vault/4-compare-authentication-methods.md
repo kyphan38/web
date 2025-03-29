@@ -2,6 +2,8 @@
 
 ## Auth Methods Overview
 
+## Intro to Auth Methods
+
 Overview
 
 - Performing authentication and managing identities
@@ -26,7 +28,9 @@ Workflow
 
 ![img](./img/17.png)
 
-Key characteristics
+## Working with Auth Methods
+
+Key features
 
 - Most auth methods must be explicitly enabled before use
 - Multiple auth methods can coexist, often serving distinct purposes (e.g., applications vs. human users)
@@ -49,6 +53,8 @@ Path configuration
 - Each auth method is enabled at a specific path
   - Custom paths can be set when enabling the method (only at creation)
   - If unspecified, the default path matches the method type (e.g., aws for AWS, approle for AppRole)
+
+## Configuring Auth Methods using the CLI - Done
 
 CLI commands for authentication
 
@@ -111,7 +117,7 @@ vault write auth/approle/role/vault-course \
   secret_id_num_uses=40
 ```
 
-## Intro to Auth Methods
+## Configuring Auth Methods using the API - checking
 
 Vault offers a fully-featured API intended for machine-to-machine interaction
 
@@ -127,13 +133,124 @@ HTTP API - Where do i need a token?
 - Using an Auth Method: When you are authenticating to Vault via API, you do not need to specify a token (because you haven't retrieved one yet)
 - Configure Auth Method: When you are enabling, configuring, or disabling an auth method, you do need to provide a token with the appropriate permissions
 
-## Working with Auth Methods
+Enaling an auth method
 
-## Configuring Auth Methods using the CLI
+- Method: POST
+
+```bash
+curl \
+--header "X-Vault-Token: s.v2otcpHygZHWiD7BQ7P5aJjL" \
+--request POST \
+--data '{"type": "approle"}' \  # Can point to a file --data @data.json
+https://vault.example.com:8200/v1/sys/auth/approle # API endpoint
+```
 
 ## Vault Authentication using the CLI
 
-## Vault Entities
+There are a few ways to authenticate to Vault when using the CLI
+
+Use the vault login command
+
+- Authenticate using a token or another auth method
+- Makes use of a token helper
+
+```bash
+# Use a "token" method
+vault login s.fhNBot4hRBfDWJ2jBdTwimaG
+---
+Success! You are now authenticated. The token information displayed below is
+already stored in the token helper. You do NOT need to run "vault login" again.
+Future Vault requests will automatically use this token.
+Key Value
+--- -----
+token s.fhNBot4hRBfDWJ2jBdTwimaG
+token_accessor 502YCRmp1SfZ8YCdfbYeS9fj
+token_duration ∞
+token_renewable false
+token_policies ["root"]
+identity_policies []
+policies ["root"]
+---
+
+# Used to obtain a token
+vault login -method=userpass username=bryan
+---
+Password (will be hidden):
+Success! You are now authenticated. The token information displayed below
+is already stored in the token helper. You do NOT need to run "vault login"
+again. Future Vault requests will automatically use this token.
+Key Value
+--- -----
+token s.jgSgKqDOnaOxu30ffC0rZWB0
+token_accessor SpiJi6bghz4huS8MG4HsLmNp
+token_duration 768h
+token_renewable true
+token_policies ["admin" "default"]
+identity_policies []
+policies ["admin" "default"]
+token_meta_username bryan
+---
+```
+
+Use the VAULT_TOKEN Environment Variable
+
+- Used if you already have a token
+
+Token Helper
+
+![img](./img/18.png)
+
+- Caches the token after authentication. Stores the token in a local file so it can be
+referenced for subsequent requests
+- Stored in `.vault-token`
+
+Parsing the JSON Response to Obtain the Vault Token
+
+```bash
+export VAULT_ADDR="https://vault.example.com:8200"
+
+export VAULT_FORMAT=json
+
+OUTPUT=$(vault write auth/approle/login role_id="12345657" secret_id="1nv84nd3821s")
+
+VAULT_TOKEN=$(echo $OUTPUT | jq '.auth.client_token' -j)
+
+vault login $VAULT_TOKEN
+```
+
+- Authentication requests to the Vault HTTP API return a JSON response that include:
+  - the token
+  - the token accessor
+  - information about attached policies
+- It is up to the user to parse the response for the token and use that token for any subsequent requests to Vault
+
+Authenticating with an auth method
+
+- Method: POST
+- Response: JSON
+
+```bash
+curl \
+--request POST \
+--data @auth.json \
+https://vault.example.com:8200/v1/auth/approle/login
+
+"request_id": "0f874bea-16a6-c3da-8f20-1f2ef9cb5d22",
+"lease_id": "",
+"renewable": false,
+"lease_duration": 0,
+"data": null,
+"wrap_info": null,
+"warnings": null,
+"auth": {
+"client_token": "s.wjkffdrqM9QYTOYrUnUxXyX6",
+"accessor": "Hbhmd3OfVTXnukBv7WxMrWld",
+"policies": [
+"admin",
+"default"
+Service Token
+],
+```
 
 ## Vault Identity Groups
 

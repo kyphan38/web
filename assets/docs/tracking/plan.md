@@ -1,4 +1,4 @@
-# tracking
+# plan
 
 Weekly
 
