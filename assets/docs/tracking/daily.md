@@ -4,4 +4,6 @@
 
 29th
 
-- 1 LOL game
+- 2 LOL game
+- Install Vault (labs left)
+- Compare authentication methods (labs left)
