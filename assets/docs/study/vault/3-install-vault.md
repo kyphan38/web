@@ -440,15 +440,15 @@ kill -9 <pid>
 ```bash
 vault version
 
-cat /etc/vault.d/vault.hcl 
+cat /etc/vault.d/vault.hcl
 
 ls -lah /opt/vault/
 
 journalctl -u vault.service -b
 
-vim /lib/systemd/system/vault.service 
+vim /lib/systemd/system/vault.service
 
-sudo vim /lib/systemd/system/vault.service 
+sudo vim /lib/systemd/system/vault.service
 ---
 ExecStart=/usr/bin/vault server -config=/etc/vault.d/vault.hcl
 ---
