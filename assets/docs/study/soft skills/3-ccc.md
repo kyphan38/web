@@ -244,7 +244,7 @@ Optimizing flow through visibility
 Common barriers to visibility
 
 - Resistance to showing "imperfect" work
-  - Some teams hesitate to share work in progress due to fear of appearing unprepared or "not good enough."
+  - Some teams hesitate to share work in progress due to fear of appearing unprepared or "not good enough"
   - Example: A developer avoids pushing early code to a shared repository until it's "perfect," delaying feedback and collaboration
 - Fear of judgement being used against the team
   - Teams worry that exposing issues might reflect poorly on their competence or be used in performance evaluations

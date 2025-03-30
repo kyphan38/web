@@ -1,6 +1,6 @@
 # communication expression storytelling
 
-> "The core of all successful DevOps implementations is the recognition that bad communication leads to friction." - Grant Fritchey
+> "The core of all successful DevOps implementations is the recognition that bad communication leads to friction" - Grant Fritchey
 
 ## Verbal skills
 
@@ -12,7 +12,7 @@ Clear
 - Don't use unnecessarily complex or elevated language
 - Keep your message simple, direct, and easy to understand
 - Speak clearly, use precise language, and structure your points logically
-- Example: Instead of saying, "We'll use CI/CD," clarify with, "We'll use continuous integration and continuous deployment to automate testing and delivery."
+- Example: Instead of saying, "We'll use CI/CD," clarify with, "We'll use continuous integration and continuous deployment to automate testing and delivery"
 
 Concise
 
@@ -62,7 +62,7 @@ Concrete
 - Use specific, vivid, and detailed language
 - Avoid vague or abstract statements
 - Help the listener visualize what you're describing with real examples or analogies
-- Example: Instead of saying "Improve system performance," say "Reduce server response time by optimizing database queries."
+- Example: Instead of saying "Improve system performance," say "Reduce server response time by optimizing database queries"
 
 Courteous
 

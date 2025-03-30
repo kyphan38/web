@@ -241,7 +241,7 @@ Achieving trust through consistency
   - Operating out of sync with your team's strategy, mission, values, or principles
 - &rarr; You are out of alignment
 - Misalignment is one of the most destructive forces in teams, departments, and organizations
-- It's better for a team to fail and learn together than for four people to go in one direction while one person goes another even if that one person is "right" and the others are "wrong."
+- It's better for a team to fail and learn together than for four people to go in one direction while one person goes another even if that one person is "right" and the others are "wrong"
 
 **Summary**
 

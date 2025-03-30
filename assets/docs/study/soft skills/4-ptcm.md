@@ -231,7 +231,7 @@ Visualization
 Context
 
 - You're in the middle of a well-planned DevOps sprint, resources are balanced, everyone knows what they're doing, and progress is steady
-- Then, out of nowhere, someone - usually a high-priority stakeholder drops a new task on your lap and says, "This needs to go in now."
+- Then, out of nowhere, someone - usually a high-priority stakeholder drops a new task on your lap and says, "This needs to go in now"
 - In this particular story, a team was halfway through a two-week sprint when a last-minute regulatory task came in from a key stakeholder
 - The task was high priority and couldn't wait, so the team had to figure out how to deal with it without derailing their sprint or burning out
 - This situation? It's super common in DevOps and agile teams. The key is knowing how to respond with clarity, calm, and a solid plan

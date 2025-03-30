@@ -1,7 +1,5 @@
 # compare authentication methods
 
-## Auth Methods Overview
-
 ## Intro to Auth Methods
 
 Key features
@@ -60,7 +58,15 @@ vault auth enable approle
 Success! Enabled approle auth method at: approle/
 ```
 
-## Configuring Auth Methods using the CLI
+## Configuring Auth Methods using CLI
+
+Use the vault auth comamnd
+
+- enable
+- disable
+- list
+- tune
+- help
 
 CLI commands for authentication
 
@@ -86,11 +92,9 @@ vault-course/  approle   auth_approle_b3f0c92d n/a
 
 - Custom paths and descriptions
   - Enable
-    - Syntax: `vault <type_of_vault_object> <subcommand> <type_of_auth_method>`
-    - Syntax: `vault <type_of_vault_object> <subcommand> <customize> <type_of_auth_method>`
-    - Syntax: `vault <type_of_vault_object> <subcommand> <description> <type_of_auth_method>`
+    - Syntax: `vault <object_type> <subcommand> <customize> <description> <method_type>`
   - Disable
-    - Syntax: `vault <type_of_vault_object> <subcommand> <path_of_object>`
+    - Syntax: `vault <object_type> <subcommand> <object_path>`
 
 ```bash
 vault auth enable approle
@@ -119,7 +123,7 @@ vault write auth/approle/role/vault-course \
   secret_id_num_uses=40
 ```
 
-## Configuring Auth Methods using the API
+## Configuring Auth Methods using API
 
 Vault provides a fully-featured API designed for machine-to-machine interaction
 
@@ -147,7 +151,7 @@ curl \
   https://vault.example.com:8200/v1/sys/auth/approle  # API endpoint
 ```
 
-## Vault Authentication using the CLI
+## Vault Authentication using CLI
 
 Vault offers several ways to authenticate via the command-line interface (CLI)
 
@@ -155,7 +159,7 @@ Using the vault login command
 
 - Authenticate using a token or another authentication method
 - Utilizes a token helper to store the token
-- Syntax: `vault login -method=<type_of_auth_method> <argument>`
+- Syntax: `vault login -method=<method_type> <argument>`
 
 Example: Token-based authentication
 
@@ -242,7 +246,7 @@ Authenticating with an authentication method
 ```bash
 curl \
   --request POST \
-  --data @auth.json \ 
+  --data @auth.json \
   https://vault.example.com:8200/v1/auth/approle/login
 ---
 {
@@ -351,7 +355,7 @@ System-based auth emthods
 
 ## Demo
 
-### Configuring Auth Methods using the CLI
+### Configuring Auth Methods using CLI
 
 ```bash
 vault auth -h
@@ -387,7 +391,7 @@ vault auth enable approle
 vault write auth/approle/role/kyphan token_ttl=20m policies=kyphan
 ```
 
-### Configuring Auth Methods using the API
+### Configuring Auth Methods using API
 
 ```bash
 curl \
@@ -414,15 +418,15 @@ curl \
   http://127.0.0.1:8200/v1/auth/approle/role/vaultcourse/secret-id | jq
 ```
 
-### Configuring Auth Methods using the UI
+### Configuring Auth Methods using UI
 
-Direction: Homepage &rarr; Access &rarr; Enable new method
+Directions: Homepage &rarr; Access &rarr; Enable new method
 
 ```bash
 vault login -method=username username=kyphan password=kp123
 ```
 
-### Vault Authentication using the CLI
+### Vault Authentication using CLI
 
 ```bash
 vault login -method=okta username=kyphan@gmail.com password=kp123
@@ -438,7 +442,7 @@ vault write auth/approle/roles/login role_id=asd123 secret_id=qwe123
 vault login -method=userpass username=kyphan password=kp123
 ```
 
-### Vault Authentication using the API
+### Vault Authentication using API
 
 ```bash
 curl \
@@ -451,9 +455,9 @@ curl \
   http://127.0.0.1:8200/v1/secret/data/app01 | jq
 ```
 
-### Vault Authentication using the UI
+### Vault Authentication using UI
 
-Direction: Homepage &rarr; Profile
+Directions: Homepage &rarr; Profile
 
 ```bash
 vault login <root_token>

@@ -6,9 +6,9 @@
 
 ## How Do We Set All of this Up?
 
-## Configure Replication using the Vault CLI
+## Configure Replication using CLI
 
-## Configure Replication using the Vault UI
+## Configure Replication using UI
 
 ## Demo
 

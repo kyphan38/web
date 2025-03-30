@@ -1,7 +1,5 @@
 # create vault policies
 
-## Vault Policies Overview
-
 ## Intro to Vault Policies
 
 How do we determine who should access secrets?
@@ -58,8 +56,8 @@ No policy named: root
 The root policy has no explicit rules but grants full access
 
 ```bash
-path "*" { 
-  capabilities = ["read", "create", "update", "delete", "list", "sudo"] 
+path "*" {
+  capabilities = ["read", "create", "update", "delete", "list", "sudo"]
 }
 ```
 
@@ -67,7 +65,15 @@ path "*" {
 
 ## Managing Policies using CLI
 
-Using the CLI
+Use the vault policy command
+
+- delete
+- fmt
+- list
+- read
+- write
+
+How to use command
 
 - Syntax: `vault <object_type> <subcommand> <policy_name> <file_location>`
 
@@ -86,7 +92,7 @@ Success! Uploaded policy: admin-policy
 
 ## Managing Policies using UI
 
-Direction: Homepage &rarr; Policies &rarr; Create ACL policy
+Directions: Homepage &rarr; Policies &rarr; Create ACL policy
 
 ## Managing Policies using API
 
@@ -125,14 +131,14 @@ path "<path>" {
 - Examples
 
 ```bash
-path "kv/data/apps/jenkins" { 
-  capabilities = ["read", "update", "delete"] 
+path "kv/data/apps/jenkins" {
+  capabilities = ["read", "update", "delete"]
 }
-path "sys/policies/*" { 
-  capabilities = ["create", "update", "list", "delete"] 
+path "sys/policies/*" {
+  capabilities = ["create", "update", "list", "delete"]
 }
-path "aws/creds/web-app" { 
-  capabilities = ["read"] 
+path "aws/creds/web-app" {
+  capabilities = ["read"]
 }
 ```
 
@@ -158,14 +164,14 @@ Root-protected paths
   - sys/step-down (force leader to relinquish active status)
 
 ```bash
-path "sys/rotate" { 
-  capabilities = ["sudo"] 
+path "sys/rotate" {
+  capabilities = ["sudo"]
 }
-path "sys/seal" { 
-  capabilities = ["sudo"] 
+path "sys/seal" {
+  capabilities = ["sudo"]
 }
-path "sys/step-down" { 
-  capabilities = ["sudo"] 
+path "sys/step-down" {
+  capabilities = ["sudo"]
 }
 ```
 
@@ -186,7 +192,6 @@ Capability definitions
 | list       | LIST       | View available items (without reading contents)|
 | sudo       | -          | Access root-protected paths                    |
 | deny       | -          | Deny access, overriding all other capabilities |
-
 
 :::note
 Write is not a valid capability
