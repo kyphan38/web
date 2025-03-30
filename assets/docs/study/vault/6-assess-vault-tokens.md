@@ -202,7 +202,7 @@ Key features
 - Limits the number of requests a token can make to Vault
   - Use limits complement TTL and Max TTL
   - Tokens expire after their last use, regardless of remaining TTL
-  - Tokens expire at TTL’s end, regardless of remaining uses
+  - Tokens expire at TTL's end, regardless of remaining uses
 
 ![img](./img/30.png)
 
@@ -231,7 +231,7 @@ Key features
 
 - Ideal when default token hierarchy behavior is undesirable
   - Root or sudo users can create orphan tokens
-  - Orphan tokens are independent of their parent and don’t expire with it
+  - Orphan tokens are independent of their parent and don't expire with it
   - They expire only when their own Max TTL is reached
 
 Policy example
@@ -417,7 +417,7 @@ Key features
 Authenticate and parse Token
 
 ```bash
-curl --request POST --data @payload.json http://127.0.0.1:8200/v1/auth/userpass/login/bryan | jq
+curl --request POST --data @payload.json http://127.0.0.1:8200/v1/auth/userpass/login/kyphan | jq
 ---
 {
   "request_id": "0b4181fe-0dec-2261-5231-bb3f033387e5",
@@ -426,7 +426,7 @@ curl --request POST --data @payload.json http://127.0.0.1:8200/v1/auth/userpass/
     "accessor": "zsap13bBoQGzB5xVPZFEu3Th",
     "policies": ["default", "training"],
     "token_policies": ["default", "training"],
-    "metadata": {"username": "bryan"},
+    "metadata": {"username": "kyphan"},
     "lease_duration": 2764800,
     "renewable": true,
     "entity_id": "88669d54-b405-c27a-d468-410a1185eb0d",
@@ -439,7 +439,7 @@ curl --request POST --data @payload.json http://127.0.0.1:8200/v1/auth/userpass/
 Store token in a file
 
 ```bash
-curl --request POST --data @payload.json http://127.0.0.1:8200/v1/auth/userpass/login/bryan | jq -r ".auth.client_token" > token.txt
+curl --request POST --data @payload.json http://127.0.0.1:8200/v1/auth/userpass/login/kyphan | jq -r ".auth.client_token" > token.txt
 
 cat token.txt
 ---
@@ -449,7 +449,7 @@ s.dhtIk8VsE3Mj61PuGP3ZfFrg
 Store token in an environment variable
 
 ```bash
-OUTPUT=$(curl --request POST --data @payload.json http://127.0.0.1:8200/v1/auth/userpass/login/bryan)
+OUTPUT=$(curl --request POST --data @payload.json http://127.0.0.1:8200/v1/auth/userpass/login/kyphan)
 
 VAULT_TOKEN=$(echo "$OUTPUT" | jq -r '.auth.client_token')
 
@@ -696,7 +696,7 @@ export VAULT_TOKEN=gFq2UwnJ0jo87kESKwUcl1Ub
 
 vault kv get secret/apps/training
 ---
-Error making API request.
+Error making API request
 URL: GET http://127.0.0.1:8200/v1/sys/internal/ui/mounts/secret/apps/training
 Code: 403. Errors:
 * permission denied
@@ -719,7 +719,7 @@ Example
 
 Default TTL
 
-- Vault’s default TTL is 768 hours (32 days), adjustable via the configuration file
+- Vault's default TTL is 768 hours (32 days), adjustable via the configuration file
 
 ```bash
 default_lease_ttl = 24h
@@ -761,7 +761,7 @@ Limited Use
 
 Independent Lifecycle
 
-- Needs: Token unaffected by parent’s lifecycle, with extended expiration
+- Needs: Token unaffected by parent's lifecycle, with extended expiration
 - Solution: Orphan Token
 
 Replication and Efficiency

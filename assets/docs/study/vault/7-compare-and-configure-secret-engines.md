@@ -35,7 +35,7 @@ Key features
 
 - Secrets engines store, generate, or encrypt data as plugins in Vault
 - Multiple engines, including duplicates, can be enabled at unique paths
-- Interaction occurs via the engine’s designated path
+- Interaction occurs via the engine's designated path
 
 ![img](./img/35.png)
 
@@ -146,7 +146,7 @@ vault secrets enable --description="my first kv" kv
 ```
 
 ```bash
-vault secrets enable –description="Static Secrets" –path="cloud-kv" kv-v2
+vault secrets enable -description="Static Secrets" -path="cloud-kv" kv-v2
 ```
 
 - List enabled engines
@@ -158,7 +158,7 @@ Path            Type       Accessor          Description
 ----            ----       --------          -----------
 aws/            aws        aws_dafa7adc      n/a
 azure/          aws        aws_1a214ff6      n/a
-bryan/          kv         kv_28b1ceaa       n/a
+kyphan/          kv         kv_28b1ceaa       n/a
 cloud-team-kv/  kv         kv_fa270a3f       n/a
 cubbyhole/      cubbyhole  cubbyhole_88c8e2e3 per-token private secret storage
 dev-team-kv/    kv         kv_55c319c4       n/a
@@ -363,7 +363,7 @@ Use the vault kv command
 
 Writing Data
 
-- KV v1 vs. KV v2
+- KV v1 vsKV v2
   - Command: Identical for both versions
   - Behavior: KV v1 overwrites without versioning; KV v2 tracks versions
 
@@ -455,7 +455,7 @@ api   a8ee4b50cce124
 
 ```bash
 # Update specific keys
-vault kv patch kv/app/db user=bryan
+vault kv patch kv/app/db user=kyphan
 ---
 Key            Value
 ---            -----
@@ -468,13 +468,13 @@ vault kv get kv/app/db
 Key   Value
 ---   -----
 pass  123
-user  bryan
+user  kyphan
 api   a8ee4b50cce124
 ```
 
 Reading data
 
-- KV v1 vs. KV v2
+- KV v1 vsKV v2
 
 ```bash
 # KV v1 - Returns data only
@@ -534,7 +534,7 @@ vault kv get -version=3 kv/app/db
 
 Deleting data
 
-- KV v1 vs. KV v2
+- KV v1 vsKV v2
 
 ```bash
 # KV v1 - Permanent deletion
@@ -738,9 +738,9 @@ key_version 4
 
 ### Transit Secrets Engine
 
-### AWS Secrets Engine – IAM
+### AWS Secrets Engine - IAM
 
-### AWS Secrets Engine – Assumed Role
+### AWS Secrets Engine - Assumed Role
 
 ### Key/Value (KV) Version 1 Secrets Engine
 

@@ -190,9 +190,9 @@ Personal space management
 
 - Often overlooked, personal space is a critical part of nonverbal communication, especially in diverse, cross-cultural teams like DevOps
 - Considerations
-  - Gender – Comfort zones may vary
-  - Personal preference – Respect individual boundaries
-  - Culture – Some cultures value close proximity, others value distance
+  - Gender - Comfort zones may vary
+  - Personal preference - Respect individual boundaries
+  - Culture - Some cultures value close proximity, others value distance
 
 **Summary**
 

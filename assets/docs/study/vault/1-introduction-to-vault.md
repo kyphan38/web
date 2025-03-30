@@ -51,7 +51,7 @@ Token usage
 
 ## Why organizations choose Vault?
 
-Organizations typically manage multiple identity providers (IDPs) across environments:
+Organizations typically manage multiple identity providers (IDPs) across environments
 
 - On-premises: Active Directory
 - AWS: AWS IAM
@@ -92,7 +92,7 @@ Use cases
 
 Use case 1: Storage of secrets
 
-- Consolidate the storage of secrets across your organization into a unified platform.
+- Consolidate the storage of secrets across your organization into a unified platform
 - Systems like Chef (data bags), Jenkins (credentials), AWS Secrets Manager, and Azure Key Vault can retrieve secrets from Vault
 
 Use case 2: Migrate to dynamic credentials
@@ -115,7 +115,7 @@ Use case 2: Migrate to dynamic credentials
 
 Use case 3: Encryption data
 
-- Vault enables centralized encryption workflows for both data at rest and in transit.
+- Vault enables centralized encryption workflows for both data at rest and in transit
 - Example: When multiple applications with different backends need access to a database, Vault can handle the encryption and key management centrally, regardless of the application design
 
 Use case 4: Automate X.209 certificates
@@ -169,7 +169,7 @@ Enterprise
   - Policy as Code using Sentinel
   - Easily scale local reads using performance standbys
   - Access to the Raft/Consul snapshot agent for automated disaster recovery solution
-- Does not include:
+- Does not include
   - Self-managed - not hosted or managed by HashiCorp
 
 HashiCorp Cloud Platform (HCP)

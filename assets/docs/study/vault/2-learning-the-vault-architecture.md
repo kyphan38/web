@@ -113,7 +113,7 @@ Unsealing options
 - Key Sharding (Shamir's Secret Sharing)
   - Requires a minimum number of key shares to reconstruct the master key manually
 - Cloud auto unseal
-  - Automatically retrieves and unseals Vault using a key stored in a cloud provider’s key management service (e.g., AWS KMS, Azure Key Vault, GCP KMS)
+  - Automatically retrieves and unseals Vault using a key stored in a cloud provider's key management service (e.g., AWS KMS, Azure Key Vault, GCP KMS)
 - Transit auto unseal
   - Uses another Vault instance with a transit secrets engine to perform the unsealing operation
 
@@ -168,9 +168,9 @@ ui       = true
 
 - Auto Unseal uses a cloud-based or on-premises HSM (Hardware Security Module) to automatically decrypt the master key
   - During initialization, Vault generates a master key, splits it into shares using Shamir's Secret Sharing, and encrypts these shares using a key managed by the external KMS/HSM
-  - The encrypted shares are stored in Vault’s backend storage
+  - The encrypted shares are stored in Vault's backend storage
   - During the auto-unseal process, Vault sends the encrypted shares to the KMS/HSM, which decrypts them and returns the plaintext shares
-  - Vault combines the decrypted shares locally to reconstruct the master key, then uses the master key to decrypt the data encryption key (DEK), which is loaded into memory to access Vault’s data
+  - Vault combines the decrypted shares locally to reconstruct the master key, then uses the master key to decrypt the data encryption key (DEK), which is loaded into memory to access Vault's data
 - The Vault configuration file specifies which key to use for decryption
 - With Cloud Auto Unseal, Vault is automatically unsealed upon service or node restart, no manual key entry is required
 - Available in both open source and Enterprise editions
@@ -233,7 +233,7 @@ What?
 
 - Initializing Vault prepares the storage backend to receive and manage secrets securely
 - Vault needs to be initialized only once per cluster, and this can be done from a single node
-- During initialization, Vault creates the master key and splits it into key shares (using Shamir’s Secret Sharing by default)
+- During initialization, Vault creates the master key and splits it into key shares (using Shamir's Secret Sharing by default)
 - You can define parameters such as
   - Number of key shares
   - Unseal threshold
@@ -252,17 +252,17 @@ What?
 
 - Vault servers are configured using a configuration file
   - Written in either HCL (HashiCorp Configuration Language) or JSON
-- The configuration file contains various stanzas and parameters that define Vault’s behavior and settings
+- The configuration file contains various stanzas and parameters that define Vault's behavior and settings
 - The file is specified when starting Vault using the --config flag
 
 ```bash
-vault server –config <location>
+vault server -config <location>
 ```
 
 - Configuration files are usually stored in /etc, but this is not mandatory
 
 ```bash
-vault server –config /etc/vault.d/vault.hcl
+vault server -config /etc/vault.d/vault.hcl
 ```
 
 What's inside the configuration file?
@@ -432,11 +432,11 @@ Types
 
 - File
   - Appends logs to a file
-  - Does not manage log rotation (you should use tools like logrotate, fluentd, etc.).
+  - Does not manage log rotation (you should use tools like logrotate, fluentd, etc.)
   - Can be used with log shipping tools for centralized logging
 - Syslog
   - Sends audit logs to the local syslog daemon
-  - Only logs locally; must be forwarded using external tools if centralization is needed.
+  - Only logs locally; must be forwarded using external tools if centralization is needed
 - Socket
   - Sends logs to a TCP, UDP, or Unix domain socket
   - Considered unreliable due to the nature of the transport protocols

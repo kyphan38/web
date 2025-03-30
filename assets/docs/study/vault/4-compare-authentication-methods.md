@@ -31,7 +31,7 @@ Workflow
 Key features
 
 - Most auth methods must be explicitly enabled before use
-- Multiple auth methods can coexist, often serving distinct purposes (e.g., applications vs. human users)
+- Multiple auth methods can coexist, often serving distinct purposes (e.g., applications vshuman users)
 - The token auth method is always enabled
   - A new Vault deployment relies on a root token for initial authentication
   - It cannot be disabled or replaced as the sole method in a fresh setup
@@ -101,11 +101,11 @@ vault auth enable approle
 ---
 Success! Enabled approle auth method at: approle/
 
-vault auth enable –path=vault-course approle
+vault auth enable -path=vault-course approle
 ---
 Success! Enabled approle auth method at: vault-course/
 
-vault auth enable –path=apps –description="MyApps" approle
+vault auth enable -path=apps -description="MyApps" approle
 
 vault auth disable apps
 ```
@@ -127,7 +127,7 @@ vault write auth/approle/role/vault-course \
 
 Vault provides a fully-featured API designed for machine-to-machine interaction
 
-Critical components of an API request that need to be included:
+Critical components of an API request that need to be included
 
 - Request Type: GET, POST, or DELETE
 - Headers: Appropriate headers such as X-Vault-Token, Authorization, or X-Vault-Namespace
@@ -167,8 +167,8 @@ Example: Token-based authentication
 vault login <s.***>
 ---
 Success! You are now authenticated. The token information displayed below is
-already stored in the token helper. You do NOT need to run "vault login" again.
-Future Vault requests will automatically use this token.
+already stored in the token helper. You do NOT need to run "vault login" again
+Future Vault requests will automatically use this token
 
 Key                  Value
 ---                  -----
@@ -186,10 +186,10 @@ Example: Userpass authentication
 ```bash
 vault login -method=userpass username=kyphan
 ---
-Password (will be hidden):
+Password (will be hidden)
 Success! You are now authenticated. The token information displayed below
 is already stored in the token helper. You do NOT need to run "vault login"
-again. Future Vault requests will automatically use this token.
+again. Future Vault requests will automatically use this token
 
 Key                  Value
 ---                  -----
@@ -229,7 +229,7 @@ vault login "$VAULT_TOKEN"
 
 ## Vault Authentication using API
 
-Authentication requests to the Vault HTTP API return a JSON response that include:
+Authentication requests to the Vault HTTP API return a JSON response that include
 
 - The token
 - The token accessor
@@ -343,7 +343,7 @@ Human-based auth methods
 - Integrates with an existing identity provider
 - Requires a hands-on approach to use
 - Involves logging in via a prompt or pop-up
-- Often configured with the platform’s integrated multi-factor authentication (MFA)
+- Often configured with the platform's integrated multi-factor authentication (MFA)
 - Example: GitHub, JWT/OIDC, Okta, RADIUS, Userpass
 
 System-based auth emthods

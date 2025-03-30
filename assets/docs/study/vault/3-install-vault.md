@@ -49,7 +49,7 @@ Never use the dev server mode in a production environment due to its lack of per
 - Uses cases
   - Proof-of-concept projects
   - Developing and testing new integrations
-  - Exploring and testing Vault’s new features
+  - Exploring and testing Vault's new features
   - Experimenting with Vault functionality
 
 To start the Vault dev server, use the following command
@@ -63,7 +63,7 @@ vault server -dev
 Guidelines
 
 - Deploy one or more persistent Vault nodes using a configuration file
-- Select a storage backend that meets Vault’s requirements (e.g., Consul, integrated storage, or other supported options)
+- Select a storage backend that meets Vault's requirements (e.g., Consul, integrated storage, or other supported options)
 - Configure multiple Vault nodes to form a cluster
 - Deploy Vault nodes close to your applications to minimize latency
 - Automate Vault provisioning for efficiency in most production scenarios
@@ -219,9 +219,9 @@ log_level    = "INFO"
 
 Key features
 
-- Serves as Vault’s internal storage option
+- Serves as Vault's internal storage option
 - Utilizes the Raft consensus protocol
-- Ensures all Vault nodes maintain a copy of Vault’s data
+- Ensures all Vault nodes maintain a copy of Vault's data
 - Eliminates the network hop required by Consul
 - Supports high availability
 - Simplifies troubleshooting by focusing solely on Vault
@@ -333,8 +333,8 @@ vault version
 Using APT Repository
 
 - Downloads HashiCorp's GPG key, converts it to binary, and saves it to /usr/share/keyrings/ for APT verification
-- Adds HashiCorp’s APT repository to your system’s sources, specifying architecture (e.g., arm64) and Ubuntu version (e.g., focal), signed by the GPG key
-- Updates the package list and installs the latest vault package from HashiCorp’s repository
+- Adds HashiCorp's APT repository to your system's sources, specifying architecture (e.g., arm64) and Ubuntu version (e.g., focal), signed by the GPG key
+- Updates the package list and installs the latest vault package from HashiCorp's repository
 
 ```bash
 # Install

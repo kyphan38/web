@@ -3,7 +3,7 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /**
- * Creating a sidebar enables you to:
+ * Creating a sidebar enables you to
  - create an ordered group of docs
  - render a sidebar for each doc of that group
  - provide next/previous navigation

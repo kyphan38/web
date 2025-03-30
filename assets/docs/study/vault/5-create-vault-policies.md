@@ -8,7 +8,7 @@ Key features
 
 - Vault policies enable operators to permit or deny access to specific paths or actions in Vault using Role-Based Access Control (RBAC)
   - Provide granular control over secret access
-- Policy format is written as declarative statements in JSON or HCL.
+- Policy format is written as declarative statements in JSON or HCL
 - Principle of least privilege grants users or applications only the permissions they need
 - By default, Policies implicitly deny access unless explicitly granted
   - No policy = no authorization
@@ -185,7 +185,7 @@ Capability definitions
 
 | Capability | HTTP Verb  | Description                                    |
 |------------|------------|------------------------------------------------|
-| create     | POST/PUT   | Create a new entry if it doesn’t exist         |
+| create     | POST/PUT   | Create a new entry if it doesn't exist         |
 | read       | GET        | Read credentials, configurations, etc.         |
 | update     | POST/PUT   | Overwrite an existing secret or configuration  |
 | delete     | DELETE     | Delete an entry                                |
@@ -238,9 +238,9 @@ Using + (Single Directory Wildcard)
 
 - Matches a single directory in a path segment
 - Can be used multiple times (e.g., secret/+/+/db)
-- Examples:
+- Examples
   - secret/+/db: Matches secret/db2/db or secret/app/db
-  - kv/data/apps/+/webapp: Matches:
+  - kv/data/apps/+/webapp: Matches
     - kv/data/apps/dev/webapp
     - kv/data/apps/qa/webapp
     - kv/data/apps/prod/webapp
@@ -259,7 +259,7 @@ path "secret/apps/+/team-*" {
 ACL Teamplting
 
 - Use `{{parameter}}` for variable replacement with token-specific values
-- Example: Restrict key/value v2 secrets to a specific user’s entity ID
+- Example: Restrict key/value v2 secrets to a specific user's entity ID
 
 ```bash
 path "secret/data/{{identity.entity.id}}/*" {
@@ -274,8 +274,8 @@ Supported parameters
 
 | Parameter                                               | Description                                        |
 |---------------------------------------------------------|----------------------------------------------------|
-| identity.entity.id                                      | Entity’s ID                                      |
-| identity.entity.name                                    | Entity’s name                                     |
+| identity.entity.id                                      | Entity's ID                                      |
+| identity.entity.name                                    | Entity's name                                     |
 | identity.entity.metadata.`<key>`                          | Metadata for the entity by key                   |
 | identity.entity.aliases.`<accessor>`.id                  | Entity alias ID for a mount                      |
 | identity.entity.aliases.`<accessor>`.name                | Entity alias name for a mount                    |
