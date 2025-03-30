@@ -266,12 +266,12 @@ curl \
 }
 ```
 
-## Vault Entities - Continue
+## Vault Entities
 
 Key features
 
 - Vault creates an entity and attaches an alias to it if a corresponding entity does not already exist
-  - This is managed through the Identity secrets engine, which oversees internal identities recognized by Vault
+  - This is managed through the identity secrets engine, which oversees internal identities recognized by Vault
 - An entity represents a single person or system that logs into Vault. Each entity has a unique identifier and consists of zero or more aliases
 - An alias is a combination of an authentication method and an identifier. It serves as a mapping between an entity and one or more authentication methods
 
@@ -284,7 +284,7 @@ Key features
 
 ![alt text](./img/21.png)
 
-Flow
+Workflow
 
 ![alt text](./img/22.png)
 
@@ -300,22 +300,25 @@ Key features
 
 ![alt text](./img/24.png)
 
-- Internal Group: Groups created within Vault to organize entities and propagate consistent permissions
-  - These are created manually
-- External Group: Groups that Vault infers and creates based on group associations from authentication methods
-  - These can be created manually or automatically
+Types of groups
+
+- Internal group
+  - Groups created within Vault to organize entities and propagate identical  permissions
+  - Created manually
+  - Simplify permission management for entities
+  - They are commonly used with Vault Namespaces to propagate permissions to child namespaces
+    - This is particularly useful when you want to avoid configuring identical authentication methods for every namespace
 
 ![alt text](./img/25.png)
 
-- Internal groups simplify permission management for entities
-- They are commonly used with Vault Namespaces to propagate permissions to child namespaces
-  - This is particularly useful when you want to avoid configuring identical authentication methods for every namespace
+- External group
+  - Groups that Vault infers and creates based on group associations from authentication methods
+  - Created manually or automatically
+  - External groups allow permissions to be set based on group membership from an external identity provider, such as LDAP, Okta, or an OIDC provider
+  - This enables a one-time setup in Vault, with ongoing permission management handled in the identity provider
+    - Note: The group name in Vault must match the group name in the identity provider
 
 ![alt text](./img/26.png)
-
-- External groups allow permissions to be set based on group membership from an external identity provider, such as LDAP, Okta, or an OIDC provider
-- This enables a one-time setup in Vault, with ongoing permission management handled in the identity provider
-  - Note: The group name in Vault must match the group name in the identity provider
 
 ## Choosing an Auth Method
 
@@ -332,7 +335,7 @@ When selecting an authentication method, consider the following key factors and 
 - Use existing user credentials
   - Typically means integrating with an existing identity provider to leverage current user credentials
   - Meets the Requirement: OIDC (OpenID Connect), LDAP, Okta, GitHub
-  - Does Not Meet the Requirements: Userpass, AWS, Azure, GCP (Google Cloud Platform)
+  - Does not meet the requirements: Userpass, AWS, Azure, GCP (Google Cloud Platform)
 
 ## Differentiate Human vs System Auth Methods
 
@@ -348,8 +351,8 @@ Human-based auth methods
 
 System-based auth emthods
 
-- UUtilizes methodologies that are not human-friendly (e.g., difficult-to-remember credentials)
-- Typically integrates with an existing platform
+- Utilizes methodologies that are not human-friendly (e.g., difficult-to-remember credentials)
+- Typically integrates with an existing backend platform
 - Vault validates credentials directly with the platform
 - Example: AWS, Tokens, Cloud Foundry, TLS Certificates, Kerberos, Microsoft Azure, AppRole, Oracle Cloud, GCP (Google Cloud Platform), Alibaba Cloud, Kubernetes (K8s)
 
@@ -460,19 +463,91 @@ curl \
 Directions: Homepage &rarr; Profile
 
 ```bash
-vault login <root_token>
+vault login <token>
 
 export VAULT_TOKEN=s.***
 ```
 
 ### AppRole Auth Method
 
+Setup
+
+```bash
+vault auth list
+
+vault auth enable approle
+
+vault write auth/approle/role/kyphan pocilies=kyphan token_ttl=20m
+
+vault list auth/approle/role
+
+vault read auth/approle/role/kyphan/role-id
+
+vault write -f auth/approle/role/kyphan/secret-id
+```
+
+Login
+
+```bash
+vault write auth/approle/login role_id=<role_id> secret_id=<secret_id>
+```
+
 ### Okta Auth Method
+
+Setup
+
+- Directions: Homepage &rarr; Security &rarr; API &rarr; Tokens &rarr; Create Token
+
+```bash
+vault auth enable okta
+
+vault auth list
+
+vault write auth/okta/config base_url="okta.com" org_name="kyphan" api_token="<token>"
+
+vault read auth/okta/config
+
+vault write auth/okta/users/andy@kyphan.io policies=kyphan
+```
+
+Login via UI
+
+- Method: Okta
+- Username: andy@kyphan.io
+- Password: `<okta_password>`
+
+Login via CLI
+
+```bash
+vault login -method=okta username=andy@kyphan.io
+```
 
 ### UserPass Auth Method
 
+Setup
+
+```bash
+vault auth list
+
+vault auth enable userpass
+
+vault write auth/userpass/users/kyphan password=kp policies=kyphan
+
+vault write auth/userpass/users/kyphann password=kpp policies=kyphan
+
+vault list auth/userpass/users
+
+vault read auth/userpass/users/kyphan
+```
+
+Login
+
+```bash
+vault login -method=userpass username=kyphan password=kp
+
+vault login -method=userpass username=kyphann password=kpp
+```
+
 ## Lab
 
-### Working with Auth Methods
-
-Later
+### Working with Auth Methods - Later

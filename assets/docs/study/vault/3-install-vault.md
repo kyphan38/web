@@ -421,11 +421,11 @@ vault server -dev &
 
 export VAULT_ADDR='http://127.0.0.1:8200'
 
-echo "<root_token>" > /home/kyphan/vault-token
+echo "<token>" > /home/kyphan/vault-token
 
 vault status
 
-vault login <root_token>
+vault login <token>
 
 vault secrets list
 

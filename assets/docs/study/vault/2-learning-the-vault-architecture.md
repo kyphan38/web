@@ -478,7 +478,7 @@ vault operator init
 
 vault operator unseal
 
-vault login <root_token>
+vault login <token>
 
 vault secrets list
 ```
@@ -513,7 +513,7 @@ vault operator init
 
 vault status
 
-vault login <root_token>
+vault login <token>
 
 vault secrets list
 ```
@@ -562,7 +562,7 @@ vault operator init
 
 vault status
 
-vault login <root_token>
+vault login <token>
 
 vault secrets enable azure
 
@@ -590,7 +590,7 @@ sudo vim /root/main_token
 
 vault operator unseal
 
-vault login <root_token>
+vault login <token>
 
 vault secrets enable -path=secrets/ kv
 
@@ -617,7 +617,7 @@ sudo systemctl start vault
 
 vault operator unseal -migrate
 
-vault login <root_token>
+vault login <token>
 
 vault secrets list
 
