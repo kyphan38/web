@@ -1,22 +1,20 @@
 # create vault policies
 
 ## Intro to Vault Policies
-
-How do we determine who should access secrets?
-
+ 
 Key features
 
 - Vault policies enable operators to permit or deny access to specific paths or actions in Vault using Role-Based Access Control (RBAC)
   - Provide granular control over secret access
 - Policy format is written as declarative statements in JSON or HCL
 - Principle of least privilege grants users or applications only the permissions they need
-- By default, Policies implicitly deny access unless explicitly granted
+- By default, policies implicitly deny access unless explicitly granted
   - No policy = no authorization
   - Explicit DENY overrides all other permissions
-- Policies are linked to tokens, a token can have multiple policies
+- Policies are attached to tokens, a token can have multiple policies
   - Permissions are cumulative and additive
 
-Default Vault policies
+Out-of-the-box Vault policies
 
 - Root policy
   - Created by default as a superuser with unrestricted permissions
@@ -34,7 +32,7 @@ default
 root
 ```
 
-- Default policy example
+- Default policy example - token management
 
 ```bash
 vault policy read default
@@ -45,7 +43,7 @@ path "auth/token/revoke-self" { capabilities = ["update"] }
 path "sys/capabilities-self" { capabilities = ["update"] }
 ```
 
-- Root policy example
+- Root policy example - cannot read
 
 ```bash
 vault policy read root
@@ -61,7 +59,9 @@ path "*" {
 }
 ```
 
-- Note: Use the root policy with extreme caution
+:::note
+Use the root policy with extreme caution
+:::
 
 ## Managing Policies using CLI
 
@@ -102,7 +102,7 @@ Create a new policy
 
 ```bash
 curl \
-  --header "X-Vault-Token: s.***" \
+  --header "X-Vault-Token: s.2kjqZ12ofDr3efPdtMJ1z5dZ" \
   --request PUT \
   --data @payload.json \
   http://127.0.0.1:8200/v1/sys/policy/webapp
@@ -193,13 +193,16 @@ Capability definitions
 | sudo       | -          | Access root-protected paths                    |
 | deny       | -          | Deny access, overriding all other capabilities |
 
+- create: if the key does not exist
+- update: if the key exists and we want to replace/update it
+
 :::note
 Write is not a valid capability
 :::
 
 Examples
 
-- Example 1 requirements
+- Example 1 
   - Generate database credentials at database/creds/db01
   - Manage secrets (create, read, update, delete) at kv/apps/dev-app01
 
@@ -212,8 +215,8 @@ path "kv/apps/dev-app01" {
 }
 ```
 
-- Example 2 requirements
-  - Read credentials under kv/apps/webapp/*
+- Example 2
+  - Read credentials after kv/apps/webapp
   - Deny access to kv/apps/webapp/super-secret
 
 ```bash
@@ -256,7 +259,7 @@ path "secret/apps/+/team-*" {
 }
 ```
 
-ACL Teamplting
+ACL templating
 
 - Use `{{parameter}}` for variable replacement with token-specific values
 - Example: Restrict key/value v2 secrets to a specific user's entity ID
@@ -291,7 +294,7 @@ vault token create -policy="web-app"
 ---
 Key             Value
 ---             -----
-token           s.***
+token           s.2kjqZ12ofDr3efPdtMJ1z5dZ
 token_accessor  18r88muoe3x1xEqVqXdlTMwJ
 token_duration  768h
 token_renewable true
@@ -349,4 +352,4 @@ path "sys/seal" {
 
 ## Lab
 
-### Working with Vault Policies
+### Working with Vault Policies - Later
