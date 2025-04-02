@@ -161,7 +161,7 @@ Key             Value
 ---             -----
 token           hvs.2kjqZ12ofDr3efPdtMJ1z5dZ
 token_accessor  73rjN1kmnzwT71pMw9H7p6P9
-token_duration  24h 
+token_duration  24h
 token_renewable true
 token_policies  ["default", "training"]
 identity_policies []
@@ -188,7 +188,7 @@ meta            <nil>
 num_uses        0
 orphan          false
 path            auth/token/create
-period          24h 
+period          24h
 policies        ["default", "training"]
 renewable       true
 ttl             23h59m28s
@@ -222,7 +222,7 @@ Key        Value
 id         hvs.516LO9Ssk1CQzvKo8ny1G0eu
 issue_time 2021-12-25T18:35:08.004652-08:00
 meta       <nil>
-num_uses   2 
+num_uses   2
 ```
 
 ## Orphan Tokens
@@ -264,7 +264,7 @@ num_uses   0
 orphan     true  
 ```
 
-## Setting the Token Type   
+## Setting the Token Type
 
 Periodic token example
 

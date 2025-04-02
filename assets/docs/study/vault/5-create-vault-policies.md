@@ -1,7 +1,7 @@
 # create vault policies
 
 ## Intro to Vault Policies
- 
+
 Key features
 
 - Vault policies enable operators to permit or deny access to specific paths or actions in Vault using Role-Based Access Control (RBAC)
@@ -202,7 +202,7 @@ Write is not a valid capability
 
 Examples
 
-- Example 1 
+- Example 1
   - Generate database credentials at database/creds/db01
   - Manage secrets (create, read, update, delete) at kv/apps/dev-app01
 

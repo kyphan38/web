@@ -42,4 +42,3 @@ JDK
 Relationship
 
 - The JRE is a subset of the JDK. If you have the JDK installed, you don’t need a separate JRE installation because the JDK already includes it
-

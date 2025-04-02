@@ -55,7 +55,7 @@ Important directory to backup
 - `plugins/`: Contains installed plugins, though you can reinstall these later
 - `secrets/` : Stores encryption keys and credentials (e.g., master.key, hudson.util.Secret)
 
-Stop Jenkins 
+Stop Jenkins
 
 ```bash
 sudo systemctl stop jenkins
