@@ -185,7 +185,7 @@ ui       = true
 ```bash
 seal "transit" {
   address         = "https://vault.example.com:8200"  # Address of the Vault cluster running the Transit engine
-  token           = "s.Qf1s5zigZ4OX6akYjQXJC1jY"      # ACL token, if required
+  token           = "hvs.Qf1s5zigZ4OX6akYjQXJC1jY"      # ACL token, if required
   disable_renewal = "false"
 
   // Key configuration

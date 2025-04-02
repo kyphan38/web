@@ -1,4 +1,4 @@
-# compare and configure secret engines
+# compare and configure secret engines - pending
 
 ## Static vs Dynamic Secrets
 

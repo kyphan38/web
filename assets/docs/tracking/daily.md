@@ -1,9 +1,8 @@
 # daily
 
-## Mar
+## Apr
 
-29th
+1st
 
-- 2 LOL game
-- Install Vault (labs left)
-- Compare authentication methods (labs left)
+- LOL: 3 games => Need to be cut
+- 

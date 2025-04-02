@@ -102,7 +102,7 @@ Create a new policy
 
 ```bash
 curl \
-  --header "X-Vault-Token: s.2kjqZ12ofDr3efPdtMJ1z5dZ" \
+  --header "X-Vault-Token: hvs.2kjqZ12ofDr3efPdtMJ1z5dZ" \
   --request PUT \
   --data @payload.json \
   http://127.0.0.1:8200/v1/sys/policy/webapp
@@ -294,7 +294,7 @@ vault token create -policy="web-app"
 ---
 Key             Value
 ---             -----
-token           s.2kjqZ12ofDr3efPdtMJ1z5dZ
+token           hvs.2kjqZ12ofDr3efPdtMJ1z5dZ
 token_accessor  18r88muoe3x1xEqVqXdlTMwJ
 token_duration  768h
 token_renewable true

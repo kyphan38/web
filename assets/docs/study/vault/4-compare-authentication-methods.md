@@ -145,7 +145,7 @@ Enabling an authentication method
 
 ```bash
 curl \
-  --header "X-Vault-Token: s.2kjqZ12ofDr3efPdtMJ1z5dZ" \
+  --header "X-Vault-Token: hvs.2kjqZ12ofDr3efPdtMJ1z5dZ" \
   --request POST \
   --data '{"type": "approle"}' \  # Can reference a file, e.g., --data @data.json
   https://vault.example.com:8200/v1/sys/auth/approle  # API endpoint
@@ -164,7 +164,7 @@ Using the vault login command
 Example: Token-based authentication
 
 ```bash
-vault login <s.2kjqZ12ofDr3efPdtMJ1z5dZ>
+vault login <hvs.2kjqZ12ofDr3efPdtMJ1z5dZ>
 ---
 Success! You are now authenticated. The token information displayed below is
 already stored in the token helper. You do NOT need to run "vault login" again
@@ -172,7 +172,7 @@ Future Vault requests will automatically use this token
 
 Key                  Value
 ---                  -----
-token                s.2kjqZ12ofDr3efPdtMJ1z5dZ
+token                hvs.2kjqZ12ofDr3efPdtMJ1z5dZ
 token_accessor       502YCRmp1SfZ8YCdfbYeS9fj
 token_duration       ∞
 token_renewable      false
@@ -193,7 +193,7 @@ again. Future Vault requests will automatically use this token
 
 Key                  Value
 ---                  -----
-token                s.2kjqZ12ofDr3efPdtMJ1z5dZ
+token                hvs.2kjqZ12ofDr3efPdtMJ1z5dZ
 token_accessor       SpiJi6bghz4huS8MG4HsLmNp
 token_duration       768h
 token_renewable      true
@@ -258,7 +258,7 @@ curl \
   "wrap_info": null,
   "warnings": null,
   "auth": {
-    "client_token": "s.wjkffdrqM9QYTOYrUnUxXyX6",
+    "client_token": "hvs.wjkffdrqM9QYTOYrUnUxXyX6",
     "accessor": "Hbhmd3OfVTXnukBv7WxMrWld",
     "policies": ["admin", "default"],
     "metadata": {}
@@ -398,7 +398,7 @@ vault write auth/approle/role/kyphan token_ttl=20m policies=kyphan
 
 ```bash
 curl \
-  --header "X-Vault-Token: s.2kjqZ12ofDr3efPdtMJ1z5dZ" \
+  --header "X-Vault-Token: hvs.2kjqZ12ofDr3efPdtMJ1z5dZ" \
   --request POST \
   --data @auth.json \
   http://127.0.0.1:8200/v1/sys/auth/approle
@@ -406,17 +406,17 @@ curl \
 vault auth list
 
 curl \
-  --header "X-Vault-Token: s.2kjqZ12ofDr3efPdtMJ1z5dZ" \
+  --header "X-Vault-Token: hvs.2kjqZ12ofDr3efPdtMJ1z5dZ" \
   --request POST \
   --data @policies.json \
   http://127.0.0.1:8200/v1/auth/approle/role/vaultcourse
 
 curl \
-  --header "X-Vault-Token: s.2kjqZ12ofDr3efPdtMJ1z5dZ" \
+  --header "X-Vault-Token: hvs.2kjqZ12ofDr3efPdtMJ1z5dZ" \
   http://127.0.0.1:8200/v1/auth/approle/role/vaultcourse/role-id | jq
 
 curl \
-  --header "X-Vault-Token: s.2kjqZ12ofDr3efPdtMJ1z5dZ" \
+  --header "X-Vault-Token: hvs.2kjqZ12ofDr3efPdtMJ1z5dZ" \
   -- request POST \
   http://127.0.0.1:8200/v1/auth/approle/role/vaultcourse/secret-id | jq
 ```
@@ -454,7 +454,7 @@ curl \
   http://1270.0.0.1:8200/v1/auth/okta/login/kyphan@andy.io | jq
 
 curl \
-  --header "X-Vault-Token: s.2kjqZ12ofDr3efPdtMJ1z5dZ" \
+  --header "X-Vault-Token: hvs.2kjqZ12ofDr3efPdtMJ1z5dZ" \
   http://127.0.0.1:8200/v1/secret/data/app01 | jq
 ```
 
@@ -465,7 +465,7 @@ Directions: Homepage &rarr; Profile
 ```bash
 vault login <token>
 
-export VAULT_TOKEN=s.2kjqZ12ofDr3efPdtMJ1z5dZ
+export VAULT_TOKEN=hvs.2kjqZ12ofDr3efPdtMJ1z5dZ
 ```
 
 ### AppRole Auth Method
