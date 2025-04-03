@@ -8,7 +8,7 @@ The scenario video covers the hidden promises that leaders agree to when engaged
 
 Next topic will be Leadership and Empowerment
 
-## Leadership and empowerment
+## Leadership and Empowerment
 
 Why?
 
@@ -115,7 +115,7 @@ Empowerment in action
 - Leadership occurs no matter what position you are in or your title
 - In DevOps, a leader is focused, clear, inspiring, and authentic
 
-## Creating safety and trust
+## Creating Safety and Trust
 
 Why and What?
 
