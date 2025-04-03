@@ -1,5 +1,7 @@
 # aws certifications
 
+## AWS Certifications
+
 Cloud practitioner and associcate
 
 - Cloud practitioner and associate share the same knowledge pool, associate goes into more depth
@@ -10,4 +12,6 @@ Professional
 
 Specialty
 
-- Specialities are a 50% / 50% split between the speciality skill covered and AWS skills between the associate and professional level
+- Specialties are a 50% / 50% split between the specialty skill covered and AWS skills between the associate and professional level
+
+![img](./img/1.png)

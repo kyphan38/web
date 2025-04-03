@@ -22,7 +22,7 @@ What?
     - API keys
     - Encryption keys
 
-## How Vault works?
+## How Vault Works?
 
 Vault interfaces
 
@@ -49,7 +49,7 @@ Token usage
   - password: abc123
 - The application presents the token, it does not need to re-authenticate after the token is issued
 
-## Why organizations choose Vault?
+## Why Organizations Choose Vault?
 
 Organizations typically manage multiple identity providers (IDPs) across environments
 
@@ -71,7 +71,7 @@ Vault solves these problem
 - On the backend, Vault integrates seamlessly with identity providers like: Active Directory, AWS IAM, Auzre AD, Google Cloud IAM
 - Vault becomes the single source of truth for authentication, policy enforcement, and access control across all environments and identity systems
 
-## Benefits and use cases Vault
+## Benefits and Use Cases Vault
 
 Benefits
 
@@ -143,7 +143,7 @@ Use case 5: Migrate to identity-based access
   - Upon successful validation, Vault issues a token with access to defined paths
   - No need to manage static secrets or IP-based firewall rules
 
-## Comparing versions of Vault
+## Comparing Versions of Vault
 
 Open source
 
