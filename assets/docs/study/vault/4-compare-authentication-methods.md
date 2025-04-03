@@ -513,7 +513,7 @@ vault write auth/okta/users/andy@kyphan.io policies=kyphan
 Login via UI
 
 - Method: Okta
-- Username: <andy@kyphan.io>
+- Username: `<andy@kyphan.io>`
 - Password: `<okta_password>`
 
 Login via CLI

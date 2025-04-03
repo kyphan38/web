@@ -9,11 +9,9 @@ Weekly
 
 K8s - Aug
 
-- [ ] KCNA
-- [ ] Helm for Beginners
-- [ ] CKAD
-- [ ] CKA
-- [ ] CKS
+- [ ] AWS: Solution Architect - Associate &rarr; SysOps Administrator - Associate &rarr; Solution Architect - Professional &rarr; DevOps Engineer - Professional &rarr; Security - Specialty
+- [ ] K8S: Beginners &rarr; KCNA &rarr; CKA &rarr; CKAD &rarr; KCSA &rarr; CKS
+- [ ] IAC: Terraform &rarr; Cloudformation &rarr; Ansible
 
 Hands-on - July
 
