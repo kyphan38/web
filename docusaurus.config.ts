@@ -13,6 +13,8 @@ const config: Config = {
   projectName: 'web',
   deploymentBranch: 'gh-pages',
 
+  trailingSlash: false,
+
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
