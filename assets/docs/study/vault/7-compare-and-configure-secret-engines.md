@@ -99,7 +99,7 @@ Secrets engine Functions
 | **Transit**              | Provides encryption-as-a-service for data in transit.                        |
 | **Venafi**               | Issues SSL/TLS certificates via Venafi Trust Protection Platform or Venafi Cloud for machine identities. |
 
-## Working with a Secrets Engine
+## Working With a Secrets Engine
 
 Key features
 
@@ -348,7 +348,7 @@ KV v2 differences
 
 ![img](./img/46.png)
 
-## Working with KV Secrets Engine
+## Working With KV Secrets Engine
 
 Use the vault kv command
 
@@ -564,7 +564,7 @@ version        3
 - Permanent deletion (KV v2)
   - Use destroy to remove data irreversibly (restorable only via Vault/Consul backup)
 
-## Encrypting Data with the Transit Secrets Engine
+## Encrypting Data With the Transit Secrets Engine
 
 Challenges with enterprise encryption
 

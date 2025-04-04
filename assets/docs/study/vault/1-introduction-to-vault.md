@@ -1,6 +1,6 @@
 # introduction to vault
 
-## What is Vault?
+## What Is Vault?
 
 Hashicorp offers all open-source
 

@@ -8,7 +8,7 @@ The scenario video will cover how to engage with peers, leaders, and subordinate
 
 Negotiating conflict is essential because it is rare and yet important when it arises. Having a method deal with is essential
 
-## Identifying clients
+## Identifying Clients
 
 Redefining "client"
 
@@ -73,7 +73,7 @@ Integrating a client-centric approach
 - A client-centric approach also requires a systemic approach to navigating expectations and conflict
 - Treating everyone as a client will create a deeper sense of rapport and alignment with everyone around you
 
-## Managing up down and sideways
+## Managing Up Down and Sideways
 
 Multi-dimensional management
 
@@ -126,7 +126,7 @@ Benefits of a holistic approach
 - The benefits are numerous if you actively manage your work relationships holistically
 - The ultimate benefit of this style of management is increased alignment with all the groups mentioned
 
-## Internal versus external clients
+## Internal Versus External Clients
 
 Client management in general
 
@@ -194,7 +194,7 @@ Delighting your customers
 - Understanding the differing needs of external clients is key to managing them correctly
 - The ultimate goal of any organization is the delight and satisfaction of customers via a product or service that solves their problems
 
-## Critical thinking problem solving and being methodical
+## Critical Thinking Problem Solving and Being Methodical
 
 Critical thinking - Definition
 
@@ -249,7 +249,7 @@ Being methodical - Key concepts
 - Problem solving is necessary because clients have needs and expectations that have to be met and/or solved
 - Being Methodical is all about being systematic, organized, and tracking what matters, whether it's projects, time, or level of effort
 
-## Managing expectations for self and others
+## Managing Expectations for Self and Others
 
 Understanding needs and goals
 
@@ -315,7 +315,7 @@ Building rapport and trust
 - No matter what technique you use, keep agreements, and if you must break them, do so intentionally
 - Most importantly, stay customer-centric and customer-focused and you will succeed
 
-## Navigating conflict
+## Navigating Conflict
 
 Navigating conflict - The model - [behavioral change stairway model](https://gdt.stanford.edu/what-can-the-fbi-teach-us-about-behavior-design/)
 
@@ -390,7 +390,7 @@ Creating agreements to solve problems
 - Emotional intelligence cannot be understated as a necessary skill even in a professional environment
 - The last point was about using agreements and collusion to solve problems
 
-## Story - Managing up, down, sideways and outside
+## Story - Managing Up, Down, Sideways and Outside
 
 Context
 

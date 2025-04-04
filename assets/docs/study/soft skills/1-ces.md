@@ -2,7 +2,7 @@
 
 > "The core of all successful DevOps implementations is the recognition that bad communication leads to friction" - Grant Fritchey
 
-## Verbal skills
+## Verbal Skills
 
 Effective verbal communication in DevOps relies on the 7 C's: Clear, Concise, Correct, Coherent, Complete, Concrete, Courteous
 
@@ -80,7 +80,7 @@ Courteous
 - We covered tips and examples in each section
 - The phrase at the end is to help you memorize the attributes which also apply to a certain extent to written communication skills as well
 
-## Written skills
+## Written Skills
 
 Good writing skills and verbal skills
 
@@ -135,7 +135,7 @@ Visual aids and formatting for readability
 - The target audience for your communication also greatly influences what words, tone, and formatting you will use
 - Professional communication of all types, except informal interactions, are usually checked for spelling, grammar, and readability
 
-## Nonverbal skills
+## Nonverbal Skills
 
 Why it matters?
 
@@ -264,7 +264,7 @@ Strategies to navigate challenges
 - Embracing professionalism is about staying non-reactive, detached yet focused, and engaged with the task and mission of the company
 - Professionalism must include an allowance for our humanity while staying within the boundaries of what is good for our teams and our organizations
 
-## Story - Information versus story
+## Story - Information Versus Story
 
 Context
 

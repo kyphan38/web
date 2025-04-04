@@ -195,7 +195,7 @@ ttl             23h59m28s
 type            service
 ```
 
-## Service Tokens with Use Limits
+## Service Tokens With Use Limits
 
 Key features
 
@@ -299,7 +299,7 @@ vault write auth/approle/role/jenkins policies="jenkins" \
   period="72h"
 ```
 
-## Managing Tokens using CLI
+## Managing Tokens Using CLI
 
 Use the vault token command
 
@@ -401,11 +401,11 @@ identity_policies []
 policies          ["default", "training"]
 ```
 
-## Managing Tokens using UI
+## Managing Tokens Using UI
 
 Directions: Homepage &rarr; Profile &rarr; Copy token
 
-## Managing Tokens using API - Continue
+## Managing Tokens Using API - Continue
 
 Key features
 
@@ -764,7 +764,7 @@ vault write auth/approle/role/training-role \
 vault token create -policy=training
 ```
 
-## Create a Token based on Use Cases
+## Create a Token Based on Use Cases
 
 Long-Running Application
 

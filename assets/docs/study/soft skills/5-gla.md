@@ -8,7 +8,7 @@ The scenario/story video will cover a situation of what to do when there is too 
 
 The overall focus for this section is how to maintain knowledge, skills, and concepts in an ever-changing and expanding IT landscape
 
-## A mindset of continual learning
+## A Mindset of Continual Learning
 
 Why?
 
@@ -57,7 +57,7 @@ Growing your value to the business
 - There are many risks particularly in IT if you do not grow your skills, concepts, and new ways of working
 - Growing your skills increases your value and your value to the business for which you work
 
-## Rituals for growth and learning
+## Rituals for Growth and Learning
 
 Why?
 
@@ -108,7 +108,7 @@ Applying learning in practice
 - Tracking those goals and balancing passion with relevancy are important
 - This is a lifelong journey, more like a marathon than a sprint, so engage it with an eye on sustainability
 
-## The truth about skill acquisition
+## The Truth About Skill Acquisition
 
 Why?
 
@@ -178,7 +178,7 @@ Exploring learning styles
 - Your personal needs and commitments will increase or ease your resistance so your foundations are in place
 - Variety and accountability help to foster a commitment to learning and growing
 
-## Story - What to learn when there is too much to know
+## Story - What to Learn When There Is Too Much to Know
 
 Context
 

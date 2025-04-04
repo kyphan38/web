@@ -1,6 +1,6 @@
 # linux
 
-## Differentiate apt and apt-get
+## Differentiate Apt and Apt-Get
 
 apt and apt-get are both command-line tools used to manage packages on Debian-based Linux distributions, but they server slightly different purpose and have distinct characteristics
 
@@ -29,7 +29,7 @@ apt and apt-get are both command-line tools used to manage packages on Debian-ba
 - Use cases
   - For day-to-ady interactive package management in the terminal
 
-## Why run apt update and apt upgrade before installing?
+## Why Run Apt Update and Apt Upgrade Before Installing?
 
 In Linux, running sudo apt update and sudo apt upgrade before installing software is a common practice because it ensures your system is up-to-date and can install the latest, most compatible versions of packages
 

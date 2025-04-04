@@ -6,7 +6,7 @@ Sometimes, you want to create a custom bash script and be able to run it from an
 
 To do this, you can place your script in a directory that is part of the system's `$PATH`. One command and safe choice is `/usr/local/bin`
 
-## What is $PATH?
+## What Is $PATH?
 
 It is an environment variable that tells the shells where to look for executables (like programs, tools, and scripts) when you run a command
 

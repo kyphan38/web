@@ -63,7 +63,7 @@ path "*" {
 Use the root policy with extreme caution
 :::
 
-## Managing Policies using CLI
+## Managing Policies Using CLI
 
 Use the vault policy command
 
@@ -90,11 +90,11 @@ Success! Uploaded policy: admin-policy
 ---
 ```
 
-## Managing Policies using UI
+## Managing Policies Using UI
 
 Directions: Homepage &rarr; Policies &rarr; Create ACL policy
 
-## Managing Policies using API
+## Managing Policies Using API
 
 Create a new policy
 
@@ -285,7 +285,7 @@ Supported parameters
 | identity.groups.ids.`<group-id>`.name                     | Group name for a given group ID                   |
 | identity.groups.names.`<group-name>`.id                   | Group ID for a given group name                  |
 
-## Working with Policies
+## Working With Policies
 
 Create a token with policy
 

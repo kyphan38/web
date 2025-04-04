@@ -8,7 +8,7 @@ Topics include learning and teaching, mobbing and co-creating, social grease, an
 
 The ending video talks about team dynamics and a scenario for team building and team
 
-## Teaching and learning
+## Teaching and Learning
 
 Why it should matter to teams?
 
@@ -40,7 +40,7 @@ A culture of knowledge sharing
 - Learning together also raises the general skill level of the team
 - Creating and prioritizing learning and learning in an organization is essential in high-performing teams
 
-## Co-creating and mobbing
+## Co-Creating and Mobbing
 
 Why?
 
@@ -80,7 +80,7 @@ Quality today, speed later
 - Both are co-creation techniques where one person drives and one or more people "assist" or watch
 - Both techniques enhance output and team cohesion
 
-## Social grease and the water cooler
+## Social Grease and the Water Cooler
 
 The power of social grease
 
@@ -129,7 +129,7 @@ Why such interactions matter of DevOps cultures
 - The "Water Cooler" is a metaphor for a safe space for informal interaction
 - Being intentional about safe informal spaces is part of an intentional crafting of a DevOps Culture
 
-## Observation and context
+## Observation and Context
 
 Why this matters?
 
@@ -214,7 +214,7 @@ Environmental context
 - Context is the act of observing the different histories and environments in which your teams are interacting
 - The four primary contexts to consider are cultural, historical, social, and environmental
 
-## Making work visible
+## Making Work Visible
 
 What and why?
 
@@ -289,7 +289,7 @@ Navigating resistance in visibility
 - Visibility helps with flow, the first way of DevOps, to showcase that the work is happening and the way we want it to happen
 - This section talked about strategies and barriers for making work visible
 
-## Story - How to wreck a team versus how to align it
+## Story - How to Wreck a Team Versus How to Align It
 
 Context
 

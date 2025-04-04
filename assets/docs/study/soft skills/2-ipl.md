@@ -208,7 +208,7 @@ Trust and safety in action
 - Trust requires setting clear goals, boundaries, and expectations that translate into agreements. Keep them
 - Safety is an agreement, an expectation, and a right to not be attacked or assaulted. Respect and dignity are required for safety
 
-## What you say vs what you do
+## What You Say vs What You Do
 
 Balancing communication and action
 
@@ -250,7 +250,7 @@ Achieving trust through consistency
 - Consistency in communication and results is important
 - This is necessary not just for teamwork but also for the overall organizational culture
 
-## Persuasion versus manipulation
+## Persuasion Versus Manipulation
 
 Why?
 
@@ -317,7 +317,7 @@ Cultivating ethical influence
 - Reviewed examples of both
 - Listed strategies for fostering ethical influence in teams and organizations
 
-## Story - The loudest promise
+## Story - The Loudest Promise
 
 Context
 

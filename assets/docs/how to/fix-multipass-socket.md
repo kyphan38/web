@@ -1,6 +1,6 @@
 # fix multipass connect to socket
 
-## Ensure permission
+## Ensure Permission
 
 Ensure permission of multipass socket
 

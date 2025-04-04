@@ -8,7 +8,7 @@ Our scenario/story video is all about "When someone adds to your workload"
 
 What you prioritize is arguably just as important as the results you produce
 
-## The art of prioritization
+## The Art of Prioritization
 
 Why?
 
@@ -110,7 +110,7 @@ Intersection of prioritization, time management, and capacity planning
 - Strategies include using the 80/20 rule from the Pareto Principle, Weighted Shortest Job First from Lean, and more
 - There is an intersection between capacity, time, and priority, but the most important thing is choosing the method(s) that work best for your business need
 
-## The science of time management
+## The Science of Time Management
 
 Why?
 
@@ -173,7 +173,7 @@ Common challenges and solutions
 - The Pomodoro technique, the Two-Minute Rule, and other techniques help with time management
 - Time management is essential for prioritizing the right things for whom you work
 
-## The magic of capacity planning
+## The Magic of Capacity Planning
 
 Why?
 
@@ -226,7 +226,7 @@ Visualization
 - Teams and individuals benefit from the consistency of sustainable and intentional ways of working
 - At a minimum, understanding that capacity planning is important and how to do it is essential
 
-## Story - When someone adds to your work
+## Story - When Someone Adds to Your Work
 
 Context
 

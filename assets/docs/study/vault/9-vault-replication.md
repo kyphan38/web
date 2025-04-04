@@ -4,11 +4,11 @@
 
 ## Replication Architecture
 
-## How Do We Set All of this Up?
+## How Do We Set All of This Up?
 
-## Configure Replication using CLI
+## Configure Replication Using CLI
 
-## Configure Replication using UI
+## Configure Replication Using UI
 
 ## Demo
 

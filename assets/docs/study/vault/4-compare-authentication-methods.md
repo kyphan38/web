@@ -26,7 +26,7 @@ Workflow
 
 ![img](./img/17.png)
 
-## Working with Auth Methods
+## Working With Auth Methods
 
 Key features
 
@@ -58,7 +58,7 @@ vault auth enable approle
 Success! Enabled approle auth method at: approle/
 ```
 
-## Configuring Auth Methods using CLI
+## Configuring Auth Methods Using CLI
 
 Use the vault auth comamnd
 
@@ -123,7 +123,7 @@ vault write auth/approle/role/vault-course \
   secret_id_num_uses=40
 ```
 
-## Configuring Auth Methods using API
+## Configuring Auth Methods Using API
 
 Vault provides a fully-featured API designed for machine-to-machine interaction
 
@@ -151,7 +151,7 @@ curl \
   https://vault.example.com:8200/v1/sys/auth/approle  # API endpoint
 ```
 
-## Vault Authentication using CLI
+## Vault Authentication Using CLI
 
 Vault offers several ways to authenticate via the command-line interface (CLI)
 
@@ -227,7 +227,7 @@ VAULT_TOKEN=$(echo "$OUTPUT" | jq '.auth.client_token' -j)
 vault login "$VAULT_TOKEN"
 ```
 
-## Vault Authentication using API
+## Vault Authentication Using API
 
 Authentication requests to the Vault HTTP API return a JSON response that include
 

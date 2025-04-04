@@ -5,7 +5,7 @@ Weekly
 - [ ] A course - Soft Skills
 - [ ] A hands on - How to deploy the website
 
-## To-do
+## To-Do
 
 K8s - Aug
 
@@ -21,7 +21,7 @@ Hands-on - July
 
 MLOps - Sep
 
-## In progress
+## In Progress
 
 - [ ] **LFCS - 22 Mar**
 - [ ] **Vault (Associate) - 29 Mar**
