@@ -12,10 +12,10 @@ conversions = {
 }
 
 # Define regex patterns
-patterns = [
-    r'(?<!etc)(?<![:.])\.$',  # Matches a single '.' unless it follows 'etc' or multiple dots
-    r'(?<!:):$'               # Matches a single ':' unless part of '::'
-]
+# patterns = [
+#     r'(?<!etc)(?<![:.])\.$',  # Matches a single '.' unless it follows 'etc' or multiple dots
+#     r'(?<!:):$'               # Matches a single ':' unless part of '::'
+# ]
 
 
 for root, _, files in os.walk(current_dir):
@@ -29,11 +29,11 @@ for root, _, files in os.walk(current_dir):
             updated_content = content
 
             # Apply regex replacements
-            for pattern in patterns:
-                new_content = re.sub(pattern, '', updated_content, flags=re.MULTILINE)
-                if new_content != updated_content:
-                    updated_content = new_content
-                    has_changes = True
+            # for pattern in patterns:
+            #     new_content = re.sub(pattern, '', updated_content, flags=re.MULTILINE)
+            #     if new_content != updated_content:
+            #         updated_content = new_content
+            #         has_changes = True
 
             # Apply character conversions
             for old, new in conversions.items():
