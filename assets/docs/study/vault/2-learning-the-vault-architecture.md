@@ -450,7 +450,7 @@ Overview
 - If Vault cannot write to any audit log (e.g., disk full, permission error), it will stop responding to requests, effectively making Vault unavailable
 - Vault requires at least one audit device to write the log before completing the Vault request (if enabled)
 
-## Vault interfaces
+## Vault Interfaces
 
 ![img](./img/9.png)
 
