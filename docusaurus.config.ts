@@ -10,7 +10,7 @@ const config: Config = {
   baseUrl: '/',
 
   organizationName: 'kyphan38',
-  projectName: 'web',
+  projectName: 'kyphan38.github.io',
   deploymentBranch: 'gh-pages',
 
   trailingSlash: false,
