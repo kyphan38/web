@@ -7,7 +7,7 @@ const config: Config = {
   favicon: 'img/earth.ico',
 
   url: 'https://kyphan38.github.io',
-  baseUrl: '/', // /web/
+  baseUrl: '/',
 
   organizationName: 'kyphan38',
   projectName: 'web',
@@ -63,13 +63,10 @@ const config: Config = {
           position: 'left',
           label: 'docs',
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
-        // {to: '/travel', label: 'Travel', position: 'left'},
       ],
     },
     footer: {
       style: 'dark',
-      // copyright: `Copyright © ${new Date().getFullYear()} Ky Phan. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
