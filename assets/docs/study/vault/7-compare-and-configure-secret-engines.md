@@ -113,7 +113,7 @@ Responsibilities
   - Enable secrets engines
   - Configure backend platform connections (e.g., AWS, databases)
   - Define roles for backend permissions
-  - Create policies for secrets engine access.
+  - Create policies for secrets engine access
 - Vault clients (e.g., users, apps)
   - Retrieve credentials using tokens and policies
   - Renew leases or tokens as needed, if permitted
@@ -595,7 +595,7 @@ Intro to Transit Secrets Engine
 - Provides encryption/decryption services, centralizing organizational encryption
 - Apps send plaintext to Vault, receiving ciphertext without accessing keys
 - Keys are Vault-managed, with per-app key support and policy-based access
-- Features:
+- Features
   - Key rotation with versioned keyrings
   - Restrict decryption to specific key versions
   - Rewrap ciphertext to newer keys

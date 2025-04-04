@@ -17,7 +17,7 @@ JRE
   - For end-users who only need to run Java applications or applets (e.g., playing a Java-based game or using a Java app)
   - Think of it as the "player" for Java programs
 - Size
-  - Smaller in size because it only includes what’s necessary to run Java programs
+  - Smaller in size because it only includes what's necessary to run Java programs
 - Use cases examples
   - You download the JRE if you want to run a Java-based application like Minecraft (without modifying its code)
 
@@ -37,8 +37,8 @@ JDK
 - Size
   - Larger because it bundles the JRE with additional development tools and documentation
 - Use case examples
-  - You download the JDK if you’re a programmer writing a Java application in an IDE like IntelliJ or Eclipse
+  - You download the JDK if you're a programmer writing a Java application in an IDE like IntelliJ or Eclipse
 
 Relationship
 
-- The JRE is a subset of the JDK. If you have the JDK installed, you don’t need a separate JRE installation because the JDK already includes it
+- The JRE is a subset of the JDK. If you have the JDK installed, you don't need a separate JRE installation because the JDK already includes it
