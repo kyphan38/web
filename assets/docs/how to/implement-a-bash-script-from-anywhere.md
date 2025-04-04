@@ -22,7 +22,7 @@ By placing your script in `/usr/local/bin/`, which is already in `$PATH`, your s
 
 ## Solution
 
-### Step 1: Create the script
+### Step 1: Create the Script
 
 Navigate to `/usr/local/bin/`
 
@@ -45,7 +45,7 @@ Make the script executable
 sudo chmod +x ./getDatabaseName.sh
 ```
 
-### Step 2: Run the script from anywhere
+### Step 2: Run the Script From Anywhere
 
 Now, you can run script from any folder and it will work
 

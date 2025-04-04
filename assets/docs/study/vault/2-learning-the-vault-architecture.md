@@ -117,7 +117,7 @@ Unsealing options
 - Transit auto unseal
   - Uses another Vault instance with a transit secrets engine to perform the unsealing operation
 
-### Unsealing with Key Shards
+### Unsealing With Key Shards
 
 ![img](./img/3.png)
 
@@ -145,7 +145,7 @@ HA Mode        active
 - To unseal Vault, you must provide the required number of key shards equal to the configured threshold
 - Key shards should never be stored online and must be highly secured, preferably encrypted and kept in offline, safe locations
 
-### Unsealing with Auto Unseal
+### Unsealing With Auto Unseal
 
 ![img](./img/4.png)
 
@@ -176,7 +176,7 @@ ui       = true
 - Available in both open source and Enterprise editions
 - This feature is available in both Open Source and Enterprise editions as of Vault 1.0 (it was previously an Enterprise-only feature)
 
-### Unsealing with Transit Auto Unseal
+### Unsealing With Transit Auto Unseal
 
 ![img](./img/5.png)
 
@@ -465,7 +465,7 @@ Overview
 
 ## Demo
 
-### Unsealing with Key Shards
+### Unsealing With Key Shards
 
 ```bash
 vault status
@@ -483,7 +483,7 @@ vault login <token>
 vault secrets list
 ```
 
-### Unsealing with Auto Unseal
+### Unsealing With Auto Unseal
 
 ```bash
 vault status
@@ -518,7 +518,7 @@ vault login <token>
 vault secrets list
 ```
 
-### Unsealing with Transit Auto Unseal
+### Unsealing With Transit Auto Unseal
 
 Setup transit cluster A
 

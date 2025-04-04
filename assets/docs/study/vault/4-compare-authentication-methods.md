@@ -358,7 +358,7 @@ System-based auth emthods
 
 ## Demo
 
-### Configuring Auth Methods using CLI
+### Configuring Auth Methods Using CLI
 
 ```bash
 vault auth -h
@@ -394,7 +394,7 @@ vault auth enable approle
 vault write auth/approle/role/kyphan token_ttl=20m policies=kyphan
 ```
 
-### Configuring Auth Methods using API
+### Configuring Auth Methods Using API
 
 ```bash
 curl \
@@ -421,7 +421,7 @@ curl \
   http://127.0.0.1:8200/v1/auth/approle/role/vaultcourse/secret-id | jq
 ```
 
-### Configuring Auth Methods using UI
+### Configuring Auth Methods Using UI
 
 Directions: Homepage &rarr; Access &rarr; Enable new method
 
@@ -429,7 +429,7 @@ Directions: Homepage &rarr; Access &rarr; Enable new method
 vault login -method=username username=kyphan password=kp123
 ```
 
-### Vault Authentication using CLI
+### Vault Authentication Using CLI
 
 ```bash
 vault login -method=okta username=kyphan@gmail.com password=kp123
@@ -445,7 +445,7 @@ vault write auth/approle/roles/login role_id=asd123 secret_id=qwe123
 vault login -method=userpass username=kyphan password=kp123
 ```
 
-### Vault Authentication using API
+### Vault Authentication Using API
 
 ```bash
 curl \
@@ -458,7 +458,7 @@ curl \
   http://127.0.0.1:8200/v1/secret/data/app01 | jq
 ```
 
-### Vault Authentication using UI
+### Vault Authentication Using UI
 
 Directions: Homepage &rarr; Profile
 
@@ -550,4 +550,4 @@ vault login -method=userpass username=kyphann password=kpp
 
 ## Lab
 
-### Working with Auth Methods - Later
+### Working With Auth Methods - Later

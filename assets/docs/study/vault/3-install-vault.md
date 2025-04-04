@@ -298,7 +298,7 @@ vault_5    10.0.101.26:8201   follower  true
 
 ## Demo
 
-### Installing Vault using Packer
+### Installing Vault Using Packer
 
 Refer to this [btkrausen/vault/packer](https://github.com/btkrausen/hashicorp/tree/master/vault/packer)
 

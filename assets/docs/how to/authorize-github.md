@@ -8,7 +8,7 @@ A solution to this is to set up a `.netrc` file, which store your credentials fo
 
 ## Solution
 
-### Step 1: Set up the .netrc file
+### Step 1: Set Up the .Netrc File
 
 On a Mac, UNIX, or Linux, you can create the `.netrc` file using the following command
 
@@ -32,7 +32,7 @@ login kyphan38
 password ghp_lRC2nJdYVw1ws8shGfsquFIs9L1fx301VjQ1
 ```
 
-### Step 2: Set file permissions
+### Step 2: Set File Permissions
 
 Since the .netrc file contains sensitive information, it's important to ensure that only your user has read/write access to it
 

@@ -15,8 +15,16 @@ for root, _, files in os.walk(current_dir):
       updated_lines = content.copy()
 
       for idx, line in enumerate(content):
-        if line.strip().startswith("## "):
-          heading_text = line.strip()[3:]
+        line = line.strip()
+        if line.startswith(("## ", "###")):
+          # heading_text = line.strip()[3:]
+          if line.startswith("## "):
+            heading_text = line[3:]
+            prefix = "## "
+          else:
+            heading_text = line[4:]
+            prefix = "### "
+
           capitalized_text = titlecase(heading_text)
 
           if heading_text != capitalized_text:
@@ -28,7 +36,7 @@ for root, _, files in os.walk(current_dir):
 
             confirm = input("Press Enter to change, or 'no' to skip: ")
             if confirm.lower() != 'no':
-              updated_lines[idx] = f"## {capitalized_text}\n"
+              updated_lines[idx] = f"{prefix}{capitalized_text}\n"
               has_changes = True
             else:
               print("Skipping change")

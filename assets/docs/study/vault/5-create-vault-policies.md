@@ -352,4 +352,4 @@ path "sys/seal" {
 
 ## Lab
 
-### Working with Vault Policies - Later
+### Working With Vault Policies - Later

@@ -12,7 +12,7 @@ Let's walk through the steps of implementing a simple symmetric encryption to be
 - Server A is to encrypt
 - Server B is to decrypt
 
-### Step 1: Generate a symmetric key
+### Step 1: Generate a Symmetric Key
 
 **Sever: A**
 
@@ -26,7 +26,7 @@ openssl rand -out secret.key 32
 - `out secret.key`: The output file where the generated key will be stored
 - `32`: The key length in bytes (32 bytes = 256 bits)
 
-### Step 2: Create a simple file
+### Step 2: Create a Simple File
 
 **Sever: A**
 
@@ -40,7 +40,7 @@ echo "This is a simple line of code" > text.txt
 - `>:` Redirects the output of the echo command to a file
 - `text.txt`: The file name that will contain the plain text
 
-### Step 3: Encrypt the file
+### Step 3: Encrypt the File
 
 **Sever: A**
 
@@ -57,7 +57,7 @@ openssl enc -aes-256-cbc -pbkdf2 -in text.txt -out text_encrypted.dat -pass file
 - `-out text_encrypted.dat`: The output file where the encrypted content will be stored
 - `-pass file:./secret.key`: The file path of secret key for decryption
 
-### Step 4: Transfer the key to server B
+### Step 4: Transfer the Key to Server B
 
 **Sever: B**
 
@@ -78,7 +78,7 @@ Use scp (secure copy) to transfer the encrypted file and key
 scp ./text_encrypted.dat ./secret.key abc@52.221.181.100:/home/abc/
 ```
 
-### Step 5: Decrypt the file
+### Step 5: Decrypt the File
 
 **Sever: B**
 
@@ -115,7 +115,7 @@ Each User
 - Sends their own public key to the server
 - Use the server's public key to encrypt and their own private key to decrypt
 
-### Step 1: Generate a private and a public key
+### Step 1: Generate a Private and a Public Key
 
 **Server**
 
@@ -148,7 +148,7 @@ openssl genpkey -algorithm RSA -aes256 -out user_private_key.pem
 openssl rsa -pubout -in user_private_key.pem -out user_public_key.pem
 ```
 
-### Step 2: Transfer public keys
+### Step 2: Transfer Public Keys
 
 Assuming
 

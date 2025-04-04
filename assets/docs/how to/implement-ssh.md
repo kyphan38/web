@@ -12,7 +12,7 @@ Common tools: `ssh`, `ssh-keygen`
 
 Key formats: `.pub` (public), `.pem` (private)
 
-### Steps 1: Generate ssh key on local machine
+### Steps 1: Generate SSH Key on Local Machine
 
 Execute the following command
 
@@ -26,7 +26,7 @@ server-ssh (private key)  server-ssh.pub (public key)
 - `-b 4096`: 4096-bit for stronger security
 - `-f`: File name and path for key to avoid default name
 
-### Step 2: Copy public key to remote server
+### Step 2: Copy Public Key to Remote Server
 
 Append public key to `~/.ssh/authorized_keys` in remote server
 
@@ -36,7 +36,7 @@ chmod 600 ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
 ```
 
-### Step 3: SSH login from local machine
+### Step 3: SSH Login From Local Machine
 
 Now, you should be logged in without entering your password
 
