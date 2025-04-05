@@ -27,4 +27,27 @@ Key features
 - Identity federation and MFA
   - Use Facebook, Twitter, Google, etc. to access AWS resources
 
-## Demo
+## Demo - General Account
+
+Root account
+
+- Account alias
+  - Used for sign-in URL
+  - Create &rarr; Fill in "Preferred alias"
+- Users
+  - User &rarr; Add users
+    - Username
+    - Credential type
+    - Set permissions
+
+IAM account
+
+- Login
+  - Account ID or account alias
+  - IAM user name
+  - Password
+- Setup MFA
+
+## Demo - Production Account
+
+Same to general account
