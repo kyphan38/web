@@ -6,6 +6,8 @@
 
 ## How to Create an Account
 
+Two root accounts
+
 ![img](./img/2.png)
 
 Create multiple accounts
