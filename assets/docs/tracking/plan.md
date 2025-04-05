@@ -1,5 +1,15 @@
 # plan
 
+## 2025
+
+Sep - IELTS
+
+July - SAA
+
+System Design - Implementation 16 chapters
+
+Leetcode - Daily
+
 ## Roadmap
 
 Stage 1: Strong foundation
