@@ -1,9 +1,44 @@
 # plan
 
-Weekly
+## Roadmap
 
-- [ ] A course - Soft Skills
-- [ ] A hands on - How to deploy the website
+Stage 1: Strong foundation
+
+- Programming basics: Python, Java
+- System design: scalability, reliability, performance, and optimization
+- Networking: TCP/IP, DNS, HTTP/HTTPS, load balancers, and firewalls
+- Databases: SQL, NoSQL
+- Operating systems: Linux and Windows environments
+- Certifications: SAA - Associate, AZ-900, etc.
+
+Stage 2: Pratical experience
+
+- Small projects
+  - Build a microservices-based application using Docker and K8S
+  - Design a scalable e-commerce system with payment integration
+  - Simulate a cloud migration for a legacy app
+
+Stage 3: Specialize in key domains
+
+- Cloud: cloud-native design
+- Enterprise: TOGAF, Zachman, integrating legacy systems with modern solutions
+- Security: encryption, identity management, compliance
+- Certifications: SAA - Professional, TOGAF Certification, etc.
+
+Stage 4: Develop soft skills
+
+Stage 5: Solution Architect
+
+- Advanced system design
+- Trade-off analysis
+- Stakeholder management and negotiation
+- Certifications: CKA, ITIL, etc.
+
+Stage 6: Stay current
+
+- Follow industry trends
+- Engage with communities
+- Experiment with emerging tools
 
 ## To-Do
 

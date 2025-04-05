@@ -2,8 +2,8 @@
 slug: /
 ---
 
-Hi folks, this is place where I note my learning and work
+Hi folks, this is the place where I share my learning and work
 
-Plz enjoy!
+If you've found this website, you're amazing, bro!
 
 ![img](./img/sing.jpg)
