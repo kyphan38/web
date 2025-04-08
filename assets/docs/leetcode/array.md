@@ -231,6 +231,8 @@ Idea
 
 - Negate the value for each existing number at its corresponding index
 - A positive value at an index indicates that the number index is missing
+- Time complexity: O(n)
+- Space complexity: O(1)
 
 ```python
 class Solution:
