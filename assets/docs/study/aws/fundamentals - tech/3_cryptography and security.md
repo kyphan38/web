@@ -47,7 +47,7 @@ Context
 - Robot General shares its public key with Cat Ruler over a secure channel
 - Robot General uses its private key to create a digital signature for the message
 - Robot General sends the message and its signature to Cat Ruler
-- Cat Ruler uses Robot General’s public key to verify the signature, confirming that the message was signed with Robot General’s private key and ensuring its authenticity and integrity
+- Cat Ruler uses Robot General's public key to verify the signature, confirming that the message was signed with Robot General's private key and ensuring its authenticity and integrity
 
 ## Steganography
 

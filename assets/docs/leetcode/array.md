@@ -3,7 +3,6 @@
 To do list
 
 - Easy
-  - 303 Range Sum Query - Immutable
   - 448 Find All Numbers Disappeared in an Array
   - 605 Can Place Flowers
   - 724 Find Pivot Index
@@ -20,8 +19,8 @@ To do list
 
 Solution - Sorting
 
-- Time Complexity: O(n log n)
-- Space Complexity: O(1)
+- Time complexity: O(n log n)
+- Space complexity: O(1)
 
 ```python
 class Solution:
@@ -39,8 +38,8 @@ class Solution:
 
 Solution - Without sorting
 
-- Time Complexity: O(n)
-- Space Complexity: O(1)
+- Time complexity: O(n)
+- Space complexity: O(1)
 
 ```python
 class Solution:
@@ -59,8 +58,8 @@ class Solution:
 
 My solution
 
-- Time Complexity: O(n^2)
-- Space Complexity: O(n^2)
+- Time complexity: O(n^2)
+- Space complexity: O(n^2)
 
 ```python
 class Solution:
@@ -80,8 +79,8 @@ class Solution:
 
 My improved solution
 
-- Time Complexity: O(n^2)
-- Space Complexity: O(n^2)
+- Time complexity: O(n^2)
+- Space complexity: O(n^2)
 
 ```python
 class Solution:
@@ -101,8 +100,8 @@ class Solution:
 
 Solution
 
-- Time Complexity: O(n)
-- Space Complexity: O(1)
+- Time complexity: O(n)
+- Space complexity: O(1)
 
 ```python
 class Solution:
@@ -122,8 +121,8 @@ class Solution:
 
 My solution
 
-- Time Complexity: O(n)
-- Space Complexity: O(n) - Hashmap
+- Time complexity: O(n)
+- Space complexity: O(n) - Hashmap
 
 ```python
 class Solution:
@@ -140,8 +139,8 @@ class Solution:
 
 My improved solution
 
-- Time Complexity: O(n)
-- Space Complexity: O(n) - Hashmap
+- Time complexity: O(n)
+- Space complexity: O(n) - Hashmap
 
 ```python
 class Solution:
@@ -156,8 +155,8 @@ class Solution:
 
 Solution - Sorting
 
-- Time Complexity: O(n log n)
-- Space Complexity: O(1)
+- Time complexity: O(n log n)
+- Space complexity: O(1)
 
 ```python
 class Solution:
@@ -172,8 +171,8 @@ class Solution:
 Solution - Set
 
 - Set only stores keys &rarr; Less memory
-- Time Complexity: O(n)
-- Space Complexity: O(n) - Set
+- Time complexity: O(n)
+- Space complexity: O(n) - Set
 
 ```python
 class Solution:
@@ -184,6 +183,66 @@ class Solution:
         return True
       seen_nums.add(num)
       return False
+```
+
+### 303. Range Sum Query - Immutable
+
+[303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/description/)
+
+My solution
+
+- Correct but not efficient
+- `sumRange` function is called multiple times
+- For a large array (e.g., 10^4 elements) and many queries (e.g., 10^4 calls), it could take O(10^8) operations
+- Time complexity: O(1) for `__init__`, O(n) for `sumRange`, O(k * n) total for k queries
+- Space complexity: O(n)
+
+```python
+class NumArray:
+  def __init__(self, nums: List[int]):
+    self.nums = nums
+  def sumRange(self, left: int, right: int) -> int:
+    sum_value = 0
+    for i in range(left, right + 1):
+      sum_value += self.nums[i]
+    return sum_value
+```
+
+Solution - Prefix
+
+- Time complexity: O(n) for `__init__`, O(1) for `sumRange`, O(n + k) total for k queries
+- Space complexity: O(n)
+
+```python
+class NumArray:
+  def __init__(self, nums: List[int]):
+    self.prefix_sum = [0] * (len(nums) + 1)
+    for i in range(len(nums)):
+      self.prefix_sum[i + 1] = self.prefix_sum[i] + nums[i]
+  def sumRange(self, left: int, right: int) -> int:
+    return self.prefix_sum[right + 1] - self.prefix_sum[left]
+```
+
+### 448. Find All Numbers Disappeared in an Array
+
+[448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/)
+
+Idea
+
+- Negate the value for each existing number at its corresponding index
+- A positive value at an index indicates that the number index is missing
+
+```python
+class Solution:
+  def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+    for i in range(len(nums)):
+      idx = abs(nums[i]) - 1 # Value is negative and needs to be positive to find the index
+      nums[idx] = -abs(nums[idx]) # Value that needs to update is already negative - More than 2 repeated numbers
+    res = []
+    for i in range(len(nums)):
+      if nums[i] > 0:
+        res.append(i + 1)
+    return res
 ```
 
 ## Medium
