@@ -3,8 +3,6 @@
 To do list
 
 - Easy
-  - 448 Find All Numbers Disappeared in an Array
-  - 605 Can Place Flowers
   - 724 Find Pivot Index
 - Medium
 - 36 Valid Sudoku
@@ -246,6 +244,10 @@ class Solution:
         res.append(i + 1)
     return res
 ```
+
+### 605. Can Place Flowers
+
+[605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/description/)
 
 ## Medium
 
