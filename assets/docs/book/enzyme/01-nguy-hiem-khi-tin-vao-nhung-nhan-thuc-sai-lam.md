@@ -1,6 +1,6 @@
 # nguy hiểm khi tin vào những nhận thức sai lầm
 
-## Phương pháp sống khỏe đến 100 tuổi
+## Phương Pháp Sống Khỏe Đến 100 Tuổi
 
 Người 100 tuổi sống khỏe mạnh mỗi ngày hay người 100 tuổi bệnh tật triền miên, thì cũng đều được tính là "người 100 tuổi"
 
@@ -8,7 +8,7 @@ Sự khác nhau giữa người 100 tuổi sống khỏe mạnh và người 100
 
 Con người có khỏe mạnh hay không phụ thuộc vào chế độ ăn uống và thói quen sinh hoạt hàng ngày
 
-## Những quan niệm phổ biến về sức khỏe đều sai lầm
+## Những Quan Niệm Phổ Biến Về Sức Khỏe Đều Sai Lầm
 
 Các phương pháp vốn vẫn được tin tưởng là tốt cho sức khỏe lại chứa rất nhiều yếu tố gây hại đến cơ thể. Nhưng nếu đứng ở góc độ một bác sĩ nội soi dạ dày mà nói thì đây đều là những "phương pháp sai lầm", gây ảnh hường xấu đến vị tướng và tràng tướng
 

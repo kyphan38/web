@@ -7,12 +7,13 @@ const config: Config = {
   favicon: 'img/earth.ico',
 
   url: 'https://kyphan38.github.io',
-  baseUrl: '/web/',
+  baseUrl: '/',
 
   organizationName: 'kyphan38',
-  projectName: 'web',
+  projectName: 'kyphan38.github.io',
   deploymentBranch: 'gh-pages',
 
+  trailingSlash: false,
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
@@ -51,31 +52,32 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: 'Ky Phan',
+      title: 'kp',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/earth.png',
+        alt: 'earth',
+        src: 'img/bw_earth.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Docs',
+          label: 'docs',
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/travel', label: 'Travel', position: 'left'},
       ],
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} Ky Phan. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
   } satisfies Preset.ThemeConfig,
 };
 

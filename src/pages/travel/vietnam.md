@@ -1,3 +1,0 @@
-# Vietnam Trip
-
-Under plan

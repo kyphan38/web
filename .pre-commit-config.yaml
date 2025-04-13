@@ -5,6 +5,6 @@ repos:
       - id: markdownlint
         name: Markdownlint
         description: Run markdownlint on your Markdown files
-        entry: mdl -r ~MD013,~MD007,~MD036,~MD026
+        entry: mdl -r ~MD013,~MD007,~MD036,~MD024,~MD026
         language: ruby
         files: \.(md|mdown|markdown|myst)$

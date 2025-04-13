@@ -9,7 +9,7 @@ Tác giả
 - Trở thành trưởng khoa nội soi dạ dày của một bệnh viện lớn tại Mỹ ở tuổi 30
 - Đã khám cho hơn 300000 bệnh nhân
 
-Từ kết quả lâm sàng khi tiến hành kiểm tra dạ dày của hơn 300000 người, tác giả đã rút ra kết luận:
+Từ kết quả lâm sàng khi tiến hành kiểm tra dạ dày của hơn 300000 người, tác giả đã rút ra kết luận
 
 - Người có sức khỏe tốt là người có dạ dày đẹp, ngược lại, người có sức khỏe kém là người có dạ dày không đẹp
 
