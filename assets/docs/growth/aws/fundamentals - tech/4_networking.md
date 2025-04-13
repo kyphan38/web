@@ -155,7 +155,7 @@ Summary
 - IP uses source and destination IP addresses for communication
 - IP packets may be delivered out of order
 
-### Layer 4 - Transport - Segment - Continue here 0033
+### Layer 4 - Transport - Segment - Continue Here 0033
 
 Problems
 

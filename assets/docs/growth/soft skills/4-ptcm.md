@@ -103,7 +103,7 @@ Intersection of prioritization, time management, and capacity planning
 - Capacity Planning ensures how much you can take on without overloading
 - These elements work together to ensure focus, efficiency, and sustainable productivity
 
-**Summary**
+Summary
 
 - This section highlights the alignment created by prioritizing tasks that align with the highest and most effective business need
 - Prioritization is usually done by assessing effort, time, value, and urgency
@@ -166,7 +166,7 @@ Common challenges and solutions
   - Break tasks into smaller, measurable chunks
   - Build in buffer time for unexpected delays
 
-**Summary**
+Summary
 
 - Time management is critically important to almost all aspects of DevOps, IT, and Software Delivery
 - Parkinson's Law, Time Blocking, and other methods were covered to understand time management concepts
@@ -219,7 +219,7 @@ Visualization
 
 - A picture is worth a thousand words, and in capacity planning, a visual tool can be worth even more
 
-**Summary**
+Summary
 
 - Capacity planning is an essential part of connecting resources with tasks
 - Capacity planning is fueled by Prioritization and sustained by time management

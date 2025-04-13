@@ -108,7 +108,7 @@ Empowerment in action
     - Push the idea that leadership is about evolving the people, the systems, and the ways of working. Keep asking: how can we do this better? How can we fail differently next time?
     - Teams develop a mindset of learning and adaptation. They stop fearing change and start seeking it deliberately, constructively, and together
 
-**Summary**
+Summary
 
 - As covered here, communication is extremely important in DevOps Leadership
 - Empowerment is about expressing and doing actions of trust, support, and growth in your teams and your people
@@ -201,7 +201,7 @@ Trust and safety in action
     - Affirm that safety emotional, psychological, physical is a non-negotiable. Set the tone that disrespect, manipulation, or harmful behavior won't be tolerated, no matter how "skilled" the individual is
     - Teams feel protected. People are more willing to speak up, share ideas, and challenge assumptions all key behaviors in high-functioning DevOps environments
 
-**Summary**
+Summary
 
 - Trust and safety are agreements that must be kept to have a high-performing team
 - Trust and safety are both built on consistency, communication, and respect
@@ -243,7 +243,7 @@ Achieving trust through consistency
 - Misalignment is one of the most destructive forces in teams, departments, and organizations
 - It's better for a team to fail and learn together than for four people to go in one direction while one person goes another even if that one person is "right" and the others are "wrong"
 
-**Summary**
+Summary
 
 - Align words with actions to build credibility and trust
 - Relying solely on actions will not get you the team, the agreements, and the connections that you need for DevOps teamwork
@@ -310,7 +310,7 @@ Cultivating ethical influence
 - Respect team autonomy and diverse perspectives
 - Build trust through consistency and empathy
 
-**Summary**
+Summary
 
 - Defined persuasion versus manipulation in DevOps
 - Reviewed the benefits of persuasion and the dangers of manipulation
@@ -345,3 +345,33 @@ Actions and result
 - Create a culture of listening and integrity
   - Leaders should communicate openly, listen actively, show empathy, and align their actions with shared values all to nurture that invisible agreement
   - These habits build high-performing, resilient teams where people trust each other, innovate safely, and grow even through difficult situations
+
+## Quiz
+
+| Number | Question                                                                                           | Answer                                                                                                    |
+|--------|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| 1      | Navigating professionalism challenges in DevOps involves:                                           | Using assertive communication and seeking feedback                                                       |
+| 2      | The '50/70 rule' for eye contact suggests                                                           | Maintaining eye contact 50% of the time while speaking and 70% while listening                             |
+| 3      | In the case study about empowerment, effective leadership strategies included                       | Delegating responsibilities and providing resources and support                                          |
+| 4      | Balancing personal engagement and professional detachment in leadership means                      | Maintaining objectivity while being empathetic                                                            |
+| 5      | Collaboration in DevOps is                                                                          | The backbone of integration between development, operations, and other functions                          |
+| 6      | Recognizing team achievements in DevOps                                                             | Helps boost team morale and motivation                                                                    |
+| 7      | True or False: Leaders should always say one thing and do another to keep the team guessing         | False                                                                                                     |
+| 8      | Clear goals, boundaries, and expectations in DevOps leadership                                      | Help guide team behavior and create clarity                                                               |
+| 9      | Ethical persuasion involves                                                                         | Convincing others through reasoning and moral appeal                                                      |
+| 10     | Trust in a DevOps environment is                                                                   | The foundation for effective collaboration                                                                 |
+| 11     | The 7 C's of effective verbal communication include being                                            | Clear, Concise, Correct, Coherent, Complete, Concrete, Courteous                                          |
+| 12     | Acting in accordance with agreements as a leader                                                    | Demonstrates reliability and builds trust                                                                 |
+| 13     | Effective communication in DevOps leadership involves                                              | Encouraging open dialogue and transparency                                                                |
+| 14     | In the case study about trust and safety, the broken trust was restored by                         | Removing the team member who did not keep agreements                                                      |
+| 15     | Continuous improvement in DevOps involves                                                           | Constantly seeking ways to optimize processes and tools                                                   |
+| 16     | Experimentation in DevOps is                                                                       | The fuel for innovation and growth                                                                        |
+| 17     | Mirroring in body language communication involves                                                 | Subtly mimicking the body language of others to create rapport                                           |
+| 18     | Leadership in DevOps is primarily about                                                             | Inspiring people                                                                                         |
+| 19     | The unspoken compact of leadership in "The Loudest Promise" includes                               | Leading with respect and dignity                                                                          |
+| 20     | Which of the following is an example of an explicit professional behavior?                          | Maintaining confidentiality and adhering to communication protocols                                        |
+| 21     | Professionalism in DevOps communication is important                                               | In all forms of daily communication                                                                       |
+| 22     | Non-verbal communication in DevOps                                                                  | Can convey emotions and attitudes more accurately than words                                              |
+| 23     | Visual aids in written communication                                                                | Can significantly enhance readability and effectiveness                                                  |
+| 24     | Effective written communication in DevOps                                                           | Requires distinct styles and approaches for different mediums                                            |
+| 25     | Which of the following best describes empowerment in a DevOps context?                              | Enabling teams to achieve their fullest potential                                                        |

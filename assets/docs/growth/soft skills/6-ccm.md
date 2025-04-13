@@ -66,7 +66,7 @@ Integrating a client-centric approach
 - Seek feedback and adapt to improve
   - Sharing your direction gives others a chance to confirm alignment or raise concerns
 
-**Summary**
+Summary
 
 - We explored a broader definition of client that included leaders, coworkers, employees, and your external clients
 - This concept is meant to encourage engagement and professionalism with all work relationships
@@ -119,7 +119,7 @@ Benefits of a holistic approach
 - Greater workplace satisfaction
 - Better professional development
 
-**Summary**
+Summary
 
 - This section walked you through the various perspectives around managing up, down, and sideways and the considerations for each
 - Managing outside the organization is included as a reminder of the various benefits of engaging with external clients
@@ -187,7 +187,7 @@ Delighting your customers
   - Creating engaging experiences
   - Ensuring customer satisfaction
 
-**Summary**
+Summary
 
 - Definition of internal and external clients - External clients are outside the company and are affected by your products or services
 - Strategies for external client management focus mainly on communication and expectation management
@@ -242,7 +242,7 @@ Being methodical - Key concepts
 - Focus on one task at a time
 - Take gradual, deliberate steps
 
-**Summary**
+Summary
 
 - The section talked about three things essential for client engagement
 - Critical thinking is essential because it allows us to systematically break down complex tasks and topics to simple actions
@@ -308,7 +308,7 @@ Building rapport and trust
 - Create rapport
   - Remember to connect on a human level. Show engagement, be social when appropriate, and send positive signals - professional relationships thrive on connection
 
-**Summary**
+Summary
 
 - This section covers a variety of ways to manage client expectations
 - Managing expectations is part of a program of clear communication, setting firm goals and boundaries, and building rapport and trust
@@ -383,7 +383,7 @@ Creating agreements to solve problems
 - Striving for genuine agreement
   - Aim for solutions that genuinely meet the needs and interests of all parties involved
 
-**Summary**
+Summary
 
 - This section highlights the skills and techniques that are necessary to navigate conflict in the workplace
 - It models the FBI behavioral change stairway model which includes active listening, rapport, empathy, and influence

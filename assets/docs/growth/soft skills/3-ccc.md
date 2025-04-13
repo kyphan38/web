@@ -33,7 +33,7 @@ A culture of knowledge sharing
 - Present at conferences and internal events
 - Run "Tech-Backs" and Lunch ‘n Learns to share insights informally
 
-**Summary**
+Summary
 
 - Teaching and learning are information-based ways to create connections within and outside teams
 - Teaching internally and externally also adds value to those audiences
@@ -73,7 +73,7 @@ Quality today, speed later
   - More sustainable, high-quality solutions
 - Though they may feel slower initially, they save time in the long run by reducing defects and increasing alignment
 
-**Summary**
+Summary
 
 - Co-creating and mobbing are group concepts to increase long-term output and collaboration
 - Co-creating is about co-creating documents, code, and tasks, while mobbing is similar but focuses on problem or troubleshooting
@@ -122,7 +122,7 @@ Why such interactions matter of DevOps cultures
   - Morale and cohesion
 - These moments humanize the workflow and reinforce a team-first mindset
 
-**Summary**
+Summary
 
 - The concept of social grease is about this hidden currency we acquire through informal interactions
 - These interactions based on curiosity about our co-workers and their lives outside of work create trust and cohesion
@@ -207,7 +207,7 @@ Environmental context
   - Virtual environments reduce spatial dynamics but can limit subtle cues like tone, eye contact, or side conversations
 - Designing inclusive and intentional environments (e.g., cameras on/off policy, async-friendly tools) enhances communication equity
 
-**Summary**
+Summary
 
 - Observation is the art and act of noticing and looking at people beyond words
 - Observation is necessary to get feedback on how your communication is being received
@@ -282,7 +282,7 @@ Navigating resistance in visibility
   - Involve them directly in designing the visibility framework. Set boundaries with firm yet empathetic communication
   - Assign them to help define what should be shown on the board and clarify that visibility is a non-negotiable team standard moving forward
 
-**Summary**
+Summary
 
 - Making results visible is about showing your work for feedback, confirmation, and correction
 - Scrum and Kanban are common frameworks for doing and showing work in progress
@@ -316,3 +316,31 @@ Actions and result
 - Lead with alignment, not control
   - Choose to lead through connection, trust, and shared purpose instead of micromanaging, undermining, or centralizing decisions. Be the kind of leader who lifts people up
   - High-performing, resilient teams emerge. Teams that can navigate complexity, adapt to change, and support one another without being dependent on a single person to succeed
+
+## Quiz
+
+| Number | Question                                                                                           | Answer                                                                                                    |
+|--------|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| 1      | In the "Social Grease and the Water Cooler" summary, what does a coffee cup or chat bubbles symbolize? | Informal interactions                                                                                     |
+| 2      | What does the presentation in Step 2 highlight?                                                    | How teaching and learning within teams enhance collaboration                                               |
+| 3      | In the Co-creating and Mobbing summary, what do interlocking hands, a light bulb, and an upward trending graph symbolize, respectively? | Collaboration, innovation, and team growth                                                                |
+| 4      | What shapes the rhythm of team success in DevOps, according to the introduction?                    | Every step in collaboration, collusion, and conspiracy                                                    |
+| 5      | What impact can the initial slower pace of co-creating and mobbing have in the long run, according to the "Quality Over Speed: A Strategic Approach" slide? | Higher quality results and more efficient long-term outcomes                                               |
+| 6      | In the Teaching and Learning summary, what symbolizes growth, collaboration, and knowledge sharing respectively? | A growing plant, interlocking hands, and an open book or light bulb                                      |
+| 7      | According to the "Understanding the Water Cooler Metaphor" slide, what often leads to unexpected insights and strengthened relationships? | Colleagues gathering for informal chats at the “Water Cooler”                                              |
+| 8      | What does collective learning create, according to the slide on "Growing Together: Strengthening Team Bonds"? | A supportive environment where team members feel valued and understood                                   |
+| 9      | What does showing genuine curiosity and interest in fellow team members foster, as per the "Fostering Team Cohesion through Curiosity" slide? | An inclusive and supportive team environment                                                              |
+| 10     | What factors to consider to master observation and context?                                         | Body language, non-verbal cues, and the operating context                                                 |
+| 11     | Which of the following is not mentioned as a team learning activity in the "Learning Together: Beyond Traditional Education" slide? | Working on individual projects separately                                                                 |
+| 12     | What does a culture of teaching and learning foster in DevOps teams, according to the presentation on "Cultivating a Learning Culture"? | Continuous improvement and adaptability                                                                   |
+| 13     | In mob programming, how many team members work on the same problem at the same time and place?       | The whole team                                                                                           |
+| 14     | What does co-creating and mobbing help harness for superior outcomes, as per the "Collaborative Action for Enhanced Outcomes" slide? | The collective power of the team                                                                          |
+| 15     | How do co-creating and mobbing contribute to developing a strong sense of team identity?           | Through collective achievements and overcoming challenges together                                         |
+| 16     | Sharing what you are doing and the problems and solutions you are creating is an excellent way to:   | Create alignment and connection within and outside a team                                                 |
+| 17     | What does the introduction quote in the Co-creating and Mobbing section suggest about collective action in DevOps? | It breeds innovation, automation, and efficiency                                                          |
+| 18     | How do co-creating and mobbing differ from traditional methods, according to the "Understanding Co-creating and Mobbing" slide? | They focus on joint action and shared responsibility                                                      |
+| 19     | What is the key focus of Step 4 in the "Social Grease and the Water Cooler" section?               | How informal interactions contribute to team bonding and idea exchange                                    |
+| 20     | What is the focus of the presentation on "The Power of Collective Growth" in the Teaching and Learning section? | How teaching and learning strengthen team bonds and collaboration                                        |
+| 21     | Co-creating and mobbing together allow teams to                                                     | Go farther, like running a marathon                                                                       |
+| 22     | What can informal interactions like "how is your day" and "how was your weekend" create?            | Social currency called social grease                                                                      |
+| 23     | What happened to the team that made anti-collaboration choices?                                     | The team was wrecked                                                                                     |

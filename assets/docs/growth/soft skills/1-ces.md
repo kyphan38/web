@@ -73,7 +73,7 @@ Courteous
 
 > Convey clear, correct, and concrete concepts in a concise, coherent, and courteous manner for complete comprehension
 
-**Summary**
+Summary
 
 - This section on Communication skills focuses on qualities and attributes that are commonly agreed as beneficial
 - We review the 7 C's, namely, Clear, Concise, Correct, Coherent, Complete, Concrete, and Courteous
@@ -128,7 +128,7 @@ Visual aids and formatting for readability
   - Body: Includes context, purpose, and relevant details
   - Closing: Courteous and appreciative to encourage goodwill and response
 
-**Summary**
+Summary
 
 - Written skills also benefit from the 7 C's, but there is more variability to written communication
 - The medium (instant messaging, email, text, design document, etc.) greatly influences what is appropriate communication
@@ -194,7 +194,7 @@ Personal space management
   - Personal preference - Respect individual boundaries
   - Culture - Some cultures value close proximity, others value distance
 
-**Summary**
+Summary
 
 - Non-verbal communication encompasses aspects like tone of voice, body language, facial expressions, eye contact, and personal space
 - This can play a pivotal role in DevOps communications and is considered more important than the information
@@ -257,7 +257,7 @@ Strategies to navigate challenges
   - Show empathy and compassion during tough interactions
   - Seek constructive feedback to improve behavior and communication
 
-**Summary**
+Summary
 
 - Professionalism is a set of behaviors, conduct, and attitude for an individual at work
 - Its definition can be defined or hidden in the culture of the workplace
@@ -292,3 +292,33 @@ Actions and result
 - Tailor the message to the listener
   - Considered the audience and adjusted tone, language, and examples accordingly engineers got ops-specific examples, leaders got value and ROI frames
   - The audience stayed engaged because the speaker spoke their language. They didn't have to translate or connect the dots, it was done for them
+
+## Quiz
+
+| Number | Question                                                                                           | Answer                                                                                                    |
+|--------|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| 1      | Non-verbal communication includes                                                                  | Body language, facial expression, tone of voice                                                            |
+| 2      | When communicating verbally, being concise means                                                   | Expressing thoughts and ideas in as few words as necessary                                                 |
+| 3      | Personal space in non-verbal communication refers to                                               | The physical distance we maintain with others                                                             |
+| 4      | When tailoring your message to the audience, you should                                            | Consider the recipient's role, familiarity with the topic, and preferred communication style               |
+| 5      | True or False: The 7 C's of effective verbal communication do not apply to written communication     | False                                                                                                     |
+| 6      | Which of these is not a tip for concrete communication?                                             | Overuse pronouns like 'it', 'this', 'that', etc., without clear antecedents                               |
+| 7      | Visual aids and proper formatting in written communication can                                     | Significantly enhance readability and effectiveness                                                       |
+| 8      | Correct communication involves                                                                     | Adhering to the rules of the language                                                                     |
+| 9      | The abbreviation "KISS" in the context of clear communication stands for                           | Keep It Simple and Straightforward                                                                         |
+| 10     | Complete communication means                                                                        | Addressing all relevant points and answering potential questions within the communication itself           |
+| 11     | Different communication mediums in DevOps                                                          | Require distinct styles and approaches                                                                   |
+| 12     | Which of the following is not one of the 7 C's of effective verbal communication?                  | Charismatic                                                                                               |
+| 13     | The 7 C's of effective verbal communication include being                                           | Clear, Concise, Correct, Coherent, Complete, Concrete, Courteous                                         |
+| 14     | Micro-expressions are                                                                                | Brief, involuntary facial expressions that reveal true emotions                                           |
+| 15     | Tone of voice in non-verbal communication can be                                                   | Upbeat questioning voice (lighter, open to dialogue), assertive/angry Voice (conveys authority, can be perceived as aggressive), and DJ voice (smooth, calm, controlled) |
+| 16     | True or False: Personal space preferences are universal and do not vary across cultures or individuals | False                                                                                                     |
+| 17     | The '50/70 rule' for eye contact suggests                                                           | Maintaining eye contact 50% of the time while speaking and 70% while listening                             |
+| 18     | True or False: Using filler words and unnecessary details can make your communication more concise  | False                                                                                                     |
+| 19     | True or False: In DevOps, it's better to respond to messages quickly without fully reading them to save time | False                                                                                                     |
+| 20     | Proofreading, grammar checking, and spell checking in written communication                       | Are essential for maintaining professionalism, clarity, and credibility                                  |
+| 21     | True or False: Courteous communication involves using a disrespectful tone and impolite language.  | False                                                                                                     |
+| 22     | Which of the following is an example of incoherent communication?                                  | "Our project deadline is next month. We had pizza for lunch. We need to speed up the work. Did you see the game last night?" |
+| 23     | The "5 Ws and H" to consider for complete communication are:                                        | Who, What, When, Where, Why, How                                                                         |
+| 24     | Concrete communication refers to                                                                  | Providing clear details and examples                                                                     |
+| 25     | Professionalism in the workplace is characterized by                                                | Being impartial and focused in the face of distractions                                                  |

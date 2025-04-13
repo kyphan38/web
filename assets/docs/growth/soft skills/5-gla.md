@@ -50,7 +50,7 @@ Growing your value to the business
 - As you grow, your value to the business grows especially in areas that the business needs
 - Learn &rarr; Business &rarr; Value
 
-**Summary**
+Summary
 
 - A mindset of continual improvement is necessary to be in the right frame of mind to grow and learn
 - This section covered the various benefits of having a learning mindset
@@ -101,7 +101,7 @@ Applying learning in practice
 - &rarr; Learning is only as valuable as its application in real-world scenarios
 - &rarr; Knowledge is potential, application is where the real power lies
 
-**Summary**
+Summary
 
 - This section is all about habits of learning and growing
 - Setting learning goals that are S.M.A.R.T. and relevant to your business, organization, department, or project is essential
@@ -171,7 +171,7 @@ Exploring learning styles
   - Teach others what you're learning - explaining a concept often deepens your own understanding
   - Practice simplifying and explaining ideas in plain language
 
-**Summary**
+Summary
 
 - The section covers the difficulty and challenges of learning something
 - It focuses on persistence and long-term versus quick, short-term efforts
