@@ -178,7 +178,7 @@ Observing how communication "lands"
 Observe, hypothesize, and experiment
 
 - Observation is the starting point of an iterative learning process
-- Observe &rarr; Form a Hypothesis &rarr; Take Action &rarr; Seek Feedback &rarr; Repeat
+- Observe &rarr; Form a Hypothesis &rarr; Take Action &rarr; Seek Feedback &rarr; [Repeat]
 - For example, if you notice decreased engagement in standups, hypothesize why (e.g., too long, not relevant), experiment with changes (shorter meetings, rotating facilitators), and assess results
 
 Cultural context

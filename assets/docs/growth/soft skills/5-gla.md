@@ -203,3 +203,33 @@ Actions and result
 - Embrace meta-skills
   - Intentionally improve in areas like communication, collaboration, and learning how to learn - things that aren't tech tools but are critical in the workplace
   - You stand out as a more effective, well-rounded engineer who can thrive in fast-moving, team-driven environments
+
+## Quiz
+
+| Number | Question                                                                                           | Answer                                                                                                    |
+|--------|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| 1      | What is the purpose of the pre-assessment segment in the "Are you already someone open who adapts well?" slide? | To evaluate whether they are already a focused high-growth learner                                         |
+| 2      | According to the "Utilizing Resources for Enhanced Learning" slide, what does the wealth of resources and tools at our fingertips make learning? | More accessible than ever                                                                                 |
+| 3      | In the post-assessment, how does the success imagery compare to the pre-assessment?                 | The post-assessment has more success images                                                                |
+| 4      | What does the "Learning as a Driver of Business Success" slide explore?                           | How continuous learning directly contributes to achieving business objectives                             |
+| 5      | According to the "The Power of Learning Habits" slide, what is cultivating strong learning habits in the fast-paced world of DevOps? | The key to staying ahead                                                                                   |
+| 6      | According to the "Prioritizing Learning as a Key DevOps Value" slide, what is prioritizing learning about in DevOps? | Staying agile and responsive in a rapidly evolving field                                                  |
+| 7      | According to the "Navigating Cognitive Challenges in Adult Learning" slide, learning new skills as an adult in a technical field like DevOps comes with | Unique cognitive challenges                                                                                |
+| 8      | What does the "Recognizing Opportunities for Growth" slide focus on?                               | Strategies for identifying and seizing learning opportunities                                               |
+| 9      | According to the "Stagnation Leads to Obsolescence" slide, what can failing to keep up with changes in DevOps lead to? | Skills becoming outdated, reducing competitiveness                                                         |
+| 10     | What is the focus of the scenario video in the "Adapting to Change" section?                       | Common challenges encountered when faced with change                                                       |
+| 11     | According to the "Goal Setting for Personal Development" slide, setting clear and achievable goals in the journey of continuous learning is | A roadmap to success                                                                                       |
+| 12     | According to the "Embracing the Learning Curve" slide, what is crucial for success in the journey of acquiring new skills? | Understanding and embracing the learning curve                                                             |
+| 13     | What does the "Committing to Lifelong Learning" slide encourage the audience to do?                | Make a personal commitment to lifelong learning                                                            |
+| 14     | What does the "Learning from Mistakes" slide explore regarding mistakes in the learning process?   | The role of mistakes as invaluable learning tools                                                          |
+| 15     | What does the "From State to Skill Acquisition" slide explain about the journey of learning in DevOps? | It is a transformative pathway from an internal state to tangible skills                                   |
+| 16     | What does the presentation in the "Establishing Rituals for Growth and Learning" slide focus on?   | The concept of practices or rituals that promote personal and professional growth                         |
+| 17     | According to the "Demystifying Skill Acquisition in DevOps" slide, what is important in learning new technologies and methodologies? | The importance of patience, practice, and persistence                                                     |
+| 18     | What does the "Putting Knowledge into Action" slide focus on?                                      | The importance of applying new knowledge and skills in practical settings                                 |
+| 19     | According to the "Cultivating a Mindset for Continual Improvement" slide, what will the presentation explore? | The importance of fostering a mindset geared toward ongoing learning and improvement                      |
+| 20     | According to the "Beyond Technical Skills: Growing in Collaboration" slide, what is the power of soft skills like collaboration and communication? | Their importance cannot be overstated                                                                     |
+| 21     | What does the "Persistence and Practice" slide focus on?                                          | The importance of persistence and consistent practice in mastering new skills                             |
+| 22     | What does the "Mastering Innovation in DevOps" slide discuss regarding adopting new technologies?   | It is essential for innovation and survival in DevOps                                                      |
+| 23     | According to the "Exploring Diverse Learning Methods" slide, what can employing a variety of learning methods do in the diverse and dynamic landscape of DevOps? | Greatly enhance skill acquisition                                                                          |
+| 24     | What does the "Establishing a Consistent Learning Routine" slide emphasize about consistency in turning learning into a habit? | Consistency is key                                                                                         |
+| 25     | What does the presentation in the "Embracing Continuous Learning in DevOps" slide introduce continuous learning as? | A foundational aspect of the DevOps culture                                                                |

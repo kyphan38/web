@@ -202,7 +202,7 @@ Effective capacity planning
 Strategies
 
 - Regular workload review timeline
-  - Start &rarr; initial review &rarr; first stage review &rarr; second stage review &rarr; final review &rarr; end
+  - Start &rarr; Initial review &rarr; First stage review &rarr; Second stage review &rarr; Final review &rarr; End
 - Historical data line graph
   - Analyze past performance and capacity trends to inform future planning
 - Capacity planning tools
@@ -253,3 +253,33 @@ Actions and result
 - Stay systematic, not emotional
   - Use structured tools, prioritization systems, capacity planning, transparent task boards to handle changes calmly and logically
   - You protect your team's sanity, maintain momentum, and show leadership even when plans shift unexpectedly
+
+## Quiz
+
+| Number | Question                                                                                           | Answer                                                                                                    |
+|--------|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| 1      | What is the focus of the "Understanding Time Management in DevOps" slide?                          | Introducing the concept of time management and its importance in DevOps                                   |
+| 2      | According to the "Core Components of Effective Capacity Planning" slide, what does capacity planning involve? | Considering factors like team skill levels and tooling capacities                                         |
+| 3      | The Pareto Principle, as described in the "Effective Strategies for Prioritization" slide, states that | 20% of tasks contribute to 80% of the results                                                             |
+| 4      | According to the "Mastering the Art of Prioritization" slide, what is prioritization in the context of DevOps? | A strategic approach to achieving optimal outcomes                                                       |
+| 5      | What is the most important factor when choosing a prioritization method, according to the "Effective Strategies for Prioritization" slide? | Selecting a method that achieves desired outcomes                                                        |
+| 6      | What does the "Adapting to Rapidly Changing Realities" slide suggest about priorities in DevOps?     | Priorities should be evaluated and adjusted daily                                                        |
+| 7      | According to the "Managing Project Work vs Interrupt-Driven Tasks" slide, what is the consequence of mixing project work and interrupt-driven tasks? | It is very hard and must be communicated                                                                  |
+| 8      | Which of the following is not mentioned as a key principle of prioritization in the "Understanding Prioritization" slide? | The LIFO (Last In, First Out) principle                                                                   |
+| 9      | What does the phrase "seeing is more than believing" refer to in the "Visual Tools in Capacity Planning" slide? | Visualizing capacity planning helps in understanding and managing work effectively                        |
+| 10     | What does the "Unveiling the Magic of Capacity Planning" slide describe capacity planning as?      | A process for determining the production capacity needed to meet changing demands                         |
+| 11     | What is the main difference between project work and interrupt-driven tasks, as described in the "Managing Project Work vs Interrupt-Driven Tasks" slide? | Interrupt-driven tasks are unforeseen and require immediate attention                                    |
+| 12     | What is the purpose of the "Addressing Common Time Management Challenges" slide?                   | To identify common time management challenges and provide strategies to overcome them                     |
+| 13     | Which of the following is not mentioned as a tool for visualizing capacity planning in the "Visual Tools in Capacity Planning" slide? | Burndown charts                                                                                           |
+| 14     | Which of the following is a strategy for responding to changes in the project landscape, as per the "Adapting to Rapidly Changing Realities" slide? | Encouraging open communication within the team to identify and address shifting priorities               |
+| 15     | According to the "Synergizing Time Management with Prioritization and Capacity Planning" slide, how does capacity planning contribute to effective time management? | Understanding the team's capacity helps in realistically scheduling and prioritizing tasks                |
+| 16     | What does the "Effective Communication of Priority Changes" slide emphasize about communicating changes in priorities? | The way priority changes are communicated is as important as the changes themselves                      |
+| 17     | What does the "Synergizing Time Management with Prioritization and Capacity Planning" slide suggest about the relationship between time management, prioritization, and capacity planning? | They are deeply interconnected                                                                            |
+| 18     | What is the purpose of the self-assessment segment in the "Do You Already Manage Priorities and Time Well?" slide? | To help the audience gauge their current skills in priority and time management                          |
+| 19     | What does the "Strategic Approaches to Capacity Planning" slide recommend for predicting future capacity needs? | Analyzing historical data from previous projects                                                         |
+| 20     | According to the "Exploring Key Time Management Theories" slide, what does Parkinson's Law state?   | Work expands to fill the time available for its completion                                               |
+| 21     | Which of the following is not listed as a benefit of capacity planning in the "Benefits of Effective Capacity Planning" slide? | Increased project budgets                                                                                 |
+| 22     | What does the Weighted Shortest Job First (WSJF) model focus on, according to the "Effective Strategies for Prioritization" slide? | Delivering the most value in the shortest time frame                                                     |
+| 23     | Which time management technique involves working in focused intervals with short breaks, as described in the "Exploring Key Time Management Theories" slide? | The Pomodoro Technique                                                                                    |
+| 24     | According to the "Strategic Approaches to Capacity Planning" slide, what is the benefit of fostering open communication and collaboration when planning capacity? | It maintains transparency and allows for clear documentation of plans and changes                        |
+| 25     | Which of the following is listed as a time management challenge in the "Addressing Common Time Management Challenges" slide? | Underestimating the time required for tasks                                                              |
