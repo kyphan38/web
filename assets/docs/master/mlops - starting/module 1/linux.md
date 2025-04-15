@@ -73,7 +73,7 @@ which telnet
 ls /usr/bin | grep telnet
 ```
 
-## Shell, Console, and Terminal - Continue - 1:12:51
+## Shell, Console, and Terminal - Continue - 1:19:13
 
 Console
 

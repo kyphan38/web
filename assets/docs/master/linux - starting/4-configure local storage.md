@@ -1,0 +1,1 @@
+# configure local storage

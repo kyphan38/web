@@ -22,10 +22,6 @@ We need to generate a random key for encryption. The key should be 256 bits (32 
 openssl rand -out secret.key 32
 ```
 
-- `openssl rand`: OpenSSL's random number generator to create a key
-- `out secret.key`: The output file where the generated key will be stored
-- `32`: The key length in bytes (32 bytes = 256 bits)
-
 ### Step 2: Create a Simple File
 
 **Sever: A**
@@ -36,10 +32,6 @@ Create a plain text file for encryption
 echo "This is a simple line of code" > text.txt
 ```
 
-- `echo`: Outputs the specified text to the console
-- `>:` Redirects the output of the echo command to a file
-- `text.txt`: The file name that will contain the plain text
-
 ### Step 3: Encrypt the File
 
 **Sever: A**
@@ -49,13 +41,6 @@ Use the above `secret.key` to encrypt the `text.txt`
 ``` bash
 openssl enc -aes-256-cbc -pbkdf2 -in text.txt -out text_encrypted.dat -pass file:./secret.key
 ```
-
-- `openssl enc`: OpenSSL's encryption function
-- `-aes-256-cbc`: The AES-256 encryption method in CBC mode
-- `-pbkdf2`: Uses PBKDF2 (Password-Based Key Derivation Function 2) for better security
-- `-in text.txt`: The the file to encrypt
-- `-out text_encrypted.dat`: The output file where the encrypted content will be stored
-- `-pass file:./secret.key`: The file path of secret key for decryption
 
 ### Step 4: Transfer the Key to Server B
 
@@ -87,8 +72,6 @@ Use the secret key to decrypt the file
 ``` bash
 openssl enc -d -aes-256-cbc -pbkdf2 -in text_encrypted.dat -out text_decrypted.txt -pass file:./secret.key
 ```
-
-- `-d`: To decrypt the file
 
 ### Drawbacks
 
@@ -125,16 +108,11 @@ Generate the private key using the following command. You will be prompted to en
 openssl genpkey -algorithm RSA -aes256 -out server_private_key.pem
 ```
 
-- `-algorithm RSA`: The encryption algorithm is RSA
-- `-aes256`: The AES-256 algorithm (symmetric encryption)
-
 Generate the public key from the private key
 
 ``` bash
 openssl rsa -pubout -in server_private_key.pem -out server_public_key.pem
 ```
-
-- `-pubout`: Tells OpenSSL to output the public key
 
 **User**
 
@@ -181,11 +159,6 @@ Use `server_public_key.pem` to encrypt the file
 openssl pkeyutl -encrypt -inkey server_public_key.pem -pubin -in text.txt -out user_text_encrypted.dat
 ```
 
-- `openssl pkeyutl`: A general-purpose OpenSSL tool used for encryption and signing using public/private keys
-- `-encrypt`: Specifies that the operation is encryption
-- `-inkey public_key.pem`: The public key file for encryption
-- `-pubin`: Tells OpenSSL that the provided key is a public key
-
 ### Step 4: User Transfers File to Server
 
 Transfer the encrypted file to Server
@@ -201,9 +174,6 @@ Use `server_private_key.pem` to decrypt the file
 ``` bash
 openssl pkeyutl -decrypt -inkey server_private_key.pem -in user_text_encrypted.dat -out user_text_decrypted.txt
 ```
-
-- `-decrypt`: Specifies that the operation is decryption
-- `-inkey private_key.pem`: The private key for decryption
 
 ### Step 6: Sever Creates and Encrypts File
 

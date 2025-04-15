@@ -22,10 +22,6 @@ ssh-keygen -t rsa -b 4096 -f ~/.ssh/server-ssh
 server-ssh (private key)  server-ssh.pub (public key)
 ```
 
-- `-t rsa`: Type of key (RSA)
-- `-b 4096`: 4096-bit for stronger security
-- `-f`: File name and path for key to avoid default name
-
 ### Step 2: Copy Public Key to Remote Server
 
 Append public key to `~/.ssh/authorized_keys` in remote server
