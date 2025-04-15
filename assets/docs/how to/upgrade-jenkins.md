@@ -1,4 +1,4 @@
-# implement jenkins - pending
+# upgrade jenkins - pending
 
 ## Install Jenkins
 
