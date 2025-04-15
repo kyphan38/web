@@ -1,4 +1,4 @@
-# implement vault login using tls
+# implement vault login using tls - pending
 
 ```bash
 mkdir -p ~/vault-certs/read/.key

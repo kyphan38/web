@@ -405,7 +405,7 @@ policies          ["default", "training"]
 
 Directions: Homepage &rarr; Profile &rarr; Copy token
 
-## Managing Tokens Using API - Continue
+## Managing Tokens Using API
 
 Key features
 
@@ -721,7 +721,8 @@ Key features
 - Every non-root token has a TTL, defining its validity period from creation or renewal
   - Example: A new token with a 30-minute TTL is valid for 30 minutes from creation
   - Example: A renewed token gets a fresh 30-minute TTL
-- When TTL expires, the token is revoked and becomes invalid for authentication. Renewal must occur before expiration. Tokens may also have a Max TTL, limiting renewals; once reached, the token cannot be renewed further
+- When TTL expires, the token is revoked and becomes invalid for authentication. Renewal must occur before expiration
+  - Tokens may also have a Max TTL, limiting renewals; once reached, the token cannot be renewed further
 
 A token can have a TTL and a Max TTL
 
@@ -766,30 +767,30 @@ vault token create -policy=training
 
 ## Create a Token Based on Use Cases
 
-Long-Running Application
+Long-running application
 
 - Needs: App cannot regenerate tokens/secrets; token renewable indefinitely
-- Solution: Periodic Token
+- Solution: periodic token
 
-Limited Use
+Limited use
 
 - Needs: Token usable only 3 times, regardless of TTL
-- Solution: Service Token with Use Limits
+- Solution: service token with use limits
 
-Independent Lifecycle
+Independent lifecycle
 
 - Needs: Token unaffected by parent's lifecycle, with extended expiration
-- Solution: Orphan Token
+- Solution: orphan token
 
 CIDR
 
 - Needs: Token used by a specific host or within a certain network block
-- Solution: CIDR-Bound Token
+- Solution: CIDR-bound token
 
-Replication and Efficiency
+Replication and efficiency
 
 - Needs: Token replicated across clusters, minimal storage overhead for mass creation
-- Solution: Batch Token
+- Solution: batch token
 
 ## Lab
 

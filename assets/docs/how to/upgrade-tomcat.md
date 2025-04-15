@@ -1,4 +1,8 @@
-# implement tomcat
+# upgrade tomcat
+
+## Prerequisites
+
+- System: Ubuntu Server with root or sudo access and network connectivity
 
 ## Install Tomcat
 
@@ -20,11 +24,6 @@ Create a system user for Tomcat (optional but recommended)
 sudo useradd -m -U -s /bin/false tomcat
 ```
 
-- `useradd`: Adds new user
-- `-m`: Create a home directory for the user. If the directory does not exist, it will be created
-- `-U`: Create a group with the same name as the user `tomcat` and assign the user to it
-- `-s /bin/false`: Set the user's shell to be prevented login since it is not a valid shell (it immediately exists)
-
 Download specific version of Tomcat (9.0.82)
 
 ```bash
@@ -39,19 +38,11 @@ sudo mkdir /opt/tomcat-9.0.82
 sudo tar -xzvf apache-tomcat-9.0.82.tar.gz -C /opt/tomcat-9.0.82 --strip-components=1
 ```
 
-- `xzvf`: Extract, gzip, verbose, file
-- `-C`: Change extracted directory
-- `--strip-components`: Remove the levels of directories from the archive's file paths during extraction
-
 Creating a symbolic link `/opt/tomcat` pointing to the specific version makes upgrades easier - you can just update the link without changing other configs
 
 ```bash
 sudo ln -sfn /opt/tomcat-9.0.82 /opt/tomcat
 ```
-
-- `-s`: Symbolic
-- `-f`: Force overwrite
-- `-n`: Avoid dereferencing
 
 Set permissions
 
