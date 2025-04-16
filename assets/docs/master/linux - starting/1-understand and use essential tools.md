@@ -1,6 +1,6 @@
 # understand and use essential tool
 
-## Access a Shell Prompt and Issue Commands With Correct Syntax
+## Command Line Basics
 
 Login methods
 
@@ -25,7 +25,7 @@ ssh aaron@192.168.0.17
 aaron@192.168.0.17's password:
 ```
 
-## Login and switch users in multi-user targets
+## Logging in and Switching Users
 
 Security features
 
@@ -95,9 +95,9 @@ sudo:x:27:kyphan
 kyphan:x:1001:
 ```
 
-Switching users
+Switch users
 
-- su (switch user)
+- `su`
   - Switches to another user account. If no user is specified, it defaults to root
   - Requires the target user's password with `su -`
   - Directly using su to become root for extended periods or sharing the root password is often discouraged for security reasons
@@ -115,7 +115,7 @@ Password:
 root
 ```
 
-- sudo 
+- `sudo`
   - Allows permitted users to execute specific commands as another user (typically root) without needing the target user's password
   - It requires the user's own password for authentication
   - Provides better accountability and allows granting specific, limited administrative privileges instead of full root access
@@ -143,4 +143,160 @@ root    ALL=(ALL:ALL) ALL
 grep '^root:' /etc/passwd
 ---
 root:x:0:0:root:/root:/bin/bash
+```
+
+## Using System Documentation
+
+Commands
+
+- `--help`: Displays a brief summary of their usage and options
+
+```bash
+ls --help
+
+# Pager
+journalctl --help
+```
+
+- `man`: Displays a comprehensive manual pages
+
+```bash
+man journalctl
+man man
+man 1 printf
+man 3 printf
+```
+
+- `apropos`: Searches the names and short descriptions of all manual pages for a specific keyword
+
+```bash
+apropos director
+apropos -s 1,8 director
+
+# Update the manual page index database
+sudo mandb
+```
+
+## Additional System Documentation
+
+- `info`: Access documentation in the GNU Info format
+
+```bash
+info bash
+```
+
+- `/usr/share/doc`: Contains supplementary documentation provided by installed packages
+
+```bash
+cd /usr/share/doc/bash
+
+less INTRO
+
+grep "command" INTRO
+```
+
+## Working With Files and Directories
+
+List files and directories
+
+- `ls`: Lists the contents of a directory
+
+```bash
+ls
+ls -a
+ls -l /var/log
+ls -lah
+```
+
+Filesystem tree
+
+- Current working directory
+- Relative path
+- Absolute path
+
+```bash
+cd /var/log
+cd -
+cd ..
+```
+
+Create files
+
+- `touch`: Creates an empty file if it doesn't exist, or updates the access and modification timestamps of an existing file
+
+```bash
+touch /home/kyphan/text.txt
+```
+
+Create directories
+
+- `mkdir`
+
+```bash
+mkdir -p /home/kyphan/folder
+```
+
+Copy files and directories
+
+- `cp`: Copies files or entire directory structures
+
+```bash
+cp hello.text folder/
+cp hello.txt folder/hello_copy.txt
+
+# If hello does not exist, it copies only the contents, if not, it copies the entire folder/ to be hello/folder/
+cp -r folder/ hello/
+
+```
+
+Move files
+
+- `mv`: Moves files/directories to a different location or renames them
+
+```bash
+mv abc.txt hello/
+mv abc.txt abcd.txt
+mv folder/ new_folder/
+```
+
+Delete files and directories
+
+- `mv`: Removes files and directories
+
+```bash
+rm abc.txt
+
+rm -r folder
+```
+
+## Working With Links -- Continue
+
+Hard link
+
+## Lab
+
+### Logging in and System Documentation
+
+```bash
+man ssh | grep version
+ssh -V
+
+apropos hostname
+hostnamectl
+
+mandb
+
+man ssh | grep verbose
+ssh -v alex@localhost
+
+ls -la /home/bob/data
+
+ssh bob@dev-host01
+touch myfile
+
+apropos ssh
+sudo mandb
+
+apropos "NFS mounts"
+touch nfsmount.conf
 ```
