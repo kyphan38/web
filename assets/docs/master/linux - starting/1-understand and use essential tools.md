@@ -1,6 +1,6 @@
 # understand and use essential tool
 
-## Access a Shell prompt and issue commands with correct syntax
+## Access a Shell Prompt and Issue Commands With Correct Syntax
 
 Login methods
 
