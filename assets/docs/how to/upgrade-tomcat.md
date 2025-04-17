@@ -1,10 +1,16 @@
 # upgrade tomcat
 
-## Prerequisites
+## Information
+
+Prerequisites
 
 - System: Ubuntu Server with root or sudo access and network connectivity
 
-## Install Tomcat
+Technology
+
+- In-place upgrade
+
+## Install
 
 Update the system
 
@@ -107,7 +113,7 @@ Check Tomcat version
 sudo java -cp /opt/tomcat/lib/catalina.jar org.apache.catalina.util.ServerInfo
 ```
 
-## Backup Tomcat
+## Backup
 
 Create a backup of existing Tomcat deployment
 
@@ -124,7 +130,7 @@ sudo cp -r /opt/tomcat/webapps /backups/tomcat/tomcat-9.0.82-webapps-backup-$(da
 sudo cp /etc/systemd/system/tomcat.service /backups/tomcat/tomcat-9.0.82-tomcat.service-backup-$(date +%Y%m%d)
 ```
 
-## Upgrade Tomcat
+## Upgrade
 
 Download specific version of Tomcat (9.0.85)
 
@@ -182,7 +188,7 @@ Check new Tomcat version
 sudo java -cp /opt/tomcat/lib/catalina.jar org.apache.catalina.util.ServerInfo
 ```
 
-## Rollback Tomcat
+## Rollback
 
 Stop Tomcat
 
