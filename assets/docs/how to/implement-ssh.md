@@ -12,7 +12,7 @@ Common tools: `ssh`, `ssh-keygen`
 
 Key formats: `.pub` (public), `.pem` (private)
 
-### Steps 1: Generate SSH Key on Local Machine
+### Step 1: Generate SSH Key on Local Machine
 
 Execute the following command
 
