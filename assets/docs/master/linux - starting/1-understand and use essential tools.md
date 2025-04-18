@@ -269,9 +269,136 @@ rm abc.txt
 rm -r folder
 ```
 
-## Working With Links -- Continue
+## Working With Hard Links
 
-Hard link
+Inodes
+
+- An inode (index node) is a data structure on Unix-like filesystems
+- Each file and directory on the filesystem has a unique inode
+- It stores metadata about the file or directory, excluding the filename and the actual file content
+- Key metadata includes file type, permissions, owner, file size, timestamps, link count, pointers, etc.
+
+```bash
+# Create the file and write text into it
+echo "Picture of Milo the dog" > Pictures/family_dog.jpg
+
+# Display detailed status information
+stat Pictures/family_dog.jpg
+---
+File: Pictures/family_dog.jpg
+Size: 49 Blocks: 8 IO Block: 4096 regular file
+Device: fd00h/64768d Inode: 52946177 Links: 1
+Access: (0640/-rw-r-----) Uid: ( 1000/ aaron) Gid: ( 1005/ family)
+...
+```
+
+- How it works
+  - When accessing a path like Pictures/family_dog.jpg, the system locates the Pictures directory
+  - It searches the directory's contents for the entry family_dog.jpg
+  - This entry contains the corresponding inode number
+  - The system uses the inode number to find the inode structure itself
+  - From the inode, it reads metadata (like permissions) and gets the pointers to the data blocks to retrieve the file's content
+- Relationship
+  - A directory entry links a filename to an inode number
+  - The inode stores metadata and points to the data blocks
+
+![img](./img/1.png)
+
+Hard links
+
+- A hard link is simply another directory entry (another filename, potentially in a different directory) that points to the exact same inode as the original file
+- Benefit
+  - Allows multiple filenames to refer to the same file data without duplicating the data itself, thus saving storage space
+  - Instead of having two separate copies of a large file, you have two names pointing to one set of data blocks via the shared inode
+
+```bash
+# ln path_to_target_file path_to_link_file
+
+# Recursively copy the contents of Aaron's Pictures directory to Jane's
+cp –r /home/aaron/Pictures/ /home/jane/Pictures/
+
+# Create a hard link: Jane's path now points to the same inode as Aaron's path
+ln /home/aaron/Pictures/family_dog.jpg /home/jane/Pictures/family_dog.jpg
+
+# Display detailed status information
+stat Pictures/family_dog.jpg
+---
+File: Pictures/family_dog.jpg
+Size: 49 Blocks: 8 IO Block: 4096 regular file
+Device: fd00h/64768d Inode: 52946177 Links: 2
+Access: (0640/-rw-r-----) Uid: ( 1000/ aaron) Gid: ( 1005/ family)
+...
+
+# The link count for inode 52946177 decreases from 2 to 1
+rm /home/aaron/Pictures/family_dog.jpg
+
+# The link count for inode 52946177 decreases from 1 to 0
+rm /home/jane/Pictures/family_dog.jpg
+```
+
+- Data deletion
+  - The actual file data (disk blocks) associated with an inode is only marked for deletion (and eventually overwritten) when its link count reaches zero
+  - Removing a hard link (rm) just deletes that specific directory entry and decrements the inode's link count
+
+Limitiations and considerations
+
+- Only hardlink to files, not folders
+- Only hardlink to files on the same filesystem
+
+```bash
+# Add existing user 'aaron' to the supplementary group 'family'
+useradd -a -G family aaron
+
+# Add existing user 'jane' to the supplementary group 'family'
+useradd -a -G family jane
+
+# Change file permissions: owner=read/write, group=read/write, others=none
+chmod 660 /home/aaron/Pictures/family_dog.jpg
+```
+
+## Working With Soft Links
+
+Soft (symbolic) links
+
+- Unlike a hard link which points directly to an inode, a symbolic link's content is simply the pathname (text string) of another file or directory (the target)
+- It is used to create convenient access points, redirect paths, or link across different filesystems or partitions
+
+![img](./img/2.png)
+
+```bash
+# ln -s path_to_target_file path_to_link_file
+
+# Create a symbolic link named 'family_dog_shortcut.jpg' and points to the absolute path '/home/aaron/Pictures/family_dog.jpg'
+ln –s /home/aaron/Pictures/family_dog.jpg family_dog_shortcut.jpg
+
+ls -l
+---
+lrwxrwxrwx. 1 aaron aaron family_dog_shortcut.jpg -> /home/aaron/Pictures..
+
+readlink family_dog_shortcut.jpg
+---
+/home/aaron/Pictures/family_dog.jpg
+
+echo “Test” >> fstab_shortcut
+---
+bash: fstab_shortcut: Permission denied
+
+ls -l
+---
+lrwxrwxrwx. 1 aaron aaron family_dog_shortcut.jpg -> /home/aaron/Pictures..
+
+ln –s Pictures/family_dog.jpg relative_picture_shortcut
+```
+
+- If the target file or directory is deleted, moved, or renamed, the symbolic link is not automatically updated or removed
+- It continues to point to the original path, which now leads nowhere. Such links are called "broken" or "dangling" links - "No such file or directory" error
+
+Limitiations and considerations
+
+- Softlink to files and folders
+- Softlink to files on different filesystem as well
+
+## List, set, and change standard ugo/rwx permissions -- Continue
 
 ## Lab
 
@@ -299,4 +426,34 @@ sudo mandb
 
 apropos "NFS mounts"
 touch nfsmount.conf
+```
+
+### Files, Directories, Hard and Soft Links
+
+```bash
+mkdir -p /home/bob/lfcs
+
+touch /home/bob/lfcs/lfcs.txt
+
+cp -r /tmp/Invoice/ /home/bob/
+
+cp -a /home/bob/myfile.txt /home/bob/data/
+
+cp -r /home/bob/lfcs /home/bob/old-data
+
+rm /home/bob/lfcs/lfcs.txt
+
+mv /home/bob/lfcs/ /home/bob/new-data/
+
+rm -rf /home/bob/lfcs
+
+ln -s /tmp /home/bob/link_to_tmp
+
+ln /opt/hlink /home/bob/hlink
+
+mv /home/bob/new_file /home/bob/old_file
+
+mkdir -p /tmp/1/2/3/4/5/6/7/8/9
+
+ls --full-time
 ```
