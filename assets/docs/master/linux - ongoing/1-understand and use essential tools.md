@@ -398,7 +398,7 @@ Limitiations and considerations
 - Softlink to files and folders
 - Softlink to files on different filesystem as well
 
-## List, set, and change standard ugo/rwx permissions -- Continue
+## List, Set, and Change Standard Ugo/RWX Permissions -- Continue
 
 ## Lab
 

@@ -1,3 +1,3 @@
 # processes
 
-## Introduction to operating systems
+## Introduction to Operating Systems

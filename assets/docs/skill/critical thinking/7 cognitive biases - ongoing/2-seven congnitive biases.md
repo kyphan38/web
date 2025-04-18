@@ -122,6 +122,13 @@ Nguyên nhân
 - Không có dữ liệu, nhận định
 - Có dữ liệu, lập luận, nhưng không biết cách sắp xếp, trình bày cho rõ
 
+## Tóm Tắt
+
+Tóm tắt
+
+- Chúng ta ra các quyết định sai, hay bị người khác dẫn dắt, lôi kéo vì có thể chúng ta mắc 1 hay nhiều căn bệnh
+- Hãy cảnh giác với 7 căn bệnh: Cảm tính, cà tin, chà biết tin ai, phiền diện, thích thuyết âm mưu, thiếu chính kiến, thiếu thuyết phục
+
 ## Thực Hành
 
 ### Tình Huống 1: Bóng Trắng Bóng Đen
