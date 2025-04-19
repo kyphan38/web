@@ -39,8 +39,8 @@ Communication in leadership
   - Remove blockers
   - Offer context and direction
   - Foster alignment and motivation
-- Good communication: Face-to-face interactions, online meetings with cameras on. well-written updates or reports
-- Bad communication: Ineffective listening, failing to show up or follow through, creating or allowing communication barriers, Misunderstandings due to lack of clarity or consistency
+- Good communication: face-to-face interactions, online meetings with cameras on. well-written updates or reports
+- Bad communication: ineffective listening, failing to show up or follow through, creating or allowing communication barriers, Misunderstandings due to lack of clarity or consistency
 
 Collaboration and teamwork
 
@@ -219,8 +219,8 @@ Aligning words with actions
 
 - The alignment between your words and actions is both influential and transformative
 - Example
-  - What you say (words): A manager tells the team to work efficiently to meet a project deadline
-  - What you do (actions): A team member later observes the manager procrastinating, which causes project delays
+  - What you say (words): a manager tells the team to work efficiently to meet a project deadline
+  - What you do (actions): a team member later observes the manager procrastinating, which causes project delays
   - &rarr; Misalignment leads to confusion, disengagement, and distrust
 
 Limitations of actions alone
@@ -255,13 +255,13 @@ Summary
 Why?
 
 - The greatest power lies in influencing with integrity, not manipulating with deceit
-- Persuasion: Honesty, empathy, trustworthiness, mutual benefit
-- Manipulation: Deception, exploitation, lack of empathy, self-serving motives
+- Persuasion: honesty, empathy, trustworthiness, mutual benefit
+- Manipulation: deception, exploitation, lack of empathy, self-serving motives
 
 A deeper definition
 
-- Persuasion: Ethical influence that uses reasoning, discussion, transparency, and moral appeal
-- Manipulation: Unethical influence through deception, coercion, or emotional exploitation typically for the manipulator's benefit
+- Persuasion: ethical influence that uses reasoning, discussion, transparency, and moral appeal
+- Manipulation: unethical influence through deception, coercion, or emotional exploitation typically for the manipulator's benefit
 
 Positive (persuasion) vs negative (Manipulation)
 
@@ -279,15 +279,15 @@ Positive (persuasion) vs negative (Manipulation)
 Key differences
 
 - Persuasion
-  - Core approach: Reason & logic
-  - Respect for autonomy: High
-  - Ethical stance: Ethical, transparent, connecting
-  - Outcome: Informed decision-making, mutual benefit
+  - Core approach: reason & logic
+  - Respect for autonomy: high
+  - Ethical stance: ethical, transparent, connecting
+  - Outcome: informed decision-making, mutual benefit
 - Manipulation
-  - Core approach: Emotion & control
-  - Respect for autonomy: Low
-  - Ethical stance: Unethical, secretive, isolating
-  - Outcome: Distorted reality, forced compliance
+  - Core approach: emotion & control
+  - Respect for autonomy: low
+  - Ethical stance: unethical, secretive, isolating
+  - Outcome: distorted reality, forced compliance
 
 Real-world examples
 

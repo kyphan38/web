@@ -10,8 +10,8 @@ JRE
   - A software layer that provides the minimum requirements to run Java applications
   - It includes the Java Virtual Machine (JVM), core libraries, and other components needed to execute Java bytecode
 - Components
-  - ava Virtual Machine (JVM): Executes Java bytecode
-  - Java class libraries: Pre-built classes and APIs for running Java programs (e.g., java.lang, java.util)
+  - Java Virtual Machine (JVM): executes Java bytecode
+  - Java class libraries: pre-built classes and APIs for running Java programs (e.g., java.lang, java.util)
   - Supporting files and runtime tools (e.g., java command to launch applications)
 - Purpose
   - For end-users who only need to run Java applications or applets (e.g., playing a Java-based game or using a Java app)
@@ -28,8 +28,8 @@ JDK
   - It includes the JRE (so it can run Java programs) plus additional tools for coding, compiling, and debugging
 - Components
   - Everything in the JRE (JVM, libraries, etc.)
-  - Compiler (javac): Converts Java source code (.java files) into bytecode (.class files)
-  - Debugger (jdb): Helps identify and fix bugs in Java code
+  - Compiler (javac): converts Java source code (.java files) into bytecode (.class files)
+  - Debugger (jdb): helps identify and fix bugs in Java code
   - Other tools: jar (for packaging), javadoc (for generating documentation), and more
 - Purpose
   - For developers who need to write, compile, and debug Java code

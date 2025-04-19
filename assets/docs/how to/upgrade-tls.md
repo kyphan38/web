@@ -5,7 +5,7 @@
 - System: Ubuntu Server with root or sudo access and network connectivity
 - Tools: Nginx, OpenSSL
 - Server IP: 192.168.64.9
-- Firewall: Ensure port 443 (HTTPS) is allowed
+- Firewall: ensure port 443 (HTTPS) is allowed
 
 ## Setup TLS 1.0
 

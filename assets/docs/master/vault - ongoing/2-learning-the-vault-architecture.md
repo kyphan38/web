@@ -422,7 +422,7 @@ What?
 - Audit devices log all authenticated requests and responses to Vault
 - The audit log is formatted in JSON for easy parsing and analysis
 - Sensitive data (e.g., secrets, tokens) is hashed using HMAC-SHA256 with a salt to prevent exposure in plain text
-- Audit logs must be protected: Even though secrets are hashed, a user with permission can still verify them using the /sys/audit-hash API and compare hashes against the log
+- Audit logs must be protected: even though secrets are hashed, a user with permission can still verify them using the /sys/audit-hash API and compare hashes against the log
 
 ```bash
 vault audit enable file file_path=/var/log/vault_audit_log.log

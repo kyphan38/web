@@ -234,16 +234,16 @@ Using * (Glob)
 
 - Wildcard for anything after a path (only at the end)
 - Examples
-  - secret/apps/application1/*: Matches any path after application1
-  - kv/platform/db-*: Matches kv/platform/db-2, but not kv/platform/db2
+  - secret/apps/application1/*: matches any path after application1
+  - kv/platform/db-*: matches kv/platform/db-2, but not kv/platform/db2
 
 Using + (Single Directory Wildcard)
 
 - Matches a single directory in a path segment
 - Can be used multiple times (e.g., secret/+/+/db)
 - Examples
-  - secret/+/db: Matches secret/db2/db or secret/app/db
-  - kv/data/apps/+/webapp: Matches
+  - secret/+/db: matches secret/db2/db or secret/app/db
+  - kv/data/apps/+/webapp: matches
     - kv/data/apps/dev/webapp
     - kv/data/apps/qa/webapp
     - kv/data/apps/prod/webapp
@@ -262,7 +262,7 @@ path "secret/apps/+/team-*" {
 ACL templating
 
 - Use `{{parameter}}` for variable replacement with token-specific values
-- Example: Restrict key/value v2 secrets to a specific user's entity ID
+- Example: restrict key/value v2 secrets to a specific user's entity ID
 
 ```bash
 path "secret/data/{{identity.entity.id}}/*" {
@@ -320,7 +320,7 @@ vault read aws/creds/s3-readonly         # Should succeed
 Administrative policies
 
 - Manage Vault backend functions under the sys/ path
-- Examples: Unsealing, policy management, secret backend setup
+- Examples: unsealing, policy management, secret backend setup
 
 - Setup
   - Licensing

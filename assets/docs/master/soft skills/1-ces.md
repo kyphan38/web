@@ -4,7 +4,7 @@
 
 ## Verbal Skills
 
-Effective verbal communication in DevOps relies on the 7 C's: Clear, Concise, Correct, Coherent, Complete, Concrete, Courteous
+Effective verbal communication in DevOps relies on the 7 C's: clear, Concise, Correct, Coherent, Complete, Concrete, Courteous
 
 Clear
 
@@ -12,14 +12,14 @@ Clear
 - Don't use unnecessarily complex or elevated language
 - Keep your message simple, direct, and easy to understand
 - Speak clearly, use precise language, and structure your points logically
-- Example: Instead of saying, "We'll use CI/CD," clarify with, "We'll use continuous integration and continuous deployment to automate testing and delivery"
+- Example: instead of saying, "We'll use CI/CD," clarify with, "We'll use continuous integration and continuous deployment to automate testing and delivery"
 
 Concise
 
 - Express your thoughts in as few words as necessary without sacrificing clarity
 - Complex ideas are built from simple ones. Break them down
 - Avoid filler words and redundancies
-- Say more with less: Short, impactful messages are easier to understand and remember
+- Say more with less: short, impactful messages are easier to understand and remember
 
 Correct
 
@@ -35,15 +35,15 @@ Coherent
   - Start &rarr; Identify topic &rarr; Organize main points &rarr; Develop supporting details &rarr; Ensure logical flow &rarr; Review and edit
   - Topic: Effective Study Habits
   - Main Points
-    - MP 1: Time management
-    - MP 2: Active engagement
-    - MP 3: Effective note-taking
-    - MP 4: Setting goals
+    - MP 1: time management
+    - MP 2: active engagement
+    - MP 3: effective note-taking
+    - MP 4: setting goals
   - Develop Supporting Details
-    - MP 1: Create a schedule, prioritize tasks
-    - MP 2: Ask questions, participate actively
-    - MP 3: Use summaries and keywords
-    - MP 4: Set short- and long-term goals, track progress
+    - MP 1: create a schedule, prioritize tasks
+    - MP 2: ask questions, participate actively
+    - MP 3: use summaries and keywords
+    - MP 4: set short- and long-term goals, track progress
   - Ensure logical flow
     - Arrange main points in a logical sequence
     - Use transitions to connect ideas smoothly
@@ -62,7 +62,7 @@ Concrete
 - Use specific, vivid, and detailed language
 - Avoid vague or abstract statements
 - Help the listener visualize what you're describing with real examples or analogies
-- Example: Instead of saying "Improve system performance," say "Reduce server response time by optimizing database queries"
+- Example: instead of saying "Improve system performance," say "Reduce server response time by optimizing database queries"
 
 Courteous
 
@@ -123,10 +123,10 @@ Visual aids and formatting for readability
 - Even in simple emails, visual elements (like bullets, bold text, or headings) can help clarify key ideas
 - Proper formatting improves scannability and comprehension
 - Professional email structure
-  - Subject Line: Clear, specific, and informative
-  - Greeting: Polite and professional to set a positive tone
-  - Body: Includes context, purpose, and relevant details
-  - Closing: Courteous and appreciative to encourage goodwill and response
+  - Subject Line: clear, specific, and informative
+  - Greeting: polite and professional to set a positive tone
+  - Body: includes context, purpose, and relevant details
+  - Closing: courteous and appreciative to encourage goodwill and response
 
 Summary
 
@@ -240,7 +240,7 @@ How and when to apply it
 
 - Professionalism should be applied in every interaction, including emails, team chats, meetings, documentation, client communication
 - Best practices include
-  - Applying the 7 Cs of communication: Clear, Courteous, Concise, Concrete, Correct, Complete, Considerate
+  - Applying the 7 Cs of communication: clear, Courteous, Concise, Concrete, Correct, Complete, Considerate
   - Being timely and responsive
   - Maintaining a constructive and forward-looking tone
   - Ensuring consistency in behavior and follow-through
@@ -301,7 +301,7 @@ Actions and result
 | 2      | When communicating verbally, being concise means                                                   | Expressing thoughts and ideas in as few words as necessary                                                 |
 | 3      | Personal space in non-verbal communication refers to                                               | The physical distance we maintain with others                                                             |
 | 4      | When tailoring your message to the audience, you should                                            | Consider the recipient's role, familiarity with the topic, and preferred communication style               |
-| 5      | True or False: The 7 C's of effective verbal communication do not apply to written communication     | False                                                                                                     |
+| 5      | True or False: the 7 C's of effective verbal communication do not apply to written communication     | False                                                                                                     |
 | 6      | Which of these is not a tip for concrete communication?                                             | Overuse pronouns like 'it', 'this', 'that', etc., without clear antecedents                               |
 | 7      | Visual aids and proper formatting in written communication can                                     | Significantly enhance readability and effectiveness                                                       |
 | 8      | Correct communication involves                                                                     | Adhering to the rules of the language                                                                     |
@@ -312,12 +312,12 @@ Actions and result
 | 13     | The 7 C's of effective verbal communication include being                                           | Clear, Concise, Correct, Coherent, Complete, Concrete, Courteous                                         |
 | 14     | Micro-expressions are                                                                                | Brief, involuntary facial expressions that reveal true emotions                                           |
 | 15     | Tone of voice in non-verbal communication can be                                                   | Upbeat questioning voice (lighter, open to dialogue), assertive/angry Voice (conveys authority, can be perceived as aggressive), and DJ voice (smooth, calm, controlled) |
-| 16     | True or False: Personal space preferences are universal and do not vary across cultures or individuals | False                                                                                                     |
+| 16     | True or False: personal space preferences are universal and do not vary across cultures or individuals | False                                                                                                     |
 | 17     | The '50/70 rule' for eye contact suggests                                                           | Maintaining eye contact 50% of the time while speaking and 70% while listening                             |
-| 18     | True or False: Using filler words and unnecessary details can make your communication more concise  | False                                                                                                     |
-| 19     | True or False: In DevOps, it's better to respond to messages quickly without fully reading them to save time | False                                                                                                     |
+| 18     | True or False: using filler words and unnecessary details can make your communication more concise  | False                                                                                                     |
+| 19     | True or False: in DevOps, it's better to respond to messages quickly without fully reading them to save time | False                                                                                                     |
 | 20     | Proofreading, grammar checking, and spell checking in written communication                       | Are essential for maintaining professionalism, clarity, and credibility                                  |
-| 21     | True or False: Courteous communication involves using a disrespectful tone and impolite language.  | False                                                                                                     |
+| 21     | True or False: courteous communication involves using a disrespectful tone and impolite language.  | False                                                                                                     |
 | 22     | Which of the following is an example of incoherent communication?                                  | "Our project deadline is next month. We had pizza for lunch. We need to speed up the work. Did you see the game last night?" |
 | 23     | The "5 Ws and H" to consider for complete communication are:                                        | Who, What, When, Where, Why, How                                                                         |
 | 24     | Concrete communication refers to                                                                  | Providing clear details and examples                                                                     |

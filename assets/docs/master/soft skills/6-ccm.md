@@ -57,7 +57,7 @@ External vs internal clients
 Integrating a client-centric approach
 
 - Always be curious
-  - Ask: Why is the client requesting this? What do they need it for?
+  - Ask: why is the client requesting this? What do they need it for?
 - Practice active listening
 - Communicate and document
   - Never leave a meeting without a clear summary
@@ -162,7 +162,7 @@ Must-haves vs good-to-haves
   - Process improvements
 - Prioritization, including internal and external client needs, often occurs before team presentations
   - Ignoring internal client priorities can slow down or even block your ability to meet external client demands
-  - Example: Technical debt. Any system built by humans requires maintenance. If your codebase isn't maintained, it degrades over time. This degradation makes it harder to meet external client expectations because internal needs (like system upkeep) were neglected
+  - Example: technical debt. Any system built by humans requires maintenance. If your codebase isn't maintained, it degrades over time. This degradation makes it harder to meet external client expectations because internal needs (like system upkeep) were neglected
 
 Enhancing communication
 

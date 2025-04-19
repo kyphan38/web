@@ -13,9 +13,9 @@ Key features when running a program
 - The executable contains
   - Instructions that the CPU can understand
   - Data of the program (all numbered with addresses)
-- Instructions run on CPU: Hardware implements an Instruction Set Architecture (ISA)
+- Instructions run on CPU: hardware implements an Instruction Set Architecture (ISA)
 - CPU also consists of a few registers
-  - Program Counter (PC): Points to the next instruction to be executed
+  - Program Counter (PC): points to the next instruction to be executed
   - Operands of instructions, memory addresses
 
 What happens when you run a program? (background)

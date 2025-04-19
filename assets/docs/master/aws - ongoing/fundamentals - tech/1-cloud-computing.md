@@ -51,9 +51,9 @@ Public cloud and private cloud must meet the 5 essential characteristics of clou
 
 ![img](./img/2.png)
 
-- Blue: Managed by the user
-- Red: Managed by the vendor
-- Green: Unit of consumption
+- Blue: managed by the user
+- Red: managed by the vendor
+- Green: unit of consumption
 
 Terms and concepts
 
@@ -64,12 +64,12 @@ Terms and concepts
 
 Stacks layers
 
-- Facilities: Building, physical security, power, air conditioner, staffing
-- Infrastructure: Storage, networking, compute resources
-- Servers: Physical hardware
-- Virtualization: Servers run virtualization software, such as VMware, Hyper-V, etc.
-- Operating system: Virtual machines run an operating system (OS)
-- Container: The OS runs containers, such as Docker, etc.
-- Runtime: The environment (e.g, Python, Java, etc.) required for the application to run
-- Data: Data required to run the application
-- Application: The software or application itself
+- Facilities: building, physical security, power, air conditioner, staffing
+- Infrastructure: storage, networking, compute resources
+- Servers: physical hardware
+- Virtualization: servers run virtualization software, such as VMware, Hyper-V, etc.
+- Operating system: virtual machines run an operating system (OS)
+- Container: the OS runs containers, such as Docker, etc.
+- Runtime: the environment (e.g, Python, Java, etc.) required for the application to run
+- Data: data required to run the application
+- Application: the software or application itself

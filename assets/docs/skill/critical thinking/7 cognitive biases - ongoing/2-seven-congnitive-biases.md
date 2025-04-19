@@ -127,7 +127,7 @@ Nguyên nhân
 Tóm tắt
 
 - Chúng ta ra các quyết định sai, hay bị người khác dẫn dắt, lôi kéo vì có thể chúng ta mắc 1 hay nhiều căn bệnh
-- Hãy cảnh giác với 7 căn bệnh: Cảm tính, cà tin, chà biết tin ai, phiền diện, thích thuyết âm mưu, thiếu chính kiến, thiếu thuyết phục
+- Hãy cảnh giác với 7 căn bệnh: cảm tính, cà tin, chà biết tin ai, phiền diện, thích thuyết âm mưu, thiếu chính kiến, thiếu thuyết phục
 
 ## Thực Hành
 
@@ -160,9 +160,9 @@ Em thẳng thắn lắm, có sao nói vậy!
 
 - Nhiều người tự hào vì mình thẳng thắn, có sao nói vậy
 - "Ai ghét mình mình chịu, chứ mình có sao nói vậy"
-- Ưu điểm: Trung thực
-- Khuyết điểm: Thiếu khiêm tốn, không biết rằng mình có thể nói sai sự thật
-- Nên: Phải tìm hiểu rất nhiều thông tin, đa chiều mới có thể kết luận
+- Ưu điểm: trung thực
+- Khuyết điểm: thiếu khiêm tốn, không biết rằng mình có thể nói sai sự thật
+- Nên: phải tìm hiểu rất nhiều thông tin, đa chiều mới có thể kết luận
 
 ![img](./img/1.png)
 

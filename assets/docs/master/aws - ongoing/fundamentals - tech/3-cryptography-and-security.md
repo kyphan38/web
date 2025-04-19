@@ -17,10 +17,10 @@ Concept
 ![img](./img/12.png)
 
 - Encryption transforms plaintext into ciphertext using an algorithm and a key
-  - Plaintext: Unencrypted data that can be loaded directly into an application
-  - Algorithm: A mathematical code that takes plaintext and an encryption key to create ciphertext
-  - Key: Can be as simple as a password or much more complex
-  - Ciphertext: Encrypted data that is unreadable without the appropriate key to decrypt it
+  - Plaintext: unencrypted data that can be loaded directly into an application
+  - Algorithm: a mathematical code that takes plaintext and an encryption key to create ciphertext
+  - Key: can be as simple as a password or much more complex
+  - Ciphertext: encrypted data that is unreadable without the appropriate key to decrypt it
 
 ### Symmetric Encryption
 

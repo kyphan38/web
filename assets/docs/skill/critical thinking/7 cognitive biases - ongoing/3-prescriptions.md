@@ -6,7 +6,7 @@ Quyết định sai vì?
 
 - Dữ liệu sai (F) &rarr; Nhận định sai (O) &rarr; Quyết định sai (T)
 
-Ví dụ: Quyết định chọn đối tác kinh doanh
+Quyết định chọn đối tác kinh doanh
 
 - Vì nghe nói đối tác rất giàu &rarr; Đối tác tốt &rarr; Hợp tác
 - Dữ liệu ít, yếu, không quan trọng &rarr; Nhận định ẩu &rarr; Quyết định sai

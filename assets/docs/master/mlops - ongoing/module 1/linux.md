@@ -26,7 +26,7 @@ Learn more
 
 ## Basic Commands
 
-Fun fact: A directory is a just a file containing the names of other files
+Fun fact: a directory is a just a file containing the names of other files
 
 | Category                      | Popular Commands                                      |
 | :---------------------------- | :---------------------------------------------------- |

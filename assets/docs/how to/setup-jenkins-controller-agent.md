@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- System: Two Ubuntu servers with root or sudo access and network connectivity
+- System: two Ubuntu servers with root or sudo access and network connectivity
   - controller-server: 192.168.64.10
   - agent-server: 192.168.64.11
 
@@ -118,7 +118,7 @@ Add new node
 - Number of executors: 1
 - Remote root directory: /home/ubuntu/jenkins-agent-ubuntu
 - Labels; ubuntu agent
-- Launch method: Launch agents via SSH
+- Launch method: launch agents via SSH
   - Host: 192.168.64.11
   - Credentials: ubuntu (SSH key for agent-server)
 

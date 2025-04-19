@@ -85,11 +85,11 @@ Project work vs interrupt-driven work
   - Use rotating team shifts for support-heavy environments
   - Clearly communicate capacity limits with stakeholders
 - Example
-  - Separated workflows: Support issues and project tasks are managed in different Jira boards to reduce context-switching
-  - Time blocking: Mornings (e.g., 9 AM - 12 PM) are reserved exclusively for deep-focus project work, with Slack notifications muted
-  - Interrupt windows: Afternoons (e.g., 2 PM - 4 PM) are dedicated to addressing support tickets, keeping reactive work contained
-  - Rotating on-call shifts: The team implements a rotation so only one person handles interrupts at a time, giving others space for long-term work
-  - Clear communication: The engineer proactively sets expectations with stakeholders, explaining that project progress depends on minimizing support duties
+  - Separated workflows: support issues and project tasks are managed in different Jira boards to reduce context-switching
+  - Time blocking: mornings (e.g., 9 AM - 12 PM) are reserved exclusively for deep-focus project work, with Slack notifications muted
+  - Interrupt windows: afternoons (e.g., 2 PM - 4 PM) are dedicated to addressing support tickets, keeping reactive work contained
+  - Rotating on-call shifts: the team implements a rotation so only one person handles interrupts at a time, giving others space for long-term work
+  - Clear communication: the engineer proactively sets expectations with stakeholders, explaining that project progress depends on minimizing support duties
 
 The power of visualizing work
 

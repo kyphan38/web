@@ -114,11 +114,11 @@ Key features
 Behaviors
 
 - App Developer: "My long-running app can't regenerate tokens or secrets"
-  - Solution: Use a periodic service token
+  - Solution: use a periodic service token
 - Principal Engineer: "I need a token that auto-revokes after one use"
-  - Solution: Use a service token with a use limit
+  - Solution: use a service token with a use limit
 - DevOps: "My app can't use a token influenced by its parent's expiration"
-  - Solution: Use an orphan token
+  - Solution: use an orphan token
 
 Summary
 
@@ -485,7 +485,7 @@ Key features
 - Root tokens are superusers with unlimited Vault access
 - They have no TTL (do not expire) and are tied to the root policy
 - Root tokens can create other root tokens with a TTL
-- Usage: Avoid daily use, revoke after necessary tasks
+- Usage: avoid daily use, revoke after necessary tasks
 
 Initial root token
 
@@ -719,8 +719,8 @@ Code: 403. Errors:
 Key features
 
 - Every non-root token has a TTL, defining its validity period from creation or renewal
-  - Example: A new token with a 30-minute TTL is valid for 30 minutes from creation
-  - Example: A renewed token gets a fresh 30-minute TTL
+  - Example: a new token with a 30-minute TTL is valid for 30 minutes from creation
+  - Example: a renewed token gets a fresh 30-minute TTL
 - When TTL expires, the token is revoked and becomes invalid for authentication. Renewal must occur before expiration
   - Tokens may also have a Max TTL, limiting renewals; once reached, the token cannot be renewed further
 
@@ -769,27 +769,27 @@ vault token create -policy=training
 
 Long-running application
 
-- Needs: App cannot regenerate tokens/secrets; token renewable indefinitely
+- Needs: app cannot regenerate tokens/secrets; token renewable indefinitely
 - Solution: periodic token
 
 Limited use
 
-- Needs: Token usable only 3 times, regardless of TTL
+- Needs: token usable only 3 times, regardless of TTL
 - Solution: service token with use limits
 
 Independent lifecycle
 
-- Needs: Token unaffected by parent's lifecycle, with extended expiration
+- Needs: token unaffected by parent's lifecycle, with extended expiration
 - Solution: orphan token
 
 CIDR
 
-- Needs: Token used by a specific host or within a certain network block
+- Needs: token used by a specific host or within a certain network block
 - Solution: CIDR-bound token
 
 Replication and efficiency
 
-- Needs: Token replicated across clusters, minimal storage overhead for mass creation
+- Needs: token replicated across clusters, minimal storage overhead for mass creation
 - Solution: batch token
 
 ## Lab

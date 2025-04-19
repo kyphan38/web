@@ -27,7 +27,7 @@ Vậy, làm thế nào để có thể sống lâu và khỏe mạnh?
 - Enzyme nguyên mẫu của hơn 5.000 loại enzyme trong cơ thể
 - Có khả năng trở thành bất cứ loại enzyme nào trước khi chuyển hóa thành một loại enzyme chuyên biệt
 - Tại một vị trí cố định, khi các enzyme chuyên biệt bị sử dụng một lượng lớn thì các enzyme cần thiết cho các bộ phận khác trong cơ thể có xu hướng giảm xuống
-  - Ví dụ: Khi chúng ta uống nhiều rượu, các enzyme phân giải cồn trong gan sẽ bị dùng với lượng lớn, khi đó, trong dạ dày sẽ thiếu các enzyme cần thiết cho quá trình tiêu hóa
+  - Ví dụ: khi chúng ta uống nhiều rượu, các enzyme phân giải cồn trong gan sẽ bị dùng với lượng lớn, khi đó, trong dạ dày sẽ thiếu các enzyme cần thiết cho quá trình tiêu hóa
 - Dù có hàng nghìn loại nhưng không phải tạo ra với số lượng cụ thể cho từng loại. Ban đầu cơ thể sẽ tạo ra enzyme nguyên mẫu, sau đó sẽ chuyển hóa thành các loại enzyme chuyên biệt đáp ứng với nhu cầu cơ thể và được sử dụng tại những cơ quan cần thiết
 
 Enzyme
