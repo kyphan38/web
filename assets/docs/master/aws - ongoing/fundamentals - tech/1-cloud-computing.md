@@ -70,6 +70,6 @@ Stacks layers
 - Virtualization: servers run virtualization software, such as VMware, Hyper-V, etc.
 - Operating system: virtual machines run an operating system (OS)
 - Container: the OS runs containers, such as Docker, etc.
-- Runtime: the environment (e.g, Python, Java, etc.) required for the application to run
+- Runtime: the environment (e.g., Python, Java, etc.) required for the application to run
 - Data: data required to run the application
 - Application: the software or application itself
