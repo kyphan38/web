@@ -19,27 +19,104 @@ How to use "I work"
 
 Verb/verb phrase
 
-- attend (go to, be present at), be admitted to (get into, gain entry to), pass the test (succeed in, clear), reckon (think, believe), belong to (be part of, be owned by), apply for (request, seek), foster a dream (nurture, cultivate), earn a degree (obtain, get), take charge of (manage, control, oversee), have a burning desire (strongly want, crave)
-- fling oneself into something (dive into, engage enthusiastically in), follow one's footstep (emulate, follow example), skipping the class (missing class, cutting class), pass experience on sb (share experience with, transfer knowledge to), stick to some disciplines (follow rules, adhere to principles), glue one's eyes to the screen (stare at, be fixated on), go bankrupt (fail financially, go bust), major in (specialize in, focus on), be planning to (intend to, aim to), regard me as (consider me as, see me as)
-- make great progress (improve significantly, advance considerably), apply myself (work hard, exert oneself), have roaring success (be very successful, triumph), guarantee me a well paid job (ensure high-paying job, secure lucrative employment), earn sufficient working experience (gain enough experience, acquire adequate experience), devote (dedicate, commit), run out of (exhaust, use up), take risks (gamble, venture), plummet (plunge, drop sharply)
+| Word/Phrase                        | Synonyms                                            | Example Sentence                                                                |
+| :--------------------------------- | :-------------------------------------------------- | :------------------------------------------------------------------------------ |
+| attend                             | go to, be present at                                | She plans to attend the conference next week.                                   |
+| be admitted to                     | get into, gain entry to                             | He hopes to be admitted to his first-choice university.                         |
+| pass the test                      | succeed in, clear                                   | If you study hard, you will pass the test.                                      |
+| reckon                             | think, believe                                      | I reckon it will rain later today.                                              |
+| belong to                          | be part of, be owned by                             | This antique watch used to belong to my grandfather.                            |
+| apply for                          | request, seek                                       | Did you apply for that marketing position?                                      |
+| foster a dream                     | nurture, cultivate                                  | Parents should foster a dream their child has for the future.                   |
+| earn a degree                      | obtain, get                                         | She moved abroad to earn a degree in international relations.                   |
+| take charge of                     | manage, control, oversee                            | The new manager will take charge of the project starting Monday.                |
+| have a burning desire              | strongly want, crave                                | He has a burning desire to travel the world.                                    |
+| fling oneself into something       | dive into, engage enthusiastically in               | After the breakup, she decided to fling herself into her work.                  |
+| follow one's footstep              | emulate, follow example                             | He decided to follow his father's footsteps and become a doctor.                |
+| skipping the class                 | missing class, cutting class                        | Skipping the class often leads to falling behind in coursework.                 |
+| pass experience on sb              | share experience with, transfer knowledge to        | Experienced mentors pass their experience on to younger colleagues.             |
+| stick to some disciplines          | follow rules, adhere to principles                  | To lose weight, you must stick to some disciplines regarding diet and exercise. |
+| glue one's eyes to the screen      | stare at, be fixated on                             | Teenagers often glue their eyes to the screen of their smartphones.             |
+| go bankrupt                        | fail financially, go bust                           | The company might go bankrupt if sales don't improve.                           |
+| major in                           | specialize in, focus on                             | I decided to major in computer science.                                         |
+| be planning to                     | intend to, aim to                                   | We are planning to renovate the kitchen next year.                              |
+| regard me as                       | consider me as, see me as                           | I hope they regard me as a valuable member of the team.                         |
+| make great progress                | improve significantly, advance considerably         | The students made great progress in their English skills.                       |
+| apply myself                       | work hard, exert oneself                            | If I apply myself, I know I can finish this report on time.                     |
+| have roaring success               | be very successful, triumph                         | Their new product launch had roaring success.                                   |
+| guarantee me a well paid job       | ensure high-paying job, secure lucrative employment | Getting this certification doesn't guarantee me a well paid job, but it helps.  |
+| earn sufficient working experience | gain enough experience, acquire adequate experience | It's important to earn sufficient working experience through internships.       |
+| devote                             | dedicate, commit                                    | She decided to devote more time to her hobbies.                                 |
+| run out of                         | exhaust, use up                                     | We might run out of milk soon.                                                  |
+| take risks                         | gamble, venture                                     | Entrepreneurs often need to take risks to succeed.                              |
+| plummet                            | plunge, drop sharply                                | Stock prices began to plummet after the announcement.                           |
 
 Noun/noun phrase
 
-- low tuition fee (affordable fees, inexpensive tuition), good facilities (excellent amenities, great resources), state investment (government funding, public investment), prevailing careers (dominant professions, common jobs), the first to arrive and the last to leave (dedicated person, hard worker), Eager beaver (enthusiast, zealous person), Immense country (vast nation, huge country), Dialect (vernacular, regional language), the tricks of the trade (insider knowledge, special skills), a cut-throat competition (fierce rivalry, intense competition), partner companies (affiliated companies, associate firms)
-- residents' living standard (citizens' quality of life, standard of living), vacancies in (job openings in, positions available in), the rule of quantity and quality (principle of amount and standard, quantity-quality guideline), a piece of (an item of, a bit of)
+| Word/Phrase                               | Synonyms                                                     | Example Sentence                                                               |
+| :---------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------------------------- |
+| low tuition fee                           | affordable fees, inexpensive tuition                         | Many students are attracted by the university's low tuition fee.               |
+| good facilities                           | excellent amenities, great resources                         | The hotel boasts good facilities, including a pool and gym.                    |
+| state investment                          | government funding, public investment                        | Increased state investment is needed in public transport.                      |
+| prevailing careers                        | dominant professions, common jobs                            | Technology and healthcare are prevailing careers in today's market.            |
+| the first to arrive and the last to leave | dedicated person, hard worker                                | Sarah is always the first to arrive and the last to leave; she's so committed. |
+| Eager beaver                              | enthusiast, zealous person                                   | Mark is such an eager beaver, always volunteering for extra tasks.             |
+| Immense country                           | vast nation, huge country                                    | Russia is an immense country spanning two continents.                          |
+| Dialect                                   | vernacular, regional language                                | The villagers spoke a local dialect that was hard for outsiders to understand. |
+| the tricks of the trade                   | insider knowledge, special skills                            | He quickly learned the tricks of the trade from his experienced colleagues.    |
+| a cut-throat competition                  | fierce rivalry, intense competition                          | There is a cut-throat competition for jobs in the finance industry.            |
+| partner companies                         | affiliated companies, associate firms                        | Our firm collaborates with several partner companies overseas.                 |
+| long history                              | ancient history, extensive past                              | This city has a long history dating back to Roman times.                       |
+| residents' living standard                | citizens' quality of life, standard of living                | The government aims to improve the residents' living standard.                 |
+| vacancies in                              | job openings in, positions available in                      | Are there any vacancies in the IT department?                                  |
+| the rule of quantity and quality          | principle of amount and standard, quantity-quality guideline | When baking, the rule of quantity and quality of ingredients is crucial.       |
+| a piece of                                | an item of, a bit of                                         | Could I have a piece of that cake?                                             |
 
 Adjective/adjective phrase
 
-- spacious (roomy, large), highly qualified (very skilled, extremely competent), dedicated (committed, devoted), Knowledgeable (informed, learned), Multi-talented (versatile, gifted), adept in (skilled in, proficient in), dead-end (unpromising, terminal), tiresome (boring, tedious), high-demanding (challenging, rigorous), skillful in (proficient in, expert at), in high demand (highly sought-after, popular), warm-hearted (kind, friendly).
+| Word/Phrase      | Synonyms                          | Example Sentence                                                         |
+| :--------------- | :-------------------------------- | :----------------------------------------------------------------------- |
+| spacious         | roomy, large                      | They moved into a spacious apartment downtown.                           |
+| highly qualified | very skilled, extremely competent | We need a highly qualified engineer for this project.                    |
+| dedicated        | committed, devoted                | The organization relies on its dedicated volunteers.                     |
+| Knowledgeable    | informed, learned                 | Our tour guide was very knowledgeable about local history.               |
+| Multi-talented   | versatile, gifted                 | She is a multi-talented artist, skilled in painting, music, and writing. |
+| adept in         | skilled in, proficient in         | He is adept in several programming languages.                            |
+| dead-end         | unpromising, terminal             | He felt stuck in a dead-end job with no prospects.                       |
+| tiresome         | boring, tedious                   | Filling out all these forms is a tiresome task.                          |
+| high-demanding   | challenging, rigorous             | Being a surgeon is a high-demanding profession.                          |
+| skillful in      | proficient in, expert at          | The chef is skillful in preparing seafood dishes.                        |
+| in high demand   | highly sought-after, popular      | Experienced software developers are in high demand.                      |
+| warm-hearted     | kind, friendly                    | She is known for her warm-hearted nature and generosity.                 |
 
 Adverb/adverb phrase
 
-- increasingly (more and more, progressively), on the daily basis (daily, every day), working from dawn to dusk (working long hours, working all day), In more detail (more thoroughly, more specifically)
+| Word/Phrase               | Synonyms                            | Example Sentence                                                   |
+| :------------------------ | :---------------------------------- | :----------------------------------------------------------------- |
+| increasingly              | more and more, progressively        | It is becoming increasingly difficult to find affordable housing.  |
+| on the daily basis        | daily, every day                    | Exercise should be done on the daily basis for better health.      |
+| working from dawn to dusk | working long hours, working all day | Farmers are often working from dawn to dusk during harvest season. |
+| In more detail            | more thoroughly, more specifically  | Could you explain the process in more detail?                      |
 
 Idiomatic phrase/connector
 
-- ranging from ... to ... (covering, extending), when it comes to (regarding, concerning), it goes without saying that (obviously, clearly), plus (also, additionally), get on like a house on fire (get along very well, hit it off), not make head or tail of sth (not understand, be baffled by), be stuck in the career treadmill (trapped in a monotonous job, in a professional rut), run out of steam (lose energy, become exhausted), In fact (actually, indeed), to be frank (honestly, candidly), needless to say (obviously, clearly)
-- frankly speaking (honestly, candidly), pass the exam with flying colors (ace the exam, pass easily), have no clue (be unaware, not know), keep an eye on (watch, monitor)
+| Word/Phrase                      | Synonyms                                           | Example Sentence                                                    |
+| :------------------------------- | :------------------------------------------------- | :------------------------------------------------------------------ |
+| ranging from ... to ...          | covering, extending                                | The store sells items ranging from basic groceries to luxury goods. |
+| when it comes to                 | regarding, concerning                              | When it comes to baking, my grandmother is an expert.               |
+| it goes without saying that      | obviously, clearly                                 | It goes without saying that honesty is the best policy.             |
+| plus                             | also, additionally                                 | The hotel room was large, plus it had a great view.                 |
+| get on like a house on fire      | get along very well, hit it off                    | My sister and my best friend get on like a house on fire.           |
+| not make head or tail of sth     | not understand, be baffled by                      | I could not make head or tail of the assembly instructions.         |
+| be stuck in the career treadmill | trapped in a monotonous job, in a professional rut | He felt he was stuck in the career treadmill and needed a change.   |
+| run out of steam                 | lose energy, become exhausted                      | After hours of studying, I started to run out of steam.             |
+| In fact                          | actually, indeed                                   | He seems quiet, but in fact, he's very talkative.                   |
+| to be frank                      | honestly, candidly                                 | To be frank, I didn't enjoy the movie very much.                    |
+| needless to say                  | obviously, clearly                                 | Needless to say, he was very happy to win the award.                |
+| frankly speaking                 | honestly, candidly                                 | Frankly speaking, I think that's a bad idea.                        |
+| pass the exam with flying colors | ace the exam, pass easily                          | She studied diligently and passed the exam with flying colors.      |
+| have no clue                     | be unaware, not know                               | I have no clue where I left my keys.                                |
+| keep an eye on                   | watch, monitor                                     | Could you keep an eye on my bag while I go to the restroom?         |
 
 ## Structure
 
