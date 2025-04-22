@@ -1,4 +1,4 @@
-# docs rule
+# rule
 
 Sau : và - không viết hoa
 
