@@ -1,4 +1,4 @@
-# setup jenkins controller agent
+# jenkins controller agent
 
 ## Prerequisites
 

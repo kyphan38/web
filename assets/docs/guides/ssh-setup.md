@@ -1,4 +1,4 @@
-# implement ssh
+# ssh setup
 
 ## SSH Authentication
 

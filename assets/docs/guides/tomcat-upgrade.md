@@ -1,4 +1,4 @@
-# upgrade tomcat
+# tomcat upgrade
 
 ## Prerequisites
 

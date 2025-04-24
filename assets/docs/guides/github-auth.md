@@ -1,4 +1,4 @@
-# authorize github
+# github auth
 
 ## Context
 

@@ -1,4 +1,4 @@
-# implement file encryption
+# file encryption
 
 ## Requirements
 
