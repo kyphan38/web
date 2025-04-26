@@ -6,12 +6,12 @@ Verb/Verb Phrase
 
 | Word/Phrase  | Synonyms                                                   | Example Sentence                              |
 | :--------------------------------- | :------------------------------------------------------------------------------- | :-------------------------------------------- |
-| speak ill of (noi xau)             | criticize (chi trich), slander (vu khong)                                        | She shouldn’t speak ill of her colleagues     |
-| demean (ha thap)                   | belittle (co nho), degrade (lam giam)                                            | His comments demeaned the team’s efforts      |
+| speak ill of (noi xau)             | criticize (chi trich), slander (vu khong)                                        | She shouldn't speak ill of her colleagues     |
+| demean (ha thap)                   | belittle (co nho), degrade (lam giam)                                            | His comments demeaned the team's efforts      |
 | get conflated (bi nham lan)        | mix up (tron lan), confuse (lam nham)                                            | The two issues often get conflated in debates |
 | bombard (tan cong)                 | attack (tan cong), overwhelm (ap dao)                                            | Reporters bombarded her with questions        |
 | spell a word (danh van tu)         | write out (viet ra), articulate (phat am)                                        | Can you spell a word for me                   |
-| hail (ca ngoi)                     | praise (ca ngoi), salute (chao mung)                                             | Fans hailed the singer’s new album            |
+| hail (ca ngoi)                     | praise (ca ngoi), salute (chao mung)                                             | Fans hailed the singer's new album            |
 | acclaim (tung ho)                  | applaud (hoan nghenh), celebrate (ca ngoi)                                       | Critics acclaimed the film as a masterpiece   |
 | rummage (luc tung)                 | search (tim kiem), dig through (dao boc)                                         | She rummaged through her bag for keys         |
 | talk up (quang ba)                 | promote (quang cao), boost (nang cao)                                            | He talked up the project to investors         |

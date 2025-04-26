@@ -67,7 +67,7 @@ Triggers for trap instructions and IDT lookup
 
 - Trap instruction is executed on hardware in the following cases
   - System call (program needs OS service)
-  - Program fault (program does something illegal, e.g., accesses memory it doesn’t have access to)
+  - Program fault (program does something illegal, e.g., accesses memory it doesn't have access to)
   - Interrupt (external device needs attention of OS, e.g., a network packet has arrived on network card)
 - Across all cases, the mechanism is: save context on kernel stack and switch to OS address in the IDT
 - IDT has many entries/functions, which to use?
@@ -119,8 +119,8 @@ Example: process A has moved from user to kernel mode, OS decides it must switch
 
 - Save context (PC, registers, kernel stack pointer) of A on kernel stack
 - Switch SP to kernel stack of B
-- Restore context from B’s kernel stack
-  - Who has saved registers on B’s kernel stack?
+- Restore context from B's kernel stack
+  - Who has saved registers on B's kernel stack?
     - OS did, when it switched out B in the past
 - Now, CPU is running B in kernel mode, return-from-trap to switch to user mode of B
 
