@@ -1,6 +1,6 @@
 # ted - pending
 
-## How to speak so that people want to listen
+## How to Speak So That People Want to Listen
 
 Verb/Verb Phrase
 

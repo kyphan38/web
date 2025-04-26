@@ -1,4 +1,4 @@
-# mechanism of process execution
+# process execution mechanism
 
 ## Process Execution
 
