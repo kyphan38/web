@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-technical/os - ongoing/processes/process-execution-mechanism" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">process execution mechanism | This is my place, bro!</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://kyphan38.github.io/technical/os - ongoing/processes/process-execution-mechanism"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="process execution mechanism | This is my place, bro!"><meta data-rh="true" name="description" content="Process Execution"><meta data-rh="true" property="og:description" content="Process Execution"><link data-rh="true" rel="icon" href="/img/earth.ico"><link data-rh="true" rel="canonical" href="https://kyphan38.github.io/technical/os - ongoing/processes/process-execution-mechanism"><link data-rh="true" rel="alternate" href="https://kyphan38.github.io/technical/os - ongoing/processes/process-execution-mechanism" hreflang="en"><link data-rh="true" rel="alternate" href="https://kyphan38.github.io/technical/os - ongoing/processes/process-execution-mechanism" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.e040279e.css">
+<script src="/assets/js/runtime~main.a3c72ef6.js" defer="defer"></script>
+<script src="/assets/js/main.a92b8739.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/bw_earth.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/bw_earth.png" alt="earth" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/bw_earth.png" alt="earth" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">kp</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/">docs</a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently dark mode)" aria-label="Switch between dark and light mode (currently dark mode)" aria-live="polite" aria-pressed="true"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/">index</a><button aria-label="Expand sidebar category &#x27;index&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/faqs/java">faqs</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/guides/bash-script-global">guides</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/interviews/git">interviews</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/leetcode/step">leetcode</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/personal/book/enzyme - ongoing/ban-co-the-song-lau-ma-khong-benh-tat">personal</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/technical/aws - ongoing/intro/aws-certifications">technical</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/aws - ongoing/intro/aws-certifications">aws - ongoing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/kubernetes/beginner/main">kubernetes</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/linux - ongoing/understand-and-use-essential-tools">linux - ongoing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/mlops - ongoing/module 1/linux">mlops - ongoing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/networking - ongoing/main">networking - ongoing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/technical/os - ongoing/processes/introduction">os - ongoing</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/technical/os - ongoing/processes/introduction">processes</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/technical/os - ongoing/processes/introduction">processes</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/technical/os - ongoing/processes/process-abstraction">process abstraction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/technical/os - ongoing/processes/system-calls-for-process-management">system calls for process management</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/technical/os - ongoing/processes/process-execution-mechanism">process execution mechanism</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/technical/os - ongoing/processes/scheduling-policies">scheduling policies</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/technical/os - ongoing/processes/inter-process-communication">inter-process communication</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/os - ongoing/memory/memory">memory</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/os - ongoing/concurrency/processed">concurrency</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/os - ongoing/io and filesystems/processed">io and filesystems</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/os - ongoing/the xv6 operating system/processed">the xv6 operating system</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/os - ongoing/networking subsystem/processed">networking subsystem</a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/soft skills/ces">soft skills</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/vault - ongoing/introduction-to-vault">vault - ongoing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/w3school/html/tutorial">w3school</a></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">technical</span><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">os - ongoing</span><meta itemprop="position" content="2"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">processes</span><meta itemprop="position" content="3"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">process execution mechanism</span><meta itemprop="position" content="4"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>process execution mechanism</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="process-execution">Process Execution<a href="#process-execution" class="hash-link" aria-label="Direct link to Process Execution" title="Direct link to Process Execution">​</a></h2>
+<p>--</p>
+<ul>
+<li>OS allocates memory and creates memory image<!-- -->
+<ul>
+<li>Code and data (from executable)</li>
+<li>Stack and heap</li>
+</ul>
+</li>
+<li>Points CPU program counter to next instruction<!-- -->
+<ul>
+<li>Other registers may store operands, return values, etc.</li>
+</ul>
+</li>
+<li>After setup, OS is out of the way - completed and process executes directly on CPU</li>
+<li>OS is not involved in every single instruction execution</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-a-simple-function-call-works">How a Simple Function Call Works?<a href="#how-a-simple-function-call-works" class="hash-link" aria-label="Direct link to How a Simple Function Call Works?" title="Direct link to How a Simple Function Call Works?">​</a></h2>
+<p>Things to recall</p>
+<ul>
+<li>Program Counter (PC) holds the memory address of the next instruction to be executed by the CPU</li>
+<li>Stack Pointer (SP) points to the current top of the stack in memory</li>
+<li>Base Pointer (BP) / Frame Pointer (FP) points to a fixed location within the current stack frame, making access to function arguments, local variables, and other stack frame data easier</li>
+<li>Stack manages function calls, stores temporary data like local variables and return addresses</li>
+</ul>
+<p>How a simple function call works in a sequential flow</p>
+<ul>
+<li>When calling<!-- -->
+<ul>
+<li>A function call (e.g., myFunction()) translates to a specific CPU instruction - CALL</li>
+<li>The CALL instruction performs two primary, sequential actions<!-- -->
+<ul>
+<li>It pushes the return address onto the stack - the address in the calling function where execution resumes after the called function finishes</li>
+<li>PC points to the next instruction (memory address) where the function&#x27;s code begins</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Inside called function<!-- -->
+<ul>
+<li>Once execution begins inside the called function, a new stack frame is created on the stack</li>
+<li>SP points to the top of the stack</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/11-6c3d2634d2edaffff979f177f0a50813.png" width="440" height="436" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-is-a-system-call-different">How Is a System Call Different?<a href="#how-is-a-system-call-different" class="hash-link" aria-label="Direct link to How Is a System Call Different?" title="Direct link to How Is a System Call Different?">​</a></h2>
+<p>--</p>
+<ul>
+<li>CPU hardware has multiple privilege levels<!-- -->
+<ul>
+<li>One to run user code: user mode</li>
+<li>One to run OS code like system calls: kernel mode</li>
+<li>Some instructions execute only in kernel mode</li>
+</ul>
+</li>
+<li>The kernel does not trust or use the user stack<!-- -->
+<ul>
+<li>Uses a separate kernel stack when in kernel mode</li>
+<li>User stack: each user process has its own stack in user space</li>
+<li>Kernel stack: when a system call is made, the CPU switches to a separate kernel stack that belongs to the calling process but exists in kernel space</li>
+</ul>
+</li>
+<li>Kernel does not trust user-provided addresses to jump to<!-- -->
+<ul>
+<li>Kernel sets up the Interrupt Descriptor Table (IDT) at boot time</li>
+<li>IDT has addresses of kernel functions to run for system calls and other events</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="trap-instruction">Trap Instruction<a href="#trap-instruction" class="hash-link" aria-label="Direct link to Trap Instruction" title="Direct link to Trap Instruction">​</a></h2>
+<p>Trap instruction execution steps</p>
+<ul>
+<li>When a system call must be made, a special trap instruction is run (usually hidden from the user by libc)</li>
+<li>Trap instruction execution<!-- -->
+<ul>
+<li>Move CPU to higher privilege level</li>
+<li>Switch to kernel stack</li>
+<li>Save context (old PC, registers) on kernel stack</li>
+<li>Look up address in IDT and jump to trap handler function in OS code</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/12-c6166660a2e02ca30332ecf35dc8c376.png" width="349" height="546" class="img_ev3q"></p>
+<p>Triggers for trap instructions and IDT lookup</p>
+<ul>
+<li>Trap instruction is executed on hardware in the following cases<!-- -->
+<ul>
+<li>System call (program needs OS service)</li>
+<li>Program fault (program does something illegal, e.g., accesses memory it doesn’t have access to)</li>
+<li>Interrupt (external device needs attention of OS, e.g., a network packet has arrived on network card)</li>
+</ul>
+</li>
+<li>Across all cases, the mechanism is: save context on kernel stack and switch to OS address in the IDT</li>
+<li>IDT has many entries/functions, which to use?<!-- -->
+<ul>
+<li>System calls/interrupts store a number in a CPU register before calling trap, to identify which IDT entry to use</li>
+</ul>
+</li>
+</ul>
+<p>Return from trap and exit kernel mode</p>
+<ul>
+<li>When OS is done handling syscall or interrupt, it calls a special instruction - return-from-trap<!-- -->
+<ul>
+<li>Restore context of CPU registers from kernel stack</li>
+<li>Change CPU privilege from kernel mode to user mode</li>
+<li>Restore PC and jump to user code after trap</li>
+</ul>
+</li>
+<li>User process unaware that it was suspended, resumes execution as normal</li>
+<li>Will you always return to the same user process from kernel mode? No</li>
+<li>Before returning to user mode, the OS checks whether it should continue running the same process or switch to another process</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-switch-between-processes">Why Switch Between Processes?<a href="#why-switch-between-processes" class="hash-link" aria-label="Direct link to Why Switch Between Processes?" title="Direct link to Why Switch Between Processes?">​</a></h2>
+<p>--</p>
+<ul>
+<li>Sometimes when the OS is in kernel mode, it cannot return to the same process it left<!-- -->
+<ul>
+<li>Process has exited or must be terminated (e.g., segfault)</li>
+<li>Process has made a blocking system call (e.g., reading data from disk, waiting for network input, waiting for a timer)<!-- -->
+<ul>
+<li>The process transfers control to the kernel to handle the request</li>
+<li>The kernel starts the operation</li>
+<li>The kernel blocks the process while operating → the process is in waiting or blocked state → the process cannot use the CPU</li>
+<li>A context switch is performed by OS to select another process from the &quot;ready&quot; queue to run on the CPU</li>
+<li>After finishing the operation, the kernel updates process state from &quot;blocked&quot; to &quot;ready&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Sometimes, the OS does not want to return to the same process<!-- -->
+<ul>
+<li>The process has run for too long</li>
+<li>Must timeshare CPU with other processes</li>
+</ul>
+</li>
+<li>In such cases, OS performs a context switch to switch from one process to another</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-os-scheduler">The OS Scheduler<a href="#the-os-scheduler" class="hash-link" aria-label="Direct link to The OS Scheduler" title="Direct link to The OS Scheduler">​</a></h2>
+<p>--</p>
+<ul>
+<li>OS scheduler has two parts<!-- -->
+<ul>
+<li>Policy to pick which process to run</li>
+<li>Mechanism to switch to that process</li>
+</ul>
+</li>
+<li>Non-preemptive (cooperative) schedulers are polite<!-- -->
+<ul>
+<li>Switch only if process cannot run - blocked or terminated</li>
+</ul>
+</li>
+<li>Preemptive (non-cooperative) schedulers can switch even when process is ready to continue<!-- -->
+<ul>
+<li>CPU generates periodic timer interrupt</li>
+<li>After servicing interrupt, OS checks if the current process has run for too long</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mechanism-of-context-switch">Mechanism of Context Switch<a href="#mechanism-of-context-switch" class="hash-link" aria-label="Direct link to Mechanism of Context Switch" title="Direct link to Mechanism of Context Switch">​</a></h2>
+<p>Example: process A has moved from user to kernel mode, OS decides it must switch from A to B</p>
+<ul>
+<li>Save context (PC, registers, kernel stack pointer) of A on kernel stack</li>
+<li>Switch SP to kernel stack of B</li>
+<li>Restore context from B’s kernel stack<!-- -->
+<ul>
+<li>Who has saved registers on B’s kernel stack?<!-- -->
+<ul>
+<li>OS did, when it switched out B in the past</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Now, CPU is running B in kernel mode, return-from-trap to switch to user mode of B</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-subtlety-on-saving-context">A Subtlety on Saving Context<a href="#a-subtlety-on-saving-context" class="hash-link" aria-label="Direct link to A Subtlety on Saving Context" title="Direct link to A Subtlety on Saving Context">​</a></h2>
+<p>--</p>
+<ul>
+<li>Context (PC and other CPU registers) saved on the kernel stack in two different scenarios</li>
+<li>When going from user mode to kernel mode, user context (e.g., which instruction of user code you stopped at) is saved on kernel stack by the trap instruction<!-- -->
+<ul>
+<li>Restored by return-from-trap</li>
+</ul>
+</li>
+<li>During a context switch, kernel context (e.g., where you stopped in the OS code) of process A is saved on the kernel stack of A by the context switching code<!-- -->
+<ul>
+<li>Restores kernel context of process B</li>
+</ul>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2025-04-26T08:01:33.000Z" itemprop="dateModified">Apr 26, 2025</time></b></span></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/technical/os - ongoing/processes/system-calls-for-process-management"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">system calls for process management</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/technical/os - ongoing/processes/scheduling-policies"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">scheduling policies</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#process-execution" class="table-of-contents__link toc-highlight">Process Execution</a></li><li><a href="#how-a-simple-function-call-works" class="table-of-contents__link toc-highlight">How a Simple Function Call Works?</a></li><li><a href="#how-is-a-system-call-different" class="table-of-contents__link toc-highlight">How Is a System Call Different?</a></li><li><a href="#trap-instruction" class="table-of-contents__link toc-highlight">Trap Instruction</a></li><li><a href="#why-switch-between-processes" class="table-of-contents__link toc-highlight">Why Switch Between Processes?</a></li><li><a href="#the-os-scheduler" class="table-of-contents__link toc-highlight">The OS Scheduler</a></li><li><a href="#mechanism-of-context-switch" class="table-of-contents__link toc-highlight">Mechanism of Context Switch</a></li><li><a href="#a-subtlety-on-saving-context" class="table-of-contents__link toc-highlight">A Subtlety on Saving Context</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"></div></footer></div>
+</body>
+</html>
