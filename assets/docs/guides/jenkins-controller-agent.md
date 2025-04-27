@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- System: two Ubuntu servers with root or sudo access and network connectivity
+- System: Two Ubuntu servers with root or sudo access and network connectivity
   - controller-server: 192.168.64.10
   - agent-server: 192.168.64.11
 
