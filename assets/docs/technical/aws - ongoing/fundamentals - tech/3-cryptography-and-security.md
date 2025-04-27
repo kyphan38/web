@@ -17,10 +17,10 @@ Concept
 ![img](./img/12.png)
 
 - Encryption transforms plaintext into ciphertext using an algorithm and a key
-  - Plaintext: unencrypted data that can be loaded directly into an application
-  - Algorithm: a mathematical code that takes plaintext and an encryption key to create ciphertext
-  - Key: can be as simple as a password or much more complex
-  - Ciphertext: encrypted data that is unreadable without the appropriate key to decrypt it
+  - Plaintext: Unencrypted data that can be loaded directly into an application
+  - Algorithm: A mathematical code that takes plaintext and an encryption key to create ciphertext
+  - Key: Can be as simple as a password or much more complex
+  - Ciphertext: Encrypted data that is unreadable without the appropriate key to decrypt it
 
 ### Symmetric Encryption
 
@@ -67,7 +67,7 @@ Example
 - Cat Ruler hides a message in a puppy image and sends it to Robot General, who knows how to extract the data
 - To an outsider, the image appears normal, providing plausible deniability
 - The carrier image may increase slightly in size, but it looks nearly identical to the original
-- An example involves hiding the message "HI" in a puppy image by adjusting pixel values: the decimal values for "H" (72) and "I" (73) are encoded by altering two pixels by 8 and 9, respectively
+- An example involves hiding the message "HI" in a puppy image by adjusting pixel values: The decimal values for "H" (72) and "I" (73) are encoded by altering two pixels by 8 and 9, respectively
 - Advanced steganography algorithms make the hidden data extremely difficult to detect without a specific key or pattern
 - While this method is basic, real-world steganography algorithms are far more complex and harder to detect
 

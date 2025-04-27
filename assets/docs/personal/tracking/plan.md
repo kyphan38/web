@@ -15,7 +15,7 @@ Leetcode - Daily
 Stage 1: Strong foundation
 
 - Programming basics: Python, Java
-- System design: scalability, reliability, performance, and optimization
+- System design: Scalability, reliability, performance, and optimization
 - Networking: TCP/IP, DNS, HTTP/HTTPS, load balancers, and firewalls
 - Databases: SQL, NoSQL
 - Operating systems: Linux and Windows environments
@@ -30,9 +30,9 @@ Stage 2: Pratical experience
 
 Stage 3: Specialize in key domains
 
-- Cloud: cloud-native design
+- Cloud: Cloud-native design
 - Enterprise: TOGAF, Zachman, integrating legacy systems with modern solutions
-- Security: encryption, identity management, compliance
+- Security: Encryption, identity management, compliance
 - Certifications: SAA - Professional, TOGAF Certification, etc.
 
 Stage 4: Develop soft skills

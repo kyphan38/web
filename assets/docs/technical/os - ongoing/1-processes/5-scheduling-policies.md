@@ -16,8 +16,8 @@
 - Maximize (utilization = fraction of time CPU is used)
 - Minimize average (turnaround time = time from a process's arrival to completion) 
 - Minimize average (response time = time from a process's arrival to first scheduling)
-- Fairness: all processes must be treated equally
-- Minimize overhead: run process long enough to amortize (reduce) cost of context switch (~1 microsecond)
+- Fairness: All processes must be treated equally
+- Minimize overhead: Run process long enough to amortize (reduce) cost of context switch (~1 microsecond)
 
 ## First-in-First-Out (FIFO)
 

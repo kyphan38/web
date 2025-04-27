@@ -118,7 +118,7 @@ Add new node
 - Number of executors: 1
 - Remote root directory: /home/ubuntu/jenkins-agent-ubuntu
 - Labels; ubuntu agent
-- Launch method: launch agents via SSH
+- Launch method: Launch agents via SSH
   - Host: 192.168.64.11
   - Credentials: ubuntu (SSH key for agent-server)
 

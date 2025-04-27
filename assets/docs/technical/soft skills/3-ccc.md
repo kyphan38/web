@@ -245,13 +245,13 @@ Common barriers to visibility
 
 - Resistance to showing "imperfect" work
   - Some teams hesitate to share work in progress due to fear of appearing unprepared or "not good enough"
-  - Example: a developer avoids pushing early code to a shared repository until it's "perfect," delaying feedback and collaboration
+  - Example: A developer avoids pushing early code to a shared repository until it's "perfect," delaying feedback and collaboration
 - Fear of judgement being used against the team
   - Teams worry that exposing issues might reflect poorly on their competence or be used in performance evaluations
-  - Example: a team avoids sharing missed deadlines in retrospectives, fearing blame rather than using the data to improve
+  - Example: A team avoids sharing missed deadlines in retrospectives, fearing blame rather than using the data to improve
 - Not feeling "safe" in the workplace
   - When people don't feel safe to speak up or share transparently, visibility breaks down
-  - Example: in a high-pressure culture, junior members may avoid raising red flags or asking for help to avoid negative attention
+  - Example: In a high-pressure culture, junior members may avoid raising red flags or asking for help to avoid negative attention
 
 Strategies for enhancing visibility
 
@@ -265,13 +265,13 @@ Strategies for enhancing visibility
   - Share lessons learned, review work done, and continuously improve transparency
 - Maintain feedback loops
   - Foster open communication between team members and stakeholders
-- Example: a team uses a Kanban board visible to all stakeholders, updates it during daily standups, and holds weekly retrospectives to discuss what's moving and what's stuck
+- Example: A team uses a Kanban board visible to all stakeholders, updates it during daily standups, and holds weekly retrospectives to discuss what's moving and what's stuck
 
 Navigating resistance in visibility
 
 - Skeptics
   - Provide data, examples, and case studies to show how visibility improves project outcomes
-  - Example: share stats from a previous sprint that saw 20% faster delivery after switching to a visible workflow
+  - Example: Share stats from a previous sprint that saw 20% faster delivery after switching to a visible workflow
 - Followers
   - Show personal benefits and provide encouragement to increase involvement
   - Highlight how visibility helped a peer get early recognition for solving a blocker, motivating others to share more
@@ -296,7 +296,7 @@ Context
 - This is a story about leadership in a DevOps environment and how different styles can either wreck or align a team
 - The speaker was leading a DevOps team under a new VP of Infrastructure, both were newly hired
 - While the speaker fostered collaboration, experimentation, and transparency, the VP took a more controlling, closed-off approach
-- Over time, the contrast in leadership styles created two very different team dynamics: one siloed and rigid, the other empowered and high-performing
+- Over time, the contrast in leadership styles created two very different team dynamics: One siloed and rigid, the other empowered and high-performing
 - The real lesson here isn't about pointing fingers, but about recognizing how leadership behaviors deeply impact team health and outcomes
 
 Actions and result
@@ -325,13 +325,13 @@ Actions and result
 | 2      | What does the presentation in Step 2 highlight?                                                    | How teaching and learning within teams enhance collaboration                                               |
 | 3      | In the Co-creating and Mobbing summary, what do interlocking hands, a light bulb, and an upward trending graph symbolize, respectively? | Collaboration, innovation, and team growth                                                                |
 | 4      | What shapes the rhythm of team success in DevOps, according to the introduction?                    | Every step in collaboration, collusion, and conspiracy                                                    |
-| 5      | What impact can the initial slower pace of co-creating and mobbing have in the long run, according to the "Quality Over Speed: a Strategic Approach" slide? | Higher quality results and more efficient long-term outcomes                                               |
+| 5      | What impact can the initial slower pace of co-creating and mobbing have in the long run, according to the "Quality Over Speed: A Strategic Approach" slide? | Higher quality results and more efficient long-term outcomes                                               |
 | 6      | In the Teaching and Learning summary, what symbolizes growth, collaboration, and knowledge sharing respectively? | A growing plant, interlocking hands, and an open book or light bulb                                      |
 | 7      | According to the "Understanding the Water Cooler Metaphor" slide, what often leads to unexpected insights and strengthened relationships? | Colleagues gathering for informal chats at the “Water Cooler”                                              |
-| 8      | What does collective learning create, according to the slide on "Growing Together: strengthening Team Bonds"? | A supportive environment where team members feel valued and understood                                   |
+| 8      | What does collective learning create, according to the slide on "Growing Together: Strengthening Team Bonds"? | A supportive environment where team members feel valued and understood                                   |
 | 9      | What does showing genuine curiosity and interest in fellow team members foster, as per the "Fostering Team Cohesion through Curiosity" slide? | An inclusive and supportive team environment                                                              |
 | 10     | What factors to consider to master observation and context?                                         | Body language, non-verbal cues, and the operating context                                                 |
-| 11     | Which of the following is not mentioned as a team learning activity in the "Learning Together: beyond Traditional Education" slide? | Working on individual projects separately                                                                 |
+| 11     | Which of the following is not mentioned as a team learning activity in the "Learning Together: Beyond Traditional Education" slide? | Working on individual projects separately                                                                 |
 | 12     | What does a culture of teaching and learning foster in DevOps teams, according to the presentation on "Cultivating a Learning Culture"? | Continuous improvement and adaptability                                                                   |
 | 13     | In mob programming, how many team members work on the same problem at the same time and place?       | The whole team                                                                                           |
 | 14     | What does co-creating and mobbing help harness for superior outcomes, as per the "Collaborative Action for Enhanced Outcomes" slide? | The collective power of the team                                                                          |

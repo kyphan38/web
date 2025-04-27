@@ -4,16 +4,16 @@
 
 Login methods
 
-- Local text-mode console: log in directly on the computer using a text-based interface
-- Local graphical-mode console: log in directly on the computer using a graphical interface, like a desktop
-- Remote text-mode login: log in to a remote computer over a network using a text-based interface (e.g., via SSH or Telnet)
-- Remote graphical-mode login: log in to a remote computer with a graphical desktop
+- Local text-mode console: Log in directly on the computer using a text-based interface
+- Local graphical-mode console: Log in directly on the computer using a graphical interface, like a desktop
+- Remote text-mode login: Log in to a remote computer over a network using a text-based interface (e.g., via SSH or Telnet)
+- Remote graphical-mode login: Log in to a remote computer with a graphical desktop
 
 Old terms
 
-- Console: the physical or main interface for interacting with a computer
-- Virtual terminal: a software-based text interface, like a command-line window
-- Terminal emulator: a program that mimics a text-based console on your screen
+- Console: The physical or main interface for interacting with a computer
+- Virtual terminal: A software-based text interface, like a command-line window
+- Terminal emulator: A program that mimics a text-based console on your screen
 
 SSH
 
@@ -29,11 +29,11 @@ aaron@192.168.0.17's password:
 
 Security features
 
-- Access controls: defines who access resources and what they can do
-- PAM (Pluggable Authentication Modules): handles authentication, authorization, and session management
-- Network security: protects systems from network-based threats
-- SSH hardening: secures the secure shell service for remote access
-- SELinux: enforces stricter security policies
+- Access controls: Defines who access resources and what they can do
+- PAM (Pluggable Authentication Modules): Handles authentication, authorization, and session management
+- Network security: Protects systems from network-based threats
+- SSH hardening: Secures the secure shell service for remote access
+- SELinux: Enforces stricter security policies
 - Others
 
 Account types
@@ -149,7 +149,7 @@ root:x:0:0:root:/root:/bin/bash
 
 Commands
 
-- `--help`: displays a brief summary of their usage and options
+- `--help`: Displays a brief summary of their usage and options
 
 ```bash
 ls --help
@@ -158,7 +158,7 @@ ls --help
 journalctl --help
 ```
 
-- `man`: displays a comprehensive manual pages
+- `man`: Displays a comprehensive manual pages
 
 ```bash
 man journalctl
@@ -167,7 +167,7 @@ man 1 printf
 man 3 printf
 ```
 
-- `apropos`: searches the names and short descriptions of all manual pages for a specific keyword
+- `apropos`: Searches the names and short descriptions of all manual pages for a specific keyword
 
 ```bash
 apropos director
@@ -179,13 +179,13 @@ sudo mandb
 
 ## Additional System Documentation
 
-- `info`: accesses documentation in the GNU Info format
+- `info`: Accesses documentation in the GNU Info format
 
 ```bash
 info bash
 ```
 
-- `/usr/share/doc`: contains supplementary documentation provided by installed packages
+- `/usr/share/doc`: Contains supplementary documentation provided by installed packages
 
 ```bash
 cd /usr/share/doc/bash
@@ -199,7 +199,7 @@ grep "command" INTRO
 
 List files and directories
 
-- `ls`: lists the contents of a directory
+- `ls`: Lists the contents of a directory
 
 ```bash
 ls
@@ -222,7 +222,7 @@ cd ..
 
 Create files
 
-- `touch`: creates an empty file if it doesn't exist, or updates the access and modification timestamps of an existing file
+- `touch`: Creates an empty file if it doesn't exist, or updates the access and modification timestamps of an existing file
 
 ```bash
 touch /home/kyphan/text.txt
@@ -238,7 +238,7 @@ mkdir -p /home/kyphan/folder
 
 Copy files and directories
 
-- `cp`: copies files or entire directory structures
+- `cp`: Copies files or entire directory structures
 
 ```bash
 cp hello.text folder/
@@ -251,7 +251,7 @@ cp -r folder/ hello/
 
 Move files
 
-- `mv`: moves files/directories to a different location or renames them
+- `mv`: Moves files/directories to a different location or renames them
 
 ```bash
 mv abc.txt hello/
@@ -261,7 +261,7 @@ mv folder/ new_folder/
 
 Delete files and directories
 
-- `mv`: removes files and directories
+- `mv`: Removes files and directories
 
 ```bash
 rm abc.txt

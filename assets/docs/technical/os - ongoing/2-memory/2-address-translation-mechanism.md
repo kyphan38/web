@@ -10,7 +10,7 @@ Virtual address space is set up by OS during process creation
 
 # Address Translation
 
-Simplified OS: places the entire memory image in one chunk
+Simplified OS: Places the entire memory image in one chunk
 
 The following translation from VA to PA is needed:
 - 128 to 32896 (32KB + 128)

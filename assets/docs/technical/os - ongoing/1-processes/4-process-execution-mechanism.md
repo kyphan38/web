@@ -39,13 +39,13 @@ How a simple function call works in a sequential flow
 --
 
 - CPU hardware has multiple privilege levels
-  - One to run user code: user mode
+  - One to run user code: User mode
   - One to run OS code like system calls: kernel mode
   - Some instructions execute only in kernel mode
 - The kernel does not trust or use the user stack
   - Uses a separate kernel stack when in kernel mode
-  - User stack: each user process has its own stack in user space
-  - Kernel stack: when a system call is made, the CPU switches to a separate kernel stack that belongs to the calling process but exists in kernel space
+  - User stack: Each user process has its own stack in user space
+  - Kernel stack: When a system call is made, the CPU switches to a separate kernel stack that belongs to the calling process but exists in kernel space
 - Kernel does not trust user-provided addresses to jump to
   - Kernel sets up the Interrupt Descriptor Table (IDT) at boot time
   - IDT has addresses of kernel functions to run for system calls and other events
@@ -69,7 +69,7 @@ Triggers for trap instructions and IDT lookup
   - System call (program needs OS service)
   - Program fault (program does something illegal, e.g., accesses memory it doesn't have access to)
   - Interrupt (external device needs attention of OS, e.g., a network packet has arrived on network card)
-- Across all cases, the mechanism is: save context on kernel stack and switch to OS address in the IDT
+- Across all cases, the mechanism is: Save context on kernel stack and switch to OS address in the IDT
 - IDT has many entries/functions, which to use?
   - System calls/interrupts store a number in a CPU register before calling trap, to identify which IDT entry to use
 
@@ -115,7 +115,7 @@ Return from trap and exit kernel mode
 
 ## Mechanism of Context Switch
 
-Example: process A has moved from user to kernel mode, OS decides it must switch from A to B
+Example: Process A has moved from user to kernel mode, OS decides it must switch from A to B
 
 - Save context (PC, registers, kernel stack pointer) of A on kernel stack
 - Switch SP to kernel stack of B

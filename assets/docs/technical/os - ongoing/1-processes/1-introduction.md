@@ -13,9 +13,9 @@ Key features when running a program
 - The executable contains
   - Instructions that the CPU can understand
   - Data of the program (all numbered with addresses)
-- Instructions run on CPU: hardware implements an Instruction Set Architecture (ISA)
+- Instructions run on CPU: Hardware implements an Instruction Set Architecture (ISA)
 - CPU also consists of a few registers
-  - Program Counter (PC): points to the next instruction to be executed
+  - Program Counter (PC): Points to the next instruction to be executed
   - Operands of instructions, memory addresses
 
 ## What Happens When You Run a Program?
@@ -46,7 +46,7 @@ Most recently used instructions and data are in CPU caches for faster access
 --
 
 - OS provides the process abstraction
-  - Process: a running program
+  - Process: A running program
   - OS creates and manages processes
 - Each process has the illusion of having the complete CPU, and OS virtualizes CPU
   - At any point in time, we have many processes such as listening to music, browsing the web
@@ -57,7 +57,7 @@ Most recently used instructions and data are in CPU caches for faster access
 
 --
 
-- OS manages the memory of the process: code, data, stack, heap, etc.
+- OS manages the memory of the process: Code, data, stack, heap, etc.
 - Each process thinks it has a dedicated memory space for itself, numbering code and data starting from 0 (virtual addresses)
 - OS abstracts the details of the actual placement in memory, translates from virtual addresses to actual physical addresses, and returns to the process
   - Each process is not aware of how memory is implemented

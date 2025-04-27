@@ -11,7 +11,7 @@ This problem must be solved in the C library
 This problem also occurs in the kernel
 - The kernel must allocate memory for its internal data structures
 
-# Variable sized allocation: headers
+# Variable sized allocation: Headers
 
 Consider a simple implementation of malloc
 

@@ -8,8 +8,8 @@
 - OS timeshares CPU across multiple processes, virtualizing the CPU
 - OS has a CPU scheduler that picks one of the many active processes to execute on a CPU
 - A CPU scheduler contains
-  - Policy: defines which process to run
-  - Mechanism: defines how to "context switch" between processes
+  - Policy: Defines which process to run
+  - Mechanism: Defines how to "context switch" between processes
 
 ## What Constitutes a Process?
 
@@ -19,9 +19,9 @@
 - Memory image
   - Code and data (static)
   - Stack and heap (dynamic)
-    - Stack: function calls, local variables, etc.
-    - Heap: dynamically allocated memory
-- CPU context: registers
+    - Stack: Function calls, local variables, etc.
+    - Heap: Dynamically allocated memory
+- CPU context: Registers
   - Program counter
   - Current operands
   - Stack pointer
@@ -43,20 +43,20 @@
 
 States
 
-- Running: currently executing on CPU
-- Ready: waiting to be scheduled
-- Blocked: suspended, not ready to run
+- Running: Currently executing on CPU
+- Ready: Waiting to be scheduled
+- Blocked: Suspended, not ready to run
   - Why? Waiting for some event, e.g., process issues a read from disk
   - When is it unblocked? Disk issues an interrupt when data is ready
-- New: being created, yet to run
-- Dead: terminated
+- New: Being created, yet to run
+- Dead: Terminated
 
 ![img](./img/4.png)
 
-- Ready &rarr; Running: the OS scheduler assigns the CPU to the process
-- Running &rarr; Ready: the OS takes the CPU away (e.g., time limit reached)
-- Running &rarr; Blocked: the process initiates a wait (e.g., starts I/O)
-- Blocked &rarr; Ready: the awaited event finishes (e.g., I/O done), making the process runnable again (waiting for the CPU)
+- Ready &rarr; Running: The OS scheduler assigns the CPU to the process
+- Running &rarr; Ready: The OS takes the CPU away (e.g., time limit reached)
+- Running &rarr; Blocked: The process initiates a wait (e.g., starts I/O)
+- Blocked &rarr; Ready: The awaited event finishes (e.g., I/O done), making the process runnable again (waiting for the CPU)
 
 Example
 

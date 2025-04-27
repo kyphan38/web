@@ -23,7 +23,7 @@ Managing your leaders
   - During incidents, avoid overloading them with details (e.g., the root cause, who's fixing it). That level of detail is for engineers or the incident manager
 - Seek ongoing feedback on major outcomes
   - They want visibility into performance and impact
-  - For rollouts, update them with clear statuses: is it green, yellow, or red? Do we have feature parity? What's the customer feedback?
+  - For rollouts, update them with clear statuses: Is it green, yellow, or red? Do we have feature parity? What's the customer feedback?
 - Create alignment
   - Ensure your work aligns with the organization's strategy, mission, and vision
 - Be consistent to build trust and rapport (close relationship)
@@ -57,7 +57,7 @@ External vs internal clients
 Integrating a client-centric approach
 
 - Always be curious
-  - Ask: why is the client requesting this? What do they need it for?
+  - Ask: Why is the client requesting this? What do they need it for?
 - Practice active listening
 - Communicate and document
   - Never leave a meeting without a clear summary
@@ -162,7 +162,7 @@ Must-haves vs good-to-haves
   - Process improvements
 - Prioritization, including internal and external client needs, often occurs before team presentations
   - Ignoring internal client priorities can slow down or even block your ability to meet external client demands
-  - Example: technical debt. Any system built by humans requires maintenance. If your codebase isn't maintained, it degrades over time. This degradation makes it harder to meet external client expectations because internal needs (like system upkeep) were neglected
+  - Example: Technical debt. Any system built by humans requires maintenance. If your codebase isn't maintained, it degrades over time. This degradation makes it harder to meet external client expectations because internal needs (like system upkeep) were neglected
 
 Enhancing communication
 
@@ -335,7 +335,7 @@ Active listening
   - Active listening is the cornerstone of effective conflict resolution
   - Pay attention to verbal, nonverbal, and paraverbal cues - expressions, micro-expressions, body language, tone, etc
 - Behavioral change stairway model
-  - Originally developed for hostage negotiation, this model progresses through: active listening, empathy, rapport, influence, and behavioral change
+  - Originally developed for hostage negotiation, this model progresses through: Active listening, empathy, rapport, influence, and behavioral change
 - Active vs passive Listening
   - Emphasize the distinction between simply hearing and actively engaging
 

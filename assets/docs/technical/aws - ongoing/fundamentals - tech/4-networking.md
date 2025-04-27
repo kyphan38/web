@@ -55,10 +55,10 @@ Summary
 
 Components on frame
 
-- Preamble and SFD: define the start of the frame
-- MAC header: contains the destination and source MAC addresses and the EtherType field (layer 3 protocol)
-- Payload: the data encapsulated within the frame
-- FCS: check to detect any transmission errors
+- Preamble and SFD: Define the start of the frame
+- MAC header: Contains the destination and source MAC addresses and the EtherType field (layer 3 protocol)
+- Payload: The data encapsulated within the frame
+- FCS: Check to detect any transmission errors
 
 CSMA/CD - Carrier-sense Multiple Access / Collision Detection
 
@@ -98,13 +98,13 @@ Decimal and binary
 
 ![img](./img/25.png)
 
-- Conversion: decimal to binary
+- Conversion: Decimal to binary
 
 ![img](./img/26.png)
 
 ![img](./img/27.png)
 
-- Conversion: binary to decimal
+- Conversion: Binary to decimal
 
 ![img](./img/28.png)
 

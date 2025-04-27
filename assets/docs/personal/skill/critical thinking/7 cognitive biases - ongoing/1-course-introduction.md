@@ -7,7 +7,7 @@
 - Trị dứt 7 căn bệnh phổ biến của tư duy
 - Đặt câu hỏi để khai khác, mở rộng, làm rõ vấn đề
 - Trình bày thuyết phục về bản thân, sản phẩm, cơ hội kinh doanh, doan nghiệp, ý tưởng mới, hay báo cáo công việc
-- Phân tích và đánh giá các sự việc, vấn đề như: nhân sự, cơ hội kinh doanh, sản phẩm mới, dự án mới, khách hàng, đối tác
+- Phân tích và đánh giá các sự việc, vấn đề như: Nhân sự, cơ hội kinh doanh, sản phẩm mới, dự án mới, khách hàng, đối tác
 
 Phương pháp học
 

@@ -23,7 +23,7 @@ OS updates the page table upon a context switch
 
 # Page Table Entry (PTE)
 
-Simplest page table: linear page table
+Simplest page table: Linear page table
 
 Page table is an array of page table entries, one per virtual page
 

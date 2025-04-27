@@ -7,8 +7,8 @@ Key features
 - Performing authentication and managing identities
 - Assigning identities and associated policies to users
 - Supporting multiple methods tailored to specific use cases
-  - Human-oriented: e.g., LDAP, OIDC
-  - System-oriented: e.g., AppRole, AWS
+  - Human-oriented: LDAP, OIDC, etc.
+  - System-oriented:  AppRole, AWS, etc.
 - Once authenticated, Vault issues a client token used for all subsequent requests (e.g., read/write operations)
   - The primary goal of all authentication methods is to obtain a token
   - Each token is linked to one or more policies and has a time-to-live (TTL)
@@ -130,14 +130,14 @@ Vault provides a fully-featured API designed for machine-to-machine interaction
 Critical components of an API request that need to be included
 
 - Request Type: GET, POST, or DELETE
-- Headers: appropriate headers such as X-Vault-Token, Authorization, or X-Vault-Namespace
-- Data: included if required by the request
-- API Endpoint: specifies the Vault component being interacted with
+- Headers: Appropriate headers such as X-Vault-Token, Authorization, or X-Vault-Namespace
+- Data: Included if required by the request
+- API Endpoint: Specifies the Vault component being interacted with
 
-HTTP API: when is a token required?
+HTTP API: When is a token required?
 
-- Using an Auth Method: when authenticating to Vault via the API, a token is not required because authentication generates a new token
-- Configuring an Auth Method: when enabling, configuring, or disabling an authentication method, a token with appropriate permissions must be provided
+- Using an Auth Method: When authenticating to Vault via the API, a token is not required because authentication generates a new token
+- Configuring an Auth Method: When enabling, configuring, or disabling an authentication method, a token with appropriate permissions must be provided
 
 Enabling an authentication method
 
@@ -161,7 +161,7 @@ Using the vault login command
 - Utilizes a token helper to store the token
 - Syntax: `vault login -method=<method_type> <argument>`
 
-Example: token-based authentication
+Example: Token-based authentication
 
 ```bash
 vault login <hvs.2kjqZ12ofDr3efPdtMJ1z5dZ>
@@ -181,7 +181,7 @@ identity_policies    []
 policies             ["root"]
 ```
 
-Example: userpass authentication
+Example: Userpass authentication
 
 ```bash
 vault login -method=userpass username=kyphan
@@ -239,7 +239,7 @@ Users must parse the response to extract the token and use it for subsequent Vau
 
 Authenticating with an authentication method
 
-- Data: role_id, secret_id, etc.
+- Data: Role_id, secret_id, etc.
 - Method: POST
 - Response: JSON
 
@@ -327,15 +327,15 @@ When selecting an authentication method, consider the following key factors and 
 - Frequently rotated
   - Typically refers to dynamic credentials that are regularly updated
   - Meets the requirements: AWS, LDAP, Azure, GCP (Google Cloud Platform), Kubernetes (K8s)
-  - Does not meet the requirements: userpass, TLS Certificates, AppRole
+  - Does not meet the requirements: Userpass, TLS Certificates, AppRole
 - Remove secrets from process or build pipeline
   - Generally indicates the use of dynamic or integrated credentials to eliminate hardcoded secrets
   - Meets the requirements: AWS, Azure, GCP (Google Cloud Platform), Kubernetes (K8s)
-  - Does not meet the requirements: userpass, LDAP
+  - Does not meet the requirements: Userpass, LDAP
 - Use existing user credentials
   - Typically means integrating with an existing identity provider to leverage current user credentials
   - Meets the Requirement: OIDC (OpenID Connect), LDAP, Okta, GitHub
-  - Does not meet the requirements: userpass, AWS, Azure, GCP (Google Cloud Platform)
+  - Does not meet the requirements: Userpass, AWS, Azure, GCP (Google Cloud Platform)
 
 ## Differentiate Human vs System Auth Methods
 

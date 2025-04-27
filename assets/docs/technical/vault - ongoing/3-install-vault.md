@@ -10,7 +10,7 @@ Installing Vault
   - VMware virtual machines
   - Physical servers
   - Laptops
-- Vault is also compatible with multiple operating systems, such as: macOS, Windows, Linux, FreeBSD, NetBSD, OpenBSD, Solaris, etc.
+- Vault is also compatible with multiple operating systems, such as: MacOS, Windows, Linux, FreeBSD, NetBSD, OpenBSD, Solaris, etc.
 - To install and set up Vault, follow this order of operations
   - Install Vault
   - Create a configuration file

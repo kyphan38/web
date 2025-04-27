@@ -50,10 +50,10 @@ Locate the Jenkins home directory
 
 Important directory to backup
 
-- `config.xml`: the main configuration file (global settings, security, etc.)
-- `jobs/`: contains subdirectories for each job, including their config.xml (job settings) and builds/ (build history)
-- `plugins/`: contains installed plugins, though you can reinstall these later
-- `secrets/` : stores encryption keys and credentials (e.g., master.key, hudson.util.Secret)
+- `config.xml`: The main configuration file (global settings, security, etc.)
+- `jobs/`: Contains subdirectories for each job, including their config.xml (job settings) and builds/ (build history)
+- `plugins/`: Contains installed plugins, though you can reinstall these later
+- `secrets/` : Stores encryption keys and credentials (e.g., master.key, hudson.util.Secret)
 
 Stop Jenkins
 

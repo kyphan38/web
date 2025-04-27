@@ -17,7 +17,7 @@
   - int shmget (key_t key, int size, int shmflg)
 - By providing the same key, two processes can get same segment of memory
 - Can read/write to memory to communicate
-- Need to take care that one is not overwriting the other's data: how?
+- Need to take care that one is not overwriting the other's data. How?
 
 ## Signals
 
@@ -27,7 +27,7 @@
   - Some signals have fixed meaning (e.g., signal to terminate a process)
   - Some signals can be user-defined
 - Signals can be sent to a process by the OS or another process (e.g., if you type Ctrl+C, the OS sends a SIGINT signal to the running process)
-- Signal handler: every process has a default code to execute for each signal
+- Signal handler: Every process has a default code to execute for each signal
   - Exit on terminate signal
 - Some signal handlers can be overridden to do other things
 
@@ -51,10 +51,10 @@
   - Read handle and write handle
   - A pipe is a half-duplex (one-way) communication
   - Data written in one file descriptor can be read through another
-- Regular pipes: both fds are in same process (how it is useful?)
+- Regular pipes: Both fds are in same process (how it is useful?)
   - Parent and child share fds after fork
   - Parent uses one end to write and child uses the other end to read
-- Named pipes: two endpoints of a pipe can be in different processes
+- Named pipes: Two endpoints of a pipe can be in different processes
 - Pipe data is buffered in OS buffers between write and read
 
 ## Message Queues

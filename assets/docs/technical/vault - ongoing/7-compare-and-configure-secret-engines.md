@@ -4,20 +4,20 @@
 
 Challenges with static secrets
 
-- Expiration: never expire, often required by legacy apps
-- Security: shared among team members, lacking accountability
-- Validity: always active, making them prime targets for attackers
-- Rotation: rarely rotated, manual process
-- Longevity: persist indefinitely due to technical debt or turnover
+- Expiration: Never expire, often required by legacy apps
+- Security: Shared among team members, lacking accountability
+- Validity: Always active, making them prime targets for attackers
+- Rotation: Rarely rotated, manual process
+- Longevity: Persist indefinitely due to technical debt or turnover
 
 Benefits of dynamic secrets
 
-- On-Demand Creation: generate secrets as needed
-- Debt Reduction: secrets are revoked in Vault and at the source
-- Leases: each secret has a lease for lifecycle management
-- Renewal: fine-grained control over renewability
-- Expiration: leases define validity periods
-- Revocation: auto-expire or manually revoke secrets
+- On-Demand Creation: Generate secrets as needed
+- Debt Reduction: Secrets are revoked in Vault and at the source
+- Leases: Each secret has a lease for lifecycle management
+- Renewal: Fine-grained control over renewability
+- Expiration: Leases define validity periods
+- Revocation: Auto-expire or manually revoke secrets
 
 Examples
 
@@ -67,8 +67,8 @@ Types of secrets engines
   - Other: Active Directory, Consul, Cubbyhole, KV, Key Management, Identity, RabbitMQ, Nomad, SSH, TOTP, Terraform Cloud, KMIP, PKI, Transform, Transit, Venafi
 - Specific engines
   - KV: Key/Value (v1: non-versioned; v2: versioned)
-  - Database: supports Cassandra, MongoDB, PostgreSQL, etc.
-  - Key Management: integrates with Azure Key Vault, AWS KMS, GCP Cloud KMS
+  - Database: Supports Cassandra, MongoDB, PostgreSQL, etc.
+  - Key Management: Integrates with Azure Key Vault, AWS KMS, GCP Cloud KMS
 
 Secrets engine Functions
 
@@ -103,9 +103,9 @@ Secrets engine Functions
 
 Key features
 
-- Default Engines: cubbyhole and Identity are enabled by default and cannot be disabled
-- Enabling Engines: other engines must be explicitly enabled via CLI, API, or UI (for most)
-- Path Isolation: engines are enabled at unique, meaningful paths for interaction
+- Default Engines: Cubbyhole and Identity are enabled by default and cannot be disabled
+- Enabling Engines: Other engines must be explicitly enabled via CLI, API, or UI (for most)
+- Path Isolation: Engines are enabled at unique, meaningful paths for interaction
 
 Responsibilities
 
@@ -329,22 +329,22 @@ Success! Tuned the secrets engine at: training/
 
 KV v2 differences
 
-- Metadata: tracks creation date, version, etc.
+- Metadata: Tracks creation date, version, etc.
 - Prefixes
-  - data/: stores actual key-value data
-  - metadata/: stores secret metadata
+  - data/: Stores actual key-value data
+  - metadata/: Stores secret metadata
 - Operational note
   - data/ and metadata/ prefixes are required for API and policies
   - CLI interactions remain unchanged
 - Versioning example
   - Write secret (v1): pass=456, api=mfid02s, user=admin
-  - Update (v2): overwrites v1
-  - Delete (v2): marks as deleted
-  - Rollback (v3): restores previous version
-  - Undelete (v3): recovers with updates (e.g., pass=789, api=ckj983md)
-  - Update (v4): new version
-  - Destroy (v4): permanently removes a version
-  - Update (v5, v6): continues versioning
+  - Update (v2): Overwrites v1
+  - Delete (v2): Marks as deleted
+  - Rollback (v3): Restores previous version
+  - Undelete (v3): Recovers with updates (e.g., pass=789, api=ckj983md)
+  - Update (v4): New version
+  - Destroy (v4): Permanently removes a version
+  - Update (v5, v6): Continues versioning
 
 ![img](./img/46.png)
 
@@ -352,19 +352,19 @@ KV v2 differences
 
 Use the vault kv command
 
-- put: write data
-- get: read data
-- delete: remove data
-- list: list paths
-- undelete: restore a version (KV v2 only)
-- destroy: permanently delete (KV v2 only)
-- patch: update specific keys (KV v2 only)
-- rollback: revert to a prior version (KV v2 only)
+- put: Write data
+- get: Read data
+- delete: Remove data
+- list: List paths
+- undelete: Restore a version (KV v2 only)
+- destroy: Permanently delete (KV v2 only)
+- patch: Update specific keys (KV v2 only)
+- rollback: Revert to a prior version (KV v2 only)
 
 Writing Data
 
 - KV v1 vsKV v2
-  - Command: identical for both versions
+  - Command: Identical for both versions
   - Behavior: KV v1 overwrites without versioning; KV v2 tracks versions
 
 ```bash

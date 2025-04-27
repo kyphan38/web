@@ -113,7 +113,7 @@ Summary
 Why?
 
 - Learning new tech skills is tough but common because transforming knowledge into competence is inherently challenging
-- Common skill areas: cloud computing, AI, blockchain, scripting, and automation
+- Common skill areas: Cloud computing, AI, blockchain, scripting, and automation
 
 Time, effort, and failure
 
@@ -163,8 +163,8 @@ Keep it interesting!
 Exploring learning styles
 
 - Abstract vs concrete
-  - Abstract: focus on expertise and concepts
-  - Concrete: emphasize hands-on experience
+  - Abstract: Focus on expertise and concepts
+  - Concrete: Emphasize hands-on experience
 - Switch mediums
   - Combine different formats like videos, books, live lectures, and group collaboration
 - Send instead of receiving

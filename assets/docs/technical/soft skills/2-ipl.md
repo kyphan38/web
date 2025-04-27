@@ -39,8 +39,8 @@ Communication in leadership
   - Remove blockers
   - Offer context and direction
   - Foster alignment and motivation
-- Good communication: face-to-face interactions, online meetings with cameras on. well-written updates or reports
-- Bad communication: ineffective listening, failing to show up or follow through, creating or allowing communication barriers, Misunderstandings due to lack of clarity or consistency
+- Good communication: Face-to-face interactions, online meetings with cameras on. well-written updates or reports
+- Bad communication: Ineffective listening, failing to show up or follow through, creating or allowing communication barriers, Misunderstandings due to lack of clarity or consistency
 
 Collaboration and teamwork
 
@@ -87,7 +87,7 @@ Empowerment in action
   - The speaker worked in a company where leadership was mostly critical and reactive even when things were done right, feedback was negative
   - The culture rewarded "firefighting" and urgent problem-solving, but rarely encouraged proactive thinking or innovation
   - As a result, the teams didn't feel empowered. They didn't improve processes, systems, or collaboration because they weren't supported to do so
-  - A new leader entered the picture with a different mindset: instead of praising people just for reacting, he recognized behaviors that embodied company values like learning from failure, innovating, and improving systems so issues wouldn't repeat
+  - A new leader entered the picture with a different mindset: Instead of praising people just for reacting, he recognized behaviors that embodied company values like learning from failure, innovating, and improving systems so issues wouldn't repeat
   - This shift encouraged people to stop plugging leaks and start redesigning the wall to stop surviving and start evolving
   - Ultimately, leadership became about rewarding principles-driven effort, not just outcomes about valuing the journey, not just the finish line
   - The story reinforces that empowerment is built on trust, support, and giving people space to grow, experiment, and contribute no matter your title or role
@@ -105,7 +105,7 @@ Empowerment in action
     - Keep connecting daily work to the company's mission, strategy, and values. Make sure teams understand not just what they're doing but why it matters
     - Work becomes meaningful. People aren't just shipping features or fixing bugs they're contributing to something bigger, and that clarity fuels stronger teamwork and better decision-making
   - Encourage continuous growth
-    - Push the idea that leadership is about evolving the people, the systems, and the ways of working. Keep asking: how can we do this better? How can we fail differently next time?
+    - Push the idea that leadership is about evolving the people, the systems, and the ways of working. Keep asking: How can we do this better? How can we fail differently next time?
     - Teams develop a mindset of learning and adaptation. They stop fearing change and start seeking it deliberately, constructively, and together
 
 Summary
@@ -179,7 +179,7 @@ Trust and safety in action
 - Context
   - The speaker was hired as an architect and team lead for a DevOps group that initially seemed promising and high-performing
   - But in team interactions, there was a noticeable shift in energy and behavior whenever one particular team member entered the room less talking, more tension, body language changed
-  - This individual didn't align with the team's mission or values: missed deadlines, wandered into other departments (like marketing and advertising), and didn't really engage with the DevOps work
+  - This individual didn't align with the team's mission or values: Missed deadlines, wandered into other departments (like marketing and advertising), and didn't really engage with the DevOps work
   - The team didn't feel safe or supported with that person around, and leadership hadn't addressed it for some reason
   - After multiple honest attempts to align and redirect that team member offering a chance to switch departments the individual finally acknowledged they didn't want to be in DevOps and moved on
   - The moment that person left, team trust and safety rebounded naturally. No top-down control was needed after that the team just re-centered and became high-performing again
@@ -219,8 +219,8 @@ Aligning words with actions
 
 - The alignment between your words and actions is both influential and transformative
 - Example
-  - What you say (words): a manager tells the team to work efficiently to meet a project deadline
-  - What you do (actions): a team member later observes the manager procrastinating, which causes project delays
+  - What you say (words): A manager tells the team to work efficiently to meet a project deadline
+  - What you do (actions): A team member later observes the manager procrastinating, which causes project delays
   - &rarr; Misalignment leads to confusion, disengagement, and distrust
 
 Limitations of actions alone
@@ -255,13 +255,13 @@ Summary
 Why?
 
 - The greatest power lies in influencing with integrity, not manipulating with deceit
-- Persuasion: honesty, empathy, trustworthiness, mutual benefit
-- Manipulation: deception, exploitation, lack of empathy, self-serving motives
+- Persuasion: Honesty, empathy, trustworthiness, mutual benefit
+- Manipulation: Deception, exploitation, lack of empathy, self-serving motives
 
 A deeper definition
 
-- Persuasion: ethical influence that uses reasoning, discussion, transparency, and moral appeal
-- Manipulation: unethical influence through deception, coercion, or emotional exploitation typically for the manipulator's benefit
+- Persuasion: Ethical influence that uses reasoning, discussion, transparency, and moral appeal
+- Manipulation: Unethical influence through deception, coercion, or emotional exploitation typically for the manipulator's benefit
 
 Positive (persuasion) vs negative (Manipulation)
 
@@ -279,15 +279,15 @@ Positive (persuasion) vs negative (Manipulation)
 Key differences
 
 - Persuasion
-  - Core approach: reason & logic
-  - Respect for autonomy: high
-  - Ethical stance: ethical, transparent, connecting
-  - Outcome: informed decision-making, mutual benefit
+  - Core approach: Reason & logic
+  - Respect for autonomy: High
+  - Ethical stance: Ethical, transparent, connecting
+  - Outcome: Informed decision-making, mutual benefit
 - Manipulation
-  - Core approach: emotion & control
-  - Respect for autonomy: low
-  - Ethical stance: unethical, secretive, isolating
-  - Outcome: distorted reality, forced compliance
+  - Core approach: Emotion & control
+  - Respect for autonomy: Low
+  - Ethical stance: Unethical, secretive, isolating
+  - Outcome: Distorted reality, forced compliance
 
 Real-world examples
 

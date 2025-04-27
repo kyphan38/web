@@ -13,7 +13,7 @@
 
 ![img](./img/1.png)
 
-- Three processes: sharing memory
+- Three processes: Sharing memory
 
 ## Abstraction: (Virtual) Address Space
 
@@ -63,11 +63,11 @@ MMU has access to page tables, and uses it to translate VA to PA
 
 # Goals of memory virtualization
 
-Transparency: user programs should not be aware of the messy details
+Transparency: User programs should not be aware of the messy details
 
-Efficiency: minimize overhead and wastage in terms of memory space and access time
+Efficiency: Minimize overhead and wastage in terms of memory space and access time
 
-Isolation and protection: a user process should not be able to access anything outside its address space
+Isolation and protection: A user process should not be able to access anything outside its address space
 
 # How can a user allocate memory?
 

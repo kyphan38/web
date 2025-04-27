@@ -15,7 +15,7 @@
 
 --
 
-- POSIX (Portable Operating System Interface) API: a standard set of system calls that an OS must implement
+- POSIX (Portable Operating System Interface) API: A standard set of system calls that an OS must implement
   - Programs written to the POSIX API can run on any POSIX-compliant OS
   - Most modern OSes are POSIX-compliant
   - Ensures program portability
@@ -55,7 +55,7 @@ Many variants exist of the above system calls with different arguments
 --
 
 - Process termination scenarios
-  - Normal: by calling exit() (exit is called automatically when the end of the main function is reached)
+  - Normal: By calling exit() (exit is called automatically when the end of the main function is reached)
   - Abnormal: OS terminates a misbehaving process
 - Terminated process exists as a zombie - still consumes memory
 - When a parent calls wait(), the zombie child is cleaned up or reaped
