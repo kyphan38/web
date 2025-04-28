@@ -19,47 +19,43 @@
 
 --
 
-- Virtual Address Space: Each process believes it has a large, continuous block of memory, starting from address 0 up to a maximum limit
-  - In reality, this memory might not be contiguous or completely available in physical memory (RAM), but the virtual memory system makes it appear so to each process
-- Contains program code (and static data), heap (dynamic allocations), and stack (used during function calls)
-  - Stack and heap grow during runtime
-  - The heap expands downward and the stack grows upward
-- CPU issues loads and stores instructions to virtual addresses, which involve reading from and writing to memory
+- Virtual address space: Each process believes it has a large, continuous block of memory, starting from address 0 up to a maximum limit
+  - In reality, this memory may not be fully available or contiguous in physical RAM. The virtual memory system creates the illusion of a seamless memory space for each process
+- Components
+  - Program code and static data: The executable instructions and fixed data
+  - Heap: Dynamically allocated memory that grows downward as needed
+  - Stack: Memory used for function calls, growing upward during execution
+- CPU operations: The CPU uses virtual addresses to read from (load) or write to (store) memory, relying on the virtual memory system to map these to physical memory
 
 ![img](./img/2.png)
 
-## How is actual memory reached?
+## How Is Actual Memory Reached?
 
-Virtual Addresses (VA): These are the addresses that each process thinks it is using, provided by the operating system
-- Each process operates within its own virtual address space, which isolates it from other processes and simplifies memory management
+--
 
-Physical Addresses (PA): These refer to the actual locations in the computer’s physical memory (RAM) where data is stored
+- Address Translation: Converts virtual addresses (VA) used by a process into physical addresses (PA) in actual memory
+  - The CPU sends load/store commands using virtual addresses, but the memory hardware works with physical addresses
+- The OS manages memory allocation and keeps track of where each process's data is stored in physical memory
+- Memory Management Unit (MMU): Special hardware that performs the translation from virtual to physical addresses, using information provided by the OS
 
 ![img](./img/3.png)
-- Right is VA
 
-Address translation from virtual addresses (VA) to physical addresses (PA)
-- CPU issues (phat hien) loads/stores to VA but memory hardware accesses PA
-- When the CPU accesses a virtual address (VA), the MMU translates it into a corresponding physical address (PA), and then the memory hardware performs the actual read/write operation on the physical memory
-- For example, a virtual address like 100 might be translated by the MMU to a physical address like 1001
+- Virtual address space - the right one
+  - This is not stored anywhere physically
+  - It is an abstraction created by the OS for each process to simplify memory management
+  - It exists as a concept to give each process its own isolated memory view
+- RAM - the left one
 
-OS allocates memory and tracks location of processes (in physical memory) - using page tables
+## Example: Paging
 
-Translation done by memory hardware called Memory Management Unit (MMU)
-- OS makes the necessary information available
+--
 
-# a
- 7h50 
-# b
-# Example: Paging
+- The OS splits the virtual address space into equal-sized chunks called pages, and physical memory (RAM) into matching chunks called frames
+- To assign memory, the OS maps a virtual page to an available physical frame
+- A table that keeps track of these mappings for each process (e.g., virtual page 0 might map to physical frame 3)
+- The MMU uses the page table to convert virtual addresses (VA) into physical addresses (PA) during memory access
 
-OS divides virtual address space into fixed size pages, physical memory into frames
-
-To allocate memory, a page is mapped to a free physical frame
-
-Page table stores mappings from virtual page number to physical frame number for a process (e.g., page 0 to frame 3)
-
-MMU has access to page tables, and uses it to translate VA to PA
+![img](./img/4.png)
 
 # Goals of memory virtualization
 

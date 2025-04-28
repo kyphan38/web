@@ -19,13 +19,13 @@ The following translation from VA to PA is needed:
 
 # Who performs address translation?
 
-In this simple example, OS tells the hardware the base (starting address) and bound (total size of process) values.
+In this simple example, OS tells the hardware the base (starting address) and bound (total size of process) values
 
-Memory hardware, the Memory Management Unit (MMU), calculates PA from VA.
+Memory hardware, the Memory Management Unit (MMU), calculates PA from VA
 
-MMU also checks if the address is beyond the bound.
+MMU also checks if the address is beyond the bound
 
-OS is not involved in every translation.
+OS is not involved in every translation
 
 # Role of hardware in translation
 

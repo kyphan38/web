@@ -79,12 +79,12 @@ TLB entries may become invalid on context switch and change of page tables
 # How Are Page Tables Stored in Memory?
 
 What is the typical size of a page table?
-- 32-bit VA, 4 KB pages, so 2^32 / 2^12 = 2^20 entries.
-- If each PTE is 4 bytes, then the page table is 4MB.
+- 32-bit VA, 4 KB pages, so 2^32 / 2^12 = 2^20 entries
+- If each PTE is 4 bytes, then the page table is 4MB
 - One such page table per process!
 
 How to reduce the size of page tables?
-- Larger pages, so fewer entries.
+- Larger pages, so fewer entries
 
 How does the OS allocate memory for such large tables?
 - Page table is itself split into smaller chunks!
