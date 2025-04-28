@@ -1,4 +1,6 @@
-# ted - pending
+# ted
+
+Status: In-progress
 
 ## How to Speak So That People Want to Listen
 
@@ -50,7 +52,6 @@ Adjective/Adjective Phrase
 | dreadful (kinh khung)     | terrible (khung khiep), awful (te hai)                         | The weather was dreadful all weekend        |
 | penultimate (gan cuoi)    | second-to-last (thu hai tu cuoi), next-to-final (gan ket thuc) | This is the penultimate chapter of the book |
 | monotonic (don dieu)      | flat (bang phang), unvaried (khong doi)                        | His monotonic voice bored the audience      |
-
 
 Adverb
 

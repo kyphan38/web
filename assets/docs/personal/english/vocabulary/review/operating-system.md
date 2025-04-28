@@ -1,8 +1,11 @@
 # operating system
 
+Status: In-progress
+
 ## Processess
 
 Verb/verb Phrase
+
 | Word/Phrase                                | Synonyms                                           | Example Sentence                                    |
 | :----------------------------------------- | :------------------------------------------------- | :-------------------------------------------------- |
 | pull back the curtain (keo man ra)         | reveal (tiet lo), unveil (ven man)                 | They pulled back the curtain to show the new design |
