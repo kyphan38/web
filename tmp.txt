@@ -1,0 +1,31 @@
+Hi Anisha,
+
+This is the highlights that I achieve since I joined the team. Alos, yesterday I have 1-1 meeting with Hanh Huy Nguyen and they are the main points that I have highlighted with him
+
+1. VIT/CTR
+- When I joined the team the management of VIT/CTR is quite manual and then I decided to build a Python script (using Numpy) that help me analyze the report by comparing 2 version report
+- When applying that I can reduce the time of analyzing from 1 hour to 10 second. Besides, the automatation scripts specifically update the status for the old items, output how many new items, how many old items, and how many fixed items
+- Note that: The sending email is not automated currently. Automation is just for analyzing
+
+2. CR 
+- I am able to handle CR which enables debuggling logs by myself with the support of Peter (in the first time)
+- My first CR in the life lol handled by myself (I am happy to be albe the handle my first CR)
+
+3. Defects
+- After getting 1 million of lines logs for downoading issues, I have analyzed and found the insgihts for that issues. After that, Peter has reviewed and approved my (findout)
+- Hanh hopes to hear the outcome of how  I resolve this in the next 1-1 meeting
+- I am happy to engage my first defect
+
+4. Technical aspects
+- 1. I have built the Jenkins pipeline that warn the password expiry to the team member via email
+- 1. I also had the KT with Jehda and Hanh - Manager and other DevOps in Jehda approved my solution. He hope me to extend the days of informing (currently 14 instead of 30 days - because NAB policy require to change passwords that will expire in 30 days isntead of 14 days) - For this one, I will check with Suresh and Linh later. due to everyone is quite busy now 
+- 2. Last week, I enage to deployment session that with Peter, and Harry. I have a chace to deploy several components with the support of Peter. I am happy to do my first deployment
+
+
+5. Ownership/accountability
+- This is the feedback from Hanh for previous 1-1. After that, I always apply this principle while working for example. always think about did I miss something that someone assgin to me or did I follow/track the whole process of a ticket, etc.
+
+Besides the highlights, I'd like to callout from NICV (Peter, Harry, Cris, Ducky) who supports me a lot of related to the work mostly related to VIT/CTR since I joined the team
+
+Regards
+Ky Phan
