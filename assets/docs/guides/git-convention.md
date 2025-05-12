@@ -23,14 +23,15 @@ Format
 
 Common branch type
 
-Type	Meaning	Example
-feature	Developing a new feature for the application.	feature/add-user-authentication
-fix	Fixing a bug in the codebase (usually on a develop or feature branch).	fix/resolve-login-issue
-hotfix	Fixing a critical, urgent bug on the production environment.	hotfix/urgent-payment-gateway-error
-release	Preparing for a new production release (bundling features, fixes).	release/v1.2.0
-docs	Changes related only to documentation.	docs/update-installation-guide
-chore	Maintenance tasks, updates that don't affect runtime code (e.g., updating dependencies, build configurations).	chore/update-react-version
-refactor	Restructuring code without changing functionality or fixing bugs.	refactor/optimize-database-queries
+| Type     | Meaning                                                                                                        | Example                             |
+| :------- | :------------------------------------------------------------------------------------------------------------- | :---------------------------------- |
+| feature  | Developing a new feature for the application.                                                                  | feature/add-user-authentication     |
+| fix      | Fixing a bug in the codebase (usually on a develop or feature branch).                                         | fix/resolve-login-issue             |
+| hotfix   | Fixing a critical, urgent bug on the production environment.                                                   | hotfix/urgent-payment-gateway-error |
+| release  | Preparing for a new production release (bundling features, fixes).                                             | release/v1.2.0                      |
+| docs     | Changes related only to documentation.                                                                         | docs/update-installation-guide      |
+| chore    | Maintenance tasks, updates that don't affect runtime code (e.g., updating dependencies, build configurations). | chore/update-react-version          |
+| refactor | Restructuring code without changing functionality or fixing bugs.                                              | refactor/optimize-database-queries  |
 
 ### Description
 
@@ -85,17 +86,18 @@ Format
 
 ### Type
 
-Type	Meaning	Example
-feat	New feature	feat(cart): add checkout functionality
-fix	Bug fix	fix(api): handle null response error
-docs	Documentation changes	docs(readme): update installation guide
-style	Code style changes (no logic impact)	style(css): format with prettier
-refactor	Code refactoring (no feature or bug changes)	refactor(auth): simplify login logic
-test	Add or modify tests	test(unit): add user model tests
-chore	Miscellaneous (e.g., dependency updates)	chore(deps): update lodash to v4.17.21
-perf	Performance improvements	perf(db): optimize query performance
-ci	CI/CD configuration changes	ci(github): add linting to workflow
-build	Build-related changes (e.g., webpack, npm)	build(webpack): add production config
+| Type     | Meaning                                      | Example                                 |
+| :------- | :------------------------------------------- | :-------------------------------------- |
+| feat     | New feature                                  | feat(cart): add checkout functionality  |
+| fix      | Bug fix                                      | fix(api): handle null response error    |
+| docs     | Documentation changes                        | docs(readme): update installation guide |
+| style    | Code style changes (no logic impact)         | style(css): format with prettier        |
+| refactor | Code refactoring (no feature or bug changes) | refactor(auth): simplify login logic    |
+| test     | Add or modify tests                          | test(unit): add user model tests        |
+| chore    | Miscellaneous (e.g., dependency updates)     | chore(deps): update lodash to v4.17.21  |
+| perf     | Performance improvements                     | perf(db): optimize query performance    |
+| ci       | CI/CD configuration changes                  | ci(github): add linting to workflow     |
+| build    | Build-related changes (e.g., webpack, npm)   | build(webpack): add production config   |
 
 ### Scope
 

@@ -184,7 +184,6 @@ Verb/Verb Phrase
 | exacerbate (lam trầm trọng)                 | /ɪɡˈzæsərbeɪt/         | worsen (lam te hon), aggravate (lam nang them)                                                 | His actions exacerbated the crisis                 |
 | spiral (xoay vong)                          | /ˈspaɪrəl/             | escalate (leo thang), spin out of control (mat kiem soat)                                      | Costs began to spiral rapidly                      |
 | pick up on (nhan ra)                        | /pɪk ʌp ɒn/            | notice (chu y), detect (phat hien)                                                             | She picked up on his hesitation                    |
-| seek to overthrow (tim cach lat do)         | /siːk tuː ˌoʊvərˈθroʊ/ | aim to topple (nham lat do), try to depose (co gang phế truất)                                 | Rebels sought to overthrow the regime              |
 | plunge into (lao vao)                       | /plʌndʒ ˈɪntuː/        | dive into (nhay vao), immerse in (dam minh vao)                                                | The country plunged into chaos                     |
 | prop up (nang do)                           | /prɒp ʌp/              | support (ho tro), bolster (cung co)                                                            | They propped up the failing government             |
 | expose (phoi bay)                           | /ɪkˈspoʊz/             | reveal (tiet lo), uncover (lam ro)                                                             | They exposed themselves to criticism               |
@@ -232,13 +231,11 @@ Noun/Noun Phrase
 | territory (lanh tho)                         | /ˈtɛrɪtɔːri/               | land (dat dai), region (khu vuc)                                                          | The territory was heavily contested             |
 | leverage (loi the)                           | /ˈlɛvərɪdʒ/                | advantage (uu the), influence (anh huong)                                                 | She used her position as leverage               |
 | proxy (uy nhiem)                             | /ˈprɒksi/                  | agent (dai dien), intermediary (trung gian)                                               | The group acted as a proxy for the state        |
-| power struggle (tranh gianh quyen luc)       | /ˈpaʊər ˈstrʌɡəl/          | fight for control (cuoc chien kiem soat), authority contest (tranh chap quyen luc)        | The power struggle weakened the government      |
 | political unrest (bat on chinh tri)          | /pəˈlɪtɪkəl ʌnˈrɛst/       | civil disorder (roi loan dan su), political turmoil (bien dong chinh tri)                 | Political unrest disrupted the elections        |
 | client (than chu)                            | /ˈklaɪənt/                 | ally (dong minh), dependent (phu thuoc)                                                   | The state was a client of the superpower        |
 | patron (nha tai tro)                         | /ˈpeɪtrən/                 | sponsor (nha tai tro), backer (nguoi ung ho)                                              | The patron funded the rebel movement            |
 | internal struggle (dau tranh noi bo)         | /ɪnˈtɜːrnəl ˈstrʌɡəl/      | domestic conflict (xung dot noi dia), inner turmoil (bien dong noi bo)                    | The party faced an internal struggle            |
 | deniability (su phu nhan)                    | /dɪˌnaɪəˈbɪlɪti/           | plausible denial (phu nhan hop ly), non-accountability (khong chiu trach nhiem)           | The operation was designed for deniability      |
-| resistance (su khang cu)                     | /rɪˈzɪstəns/               | opposition (su phan doi), defiance (su thach thuc)                                        | The resistance fought against the regime        |
 | invasion (xam luoc)                          | /ɪnˈveɪʒən/                | attack (tan cong), incursion (xam nhap)                                                   | The invasion caught the nation off guard        |
 | dynamic (dong luc)                           | /daɪˈnæmɪk/                | force (suc manh), momentum (da)                                                           | The dynamic of the conflict shifted rapidly     |
 | superpower (sieu cuong)                      | /ˈsuːpərˌpaʊər/            | global power (cuong quoc toan cau), dominant nation (quoc gia thong tri)                  | The superpower influenced world events          |
@@ -246,7 +243,6 @@ Noun/Noun Phrase
 | harsh bitter reality (thuc te cay dang)      | /hɑːrʃ ˈbɪtər riˈælɪti/    | grim truth (su that nghiem trong), cruel fact (su kien tan nhan)                          | They faced the harsh bitter reality of war      |
 | peninsula (ban dao)                          | /pəˈnɪnsələ/               | cape (mui dat), landmass (khoi dat)                                                       | The peninsula was a strategic location          |
 | battleground (chien truong)                  | /ˈbætəlɡraʊnd/             | war zone (vung chien tranh), conflict area (khu vuc xung dot)                             | The city became a battleground                  |
-| massive power (cuong quoc lon)               | /ˈmæsɪv ˈpaʊər/            | great nation (quoc gia lon), mighty state (quoc gia manh me)                              | Massive powers clashed over influence           |
 | ideology (y thuc he)                         | /ˌaɪdiˈɒlədʒi/             | belief system (he thong niem tin), doctrine (hoc thuyet)                                  | Ideology fueled the revolution                  |
 | weaponry (vu khi)                            | /ˈwɛpənri/                 | arms (vu khi), arsenal (kho vu khi)                                                       | Their weaponry was outdated                     |
 | manpower (nhan luc)                          | /ˈmænˌpaʊər/               | workforce (luc luong lao dong), personnel (nhan su)                                       | The army lacked sufficient manpower             |
@@ -259,7 +255,6 @@ Noun/Noun Phrase
 | political aggression (xam luoc chinh tri)    | /pəˈlɪtɪkəl əˈɡrɛʃən/      | diplomatic hostility (thu dich ngoai giao), political attack (tan cong chinh tri)         | Political aggression strained relations         |
 | indigenous origin (nguon goc ban dia)        | /ɪnˈdɪdʒənəs ˈɒrɪdʒɪn/     | native roots (goc re ban dia), local heritage (di san dia phuong)                         | The movement had an indigenous origin           |
 | rebel group (nhom noi loan)                  | /ˈrɛbəl ɡruːp/             | insurgent faction (phe noi day), resistance movement (phong trao khang cu)                | Rebel groups challenged the government          |
-| installation (cai dat)                       | /ˌɪnstəˈleɪʃən/            | facility (co so), setup (he thong)                                                        | The military built a new installation           |
 | dictator (doc tai)                           | /ˈdɪkteɪtər/               | autocrat (nha doc tai), tyrant (bao chua)                                                 | The dictator ruled with an iron fist            |
 | madness (su dien ro)                         | /ˈmædnəs/                  | insanity (su khung khiep), lunacy (su mat tri)                                            | The decision was pure madness                   |
 | puppet government (chinh phu con roi)        | /ˈpʌpɪt ˈɡʌvərnmənt/       | controlled regime (che do bi kiem soat), proxy administration (bo may uy nhiem)           | They installed a puppet government              |
@@ -275,7 +270,6 @@ Noun/Noun Phrase
 | militia (dan quan)                           | /mɪˈlɪʃə/                  | citizen army (quan dan), paramilitary (luc luong ban quan su)                             | The militia defended the town                   |
 | small arm (vu khi nho)                       | /smɔːl ɑːrm/               | light weapon (vu khi nhe), firearm (sung)                                                 | They were equipped with small arms              |
 | logistics support (ho tro hau can)           | /ləˈdʒɪstɪks səˈpɔːrt/     | supply aid (vien tro cung cap), operational backing (ho tro tac chien)                    | Logistics support was critical to success       |
-| deadliest conflict (xung dot chet choc nhat) | /ˈdɛdliəst ˈkɒnflɪkt/      | most lethal war (chien tranh nguy hiem nhat), bloodiest dispute (tranh chap dam mau nhat) | It was among the deadliest conflicts in history |
 | power vacuum (khoang trong quyen luc)        | /ˈpaʊər ˈvækjuːm/          | authority gap (khoang cach quyen luc), leadership void (khoang trong lanh dao)            | The coup created a power vacuum                 |
 | airstrike (khong kich)                       | /ˈɛərstraɪk/               | air raid (tan cong tren khong), bombing run (dot nem bom)                                 | The airstrike targeted enemy positions          |
 | revolution (cach mang)                       | /ˌrɛvəˈluːʃən/             | uprising (khoi nghia), revolt (cuoc noi loan)                                             | The revolution changed the government           |
@@ -293,7 +287,6 @@ Noun/Noun Phrase
 | sterile language (ngon ngu vo cam)           | /ˈstɛrəl ˈlæŋɡwɪdʒ/        | emotionless speech (loi noi khong cam xuc), clinical phrasing (cach dien dat lanh lung)   | The report used sterile language                |
 | tenet (nguyen tac)                           | /ˈtɛnɪt/                   | principle (nguyen tac), guideline (huong dan)                                             | Non-interference is a foreign policy tenet      |
 | critique (phe binh)                          | /krɪˈtiːk/                 | criticism (su chi trich), evaluation (danh gia)                                           | The policy faced sharp critiques                |
-| rational great power (cuong quoc hop ly)     | /ˈræʃənəl ɡreɪt ˈpaʊər/    | logical superpower (sieu cuong logic), reasoned hegemon (ba quyen hop ly)                 | They acted as a rational great power            |
 | cross-cutting geometry (hinh hoc cat ngang)  | /ˈkrɒs ˌkʌtɪŋ dʒiˈɒmɪtri/  | intersecting framework (khuon kho cat cheo), overlapping structure (cau truc chong len)   | Alliances formed cross-cutting geometries       |
 | sponsor (nha tai tro)                        | /ˈspɒnsər/                 | backer (nguoi ung ho), funder (nha tai tro)                                               | The sponsor provided crucial resources          |
 
@@ -310,7 +303,6 @@ Adjective/Adjective Phrase
 | nuclear (hat nhan)                             | /ˈnjuːkliər/               | atomic (nguyen tu), radioactive (phong xa)                                                       | Nuclear energy powers the facility             |
 | unthinkable (khong tuong tuong noi)            | /ʌnˈθɪŋkəbəl/              | unimaginable (khong the tuong tuong), inconceivable (khong the hieu noi)                         | The outcome was unthinkable to many            |
 | rigorous (nghiem ngat)                         | /ˈrɪɡərəs/                 | strict (nghiem khac), thorough (cẩn thận)                                                        | The training program is rigorous               |
-| rational (hop ly)                              | /ˈræʃənəl/                 | logical (logica), reasonable (hop ly)                                                            | She made a rational decision                   |
 | practically limitless (gan nhu khong gioi han) | /ˈpræktɪkli ˈlɪmɪtlɪs/     | virtually boundless (gan nhu vo han), nearly infinite (gan nhu vo cung)                          | The possibilities are practically limitless    |
 | resource-rich (giau tai nguyen)                | /ˈriːsɔːrs rɪtʃ/           | abundant in resources (nhieu tai nguyen), wealthy in assets (giau tai san)                       | The region is resource-rich                    |
 | american-friendly (than thien voi my)          | /əˈmɛrɪkən ˈfrɛndli/       | pro-american (ung ho my), us-aligned (lien ket voi my)                                           | The policy is American-friendly                |
@@ -342,12 +334,10 @@ Idiomatic Phrase/Connector
 | Word/Phrase                              | IPA                         | Synonyms                                                                        | Example Sentence                            |
 | :--------------------------------------- | :-------------------------- | :------------------------------------------------------------------------------ | :------------------------------------------ |
 | on the rise (dang tang)                  | /ɒn ðə raɪz/                | increasing (tang len), growing (phat trien)                                     | Sales are on the rise this quarter          |
-| focus the mind (tap trung tam tri)       | /ˈfoʊkəs ðə maɪnd/          | concentrate (tap trung), center (dinh huong)                                    | Meditation helps focus the mind daily       |
 | keep the lights on (duy tri hoat dong)   | /kiːp ðə laɪts ɒn/          | sustain (duy tri), maintain (giu vung)                                          | We work hard to keep the lights on          |
 | get leverage on (co loi the)             | /ɡɛt ˈlɛvərɪdʒ ɒn/          | gain advantage (co loi the), obtain influence (gianh anh huong)                 | She got leverage on the deal                |
 | pay the price (tra gia)                  | /peɪ ðə praɪs/              | bear the cost (chiu chi phi), face consequences (doi mat hau qua)               | He paid the price for his mistake           |
 | sap the strength (lam suy yeu suc manh)  | /sæp ðə strɛŋkθ/            | weaken (lam yeu), drain energy (hut can nang luong)                             | Stress can sap the strength quickly         |
-| via (thong qua)                          | /ˈvaɪə/                     | through (qua), by way of (thong qua)                                            | We traveled via the northern route          |
 | in an effort to (nham muc dich)          | /ɪn ən ˈɛfərt tuː/          | to attempt (co gang), striving to (phấn đấu)                                    | In an effort to save time, we rushed        |
 | on a whole new level (o mot tam cao moi) | /ɒn ə hoʊl nuː ˈlɛvəl/      | at a higher degree (cao hon), elevated (nang cao)                               | Her skills are on a whole new level         |
 | turn red (chuyen sang do)                | /tɜːrn rɛd/                 | become communist (tro thanh cong san), shift left (chuyen sang trai)            | The region turned red after the election    |

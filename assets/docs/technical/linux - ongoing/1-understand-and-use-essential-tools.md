@@ -379,7 +379,7 @@ readlink family_dog_shortcut.jpg
 ---
 /home/aaron/Pictures/family_dog.jpg
 
-echo “Test” >> fstab_shortcut
+echo "Test" >> fstab_shortcut
 ---
 bash: fstab_shortcut: Permission denied
 

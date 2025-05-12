@@ -57,54 +57,54 @@
 
 ![img](./img/4.png)
 
-# Goals of memory virtualization
+## Goals of Memory Virtualization
 
-Transparency: User programs should not be aware of the messy details
+--
 
-Efficiency: Minimize overhead and wastage in terms of memory space and access time
+- Transparency: User programs should not be aware of the messy details
+- Efficiency: Minimize overhead and wastage in terms of memory space and access time
+- Isolation and protection: A user process should not be able to access anything outside its address space
 
-Isolation and protection: A user process should not be able to access anything outside its address space
+## How Can a User Allocate Memory?
 
-# How can a user allocate memory?
+--
 
-OS allocates a set of pages to the memory image of the process
+- OS allocates a set of pages to the memory image of the process
+- Within this image
+  - Static/global variables are allocated in the executable
+  - Local variables of a function on stack
+  - Dynamic allocation with malloc on the heap
 
-Within this image:
-- Static/global variables are allocated in the executable
-- Local variables of a function on stack
-- Dynamic allocation with malloc on the heap
+![img](./img/5.png)
 
-# Memory allocation system calls
+## Memory Allocation System Calls
 
-malloc implemented by C library
-- Algorithms for efficient memory allocation and free space management
+--
 
-To grow heap, libc uses the brk/sbrk system call
+- malloc implemented by C library
+  - Algorithms for efficient memory allocation and free space management
+- To grow heap, libc uses the brk/sbrk system call
+- A program can also allocate a page sized memory using the mmap() system call
+  - Gets "anonymous" page from OS
 
-A program can also allocate a page sized memory using the mmap() system call
-- Gets “anonymous” page from OS
+![img](./img/6.png)
 
-# A subtle point: what is the address space of the OS?
+## A Subtle Point: What Is the Address Space of the OS?
 
-OS is not a separate process with its own address space
+--
 
-Instead, OS code is part of the address space of every process
+- OS is not a separate process with its own address space
+- Instead, OS code is part of the address space of every process
+- A process sees OS as part of its code (e.g., library)
+- Page tables map the OS addresses to OS code
 
-A process sees OS as part of its code (e.g., library)
+![img](./img/7.png)
 
-Page tables map the OS addresses to OS code
+## How Does the OS Allocate Memory?
 
-# How does the OS allocate memory?
+--
 
-OS needs memory for its data structures
-
-For large allocations, OS allocates a page
-
-For smaller allocations, OS uses various memory allocation algorithms (more later)
-- Cannot use libc and malloc in kernel!
-Beta
-0 / 0
-used queries
-
-
-1
+- OS needs memory for its data structures
+- For large allocations, OS allocates a page
+- For smaller allocations, OS uses various memory allocation algorithms (more later)
+  - Cannot use libc and malloc in kernel!
