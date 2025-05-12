@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-guides/git-convention" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">git convention | This is my place, bro!</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://kyphan38.github.io/guides/git-convention"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="git convention | This is my place, bro!"><meta data-rh="true" name="description" content="Branch"><meta data-rh="true" property="og:description" content="Branch"><link data-rh="true" rel="icon" href="/img/earth.ico"><link data-rh="true" rel="canonical" href="https://kyphan38.github.io/guides/git-convention"><link data-rh="true" rel="alternate" href="https://kyphan38.github.io/guides/git-convention" hreflang="en"><link data-rh="true" rel="alternate" href="https://kyphan38.github.io/guides/git-convention" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.e040279e.css">
+<script src="/assets/js/runtime~main.651c9190.js" defer="defer"></script>
+<script src="/assets/js/main.72cb55cd.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/bw_earth.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/bw_earth.png" alt="earth" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/bw_earth.png" alt="earth" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">kp</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/">docs</a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently dark mode)" aria-label="Switch between dark and light mode (currently dark mode)" aria-live="polite" aria-pressed="true"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/">index</a><button aria-label="Expand sidebar category &#x27;index&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/faqs/java">faqs</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/guides/bash-script-global">guides</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/guides/bash-script-global">bash script global</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/guides/file-encryption">file encryption</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/guides/git-convention">git convention</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/guides/github-auth">github auth</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/guides/jenkins-controller-agent">jenkins controller agent</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/guides/jenkins-upgrade">jenkins upgrade</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/guides/ssh-setup">ssh setup</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/guides/tls-upgrade">tls upgrade</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/guides/tomcat-upgrade">tomcat upgrade</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/guides/vault-tls-login">vault tls login - pending</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/interviews/git">interviews</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/leetcode/step">leetcode</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/personal/book/enzyme - ongoing/ban-co-the-song-lau-ma-khong-benh-tat">personal</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/technical/aws - ongoing/intro/aws-certifications">technical</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">guides</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">git convention</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>git convention</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="branch">Branch<a href="#branch" class="hash-link" aria-label="Direct link to Branch" title="Direct link to Branch">​</a></h2>
+<p>Key points</p>
+<ul>
+<li>Clarity: Easily identify the purpose and scope of work for each branch</li>
+<li>Organization: Keep the repository tidy, making it easier to search for and manage branches</li>
+<li>Automation: Support Continuous Integration/Continuous Deployment (CI/CD) pipelines or other automation tools that might trigger actions based on branch names</li>
+<li>Collaboration: Enable team members to easily follow each other&#x27;s work and understand the project&#x27;s development flow</li>
+</ul>
+<p>Format</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">&lt;type&gt;/&lt;description&gt;</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">---</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">&lt;type&gt;/&lt;ticket-id&gt;-&lt;description&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>Type: Specifies the kind of work the branch addresses (e.g., feature, fix, hotfix, chore)</li>
+<li>Ticket ID (Optional): The identifier of the related ticket/task in the project management system</li>
+<li>Description: A short, descriptive summary of the branch&#x27;s purpose. Use lowercase letters with words separated by hyphens (-)</li>
+</ul>
+<p>Common branch type</p>
+<p>Type	Meaning	Example
+feature	Developing a new feature for the application.	feature/add-user-authentication
+fix	Fixing a bug in the codebase (usually on a develop or feature branch).	fix/resolve-login-issue
+hotfix	Fixing a critical, urgent bug on the production environment.	hotfix/urgent-payment-gateway-error
+release	Preparing for a new production release (bundling features, fixes).	release/v1.2.0
+docs	Changes related only to documentation.	docs/update-installation-guide
+chore	Maintenance tasks, updates that don&#x27;t affect runtime code (e.g., updating dependencies, build configurations).	chore/update-react-version
+refactor	Restructuring code without changing functionality or fixing bugs.	refactor/optimize-database-queries</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description">​</a></h3>
+<p>--</p>
+<ul>
+<li>Concise: Keep the description short enough to be easily readable in branch lists</li>
+<li>Descriptive: Clearly state the main purpose of the branch</li>
+<li>Format: Use lowercase letters and hyphens (-) to separate words. Avoid spaces, special characters, or uppercase letters (except possibly in the ticket-id)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="examples">Examples<a href="#examples" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h3>
+<p>--</p>
+<ul>
+<li><code>feature/implement-oauth-login</code></li>
+<li><code>fix/JIRA-123-user-cannot-upload-avatar</code></li>
+<li><code>hotfix/critical-security-patch-for-user-api</code></li>
+<li><code>chore/setup-eslint-prettier</code></li>
+<li><code>release/v2.0.1-beta</code></li>
+<li><code>docs/add-api-usage-examples</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices">​</a></h3>
+<p>--</p>
+<ul>
+<li>Consistency: The entire team should agree on and strictly follow the chosen naming convention</li>
+<li>Concise but descriptive: Branch names should be short enough not to be cumbersome when typing commands, but clear enough for others to understand their purpose</li>
+<li>Use hyphens: Always use hyphens (-) to separate words in the description, not underscores (_) or spaces</li>
+<li>Use English: Prefer using English for branch names to ensure consistency and ease of understanding in international or multilingual teams</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="commit">Commit<a href="#commit" class="hash-link" aria-label="Direct link to Commit" title="Direct link to Commit">​</a></h2>
+<p>Key points</p>
+<ul>
+<li>Clear: Easy to understand</li>
+<li>Searchable: Facilitates finding specific changes</li>
+<li>Automated: Supports tools like changelog generators</li>
+<li>Professional: Maintains a polished project history</li>
+</ul>
+<p>Format</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">&lt;type&gt;(&lt;scope&gt;): &lt;description&gt;</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">[Body: Detailed explanation of changes]</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">[Footer: Additional metadata]</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>Type: Indicates the change type (e.g., feat, fix, docs)</li>
+<li>Scope: Specifies the affected module (e.g., frontend, backend, api)</li>
+<li>Description: Concise summary of the change (50-72 characters)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="type">Type<a href="#type" class="hash-link" aria-label="Direct link to Type" title="Direct link to Type">​</a></h3>
+<p>Type	Meaning	Example
+feat	New feature	feat(cart): add checkout functionality
+fix	Bug fix	fix(api): handle null response error
+docs	Documentation changes	docs(readme): update installation guide
+style	Code style changes (no logic impact)	style(css): format with prettier
+refactor	Code refactoring (no feature or bug changes)	refactor(auth): simplify login logic
+test	Add or modify tests	test(unit): add user model tests
+chore	Miscellaneous (e.g., dependency updates)	chore(deps): update lodash to v4.17.21
+perf	Performance improvements	perf(db): optimize query performance
+ci	CI/CD configuration changes	ci(github): add linting to workflow
+build	Build-related changes (e.g., webpack, npm)	build(webpack): add production config</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="scope">Scope<a href="#scope" class="hash-link" aria-label="Direct link to Scope" title="Direct link to Scope">​</a></h3>
+<p>Key points</p>
+<ul>
+<li>Purpose: Clarifies the affected project area</li>
+<li>Optional: Omit if changes are project-wide</li>
+</ul>
+<p>Common scopes</p>
+<ul>
+<li>auth: Authentication (login, logout, JWT)</li>
+<li>ui: User interface (CSS, components)</li>
+<li>api: Server-side endpoints or logic</li>
+<li>db: Database (schema, migrations, queries)</li>
+<li>config: Project configuration (env, webpack)</li>
+</ul>
+<p>Choosing a scope</p>
+<ul>
+<li>Base on modified files (e.g., src/auth → auth)</li>
+<li>Omit if unclear, but avoid overusing this</li>
+</ul>
+<p>Examples</p>
+<ul>
+<li><code>fix(ui): adjust padding for navbar</code></li>
+<li><code>feat: add dark mode toggle</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="description-1">Description<a href="#description-1" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description">​</a></h3>
+<p>Key points</p>
+<ul>
+<li>Length: 50-72 characters for clean git log display</li>
+<li>Clarity: Answers &quot;What does this commit do&quot;?</li>
+<li>Style: Imperative, lowercase, starts with a verb (e.g., add, fix)</li>
+</ul>
+<p>Example</p>
+<ul>
+<li>Good: <code>add user profile page with avatar upload</code></li>
+<li>Bad: <code>Added a new profile page and some stuff for users</code> (too vague, lengthy)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="body-and-footer">Body and Footer<a href="#body-and-footer" class="hash-link" aria-label="Direct link to Body and Footer" title="Direct link to Body and Footer">​</a></h3>
+<p>Body</p>
+<ul>
+<li>When: For complex changes needing more context</li>
+<li>Format: Use bullet points or numbered lists, max 72 characters per line</li>
+<li>Purpose: Explain what changed and why</li>
+</ul>
+<p>Footer</p>
+<ul>
+<li>Content: Metadata like issue IDs, breaking changes, or credits</li>
+<li>Keywords<!-- -->
+<ul>
+<li>Closes #123: Auto-closes GitHub issue</li>
+<li>Fixes #123: Similar to Closes</li>
+<li>BREAKING CHANGE: Highlights major changes</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="examples-1">Examples<a href="#examples-1" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h3>
+<p>--</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">feat(auth): add Google OAuth login</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">- Implement Google OAuth2 flow for authentication</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">- Add /auth/google endpoint for redirect</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">- Update user model to store Google ID</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Closes #123</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">refactor(auth): simplify JWT token generation</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">- Remove redundant token validation logic</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">- Update token expiration to 1 hour</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">- Add unit tests for token generation</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">BREAKING CHANGE: token expires after 1 hour instead of 24 hours</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Closes #456</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices-1">Best Practices<a href="#best-practices-1" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices">​</a></h3>
+<p>--</p>
+<ul>
+<li>Language: Use English for international teams; align with team preference otherwise</li>
+<li>Single purpose: One commit per logical change (e.g., don’t mix bug fixes and features)</li>
+<li>Review changes: Run git diff to avoid committing unintended changes (e.g., debug logs)</li>
+<li>Team alignment: Agree on types, scopes, and format with the team before adoption</li>
+<li>Tools: Use linters or hooks (e.g., Commitizen) to enforce this convention</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2025-05-12T01:07:59.000Z" itemprop="dateModified">May 12, 2025</time></b></span></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/guides/file-encryption"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">file encryption</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/guides/github-auth"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">github auth</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#branch" class="table-of-contents__link toc-highlight">Branch</a><ul><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#examples" class="table-of-contents__link toc-highlight">Examples</a></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a></li></ul></li><li><a href="#commit" class="table-of-contents__link toc-highlight">Commit</a><ul><li><a href="#type" class="table-of-contents__link toc-highlight">Type</a></li><li><a href="#scope" class="table-of-contents__link toc-highlight">Scope</a></li><li><a href="#description-1" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#body-and-footer" class="table-of-contents__link toc-highlight">Body and Footer</a></li><li><a href="#examples-1" class="table-of-contents__link toc-highlight">Examples</a></li><li><a href="#best-practices-1" class="table-of-contents__link toc-highlight">Best Practices</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"></div></footer></div>
+</body>
+</html>
