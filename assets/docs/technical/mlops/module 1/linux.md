@@ -71,6 +71,9 @@ which telnet
 
 #
 ls /usr/bin | grep telnet
+
+#
+docker ps -a | awk 'NR>2 {print $2}'
 ```
 
 ## Shell, Console, and Terminal - Continue - 1:19:13
