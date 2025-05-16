@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-technical/os - ongoing/memory" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">memory | This is my place, bro!</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://kyphan38.github.io/technical/os - ongoing/memory"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="memory | This is my place, bro!"><meta data-rh="true" name="description" content="Intro to Virtual Memory"><meta data-rh="true" property="og:description" content="Intro to Virtual Memory"><link data-rh="true" rel="icon" href="/img/earth.ico"><link data-rh="true" rel="canonical" href="https://kyphan38.github.io/technical/os - ongoing/memory"><link data-rh="true" rel="alternate" href="https://kyphan38.github.io/technical/os - ongoing/memory" hreflang="en"><link data-rh="true" rel="alternate" href="https://kyphan38.github.io/technical/os - ongoing/memory" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.e040279e.css">
+<script src="/assets/js/runtime~main.485d6f5a.js" defer="defer"></script>
+<script src="/assets/js/main.cb4c55ef.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/bw_earth.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/bw_earth.png" alt="earth" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/bw_earth.png" alt="earth" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">kp</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/">docs</a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently dark mode)" aria-label="Switch between dark and light mode (currently dark mode)" aria-live="polite" aria-pressed="true"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/">index</a><button aria-label="Expand sidebar category &#x27;index&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/faqs/java">faqs</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/guides/bash-script-global">guides</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/interviews/git">interviews</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/leetcode/step">leetcode</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/personal/book/enzyme - ongoing/ban-co-the-song-lau-ma-khong-benh-tat">personal</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/technical/aws - ongoing/intro/aws-certifications">technical</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/aws - ongoing/intro/aws-certifications">aws - ongoing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/kubernetes/cka/intro/main">kubernetes</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/linux - ongoing/understand-and-use-essential-tools">linux - ongoing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/mlops/module 1/linux">mlops</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/networking - ongoing/main">networking - ongoing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/technical/os - ongoing/processes">os - ongoing</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/technical/os - ongoing/processes">processes</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/technical/os - ongoing/memory">memory</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/technical/os - ongoing/concurrency">concurrency</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/technical/os - ongoing/io-and-filesystems">io and file systems</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/technical/os - ongoing/the-xv6-operating-system">the xv6 operating system</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/technical/os - ongoing/networking-subsystem">networking subsystem</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/soft skills/ces">soft skills</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/vault - ongoing/introduction-to-vault">vault - ongoing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/technical/w3school/html/tutorial">w3school</a></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">technical</span><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">os - ongoing</span><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">memory</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>memory</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="intro-to-virtual-memory">Intro to Virtual Memory<a href="#intro-to-virtual-memory" class="hash-link" aria-label="Direct link to Intro to Virtual Memory" title="Direct link to Intro to Virtual Memory">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-virtualize-memory">Why Virtualize Memory?<a href="#why-virtualize-memory" class="hash-link" aria-label="Direct link to Why Virtualize Memory?" title="Direct link to Why Virtualize Memory?">​</a></h3>
+<p>--</p>
+<ul>
+<li>Because the real view of memory is messy</li>
+<li>Earlier, memory had only code of one running process (and the OS code)</li>
+<li>Now, multiple active processes timeshare the CPU<!-- -->
+<ul>
+<li>Memory of many processes</li>
+<li>Non-contiguous</li>
+</ul>
+</li>
+<li>Need to hide this complexity from user</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/17-2106c457482cc8525e5d73484ece72ba.png" width="396" height="554" class="img_ev3q"></p>
+<ul>
+<li>Three processes: Sharing memory</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="abstraction-virtual-address-space">Abstraction: (Virtual) Address Space<a href="#abstraction-virtual-address-space" class="hash-link" aria-label="Direct link to Abstraction: (Virtual) Address Space" title="Direct link to Abstraction: (Virtual) Address Space">​</a></h3>
+<p>--</p>
+<ul>
+<li>Virtual address space: Each process believes it has a large, continuous block of memory, starting from address 0 up to a maximum limit<!-- -->
+<ul>
+<li>In reality, this memory may not be fully available or contiguous in physical RAM. The virtual memory system creates the illusion of a seamless memory space for each process</li>
+</ul>
+</li>
+<li>Components<!-- -->
+<ul>
+<li>Program code and static data: The executable instructions and fixed data</li>
+<li>Heap: Dynamically allocated memory that grows downward as needed</li>
+<li>Stack: Memory used for function calls, growing upward during execution</li>
+</ul>
+</li>
+<li>CPU operations: The CPU uses virtual addresses to read from (load) or write to (store) memory, relying on the virtual memory system to map these to physical memory</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/18-2de3ca55daf5de08292af25ac8ffcd5b.png" width="455" height="498" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-is-actual-memory-reached">How Is Actual Memory Reached?<a href="#how-is-actual-memory-reached" class="hash-link" aria-label="Direct link to How Is Actual Memory Reached?" title="Direct link to How Is Actual Memory Reached?">​</a></h3>
+<p>--</p>
+<ul>
+<li>Address Translation: Converts virtual addresses (VA) used by a process into physical addresses (PA) in actual memory<!-- -->
+<ul>
+<li>The CPU sends load/store commands using virtual addresses, but the memory hardware works with physical addresses</li>
+</ul>
+</li>
+<li>The OS manages memory allocation and keeps track of where each process&#x27;s data is stored in physical memory</li>
+<li>Memory Management Unit (MMU): Special hardware that performs the translation from virtual to physical addresses, using information provided by the OS</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/19-df867c414c4414141b21184d4631f88e.png" width="436" height="525" class="img_ev3q"></p>
+<ul>
+<li>Virtual address space - the right one<!-- -->
+<ul>
+<li>This is not stored anywhere physically</li>
+<li>It is an abstraction created by the OS for each process to simplify memory management</li>
+<li>It exists as a concept to give each process its own isolated memory view</li>
+</ul>
+</li>
+<li>RAM - the left one</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-paging">Example: Paging<a href="#example-paging" class="hash-link" aria-label="Direct link to Example: Paging" title="Direct link to Example: Paging">​</a></h3>
+<p>--</p>
+<ul>
+<li>The OS splits the virtual address space into equal-sized chunks called pages, and physical memory (RAM) into matching chunks called frames</li>
+<li>To assign memory, the OS maps a virtual page to an available physical frame</li>
+<li>A table that keeps track of these mappings for each process (e.g., virtual page 0 might map to physical frame 3)</li>
+<li>The MMU uses the page table to convert virtual addresses (VA) into physical addresses (PA) during memory access</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/20-44649e591f1bad7cc1cd9c85b2706566.png" width="428" height="669" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="goals-of-memory-virtualization">Goals of Memory Virtualization<a href="#goals-of-memory-virtualization" class="hash-link" aria-label="Direct link to Goals of Memory Virtualization" title="Direct link to Goals of Memory Virtualization">​</a></h3>
+<p>--</p>
+<ul>
+<li>Transparency: User programs should not be aware of the messy details</li>
+<li>Efficiency: Minimize overhead and wastage in terms of memory space and access time</li>
+<li>Isolation and protection: A user process should not be able to access anything outside its address space</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-can-a-user-allocate-memory">How Can a User Allocate Memory?<a href="#how-can-a-user-allocate-memory" class="hash-link" aria-label="Direct link to How Can a User Allocate Memory?" title="Direct link to How Can a User Allocate Memory?">​</a></h3>
+<p>--</p>
+<ul>
+<li>OS allocates a set of pages to the memory image of the process</li>
+<li>Within this image<!-- -->
+<ul>
+<li>Static/global variables are allocated in the executable</li>
+<li>Local variables of a function on stack</li>
+<li>Dynamic allocation with malloc on the heap</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/21-fcfadc2dc01002248f3533f8fc95f8fd.png" width="285" height="297" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="memory-allocation-system-calls">Memory Allocation System Calls<a href="#memory-allocation-system-calls" class="hash-link" aria-label="Direct link to Memory Allocation System Calls" title="Direct link to Memory Allocation System Calls">​</a></h3>
+<p>--</p>
+<ul>
+<li>malloc implemented by C library<!-- -->
+<ul>
+<li>Algorithms for efficient memory allocation and free space management</li>
+</ul>
+</li>
+<li>To grow heap, libc uses the brk/sbrk system call</li>
+<li>A program can also allocate a page sized memory using the mmap() system call<!-- -->
+<ul>
+<li>Gets &quot;anonymous&quot; page from OS</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/22-13091bff3e183fbc2adedf9c6c82dfcf.png" width="226" height="439" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="a-subtle-point-what-is-the-address-space-of-the-os">A Subtle Point: What Is the Address Space of the OS?<a href="#a-subtle-point-what-is-the-address-space-of-the-os" class="hash-link" aria-label="Direct link to A Subtle Point: What Is the Address Space of the OS?" title="Direct link to A Subtle Point: What Is the Address Space of the OS?">​</a></h3>
+<p>--</p>
+<ul>
+<li>OS is not a separate process with its own address space</li>
+<li>Instead, OS code is part of the address space of every process</li>
+<li>A process sees OS as part of its code (e.g., library)</li>
+<li>Page tables map the OS addresses to OS code</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/23-81210e04d620e8068d1fb6e1c2ef1a5c.png" width="398" height="379" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-does-the-os-allocate-memory">How Does the OS Allocate Memory?<a href="#how-does-the-os-allocate-memory" class="hash-link" aria-label="Direct link to How Does the OS Allocate Memory?" title="Direct link to How Does the OS Allocate Memory?">​</a></h3>
+<p>--</p>
+<ul>
+<li>OS needs memory for its data structures</li>
+<li>For large allocations, OS allocates a page</li>
+<li>For smaller allocations, OS uses various memory allocation algorithms (more later)<!-- -->
+<ul>
+<li>Cannot use libc and malloc in kernel!</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="address-translation-mechanism">Address Translation Mechanism<a href="#address-translation-mechanism" class="hash-link" aria-label="Direct link to Address Translation Mechanism" title="Direct link to Address Translation Mechanism">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="a-simple-example">A Simple Example<a href="#a-simple-example" class="hash-link" aria-label="Direct link to A Simple Example" title="Direct link to A Simple Example">​</a></h3>
+<p>--</p>
+<ul>
+<li>Consider a simple C function</li>
+</ul>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token keyword" style="color:rgb(189, 147, 249);font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(80, 250, 123)">func</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token keyword" style="color:rgb(189, 147, 249);font-style:italic">int</span><span class="token plain"> x </span><span class="token operator">=</span><span class="token plain"> </span><span class="token number">3000</span><span class="token punctuation" style="color:rgb(248, 248, 242)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  x </span><span class="token operator">=</span><span class="token plain"> x </span><span class="token operator">+</span><span class="token plain"> </span><span class="token number">3</span><span class="token punctuation" style="color:rgb(248, 248, 242)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>It is compiled as follows</li>
+</ul>
+<div class="language-assembly codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-assembly codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">128: movl 0x0(%ebx), %eax    ; load 0+%ebx into eax</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">132: addl $0x03, %eax        ; add 3 to eax register</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">135: movl %eax, 0x0(%ebx)    ; store eax back to mem</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>Virtual address space is set up by OS during process creation</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/24-6e0bb30265653c8438167d5c60fe9da7.png" width="171" height="557" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="address-translation">Address Translation<a href="#address-translation" class="hash-link" aria-label="Direct link to Address Translation" title="Direct link to Address Translation">​</a></h3>
+<p>--</p>
+<ul>
+<li>Simplified OS: Places the entire memory image in one chunk</li>
+<li>The following translation from VA to PA is needed<!-- -->
+<ul>
+<li>128 to 32896 (32KB + 128)</li>
+<li>1KB to 33 KB</li>
+<li>20KB? Error!</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/25-f74699b0df090abba9b6e456fc6378a3.png" width="428" height="606" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="who-performs-address-translation">Who Performs Address Translation?<a href="#who-performs-address-translation" class="hash-link" aria-label="Direct link to Who Performs Address Translation?" title="Direct link to Who Performs Address Translation?">​</a></h3>
+<p>--</p>
+<ul>
+<li>In this simple example, OS tells the hardware the base (starting address) and bound (total size of process) values</li>
+<li>Memory hardware, the Memory Management Unit (MMU), calculates PA from VA</li>
+<li>MMU also checks if the address is beyond the bound</li>
+<li>OS is not involved in every translation</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="role-of-hardware-in-translation">Role of Hardware in Translation<a href="#role-of-hardware-in-translation" class="hash-link" aria-label="Direct link to Role of Hardware in Translation" title="Direct link to Role of Hardware in Translation">​</a></h3>
+<p>--</p>
+<ul>
+<li>CPU provides a privileged mode of execution</li>
+<li>Instruction set has privileged instructions to set translation information (e.g., base, bound)</li>
+<li>Hardware (MMU) uses this information to perform translation on every memory access</li>
+<li>MMU generates faults and traps to the OS when access is illegal (e.g., VA is out of bounds)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="role-of-os-in-translation">Role of OS in Translation<a href="#role-of-os-in-translation" class="hash-link" aria-label="Direct link to Role of OS in Translation" title="Direct link to Role of OS in Translation">​</a></h3>
+<p>--</p>
+<ul>
+<li>OS maintains a free list of memory</li>
+<li>Allocates space to a process during creation (and when requested) and cleans up when done</li>
+<li>Maintains information on where space is allocated to each process (in PCB)</li>
+<li>Sets address translation information (e.g., base &amp; bound) in hardware</li>
+<li>Updates this information upon context switch</li>
+<li>Handles traps due to illegal memory access</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="segmentation">Segmentation<a href="#segmentation" class="hash-link" aria-label="Direct link to Segmentation" title="Direct link to Segmentation">​</a></h3>
+<p>--</p>
+<ul>
+<li>Generalized base and bounds</li>
+<li>Each segment of the memory image is placed separately</li>
+<li>Multiple (base, bound) values are stored in the MMU</li>
+<li>Good for sparse address spaces</li>
+<li>But variable-sized allocation leads to external fragmentation<!-- -->
+<ul>
+<li>Small holes in memory are left between segments</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/26-7869010e6fe60b508d5dd745741fee09.png" width="412" height="525" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="paging">Paging<a href="#paging" class="hash-link" aria-label="Direct link to Paging" title="Direct link to Paging">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="paging-1">Paging<a href="#paging-1" class="hash-link" aria-label="Direct link to Paging" title="Direct link to Paging">​</a></h3>
+<p>--</p>
+<ul>
+<li>Allocate memory in fixed-size chunks (&quot;pages&quot;)</li>
+<li>Avoids external fragmentation (no small &quot;holes&quot;)</li>
+<li>Has internal fragmentation (partially filled pages)</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/27-c2bc26e4d67062fb912a8450cd09730b.png" width="862" height="372" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="page-table">Page Table<a href="#page-table" class="hash-link" aria-label="Direct link to Page Table" title="Direct link to Page Table">​</a></h3>
+<p>--</p>
+<ul>
+<li>Per-process data structure to help VA-PA translation</li>
+<li>An array stores mappings from the virtual page number (VPN) to the physical frame number (PFN)<!-- -->
+<ul>
+<li>E.g., VP 0 → PF 3, VP 1 → PF 7</li>
+</ul>
+</li>
+<li>Part of OS memory (in PCB)</li>
+<li>MMU has access to the page table and uses it for address translation</li>
+<li>OS updates the page table upon a context switch</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/28-12ab370f989cb5582f0d06e5fd42c8b0.png" width="393" height="463" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="page-table-entry-pte">Page Table Entry (PTE)<a href="#page-table-entry-pte" class="hash-link" aria-label="Direct link to Page Table Entry (PTE)" title="Direct link to Page Table Entry (PTE)">​</a></h3>
+<p>--</p>
+<ul>
+<li>Simplest page table: Linear page table</li>
+<li>Page table is an array of page table entries, one per virtual page</li>
+<li>VPN (virtual page number) is the index into this array</li>
+<li>Each PTE contains PFN (physical frame number) and a few other bits:<!-- -->
+<ul>
+<li>Valid bit: Is this page used by the process?</li>
+<li>Protection bits: Read/write permissions</li>
+<li>Present bit: Is this page in memory?</li>
+<li>Dirty bit: Has this page been modified?</li>
+<li>Accessed bit: Has this page been recently accessed?</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="address-translation-in-hardware">Address Translation in Hardware<a href="#address-translation-in-hardware" class="hash-link" aria-label="Direct link to Address Translation in Hardware" title="Direct link to Address Translation in Hardware">​</a></h3>
+<p>--</p>
+<ul>
+<li>Most significant bits of VA give the VPN</li>
+<li>Page table maps VPN to PFN</li>
+<li>PA is obtained from PFN and offset within a page</li>
+<li>MMU stores the physical address of the start of the page table, not all entries</li>
+<li>&quot;Walks&quot; the page table to get the relevant PTE</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="img" src="/assets/images/29-33a0448e32ea1b7d39f00da90f7954ef.png" width="500" height="412" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-happens-on-memory-access">What Happens on Memory Access?<a href="#what-happens-on-memory-access" class="hash-link" aria-label="Direct link to What Happens on Memory Access?" title="Direct link to What Happens on Memory Access?">​</a></h3>
+<p>--</p>
+<ul>
+<li>The CPU requests code or data at a virtual address</li>
+<li>MMU must translate VA to PA:<!-- -->
+<ul>
+<li>First, access memory to read the page table entry</li>
+<li>Translate VA to PA</li>
+<li>Then, access memory to fetch code/data</li>
+</ul>
+</li>
+<li>Paging adds overhead to memory access</li>
+<li>Solution? A cache for VA-PA mappings</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="translation-lookaside-buffer-tlb">Translation Lookaside Buffer (TLB)<a href="#translation-lookaside-buffer-tlb" class="hash-link" aria-label="Direct link to Translation Lookaside Buffer (TLB)" title="Direct link to Translation Lookaside Buffer (TLB)">​</a></h3>
+<ul>
+<li>A cache of recent VA-PA mappings</li>
+<li>To translate VA to PA, the MMU first looks up the TLB</li>
+<li>If TLB hit, PA can be directly used</li>
+<li>If TLB miss, the MMU performs additional memory accesses to &quot;walk&quot; the page table</li>
+<li>TLB misses are expensive (multiple memory accesses)<!-- -->
+<ul>
+<li>Locality of reference helps to have a high hit rate</li>
+</ul>
+</li>
+<li>TLB entries may become invalid on context switch and change of page tables</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-are-page-tables-stored-in-memory">How Are Page Tables Stored in Memory?<a href="#how-are-page-tables-stored-in-memory" class="hash-link" aria-label="Direct link to How Are Page Tables Stored in Memory?" title="Direct link to How Are Page Tables Stored in Memory?">​</a></h3>
+<p>--</p>
+<ul>
+<li>What is the typical size of a page table?<!-- -->
+<ul>
+<li>32-bit VA, 4 KB pages, so 2^32 / 2^12 = 2^20 entries</li>
+<li>If each PTE is 4 bytes, then the page table is 4MB</li>
+<li>One such page table per process!</li>
+</ul>
+</li>
+<li>How to reduce the size of page tables?<!-- -->
+<ul>
+<li>Larger pages, so fewer entries</li>
+</ul>
+</li>
+<li>How does the OS allocate memory for such large tables?<!-- -->
+<ul>
+<li>Page table is itself split into smaller chunks!</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="multilevel-page-tables-1">Multilevel Page Tables (1)<a href="#multilevel-page-tables-1" class="hash-link" aria-label="Direct link to Multilevel Page Tables (1)" title="Direct link to Multilevel Page Tables (1)">​</a></h3>
+<p>--</p>
+<ul>
+<li>A page table is spread over many pages</li>
+<li>An &quot;outer&quot; page table or page directory tracks the PFNs of the page table pages</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="multilevel-page-tables-2">Multilevel Page Tables (2)<a href="#multilevel-page-tables-2" class="hash-link" aria-label="Direct link to Multilevel Page Tables (2)" title="Direct link to Multilevel Page Tables (2)">​</a></h3>
+<p>--</p>
+<ul>
+<li>Depending on how large the page table is, more than 2 levels may be needed<!-- -->
+<ul>
+<li>64-bit architectures may need 7 levels</li>
+</ul>
+</li>
+<li>What about address translation?<!-- -->
+<ul>
+<li>First few bits of VA identify the outer page table entry</li>
+<li>The next few bits index into the next level of PTEs</li>
+</ul>
+</li>
+<li>In case of TLB miss, multiple accesses to memory are required to access all levels of page tables</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="is-main-memory-always-enough">Is Main Memory Always Enough?<a href="#is-main-memory-always-enough" class="hash-link" aria-label="Direct link to Is Main Memory Always Enough?" title="Direct link to Is Main Memory Always Enough?">​</a></h2>
+<p>Are all pages of all active processes always in main memory?</p>
+<ul>
+<li>Not necessary, especially with large address spaces</li>
+</ul>
+<p>OS uses a part of disk (swap space) to store pages that are not in active use</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="page-fault">Page Fault<a href="#page-fault" class="hash-link" aria-label="Direct link to Page Fault" title="Direct link to Page Fault">​</a></h3>
+<p>Present bit in the page table entry indicates if a page of a process resides in memory or not</p>
+<p>When translating VA to PA, the MMU reads the present bit</p>
+<p>If the page is present in memory, it is directly accessed</p>
+<p>If the page is not in memory, the MMU raises a trap to the OS—this is a page fault</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="page-fault-handling">Page Fault Handling<a href="#page-fault-handling" class="hash-link" aria-label="Direct link to Page Fault Handling" title="Direct link to Page Fault Handling">​</a></h3>
+<p>A page fault traps the OS and moves the CPU to kernel mode</p>
+<p>OS fetches the disk address of the page and issues a read to the disk</p>
+<p>OS keeps track of the disk address (eg, in the page table)</p>
+<p>OS context switches to another process while the current process is blocked</p>
+<p>When the disk read completes, the OS updates the page table and marks the process as ready</p>
+<p>When the process is scheduled again, the OS restarts the instruction that caused the page fault</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary-what-happens-on-memory-access">Summary: What Happens on Memory Access<a href="#summary-what-happens-on-memory-access" class="hash-link" aria-label="Direct link to Summary: What Happens on Memory Access" title="Direct link to Summary: What Happens on Memory Access">​</a></h3>
+<p>CPU issues a load to a VA for code or data:</p>
+<ul>
+<li>Checks the CPU cache first</li>
+<li>Goes to main memory in case of a cache miss</li>
+</ul>
+<p>The MMU looks up the TLB for the VA:</p>
+<ul>
+<li>If TLB hit, the PA is obtained, and the memory location is fetched and returned to the CPU (via CPU caches)</li>
+<li>If TLB miss, the MMU accesses memory, walks the page table, and obtains the page table entry<!-- -->
+<ul>
+<li>If the present bit is set in the PTE, the memory is accessed</li>
+<li>If the present bit is not set but valid, a page fault is raised, and the OS handles the fault, restarting the CPU load instruction</li>
+<li>If the access is invalid, a trap is raised to the OS for illegal access</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="more-complications-in-a-page-fault">More Complications in a Page Fault<a href="#more-complications-in-a-page-fault" class="hash-link" aria-label="Direct link to More Complications in a Page Fault" title="Direct link to More Complications in a Page Fault">​</a></h3>
+<p>When servicing page fault, what if OS finds that there is no free page to swap in the faulting page?</p>
+<p>OS must swap out an existing page (if it has been modified, ie, dirty) and then swap in the faulting page - too much work!</p>
+<p>OS may proactively swap out pages to keep a list of free pages handy</p>
+<p>The decision of which pages to swap out is made by the page replacement policy</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="page-replacement-policies">Page Replacement Policies<a href="#page-replacement-policies" class="hash-link" aria-label="Direct link to Page Replacement Policies" title="Direct link to Page Replacement Policies">​</a></h3>
+<p>Optimal: Replace the page not needed for the longest time in the future (not practical!)</p>
+<p>FIFO: Replace the page that was brought into memory earliest (may replace a popular page)</p>
+<p>LRU/LFU: Replace the page that was least recently (or frequently) used in the past</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-optimal-policy">Example: Optimal Policy<a href="#example-optimal-policy" class="hash-link" aria-label="Direct link to Example: Optimal Policy" title="Direct link to Example: Optimal Policy">​</a></h3>
+<p>Example: 3 frames for 4 pages (0, 1, 2, 3)</p>
+<p>The first few accesses are cold (compulsory) misses</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-fifo">Example: FIFO<a href="#example-fifo" class="hash-link" aria-label="Direct link to Example: FIFO" title="Direct link to Example: FIFO">​</a></h3>
+<p>Usually worse than optimal</p>
+<p>Belady’s anomaly: Performance may get worse when memory size increases!</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-lru">Example: LRU<a href="#example-lru" class="hash-link" aria-label="Direct link to Example: LRU" title="Direct link to Example: LRU">​</a></h3>
+<p>Equivalent to optimal in this simple example</p>
+<p>Works well due to locality of references</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-is-lru-implemented">How Is LRU Implemented?<a href="#how-is-lru-implemented" class="hash-link" aria-label="Direct link to How Is LRU Implemented?" title="Direct link to How Is LRU Implemented?">​</a></h3>
+<p>OS is not involved in every memory access, so how does it know which page is LRU?
+Hardware help and approximations are used:</p>
+<p>MMU sets an &quot;accessed&quot; bit in the PTE when a page is accessed</p>
+<p>OS periodically checks this bit to estimate which pages are active and inactive</p>
+<p>To replace, the OS tries to find a page without the access bit set</p>
+<ul>
+<li>It may also look for a page without the dirty bit set to avoid swapping out to disk</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="memory-allocation-and-free-space-management-algo">Memory Allocation and Free Space Management Algo<a href="#memory-allocation-and-free-space-management-algo" class="hash-link" aria-label="Direct link to Memory Allocation and Free Space Management Algo" title="Direct link to Memory Allocation and Free Space Management Algo">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="variable-sized-allocation">Variable Sized Allocation<a href="#variable-sized-allocation" class="hash-link" aria-label="Direct link to Variable Sized Allocation" title="Direct link to Variable Sized Allocation">​</a></h3>
+<p>--</p>
+<ul>
+<li>Given a block of memory, how do we allocate it to satisfy various memory allocation requests?</li>
+<li>This problem must be solved in the C library<!-- -->
+<ul>
+<li>Allocates one or more pages from the kernel via brk/sbrk or mmap system calls</li>
+<li>Gives out smaller chunks to user programs via malloc</li>
+</ul>
+</li>
+<li>This problem also occurs in the kernel<!-- -->
+<ul>
+<li>The kernel must allocate memory for its internal data structures</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="variable-sized-allocation-headers">Variable Sized Allocation: Headers<a href="#variable-sized-allocation-headers" class="hash-link" aria-label="Direct link to Variable Sized Allocation: Headers" title="Direct link to Variable Sized Allocation: Headers">​</a></h3>
+<p>--</p>
+<ul>
+<li>Consider a simple implementation of malloc</li>
+<li>Every allocated chunk has a header with information like the size of the chunk<!-- -->
+<ul>
+<li>Why store size? We should know how much to free when free() is called</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="free-list">Free List<a href="#free-list" class="hash-link" aria-label="Direct link to Free List" title="Direct link to Free List">​</a></h3>
+<p>Free space is managed as a list</p>
+<ul>
+<li>A pointer to the next free chunk is embedded within the free chunk</li>
+</ul>
+<p>The library tracks the head of the list</p>
+<ul>
+<li>Allocations happen from the head</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="external-fragmentation">External Fragmentation<a href="#external-fragmentation" class="hash-link" aria-label="Direct link to External Fragmentation" title="Direct link to External Fragmentation">​</a></h3>
+<p>Suppose 3 allocations of size 100 bytes each occur. Then, the middle chunk pointed to by sptr is freed</p>
+<p>The free list now has two non-contiguous elements</p>
+<p>Free space may be scattered around due to fragmentation</p>
+<ul>
+<li>Cannot satisfy a request for 3800 bytes, even though the space is available</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="splitting-and-coalescing">Splitting and Coalescing<a href="#splitting-and-coalescing" class="hash-link" aria-label="Direct link to Splitting and Coalescing" title="Direct link to Splitting and Coalescing">​</a></h3>
+<p>Suppose all three chunks are freed</p>
+<p>The list now has several free chunks that are adjacent</p>
+<p>A smart algorithm would merge them into a bigger free chunk</p>
+<p>Must split and coalesce free chunks to satisfy variable-sized requests</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="buddy-allocation-for-easy-coalescing">Buddy Allocation for Easy Coalescing<a href="#buddy-allocation-for-easy-coalescing" class="hash-link" aria-label="Direct link to Buddy Allocation for Easy Coalescing" title="Direct link to Buddy Allocation for Easy Coalescing">​</a></h3>
+<p>Allocate memory in sizes that are powers of 2</p>
+<ul>
+<li>For example, for a request of 7000 bytes, allocate an 8 KB chunk</li>
+</ul>
+<p>Why? Two adjacent power-of-2 chunks can be merged to form a bigger power-of-2 chunk</p>
+<ul>
+<li>For example, if an 8KB block and its &quot;buddy&quot; are free, they can form a 16KB chunk</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="variable-size-allocation-strategies">Variable Size Allocation Strategies<a href="#variable-size-allocation-strategies" class="hash-link" aria-label="Direct link to Variable Size Allocation Strategies" title="Direct link to Variable Size Allocation Strategies">​</a></h3>
+<p>First fit: Allocate the first free chunk that is sufficient</p>
+<p>Best fit: Allocate the free chunk that is closest in size</p>
+<p>Worst fit: Allocate the free chunk that is farthest in size</p>
+<p>Example: Consider a free list and malloc(15)</p>
+<p>Best fit would allocate the 20-byte chunk</p>
+<p>Worst fit would allocate the 30-byte chunk (remaining chunk is bigger and more usable)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fixed-size-allocations">Fixed Size Allocations<a href="#fixed-size-allocations" class="hash-link" aria-label="Direct link to Fixed Size Allocations" title="Direct link to Fixed Size Allocations">​</a></h3>
+<p>Memory allocation algorithms are much simpler with fixed-size allocations</p>
+<p>Page-sized fixed allocations in the kernel:</p>
+<ul>
+<li>Has a free list of pages</li>
+<li>A pointer to the next page is stored in the free page itself</li>
+</ul>
+<p>For some smaller allocations (eg, PCB), the kernel uses a slab allocator</p>
+<ul>
+<li>Object caches for each type (size) of objects</li>
+<li>Within each cache, only fixed-size allocation</li>
+<li>Each cache is made up of one or more &quot;slabs&quot;</li>
+</ul>
+<p>Fixed-size memory allocators can be used in user programs too (instead of generic malloc)</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2025-05-16T00:43:21.000Z" itemprop="dateModified">May 16, 2025</time></b></span></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/technical/os - ongoing/processes"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">processes</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/technical/os - ongoing/concurrency"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">concurrency</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#intro-to-virtual-memory" class="table-of-contents__link toc-highlight">Intro to Virtual Memory</a><ul><li><a href="#why-virtualize-memory" class="table-of-contents__link toc-highlight">Why Virtualize Memory?</a></li><li><a href="#abstraction-virtual-address-space" class="table-of-contents__link toc-highlight">Abstraction: (Virtual) Address Space</a></li><li><a href="#how-is-actual-memory-reached" class="table-of-contents__link toc-highlight">How Is Actual Memory Reached?</a></li><li><a href="#example-paging" class="table-of-contents__link toc-highlight">Example: Paging</a></li><li><a href="#goals-of-memory-virtualization" class="table-of-contents__link toc-highlight">Goals of Memory Virtualization</a></li><li><a href="#how-can-a-user-allocate-memory" class="table-of-contents__link toc-highlight">How Can a User Allocate Memory?</a></li><li><a href="#memory-allocation-system-calls" class="table-of-contents__link toc-highlight">Memory Allocation System Calls</a></li><li><a href="#a-subtle-point-what-is-the-address-space-of-the-os" class="table-of-contents__link toc-highlight">A Subtle Point: What Is the Address Space of the OS?</a></li><li><a href="#how-does-the-os-allocate-memory" class="table-of-contents__link toc-highlight">How Does the OS Allocate Memory?</a></li></ul></li><li><a href="#address-translation-mechanism" class="table-of-contents__link toc-highlight">Address Translation Mechanism</a><ul><li><a href="#a-simple-example" class="table-of-contents__link toc-highlight">A Simple Example</a></li><li><a href="#address-translation" class="table-of-contents__link toc-highlight">Address Translation</a></li><li><a href="#who-performs-address-translation" class="table-of-contents__link toc-highlight">Who Performs Address Translation?</a></li><li><a href="#role-of-hardware-in-translation" class="table-of-contents__link toc-highlight">Role of Hardware in Translation</a></li><li><a href="#role-of-os-in-translation" class="table-of-contents__link toc-highlight">Role of OS in Translation</a></li><li><a href="#segmentation" class="table-of-contents__link toc-highlight">Segmentation</a></li></ul></li><li><a href="#paging" class="table-of-contents__link toc-highlight">Paging</a><ul><li><a href="#paging-1" class="table-of-contents__link toc-highlight">Paging</a></li><li><a href="#page-table" class="table-of-contents__link toc-highlight">Page Table</a></li><li><a href="#page-table-entry-pte" class="table-of-contents__link toc-highlight">Page Table Entry (PTE)</a></li><li><a href="#address-translation-in-hardware" class="table-of-contents__link toc-highlight">Address Translation in Hardware</a></li><li><a href="#what-happens-on-memory-access" class="table-of-contents__link toc-highlight">What Happens on Memory Access?</a></li><li><a href="#translation-lookaside-buffer-tlb" class="table-of-contents__link toc-highlight">Translation Lookaside Buffer (TLB)</a></li><li><a href="#how-are-page-tables-stored-in-memory" class="table-of-contents__link toc-highlight">How Are Page Tables Stored in Memory?</a></li><li><a href="#multilevel-page-tables-1" class="table-of-contents__link toc-highlight">Multilevel Page Tables (1)</a></li><li><a href="#multilevel-page-tables-2" class="table-of-contents__link toc-highlight">Multilevel Page Tables (2)</a></li></ul></li><li><a href="#is-main-memory-always-enough" class="table-of-contents__link toc-highlight">Is Main Memory Always Enough?</a><ul><li><a href="#page-fault" class="table-of-contents__link toc-highlight">Page Fault</a></li><li><a href="#page-fault-handling" class="table-of-contents__link toc-highlight">Page Fault Handling</a></li><li><a href="#summary-what-happens-on-memory-access" class="table-of-contents__link toc-highlight">Summary: What Happens on Memory Access</a></li><li><a href="#more-complications-in-a-page-fault" class="table-of-contents__link toc-highlight">More Complications in a Page Fault</a></li><li><a href="#page-replacement-policies" class="table-of-contents__link toc-highlight">Page Replacement Policies</a></li><li><a href="#example-optimal-policy" class="table-of-contents__link toc-highlight">Example: Optimal Policy</a></li><li><a href="#example-fifo" class="table-of-contents__link toc-highlight">Example: FIFO</a></li><li><a href="#example-lru" class="table-of-contents__link toc-highlight">Example: LRU</a></li><li><a href="#how-is-lru-implemented" class="table-of-contents__link toc-highlight">How Is LRU Implemented?</a></li></ul></li><li><a href="#memory-allocation-and-free-space-management-algo" class="table-of-contents__link toc-highlight">Memory Allocation and Free Space Management Algo</a><ul><li><a href="#variable-sized-allocation" class="table-of-contents__link toc-highlight">Variable Sized Allocation</a></li><li><a href="#variable-sized-allocation-headers" class="table-of-contents__link toc-highlight">Variable Sized Allocation: Headers</a></li><li><a href="#free-list" class="table-of-contents__link toc-highlight">Free List</a></li><li><a href="#external-fragmentation" class="table-of-contents__link toc-highlight">External Fragmentation</a></li><li><a href="#splitting-and-coalescing" class="table-of-contents__link toc-highlight">Splitting and Coalescing</a></li><li><a href="#buddy-allocation-for-easy-coalescing" class="table-of-contents__link toc-highlight">Buddy Allocation for Easy Coalescing</a></li><li><a href="#variable-size-allocation-strategies" class="table-of-contents__link toc-highlight">Variable Size Allocation Strategies</a></li><li><a href="#fixed-size-allocations" class="table-of-contents__link toc-highlight">Fixed Size Allocations</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"></div></footer></div>
+</body>
+</html>
