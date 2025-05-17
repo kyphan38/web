@@ -155,6 +155,15 @@ void func() {
 --
 
 - In this simple example, OS tells the hardware the base (starting address) and bound (total size of process) values
+
+```text
+physical address = virtual address + base
+```
+
+```text
+33 KB = 1 KB + 32 KB
+```
+
 - Memory hardware, the Memory Management Unit (MMU), calculates PA from VA
 - MMU also checks if the address is beyond the bound
 - OS is not involved in every translation
@@ -194,7 +203,7 @@ void func() {
 
 ## Paging
 
-### Paging
+### What Is It?
 
 --
 
@@ -296,7 +305,9 @@ void func() {
   - The next few bits index into the next level of PTEs
 - In case of TLB miss, multiple accesses to memory are required to access all levels of page tables
 
-## Is Main Memory Always Enough?
+## Demand Paging
+
+### Is Main Memory Always Enough?
 
 Are all pages of all active processes always in main memory?
 - Not necessary, especially with large address spaces
