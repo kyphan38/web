@@ -285,6 +285,8 @@ void func() {
 - A page table is spread over many pages
 - An "outer" page table or page directory tracks the PFNs of the page table pages
 
+![img](./img/30.png)
+
 ### Multilevel Page Tables (2)
 
 --
@@ -296,97 +298,108 @@ void func() {
   - The next few bits index into the next level of PTEs
 - In case of TLB miss, multiple accesses to memory are required to access all levels of page tables
 
-## Is Main Memory Always Enough?
+![img](./img/31.png)
 
-Are all pages of all active processes always in main memory?
-- Not necessary, especially with large address spaces
+## Demand Paging
 
-OS uses a part of disk (swap space) to store pages that are not in active use
+### Is Main Memory Always Enough?
+
+--
+
+- Are all pages of all active processes always in main memory?
+  - Not necessary, especially with large address spaces
+- OS uses a part of disk (swap space) to store pages that are not in active use
+
+![img](./img/32.png)
 
 ### Page Fault
 
-Present bit in the page table entry indicates if a page of a process resides in memory or not
+--
 
-When translating VA to PA, the MMU reads the present bit
-
-If the page is present in memory, it is directly accessed
-
-If the page is not in memory, the MMU raises a trap to the OS—this is a page fault
+- Present bit in the page table entry indicates if a page of a process resides in memory or not
+- When translating VA to PA, the MMU reads the present bit
+- If the page is present in memory, it is directly accessed
+- If the page is not in memory, the MMU raises a trap to the OS - this is a page fault
 
 ### Page Fault Handling
 
-A page fault traps the OS and moves the CPU to kernel mode
+--
 
-OS fetches the disk address of the page and issues a read to the disk
-
-OS keeps track of the disk address (eg, in the page table)
-
-OS context switches to another process while the current process is blocked
-
-When the disk read completes, the OS updates the page table and marks the process as ready
-
-When the process is scheduled again, the OS restarts the instruction that caused the page fault
+- A page fault traps the OS and moves the CPU to kernel mode
+- OS fetches the disk address of the page and issues a read to the disk
+  - OS keeps track of the disk address (eg, in the page table)
+- OS context switches to another process while the current process is blocked
+- When the disk read completes, the OS updates the page table and marks the process as ready
+- When the process is scheduled again, the OS restarts the instruction that caused the page fault
 
 ### Summary: What Happens on Memory Access
 
-CPU issues a load to a VA for code or data:
-- Checks the CPU cache first
-- Goes to main memory in case of a cache miss
+--
 
-The MMU looks up the TLB for the VA:
-- If TLB hit, the PA is obtained, and the memory location is fetched and returned to the CPU (via CPU caches)
-- If TLB miss, the MMU accesses memory, walks the page table, and obtains the page table entry
-  - If the present bit is set in the PTE, the memory is accessed
-  - If the present bit is not set but valid, a page fault is raised, and the OS handles the fault, restarting the CPU load instruction
-  - If the access is invalid, a trap is raised to the OS for illegal access
+- CPU issues a load to a VA for code or data
+  - Checks the CPU cache first
+  - Goes to main memory in case of a cache miss
+- The MMU looks up the TLB for the VA:
+  - If TLB hit, the PA is obtained, and the memory location is fetched and returned to the CPU (via CPU caches)
+  - If TLB miss, the MMU accesses memory, walks the page table, and obtains the page table entry
+    - If the present bit is set in the PTE, the memory is accessed
+    - If the present bit is not set but valid, a page fault is raised, and the OS handles the fault, restarting the CPU load instruction
+    - If the access is invalid, a trap is raised to the OS for illegal access
 
 ### More Complications in a Page Fault
 
-When servicing page fault, what if OS finds that there is no free page to swap in the faulting page?
+--
 
-OS must swap out an existing page (if it has been modified, ie, dirty) and then swap in the faulting page - too much work!
-
-OS may proactively swap out pages to keep a list of free pages handy
-
-The decision of which pages to swap out is made by the page replacement policy
+- When servicing page fault, what if OS finds that there is no free page to swap in the faulting page?
+- OS must swap out an existing page (if it has been modified, ie, dirty) and then swap in the faulting page - too much work!
+- OS may proactively swap out pages to keep a list of free pages handy
+- The decision of which pages to swap out is made by the page replacement policy
 
 ### Page Replacement Policies
 
-Optimal: Replace the page not needed for the longest time in the future (not practical!)
+--
 
-FIFO: Replace the page that was brought into memory earliest (may replace a popular page)
-
-LRU/LFU: Replace the page that was least recently (or frequently) used in the past
+- Optimal: Replace the page not needed for the longest time in the future (not practical!)
+- FIFO: Replace the page that was brought into memory earliest (may replace a popular page)
+- LRU/LFU: Replace the page that was least recently (or frequently) used in the past
 
 ### Example: Optimal Policy
 
-Example: 3 frames for 4 pages (0, 1, 2, 3)
+--
 
-The first few accesses are cold (compulsory) misses
+- Example: 3 frames for 4 pages (0, 1, 2, 3)
+- The first few accesses are cold (compulsory) misses
+
+![img](./img/33.png)
 
 ### Example: FIFO
 
-Usually worse than optimal
+--
 
-Belady’s anomaly: Performance may get worse when memory size increases!
+- Usually worse than optimal
+- Belady's anomaly: Performance may get worse when memory size increases!
+
+![img](./img/34.png)
 
 ### Example: LRU
 
-Equivalent to optimal in this simple example
+--
 
-Works well due to locality of references
+- Equivalent to optimal in this simple example
+- Works well due to locality of references
+
+![img](./img/35.png)
 
 ### How Is LRU Implemented?
 
-OS is not involved in every memory access, so how does it know which page is LRU?
-Hardware help and approximations are used:
+--
 
-MMU sets an "accessed" bit in the PTE when a page is accessed
-
-OS periodically checks this bit to estimate which pages are active and inactive
-
-To replace, the OS tries to find a page without the access bit set
-- It may also look for a page without the dirty bit set to avoid swapping out to disk
+- OS is not involved in every memory access, so how does it know which page is LRU?
+- Hardware help and approximations are used
+- MMU sets an "accessed" bit in the PTE when a page is accessed
+- OS periodically checks this bit to estimate which pages are active and inactive
+- To replace, the OS tries to find a page without the access bit set
+  - It may also look for a page without the dirty bit set to avoid swapping out to disk
 
 ## Memory Allocation and Free Space Management Algo
 
@@ -409,66 +422,72 @@ To replace, the OS tries to find a page without the access bit set
 - Every allocated chunk has a header with information like the size of the chunk
   - Why store size? We should know how much to free when free() is called
 
+![img](./img/36.png)
+
 ### Free List
 
-Free space is managed as a list
-- A pointer to the next free chunk is embedded within the free chunk
+--
 
-The library tracks the head of the list
-- Allocations happen from the head
+- Free space is managed as a list
+  - A pointer to the next free chunk is embedded within the free chunk
+- The library tracks the head of the list
+  - Allocations happen from the head
+
+![img](./img/37.png)
 
 ### External Fragmentation
 
-Suppose 3 allocations of size 100 bytes each occur. Then, the middle chunk pointed to by sptr is freed
+--
 
-The free list now has two non-contiguous elements
+- Suppose 3 allocations of size 100 bytes each occur. Then, the middle chunk pointed to by sptr is freed
+- The free list now has two non-contiguous elements
+- Free space may be scattered around due to fragmentation
+  - Cannot satisfy a request for 3800 bytes, even though the space is available
 
-Free space may be scattered around due to fragmentation
-- Cannot satisfy a request for 3800 bytes, even though the space is available
+![img](./img/38.png)
 
 ### Splitting and Coalescing
 
-Suppose all three chunks are freed
+--
 
-The list now has several free chunks that are adjacent
+- Suppose all three chunks are freed
+- The list now has several free chunks that are adjacent
+- A smart algorithm would merge them into a bigger free chunk
+- Must split and coalesce free chunks to satisfy variable-sized requests
 
-A smart algorithm would merge them into a bigger free chunk
-
-Must split and coalesce free chunks to satisfy variable-sized requests
+![img](./img/39.png)
 
 ### Buddy Allocation for Easy Coalescing
 
-Allocate memory in sizes that are powers of 2
-- For example, for a request of 7000 bytes, allocate an 8 KB chunk
+--
 
-Why? Two adjacent power-of-2 chunks can be merged to form a bigger power-of-2 chunk
-- For example, if an 8KB block and its "buddy" are free, they can form a 16KB chunk
+- Allocate memory in sizes that are powers of 2
+  - For example, for a request of 7000 bytes, allocate an 8 KB chunk
+- Why? Two adjacent power-of-2 chunks can be merged to form a bigger power-of-2 chunk
+  - For example, if an 8KB block and its "buddy" are free, they can form a 16KB chunk
+
+![img](./img/40.png)
 
 ### Variable Size Allocation Strategies
 
-First fit: Allocate the first free chunk that is sufficient
+--
 
-Best fit: Allocate the free chunk that is closest in size
+- First fit: Allocate the first free chunk that is sufficient
+- Best fit: Allocate the free chunk that is closest in size
+- Worst fit: Allocate the free chunk that is farthest in size
 
-Worst fit: Allocate the free chunk that is farthest in size
-
-Example: Consider a free list and malloc(15)
-
-Best fit would allocate the 20-byte chunk
-
-Worst fit would allocate the 30-byte chunk (remaining chunk is bigger and more usable)
+![img](./img/41.png)
 
 ### Fixed Size Allocations
 
-Memory allocation algorithms are much simpler with fixed-size allocations
+--
 
-Page-sized fixed allocations in the kernel:
-- Has a free list of pages
-- A pointer to the next page is stored in the free page itself
-
-For some smaller allocations (eg, PCB), the kernel uses a slab allocator
-- Object caches for each type (size) of objects
-- Within each cache, only fixed-size allocation
-- Each cache is made up of one or more "slabs"
-
-Fixed-size memory allocators can be used in user programs too (instead of generic malloc)
+- Memory allocation algorithms are much simpler with fixed-size allocations
+- Page-sized fixed allocations in the kernel:
+  - Has a free list of pages
+  - A pointer to the next page is stored in the free page itself
+- For some smaller allocations (eg, PCB), the kernel uses a slab allocator
+  - Object caches for each type (size) of objects
+  - Within each cache, only fixed-size allocation
+  - Each cache is made up of one or more "slabs"
+- Fixed-size memory allocators can be used in user programs too (instead of generic malloc)

@@ -183,7 +183,7 @@ Closes #456
 --
 
 - Language: Use English for international teams; align with team preference otherwise
-- Single purpose: One commit per logical change (e.g., don’t mix bug fixes and features)
+- Single purpose: One commit per logical change (e.g., don't mix bug fixes and features)
 - Review changes: Run git diff to avoid committing unintended changes (e.g., debug logs)
 - Team alignment: Agree on types, scopes, and format with the team before adoption
 - Tools: Use linters or hooks (e.g., Commitizen) to enforce this convention

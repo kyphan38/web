@@ -19,7 +19,7 @@ Installing Vault
 - Where to download Vault
   - vaultproject.io
   - releases.hashicorp.com/vault
-  - Alternatively, use your preferred package manager (e.g., apt, yum, or even homebrew—community-supported)
+  - Alternatively, use your preferred package manager (e.g., apt, yum, or even homebrew-community-supported)
   - For Kubernetes, use the Vault Helm Chart to install and configure Vault
 - Installation steps
   - Download Vault

@@ -24,26 +24,25 @@ Key features when running a program
 
 ![img](./img/1.png)
 
-- To run an executable, CPU will
-  - Fetch instruction pointed at by PC from memory
+- To run an executable, the CPU will
+  - Fetch the instruction pointed at by the PC from memory
   - Load data required by the instructions into registers
   - Decode and execute the instruction
-  - Store result back to memory
-
-Most recently used instructions and data are in CPU caches for faster access
+  - Store the result back to memory
+- Most recently used instructions and data are in CPU caches for faster access
 
 ### What Does the OS Do?
 
 --
 
-- OS manages program memory
-  - Loads program executable (code, data) from disk to memory
-- OS manages CPU
-  - Initializes program counter (PC) and other registers to begin execution
-- OS manages external devices
-  - Reads and writes files from disk
+- The OS manages program memory
+  - Loads the program executable (code, data) from disk to memory
+- The OS manages the CPU
+  - Initializes the program counter (PC) and other registers to begin execution
+- The OS manages external devices
+  - Reads and writes files from the disk
 
-### How Does OS Manage CPU?
+### How Does the OS Manage the CPU?
 
 --
 
@@ -261,12 +260,6 @@ Many variants exist of the above system calls with different arguments
 
 Example with general steps
 
-```bash
-ls
----
-a.txt b.txt c.txt
-```
-
 - Shell reads the command ls
 - Shell parses the command and locates the ls
 - executable in $PATH (e.g., /bin/ls)
@@ -289,6 +282,7 @@ a.txt b.txt c.txt
 
 ![img](./img/10.png)
 
+## pppppppppppppppppppppppppp
 
 ## Process Execution Mechanism
 
@@ -442,7 +436,7 @@ Example: Process A has moved from user to kernel mode, OS decides it must switch
 --
 
 - Maximize (utilization = fraction of time CPU is used)
-- Minimize average (turnaround time = time from a process's arrival to completion) 
+- Minimize average (turnaround time = time from a process's arrival to completion)
 - Minimize average (response time = time from a process's arrival to first scheduling)
 - Fairness: All processes must be treated equally
 - Minimize overhead: Run process long enough to amortize (reduce) cost of context switch (~1 microsecond)
@@ -509,7 +503,6 @@ RR gives each process a fixed time slice, preempting and cycling through a queue
   - Process from the highest priority queue scheduled first
   - Within the same priority, any algorithm like RR
   - Priority of a process decays with its age
-
 
 ## Inter-Process Communication
 
