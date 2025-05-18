@@ -11,8 +11,7 @@ What is an operating system?
 
 When a program runs
 
-- compiler translates high-level programs into an executable (e.g., ".c" source code to "a.out" on disk)
-- The executable contains:
+- A compiler translates high-level programs into an executable (e.g., ".c" source code to "a.out" on disk)
 - The executable contains
   - Instructions that the CPU can understand
   - Program data (all numbered with addresses)
@@ -49,8 +48,8 @@ When a program runs
 --
 
 - Provides the process abstraction
-  - A process is a running program.
-  - The OS creates and manages processes.
+  - A process is a running program
+  - The OS creates and manages processes
 - Gives each process the illusion of having exclusive access to the CPU by virtualizing the CPU
   - Multiple processes (e.g., listening to music, browsing the web) run concurrently
 - Timeshares the CPU between processes
