@@ -2,7 +2,7 @@
 
 ## Array
 
-Static vs dynamic arrays
+Static vs. dynamic arrays
 
 - Static: fixed size
   - Examples: C++ (`int[]`), Java (`double[]`)
@@ -14,7 +14,7 @@ How dynamic arrays work
 - Initial allocation
   - Created on the heap (unlike static arrays on the stack)
   - Memory block size is based on an initial capacity (user-defined or default)
-- Capacity vs size
+- Capacity vs. size
   - Size: number of elements currently stored
   - Capacity: total memory reserved (typically exceeds size for growth)
 - Growth mechanism

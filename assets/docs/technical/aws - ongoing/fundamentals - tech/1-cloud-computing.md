@@ -22,7 +22,7 @@ NIST - 5 characteristics
   - Resource usage can be monitored, controlled, reported, and billed
   - Usage is measured. Pay for what you consume
 
-## Public vs Private vs Hybrid vs Multi Cloud
+## Public vs. Private vs. Hybrid vs. Multi Cloud
 
 ![img](./img/1.png)
 

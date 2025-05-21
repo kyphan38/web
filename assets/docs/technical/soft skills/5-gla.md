@@ -162,7 +162,7 @@ Keep it interesting!
 
 Exploring learning styles
 
-- Abstract vs concrete
+- Abstract vs. concrete
   - Abstract: Focus on expertise and concepts
   - Concrete: Emphasize hands-on experience
 - Switch mediums

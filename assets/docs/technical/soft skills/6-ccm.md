@@ -45,7 +45,7 @@ Nurturing your employees as clients
   - Offer correction when needed, but also show genuine curiosity in their work
   - Be observant and attentive to what they say and do
 
-External vs internal clients
+External vs. internal clients
 
 - External clients usually pay the bills while internal clients provide the service to the external ones
 - With external clients
@@ -150,7 +150,7 @@ Meeting diverse needs
 - External client management
   - Emphasizes product features, customer satisfaction, and managing expectations
 
-Must-haves vs good-to-haves
+Must-haves vs. good-to-haves
 
 - Must-haves
   - Critical functionalities
@@ -336,7 +336,7 @@ Active listening
   - Pay attention to verbal, nonverbal, and paraverbal cues - expressions, micro-expressions, body language, tone, etc
 - Behavioral change stairway model
   - Originally developed for hostage negotiation, this model progresses through: Active listening, empathy, rapport, influence, and behavioral change
-- Active vs passive Listening
+- Active vs. passive Listening
   - Emphasize the distinction between simply hearing and actively engaging
 
 Techniques for active listening
@@ -433,7 +433,7 @@ Actions and result
 | 1      | What does the "Empathy and Rapport in Conflict Resolution" slide highlight regarding the role of empathy in understanding conflicts? | Empathy is important in understanding not just the surface issues but the underlying emotions and perspectives |
 | 2      | According to the "Integrating a Client-Centric Approach in DevOps" slide, what is one of the tips for maintaining a client-centric approach consistently? | Active listening                                                                                           |
 | 3      | What does the "Colleagues: Peer Clients in DevOps" slide discuss regarding the role of collaboration in the DevOps culture? | Collaboration is key for effective teamwork and innovation                                                  |
-| 4      | According to the "Internal vs External Clients" slide, what is the focus of the scenario video?      | Examples of real-world managing up, down, and sideways                                                     |
+| 4      | According to the "Internal vs. External Clients" slide, what is the focus of the scenario video?      | Examples of real-world managing up, down, and sideways                                                     |
 | 5      | According to the "Employees: Nurturing Your Team as Clients" slide, what is one of the strategies suggested for nurturing a client-like relationship with team members? | Implementing regular one-on-one meetings                                                                   |
 | 6      | According to the "Introduction to Active Listening" slide, what is active listening presented as?    | The cornerstone of resolving conflicts effectively                                                       |
 | 7      | According to the "The Role of Emotional Intelligence" slide, what is one of the strategies for maintaining composure during conflicts? | Practicing calming techniques like deep breathing or mindfulness                                           |
