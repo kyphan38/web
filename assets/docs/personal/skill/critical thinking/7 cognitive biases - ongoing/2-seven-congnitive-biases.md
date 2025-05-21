@@ -47,7 +47,7 @@ Triệu chứng
 Nguyên nhân
 
 - Nhận định chủ yếu dựa trên cảm nhận, cảm xúc, giác quan, trực giác
-- Không dựa trên số liệu và dữ kiện khách quan 
+- Không dựa trên số liệu và dữ kiện khách quan
 
 ### Bệnh Cả Tin
 

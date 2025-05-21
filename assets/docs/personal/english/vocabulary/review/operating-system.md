@@ -12,9 +12,9 @@ Verb/verb Phrase
 | get a handle on (nam bat)                  | grasp (hieu ro), understand (thau hieu)            | She finally got a handle on the complex project     |
 | kick off (bat dau)                         | start (khoi dau), launch (phat dong)               | The team kicked off the meeting with a brainstorm   |
 | juggle (tung hoi)                          | balance (can bang), manage (quan ly)               | He juggles work and family with ease                |
-| circle back to (quay lai)                  | revisit (xem lai), return to (tro lai)             | Let’s circle back to this topic later               |
+| circle back to (quay lai)                  | revisit (xem lai), return to (tro lai)             | Let's circle back to this topic later               |
 | keep track of (theo doi)                   | monitor (giam sat), record (ghi lai)               | She keeps track of her expenses daily               |
-| mess with (can thiep)                      | interfere with (lam phien), tamper with (soan vao) | Don’t mess with the settings on my phone            |
+| mess with (can thiep)                      | interfere with (lam phien), tamper with (soan vao) | Don't mess with the settings on my phone            |
 | unpack (mo rong)                           | analyze (phan tich), explain (giai thich)          | He unpacked the data in the meeting                 |
 | reclaim (khoi phuc)                        | recover (lay lai), retrieve (thu hoi)              | They reclaimed the land for farming                 |
 | reap (gat hai)                             | harvest (thu hoach), gain (thu loi)                | She reaped the benefits of her hard work            |
@@ -23,7 +23,7 @@ Verb/verb Phrase
 | hit the layer down (dan ap)                | suppress (dan ap), push down (ep xuong)            | They hit the layer down to stabilize the system     |
 | set up the stage (chuan bi san khau)       | prepare (chuan bi), arrange (sap xep)              | She set up the stage for the presentation           |
 | tie together (ket noi)                     | connect (lien ket), link (gan ket)                 | The report ties together all the findings           |
-| clutter up (lam roi)                       | mess up (lam hon loan), disorder (lam be tac)      | Don’t clutter up the desk with papers               |
+| clutter up (lam roi)                       | mess up (lam hon loan), disorder (lam be tac)      | Don't clutter up the desk with papers               |
 | pick up where it left off (tiep tuc)       | resume (tai khoi), continue (tiep noi)             | We picked up where we left off last week            |
 | preempt (ngan chan)                        | forestall (ngan ngua), prevent (chan truoc)        | The team preempted issues with early testing        |
 | dispatch (gui di)                          | send (chuyen di), ship (van chuyen)                | They dispatched the package this morning            |

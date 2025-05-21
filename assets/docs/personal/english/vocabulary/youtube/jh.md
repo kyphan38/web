@@ -9,7 +9,7 @@ Verb/Verb Phrase
 | Word/Phrase                             | IPA                    | Synonyms                                                                | Example Sentence                           |
 | :-------------------------------------- | :--------------------- | :---------------------------------------------------------------------- | :----------------------------------------- |
 | get rich off (lam giau tu)              | /ɡɛt rɪtʃ ɒf/          | profit from (loi nhuan tu), capitalize on (tan dung)                    | She got rich off her innovative app        |
-| live off (song nho)                     | /lɪv ɒf/               | depend on (phu thuoc), subsist on (song nho)                            | He lives off his parents’ support          |
+| live off (song nho)                     | /lɪv ɒf/               | depend on (phu thuoc), subsist on (song nho)                            | He lives off his parents' support          |
 | look deep into (nghien cuu sau)         | /lʊk diːp ˈɪntuː/      | investigate (dieu tra), probe (tham do)                                 | They looked deep into the issue            |
 | get sued (bi kien)                      | /ɡɛt suːd/             | be prosecuted (bi truy to), be litigated (bi kien tung)                 | The company got sued for fraud             |
 | cease (ngung)                           | /siːs/                 | stop (dung), halt (tam ngung)                                           | They ceased operations last month          |
@@ -68,7 +68,7 @@ Noun/Noun Phrase
 | pedestal (be dung)                             | /ˈpɛdɪstl/               | base (de), platform (nen tang)                                                    | The statue was placed on a pedestal      |
 | reforms (cai cach)                             | /rɪˈfɔːrmz/              | changes (thay doi), improvements (cai thien)                                      | Reforms transformed the system           |
 | for-profit companies (cong ty loi nhuan)       | /fər ˈprɒfɪt ˈkʌmpəniz/  | commercial firms (cong ty thuong mai), private businesses (doanh nghiep tu nhan)  | For-profit companies dominate the market |
-| mythologization (su than thoai hoa)            | /ˌmɪθələdʒaɪˈzeɪʃn/      | idealization (ly tuong hoa), romanticization (lang man hoa)                       | The leader’s mythologization grew        |
+| mythologization (su than thoai hoa)            | /ˌmɪθələdʒaɪˈzeɪʃn/      | idealization (ly tuong hoa), romanticization (lang man hoa)                       | The leader's mythologization grew        |
 | ballooning (su phinh to)                       | /bəˈluːnɪŋ/              | expansion (mo rong), escalation (leo thang)                                       | Ballooning debt worried economists       |
 | tax credit (tin dung thue)                     | /tæks ˈkrɛdɪt/           | tax break (giam thue), tax relief (miễn thue)                                     | She received a tax credit                |
 | specifics (chi tiet)                           | /spəˈsɪfɪks/             | details (chi tiet), particulars (diem rieng)                                      | He explained the specifics of the plan   |
@@ -138,7 +138,7 @@ Idiomatic Phrase/Connector
 | all the way down (hoan toan)                      | /ɔːl ðə weɪ daʊn/              | completely (hoan toan), entirely (toan bo)                                | Prices fell all the way down               |
 | and yet what (tuy nhien cai gi)                   | /ænd jɛt wɒt/                  | but what (nhung cai gi), however what (tuy nhien cai gi)                  | And yet what can we do                     |
 | ahead of (truoc)                                  | /əˈhɛd ɒv/                     | before (truoc), in front of (phia truoc)                                  | She finished ahead of schedule             |
-| bird’s-eye view (tong quan)                       | /ˌbɜːrdz aɪ vjuː/              | overview (tong quan), panorama (toan canh)                                | The report gave a bird’s-eye view          |
+| bird's-eye view (tong quan)                       | /ˌbɜːrdz aɪ vjuː/              | overview (tong quan), panorama (toan canh)                                | The report gave a bird's-eye view          |
 | it comes out to be (hoa ra la)                    | /ɪt kʌmz aʊt tə biː/           | turns out (hoa ra), results in (dan den)                                  | It comes out to be a great deal            |
 | at the heart of (trong tam)                       | /æt ðə hɑːrt ɒv/               | core of (loi cua), center of (trung tam)                                  | At the heart of the issue is trust         |
 | come in these paper coupons (den duoi dang phieu) | /kʌm ɪn ðiːz ˈpeɪpər ˈkuːpɒnz/ | arrive as (den nhu), presented as (trinh bay nhu)                         | Discounts come in these paper coupons      |
@@ -149,7 +149,7 @@ Idiomatic Phrase/Connector
 | to the tune of (so tien)                          | /tə ðə tjuːn ɒv/               | amounting to (len den), in the amount of (voi so tien)                    | They lost to the tune of a million dollars |
 | at the expense of (voi chi phi)                   | /æt ði ɪkˈspɛns ɒv/            | at the cost of (voi gia), sacrificing (hy sinh)                           | Success came at the expense of health      |
 | be mind (hay nho)                                 | /bi maɪnd/                     | take note (ghi chu), bear in mind (nho)                                   | Be mind the rules before starting          |
-| get my head around (hieu ro)                      | /ɡɛt maɪ hɛd əˈraʊnd/          | grasp (nam bat), understand (hieu)                                        | I can’t get my head around this            |
+| get my head around (hieu ro)                      | /ɡɛt maɪ hɛd əˈraʊnd/          | grasp (nam bat), understand (hieu)                                        | I can't get my head around this            |
 | get people off the rolls (loai bo danh sach)      | /ɡɛt ˈpiːpl ɒf ðə roʊlz/       | remove from lists (xoa khoi danh sach), delist (loai bo)                  | They got people off the rolls              |
 | in the chair (trong ghe)                          | /ɪn ðə tʃeər/                  | in position (o vi tri), seated (ngoi)                                     | He was in the chair during the meeting     |
 | the amount of drag (muc do keo)                   | /ði əˈmaʊnt ɒv dræɡ/           | level of resistance (muc do khang cu), extent of delay (pham vi tri hoan) | The amount of drag slowed progress         |
@@ -297,7 +297,7 @@ Adjective/Adjective Phrase
 | interstate (lien bang)                         | /ˈɪntərsteɪt/              | between states (giua cac bang), cross-state (xuyen bang)                                         | Interstate trade boosts the economy            |
 | suspenseful (gay can)                          | /səˈspɛnsfəl/              | thrilling (hap dan), tense (cang thang)                                                          | The movie was suspenseful and gripping         |
 | internationalize (quoc te hoa)                 | /ˌɪntərˈnæʃənəlaɪz/        | globalize (toan cau hoa), make international (quoc te hoa)                                       | They aim to internationalize the brand         |
-| deadly (chet choc)                             | /ˈdɛdli/                   | lethal (gây tu vong), fatal (nguy hiem)                                                          | The snake’s venom is deadly                    |
+| deadly (chet choc)                             | /ˈdɛdli/                   | lethal (gây tu vong), fatal (nguy hiem)                                                          | The snake's venom is deadly                    |
 | resistant to peace (khang cu chien tranh)      | /rɪˈzɪstənt tə piːs/       | opposed to peace (phan doi hoa binh), defiant of peace (thach thuc hoa binh)                     | The group remains resistant to peace talks     |
 | dominant (thong tri)                           | /ˈdɒmɪnənt/                | leading (hang dau), prevailing (chiem uu the)                                                    | The team is dominant in the league             |
 | nuclear (hat nhan)                             | /ˈnjuːkliər/               | atomic (nguyen tu), radioactive (phong xa)                                                       | Nuclear energy powers the facility             |
@@ -344,5 +344,5 @@ Idiomatic Phrase/Connector
 | go a long way (co tac dung lon)          | /ɡoʊ ə lɒŋ weɪ/             | make a big impact (co anh huong lon), be effective (hieu qua)                   | A smile goes a long way                     |
 | on the ground (tai cho)                  | /ɒn ðə ɡraʊnd/              | in the field (tai hien truong), locally (tai dia phuong)                        | Reporters are active on the ground          |
 | give rise to (lam phat sinh)             | /ɡɪv raɪz tuː/              | cause (gây ra), lead to (dan den)                                               | The policy gave rise to protests            |
-| on a matter of principle (vi nguyen tac) | /ɒn ə ˈmætər əv ˈprɪnsəpəl/ | for principle’s sake (vi ly do nguyen tac), based on belief (dua tren niem tin) | She refused on a matter of principle        |
+| on a matter of principle (vi nguyen tac) | /ɒn ə ˈmætər əv ˈprɪnsəpəl/ | for principle's sake (vi ly do nguyen tac), based on belief (dua tren niem tin) | She refused on a matter of principle        |
 | catch in the middle (bi ket giua)        | /kætʃ ɪn ðə ˈmɪdəl/         | trap between (mac ket giua), stuck in between (bi ket giua)                     | He was caught in the middle of the conflict |
