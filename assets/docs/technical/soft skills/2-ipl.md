@@ -208,7 +208,7 @@ Summary
 - Trust requires setting clear goals, boundaries, and expectations that translate into agreements. Keep them
 - Safety is an agreement, an expectation, and a right to not be attacked or assaulted. Respect and dignity are required for safety
 
-## What You Say vs What You Do
+## What You Say vs. What You Do
 
 Balancing communication and action
 
@@ -263,7 +263,7 @@ A deeper definition
 - Persuasion: Ethical influence that uses reasoning, discussion, transparency, and moral appeal
 - Manipulation: Unethical influence through deception, coercion, or emotional exploitation typically for the manipulator's benefit
 
-Positive (persuasion) vs negative (Manipulation)
+Positive (persuasion) vs. negative (Manipulation)
 
 - Persuasion
   - Honest, respectful, and transparent

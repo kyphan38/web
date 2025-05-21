@@ -76,7 +76,7 @@ Effective communication of priority changes
 - Changing a priority means changing an agreement and failure to inform the stakeholders breaks that agreement
 - Always clarify the why behind changes to maintain trust and alignment
 
-Project work vs interrupt-driven work
+Project work vs. interrupt-driven work
 
 - Mixing these two types of work can be extremely challenging. To manage effectively
   - Keep workflows separate where possible
@@ -264,11 +264,11 @@ Actions and result
 | 4      | According to the "Mastering the Art of Prioritization" slide, what is prioritization in the context of DevOps? | A strategic approach to achieving optimal outcomes                                                       |
 | 5      | What is the most important factor when choosing a prioritization method, according to the "Effective Strategies for Prioritization" slide? | Selecting a method that achieves desired outcomes                                                        |
 | 6      | What does the "Adapting to Rapidly Changing Realities" slide suggest about priorities in DevOps?     | Priorities should be evaluated and adjusted daily                                                        |
-| 7      | According to the "Managing Project Work vs Interrupt-Driven Tasks" slide, what is the consequence of mixing project work and interrupt-driven tasks? | It is very hard and must be communicated                                                                  |
+| 7      | According to the "Managing Project Work vs. Interrupt-Driven Tasks" slide, what is the consequence of mixing project work and interrupt-driven tasks? | It is very hard and must be communicated                                                                  |
 | 8      | Which of the following is not mentioned as a key principle of prioritization in the "Understanding Prioritization" slide? | The LIFO (Last In, First Out) principle                                                                   |
 | 9      | What does the phrase "seeing is more than believing" refer to in the "Visual Tools in Capacity Planning" slide? | Visualizing capacity planning helps in understanding and managing work effectively                        |
 | 10     | What does the "Unveiling the Magic of Capacity Planning" slide describe capacity planning as?      | A process for determining the production capacity needed to meet changing demands                         |
-| 11     | What is the main difference between project work and interrupt-driven tasks, as described in the "Managing Project Work vs Interrupt-Driven Tasks" slide? | Interrupt-driven tasks are unforeseen and require immediate attention                                    |
+| 11     | What is the main difference between project work and interrupt-driven tasks, as described in the "Managing Project Work vs. Interrupt-Driven Tasks" slide? | Interrupt-driven tasks are unforeseen and require immediate attention                                    |
 | 12     | What is the purpose of the "Addressing Common Time Management Challenges" slide?                   | To identify common time management challenges and provide strategies to overcome them                     |
 | 13     | Which of the following is not mentioned as a tool for visualizing capacity planning in the "Visual Tools in Capacity Planning" slide? | Burndown charts                                                                                           |
 | 14     | Which of the following is a strategy for responding to changes in the project landscape, as per the "Adapting to Rapidly Changing Realities" slide? | Encouraging open communication within the team to identify and address shifting priorities               |

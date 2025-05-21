@@ -163,7 +163,7 @@ The role of observation
   - Audience response awareness
     - Watching for confusion, disengagement, or excitement to tailor your communication in real-time
   - Adaptive communication strategies
-    - Changing your language, tone, or format based on the audience, technical vs non-technical, junior vs senior
+    - Changing your language, tone, or format based on the audience, technical vs. non-technical, junior vs. senior
   - Effective message delivery
     - Ensuring your message is not only sent but clearly received and understood. Observing non-verbal cues helps confirm this
   - Enhanced collaborative dynamics

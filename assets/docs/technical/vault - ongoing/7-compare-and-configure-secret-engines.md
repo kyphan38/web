@@ -1,6 +1,6 @@
 # compare and configure secret engines - pending
 
-## Static vs Dynamic Secrets
+## Static vs. Dynamic Secrets
 
 Challenges with static secrets
 

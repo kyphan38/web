@@ -93,31 +93,31 @@ When a program runs
 - When a system call is made, the CPU executes OS code at a higher privilege level
 - Progressed from running a single program to managing multiple processes concurrently
 
-<!-- ## Process Abstraction
+## Process Abstraction
 
 ### What Is Process Abstraction?
 
 --
 
-- When you run an executable file, the OS creates a process which is a running program
+- When you run an executable file, the OS creates a process, which is a running program
 - The OS timeshares the CPU across multiple processes, virtualizing the CPU
-- The OS has a CPU scheduler that picks one of the many active processes to execute on a CPU
+- The OS has a CPU scheduler that selects one of the many active processes to execute on a CPU
 - A CPU scheduler contains
   - Policy: Defines which process to run
-  - Mechanism: Defines how to "context switch" between processes
+  - Mechanism: Defines how to perform a "context switch" between processes
 
 ### What Constitutes a Process?
 
 ![img](./img/2.png)
 
-- A unique identifier (`PID`)
+- A unique identifier (PID)
 - Memory image
   - Code and data (static)
   - Stack and heap (dynamic)
-    - Stack: Function calls, local variables, etc.
-    - Heap: Dynamically allocated memory
+    - Stack: Stores function calls, local variables, etc.
+    - Heap: Holds dynamically allocated memory
 - CPU context: Registers
-  - Program counter
+  - Program Counter (PC)
   - Current operands
   - Stack pointer
 - File descriptors
@@ -129,10 +129,10 @@ When a program runs
 
 - Allocates memory and creates a memory image
   - Loads code and data from the disk executable
-  - Creates a runtime stack and heap
-- Opens basic files - `STDIN`, `STDOUT`, `STDERR`
+  - Initializes a runtime stack and heap
+- Opens basic files: `STDIN`, `STDOUT`, `STDERR`
 - Initializes CPU registers
-  - PC points to the first instruction
+  - Sets the Program Counter (PC) to point to the first instruction
 
 ### States of a Process
 
@@ -141,15 +141,15 @@ States
 - Running: Currently executing on the CPU
 - Ready: Waiting to be scheduled
 - Blocked: Suspended, not ready to run
-  - Why? Waiting for some event, e.g., the process issues a read from disk
-  - When is it unblocked? The disk issues an interrupt when data is ready
-- New: Being created, yet to run
+  - Why? Waiting for some event (e.g., the process issues a read from disk)
+  - When unblocked? The disk issues an interrupt when data is ready
+- New: Being created, not yet running
 - Dead: Terminated
 
 ![img](./img/4.png)
 
 - Ready &rarr; Running: The OS scheduler assigns the CPU to the process
-- Running &rarr; Ready: The OS takes the CPU away (e.g., time limit reached)
+- Running &rarr; Ready: The OS reclaims the CPU (e.g., time limit reached)
 - Running &rarr; Blocked: The process initiates a wait (e.g., starts I/O)
 - Blocked &rarr; Ready: The awaited event finishes (e.g., I/O done), making the process runnable again (waiting for the CPU)
 
@@ -162,10 +162,10 @@ Example
 --
 
 - The OS maintains a data structure (e.g., a list) of all active processes
-- Information about each process is stored in a process control block (`PCB`)
+- Information about each process is stored in a Process Control Block (`PCB`)
   - Process identifier
   - Process state
-  - Pointers to other related processes (parent)
+  - Pointers to other related processes (e.g., parent process)
   - CPU context of the process (saved when the process is suspended)
   - Pointers to memory locations
   - Pointers to open files
@@ -291,30 +291,30 @@ Example with general steps
 - The OS allocates memory and creates a memory image
   - Code and data (from the executable)
   - Stack and heap
-- Points the CPU program counter to the next instruction
+- Sets the CPU Program Counter (PC) to the next instruction
   - Other registers may store operands, return values, etc.
-- After setup, the OS is out of the way - completed, and the process executes directly on the CPU
-- The OS is not involved in every single instruction execution
+- After setup, the OS steps aside, and the process executes directly on the CPU
+- The OS is not involved in every instruction's execution
 
 ### How Does a Simple Function Call Work?
 
-Things to recall
+Key concepts
 
 - The Program Counter (PC) holds the memory address of the next instruction to be executed by the CPU
-- The Stack Pointer (`SP`) points to the current top of the stack in memory
-- The Base Pointer (`BP`) / Frame Pointer (`FP`) points to a fixed location within the current stack frame, making access to function arguments, local variables, and other stack frame data easier
-- The stack manages function calls and stores temporary data like local variables and return addresses
+- The Stack Pointer (SP) points to the current top of the stack in memory
+- The Base Pointer (BP) or Frame Pointer (FP) points to a fixed location within the current stack frame, simplifying access to function arguments, local variables, and other stack frame data
+- The stack manages function calls and stores temporary data, such as local variables and return addresses
 
-How a simple function call works in a sequential flow
+How a simple function call works in sequential flow
 
 - When calling
-  - A function call (e.g., `myFunction()`) translates to a specific CPU instruction - `CALL`
-  - The `CALL` instruction performs two primary, sequential actions
-    - It pushes the return address onto the stack - the address in the calling function where execution resumes after the called function finishes
-    - The PC points to the next instruction (memory address) where the function's code begins
+  - A function call (e.g., `myFunction()`) translates to a CPU instruction: `CALL`
+  - The `CALL` instruction performs two sequential actions
+    - Pushes the return address onto the stack (the address in the calling function where execution resumes after the called function finishes)
+    - Updates the PC to point to the memory address where the function's code begins
 - Inside the called function
-  - Once execution begins inside the called function, a new stack frame is created on the stack
-  - The `SP` points to the top of the stack
+  - A new stack frame is created on the stack
+  - The SP points to the top of the stack
 
 ![img](./img/11.png)
 
@@ -322,28 +322,28 @@ How a simple function call works in a sequential flow
 
 --
 
-- CPU hardware has multiple privilege levels
-  - One to run user code: User mode
-  - One to run OS code like system calls: Kernel mode
-  - Some instructions execute only in kernel mode
+- CPU hardware supports multiple privilege levels
+  - User mode: For running user code
+  - Kernel mode: For running OS code, such as system calls
+  - Certain instructions execute only in kernel mode
 - The kernel does not trust or use the user stack
-  - Uses a separate kernel stack when in kernel mode
+  - Uses a separate kernel stack in kernel mode
   - User stack: Each user process has its own stack in user space
-  - Kernel stack: When a system call is made, the CPU switches to a separate kernel stack that belongs to the calling process but exists in kernel space
-- The kernel does not trust user-provided addresses to jump to
-  - The kernel sets up the Interrupt Descriptor Table (`IDT`) at boot time
-  - The `IDT` has addresses of kernel functions to run for system calls and other events
+  - Kernel stack: When a system call is made, the CPU switches to a kernel stack unique to the calling process but located in kernel space
+- The kernel does not trust user-provided addresses for jumps
+  - The kernel sets up the Interrupt Descriptor Table (IDT) at boot time
+  - The IDT contains addresses of kernel functions for system calls and other events
 
 ### Trap Instruction
 
 Trap instruction execution steps
 
-- When a system call must be made, a special `trap` instruction is run (usually hidden from the user by `libc`)
-- `Trap` instruction execution
-  - Moves the CPU to a higher privilege level
+- When a system call is needed, a special trap instruction is executed (typically hidden from the user by `libc`)
+- Trap execution
+  - Moves the CPU to a higher privilege level (kernel mode)
   - Switches to the kernel stack
-  - Saves context (old PC, registers) on the kernel stack
-  - Looks up the address in the `IDT` and jumps to the trap handler function in OS code
+  - Saves context (PC, registers) on the kernel stack
+  - Looks up the address in the IDT and jumps to the trap handler function in OS code
 
 ![img](./img/12.png)
 
@@ -424,70 +424,72 @@ Example: Process A has moved from user to kernel mode; the OS decides it must sw
 
 --
 
-- On a context switch, which process to run next, from the set of ready processes?
-- The OS scheduler schedules the CPU requests (bursts) of processes
-  - CPU burst = the CPU time used by a process in a continuous stretch
-  - If a process comes back after an I/O wait, it counts as a fresh CPU burst
+- During a context switch, which process should run next from the set of ready processes?
+- The OS scheduler manages the CPU requests (bursts) of processes
+  - CPU burst: The CPU time used by a process in a continuous stretch
+  - A process returning after an I/O wait starts a new CPU burst
 
 ### What Are We Trying to Optimize?
 
 --
 
-- Maximize utilization (= fraction of time the CPU is used)
-- Minimize average turnaround time (= time from a process's arrival to completion)
-- Minimize average response time (= time from a process's arrival to first scheduling)
-- Fairness: All processes must be treated equally
+- Maximize utilization: The fraction of time the CPU is used
+- Minimize average turnaround time: The time from a process's arrival to its completion
+- Minimize average response time: The time from a process's arrival to its first scheduling
+- Fairness: Ensure all processes are treated equally
 - Minimize overhead: Run a process long enough to amortize (reduce) the cost of a context switch (~1 microsecond)
 
-### First-in-First-Out (`FIFO`)
+### First-in-First-Out (FIFO)
 
-`FIFO` runs processes in arrival order (e.g., A, B, C at t=0) without preemption until completion
+FIFO runs processes in arrival order (e.g., A, B, C arriving at t=0) without preemption until completion
 
 - Pros
   - Simple to implement
-  - Fair by arrival order
+  - Fair based on arrival order
 - Cons
-  - The convoy effect delays short jobs
-  - High turnaround times (especially for processes arriving later or shorter jobs stuck behind longer ones)
+  - The convoy effect delays short jobs behind long ones
+  - High turnaround times, especially for processes arriving later or short jobs stuck behind longer ones
 
 ![img](./img/13.png)
 
-### Shortest Job First (`SJF`)
+### Shortest Job First (SJF)
 
-`SJF` runs the shortest job first, non-preemptively; it is optimal when jobs arrive together
+SJF runs the shortest job first, non-preemptively; it is optimal when jobs arrive simultaneously
 
 - Pros
   - Minimizes wait time for simultaneous arrivals
   - Efficient for varied job lengths
 - Cons
-  - Short jobs wait if a long job starts
-  - Needs accurate job length estimates
+  - Short jobs wait if a long job starts first
+  - Requires accurate job length estimates
 
 ![img](./img/14.png)
 
-### Shortest Time-to-Completion First (`STCF`)
+### Shortest Time-to-Completion First (STCF)
 
-`STCF` (or `SRTF`) preempts for the job with the shortest remaining time on new arrivals
+STCF (also known as SRTF) preempts for the job with the shortest remaining time when new processes arrive
 
 - Pros
-  - Lowers wait time dynamically
-  - Prioritizes near-complete jobs
+  - Dynamically reduce wait time
+  - Prioritizes jobs nearing completion
 - Cons
   - High context switch overhead
-  - Needs remaining time estimates
-
+  - Requires accurate estimates of remaining time
+  
 ![img](./img/15.png)
 
-### Round Robin (`RR`)
+### Round Robin (RR)
 
-`RR` gives each process a fixed time slice, preempting and cycling through a queue
+RR assigns each process a fixed time slice, preempting and cycling through a queue
 
 - Pros
-  - Fair CPU sharing
-  - Good response time for interactive systems
+  - Ensure fair CPU sharing
+  - Provides good response time for interactive systems
 - Cons
-  - Poor turnaround for long jobs (frequently interrupted, etc.)
-  - Quantum size impacts efficiency (too small increases context switch overhead; too large mimics `FIFO` behavior)
+  - Poor turnaround for long jobs due to frequent interruptions
+  - Time quantum size impacts efficiency
+    - Too small: Increases context switch overhead
+    - Too large: Mimics FIFO behavior
 
 ![img](./img/16.png)
 
@@ -495,87 +497,91 @@ Example: Process A has moved from user to kernel mode; the OS decides it must sw
 
 --
 
-- Real schedulers are more complex
-- For example, Linux uses a Multi-Level Feedback Queue (`MLFQ`)
-  - Many queues, in order of priority
-  - A process from the highest priority queue is scheduled first
-  - Within the same priority, any algorithm like `RR` can be used
-  - The priority of a process decays with its age
+- Real-world schedulers are more complex
+- For example, Linux uses a Multi-Level Feedback Queue (MLFQ)
+  - Multiple queues, ordered by priority
+  - The highest-priority queue's process is scheduled first
+  - Within the same priority, an algorithm like RR may be used
+  - A process's priority decreases as it ages
 
 ## Inter-Process Communication
 
-### Inter-Process Communication (`IPC`)
+### Inter-Process Communication (IPC)
 
 --
 
-- Processes do not share any memory with each other
-  - Each has its own separate memory
-- Some processes might want to work together for a task, so they need to communicate information
-- `IPC` mechanisms to share information between processes
+- Processes do not share memory with each other
+  - Each process has its own separate memory space
+- Some processes need to collaborate on tasks, requiring them to communicate information
+- IPC mechanisms enable information sharing between processes
 
 ### Shared Memory
 
 --
 
-- Processes can both access the same region of memory via the `shmget()` system call
+- Processes can access the same region of memory using the `shmget()` system call
   - `int shmget (key_t key, int size, int shmflg)`
-- By providing the same key, two processes can get the same segment of memory
-- They can read/write to memory to communicate
-- They need to take care that one is not overwriting the other's data. How?
+- By providing the same key, two processes can access the same memory segment
+- Processes read from or write to this memory to communicate
+- Synchronization is needed to prevent one process from overwriting another's data
 
 ### Signals
 
 --
 
 - A certain set of signals is supported by the OS
-  - Some signals have a fixed meaning (e.g., a signal to terminate a process)
-  - Some signals can be user-defined
-- Signals can be sent to a process by the OS or another process (e.g., if you type Ctrl+C, the OS sends a `SIGINT` signal to the running process)
-- Signal handler: Every process has default code to execute for each signal
-  - Exit on a terminate signal
+  - Some signals have a fixed meaning (e.g., terminating a process)
+  - Others are user-defined
+- Signals can be sent to a process by the OS or another process (e.g., pressing Ctrl+C sends a `SIGINT` signal to the running process)
+- Signal handler
+  - Each process has default code to execute for each signal
+  - For example, exiting on a terminate signal
 - Some signal handlers can be overridden to do other things
 
 ### Sockets
 
 --
 
-- Sockets can be used for two processes on the same machine or different machines to communicate
-  - `TCP`/`UDP` sockets across machines
-  - Unix sockets on the local machine
-- Communicating with sockets
-  - Processes open sockets and connect them to each other
+- Sockets enable communication between processes on the same or different machines
+  - TCP/UDP sockets for communication across machines
+  - Unix sockets for communication on the local machine
+- Communication via sockets
+  - Processes open sockets and connect them
   - Messages written into one socket can be read from another
-  - The OS transfers data across the socket buffer
+  - The OS transfers data through the socket buffer
 
 ### Pipes
 
 --
 
-- The `pipe` system call returns two file descriptors
-  - Read handle and write handle
-  - A pipe is half-duplex (one-way) communication
-  - Data written in one file descriptor can be read through another
-- Regular pipes: Both `fds` are in the same process (how is this useful?)
-  - The parent and child share `fds` after `fork()`
-  - The parent uses one end to write, and the child uses the other end to read
-- Named pipes: Two endpoints of a pipe can be in different processes
-- Pipe data is buffered in OS buffers between write and read
+- The pipe system call returns two file descriptors
+  - A read handle and a write handle
+  - Pipes provide half-duplex (one-way) communication
+  - Data written to one file descriptor can be read from the other
+- Regular pipes
+  - Both file descriptors are initially in the same process
+  - After a `fork()`, the parent and child share the file descriptors
+  - For example, the parent writes to one end, and the child reads from the other
+- Named pipes
+  - Allow two different processes to connect to the pipe's endpoints
+- Pipe data is buffered in OS buffers between write and read operations
 
 ### Message Queues
 
 --
 
-- Mailbox abstraction
-- A process can open a mailbox at a specified location
-- Processes can send/receive messages from the mailbox
-- The OS buffers messages between send and receive
+- Provide a mailbox abstraction
+  - A process can open a mailbox at a specified location
+  - Processes can send and receive messages through the mailbox
+- The OS buffers messages between send and receive operations
 
-### Blocking vs Non-Blocking Communication
+### Blocking vs. Non-Blocking Communication
 
 --
 
-- Some `IPC` actions can block
-  - Reading from a socket/pipe that has no data, or reading from an empty message queue
-  - Writing to a full socket/pipe/message queue
-- The system calls to read/write have versions that block or can return with an error code in case of failure
-  - A socket read can return an error indicating no data to be read, instead of blocking -->
+- Some IPC actions can block
+  - Reading from an empty socket, pipe, or message queue
+  - Writing to a full socket, pipe, or message queue
+- System calls for reading/writing offer
+  - Blocking versions: Wait until the operation can complete
+  - Non-blocking versions: Return an error code if the operation cannot proceed immediately (e.g., a socket read returns an error if no data is available)

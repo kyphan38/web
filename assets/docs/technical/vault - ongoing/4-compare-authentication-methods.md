@@ -337,7 +337,7 @@ When selecting an authentication method, consider the following key factors and 
   - Meets the Requirement: OIDC (OpenID Connect), LDAP, Okta, GitHub
   - Does not meet the requirements: Userpass, AWS, Azure, GCP (Google Cloud Platform)
 
-## Differentiate Human vs System Auth Methods
+## Differentiate Human vs. System Auth Methods
 
 Vault supports a wide variety of authentication methods, which can be broadly categorized into those designed for human-based authentication and those intended for machine-to-machine (system-based) authentication
 

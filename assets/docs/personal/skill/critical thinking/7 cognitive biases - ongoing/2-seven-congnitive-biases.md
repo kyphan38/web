@@ -148,7 +148,7 @@ Bài học
 - Lắng nghe và quan sát đa chiều sẽ cải thiện chất lượng góc nhìn của chúng ta
 - Sự thật không dễ nắm bắt
 
-Trung thực vs sự thật
+Trung thực vs. sự thật
 
 - Trung thực chưa phải là sự thật
 - Trung thực là khi chúng ta trình bày đúng những gì mà mình biết được, cảm nhận được về 1 sự việc, mà không đổi trá, cố tình bóp méo, nói sai những gì ta biết

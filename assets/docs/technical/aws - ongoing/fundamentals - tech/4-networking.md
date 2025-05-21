@@ -94,7 +94,7 @@ Summary
 
 Decimal and binary
 
-- Human vs computer
+- Human vs. computer
 
 ![img](./img/25.png)
 
