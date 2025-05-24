@@ -279,7 +279,7 @@ physical address = virtual address + base
 --
 
 - What is the typical size of a page table?
-  - 32-bit VA, 4 KB pages, so 2^32 / 2^12 = 2^20 entries
+  - 32-bit VA, 4 KB pages, so 2^32/2^12 = 2^20 entries
   - If each PTE is 4 bytes, then the page table is 4MB
   - One such page table per process!
 - How to reduce the size of page tables?

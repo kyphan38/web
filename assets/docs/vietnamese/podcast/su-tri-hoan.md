@@ -11,7 +11,7 @@
 - Câu chuyện thực tế: Giống như anh bạn của mình, biết rõ cần học kỹ năng mới, xây dựng thói quen tốt, bắt đầu dự án riêng, ... nhưng ngày qua ngày vẫn mắc kẹt với đủ thứ lý do
   - Đây chính là biểu hiện kinh điển của sự kháng cự - một lực cản nội tâm mạnh mẽ luôn tìm cách giữ chúng ta ở lại vùng an toàn, ngay cả khi chúng ta biết mình cần phải tiến lên
 
-### Bài Học Cốt Lõi - Cuộc Sống Là Chuỗi Bài Kiểm Tra Không Báo Trước
+### Cuộc Sống Là Chuỗi Bài Kiểm Tra Không Báo Trước
 
 Bản năng con người và mục tiêu
   
@@ -42,7 +42,7 @@ Hậu quả và tần suất
 - Quy luật: Mục tiêu càng lớn &rarr; Bài kiểm tra càng khó
   - Những bài kiểm tra này không phải để hạ gục bạn, mà để nâng tầm bạn. Chúng khó hơn vì bạn đang nhắm đến những đỉnh cao hơn. Chúng là những bài tập cho ý chí và bản lĩnh của bạn. Vượt qua chúng, bạn không chỉ đạt mục tiêu mà còn trở nên mạnh mẽ hơn
 
-### Sự Thật Không Thể Né Tránh - Đau Đớn Là Một Phần Của Cuộc Sống
+### Đau Đớn Là Một Phần Của Cuộc Sống
 
 Không có lối thoát khỏi nỗi đau
 
@@ -76,7 +76,7 @@ Nghich lý của sự thoải mái
 - Như Victor Frankl nói: Nếu cuộc sống có ý nghĩa, thì sự chịu đựng cũng phải có ý nghĩa
 - Đây là quy luật nhân quả áp dụng vào đời sống hàng ngày. Mỗi hành động dễ dãi hôm nay là bạn đang vay mượn sự dễ chịu từ tương lai, và lãi suất của nó rất cao. Ngược lại, mỗi nỗ lực khó khăn hôm nay là bạn đang gửi tiết kiệm cho một tương lai vững vàng hơn
 
-### Kẻ Thù Trỗi Dậy - Quy Luật Của Sự Kháng Cự
+### Quy Luật Của Sự Kháng Cự
 
 Bản chất và mục đích
 
@@ -116,7 +116,7 @@ Cái bẫy của giải pháp bề nổi và nhu cầu đi và gốc rễ
 - Chúng ta không thể chỉ giải quyết triệu chứng. Chúng ta phải thực sự giải quyết cái nguyên nhân gốc rễ của mình
 - Việc tìm mẹo vặt giống như uống thuốc giảm đau khi bạn bị gãy xương. Nó có thể làm bạn dễ chịu tạm thời, nhưng không chữa lành vết thương. Nguyên nhân gốc rễ có thể là gì? Đó là những nỗi sợ sâu thẳm, những niềm tin giới hạn, sự thiếu hụt giá trị bản thân, hay việc chưa tìm thấy lẽ sống đủ mạnh mẽ. Chỉ khi chạm tới được tầng sâu này, chúng ta mới có thể tìm thấy sức mạnh thực sự để tiến lên
 
-### Giải Quyết Gốc Rễ - Bắt Đầu Từ Nhận Thức Và Hành Động
+### Bắt Đầu Từ Nhận Thức Và Hành Động
 
 Tái định khung nhận thức - nó không khó như bạn nghĩ
 
@@ -136,8 +136,8 @@ Hành động cụ thể
     - Ghi chú lại tình huống, cảm giác dẫn dắt
     - Ví dụ
       - Video dài quá &rarr; Lướt TikTok đã = kháng cự mang tên thỏa mãn tức thời
-      - Biết cách làm rồi &rarr; Cần xem thêm = kháng cự mang tên cần thêm thông tin / phân tích quá mức
-      - Quay video &rarr; Cần đồ xịn / chuẩn bị kỹ = kháng cự mang tên chủ nghĩa hoàn hảo
+      - Biết cách làm rồi &rarr; Cần xem thêm = kháng cự mang tên cần thêm thông tin/phân tích quá mức
+      - Quay video &rarr; Cần đồ xịn/chuẩn bị kỹ = kháng cự mang tên chủ nghĩa hoàn hảo
   - Đây là thực hành chánh niệm - nhận biết mà không phán xét, để thấy rõ kịch bản quen thuộc mà kháng cự hay dùng. Việc ghi chép giúp bạn khách quan hóa vấn đề
 - Bước 2: Bắt quả tang và vượt qua
   - Mục đích: Khi bạn đã biết gương mặt quen thuộc của kháng cự, bạn có thể bắt quả tang nó ngay khi nó xuất hiện trong đời sống
@@ -170,4 +170,137 @@ Lời nhắn nhủ cuối cùng
 - Trực tiếp đối diện với bài kiểm tra, vượt qua kháng cự &rarr; Bạn sẽ trở nên bất khả chiến bại
 - Bất khả chiến bại không có nghĩa là không bao giờ vấp ngã hay sợ hãi, mà là có đủ sự rõ ràng để nhận ra trận chiến, đủ lòng can đảm để đối mặt, và đủ sự kiên định để đứng dậy mỗi khi vấp ngã. Đó là sức mạnh đến từ việc làm chủ chính mình, thay vì để sự kháng cự làm chủ
 
-## Tác Giả   - Hieu Nguyen
+## Tác Giả - Hieu Nguyen
+
+### Rào Cản Tâm Lý Đầu Tiên
+
+--
+
+- Tình huống quen thuộc: Chắc hẳn ai cũng từng trải qua cảm giác này: Hôm nay không có hứng. Chúng ta biết rõ có việc cần làm - bài tập, báo cáo - nhưng cái hứng nó cứ lặn mất tăm
+- Khi có việc khó: Đặc biệt với những việc khó nhằn, phức tạp, những việc mà chỉ nghĩ đến thôi đã thấy ngán, thì cái hứng lại càng xa xỉ. Càng khó, càng ngại, càng không có hứng
+  - Đây thực chất là một cơ chế tự vệ của não bộ. Nó muốn né tránh cảm giác khó chịu, sự không chắc chắn, hoặc nỗi sợ thất bại tiềm ẩn khi đối mặt với việc khó. Não bộ ưu tiên sự dễ chịu, và không có hứng là một lý do hoàn hảo để trì hoãn, một cách để điều chỉnh cảm xúc tạm thời
+
+### Khi Nước Đến Chân Vẫn Chưa Muốn Nhảy
+
+--
+
+- Cơ chế hoạt động: Chừng nào còn thời gian, chúng ta còn cho phép mình hẹn. Việc cuối tuần cần xong, nhưng mới đầu tuần thì ta hẹn đến giữa tuần, rồi thứ Sáu, thứ Bảy, ...
+  - Chúng ta tuân thủ định luật Parkinson một cách vô thức: Công việc sẽ phình ra để lấp đầy thời gian được cho phép
+- Áp lực vô hình: Công việc cứ treo lơ lửng trên đầu - đây chính là hiệu ứng Zeigarnik, khiến ta không thể quên những việc dang dở, gây ra cảm giác stress ngầm - cho đến khi không thể lùi được nữa
+- Giây phút cuối cùng: Lúc đó, ta mới hối hả ngồi vào bàn. Nhưng trớ trêu thay, ngay cả lúc đó, ta vẫn dễ dàng bị cuốn vào những thứ khác: Mở Facebook xem chút rồi làm, đọc nốt bài báo này rồi làm, ...
+- Cảm xúc mâu thuẫn: Đi kèm với đó là cảm giác tội lỗi (sao mình biết việc cần làm mà vẫn ngồi đây?), nhưng song song đó, vẫn không có một chút hứng thú nào để bắt tay vào việc. Đây là cuộc chiến giữa lý trí và cảm xúc, giữa mục tiêu dài hạn và sự thỏa mãn tức thời
+
+### Học Tiếng Anh Và Những Thành Công Bị Bỏ Lỡ
+
+--
+
+- Biết rõ lợi ích: Ai cũng biết giỏi tiếng Anh sẽ giúp ích rất nhiều
+- Biết rõ cách làm: Ai cũng biết cách duy nhất là phải ngồi xuống trau dồi, luyện tập
+- Vấn đề cốt lõi: Chúng ta biết rất rõ mình cần làm gì, nhưng không tìm được hứng thú để bắt tay vào làm
+- Hậu quả: Cứ thế, nó trôi từ ngày này qua ngày nọ, đôi khi trôi đi cả đời. Chúng ta bỏ lỡ những thành công mà lẽ ra mình đã biết cách để đạt được
+- Cái hứng ở đây chính là động lực bền bỉ, thứ mà chúng ta thường nhầm lẫn với cảm xúc nhất thời. Chờ đợi cảm hứng giống như chờ đợi gió để căng buồm, thay vì học cách chèo thuyền. Chúng ta thiếu năng lượng khởi động để bắt đầu
+
+### Làm Hay Không Làm?
+
+- Câu nói đáng suy ngẫm: Hầu hết chúng ta đều biết cách để thành công. Sự khác biệt duy nhất giữa người thành công và không thành công là: Một nhóm ngồi xuống bắt tay vào làm, và một nhóm thì trì hoãn nó
+- Rào cản lớn nhất thường không phải là thiếu kiến thức hay cơ hội, mà chính là khả năng hành động. Sự khác biệt cốt lõi nằm ở việc biến ý định thành hành động, vượt qua hố sâu của sự trì hoãn
+
+### Người Thành Công Có Siêu Năng Lực?
+
+- Câu hỏi: Liệu người thành công có phải lúc nào cũng tràn đầy cảm hứng, không bao giờ mệt mỏi?
+- Góc nhìn cá nhân: Tôi không dám nhận mình thành công lớn, nhưng qua những gì đã làm, tôi xin khẳng định: Tôi cũng như anh chị, cũng có lúc mệt mỏi, cũng thích nghỉ ngơi, không phải siêu nhân
+- Người thành công không phải không có sự trì hoãn hay lười biếng, mà họ đã xây dựng được những cơ chế, những hệ thống, và quan trọng nhất là một tư duy để đối phó và vượt qua nó một cách hiệu quả hơn. Họ không đợi cảm hứng, họ tạo ra nó thông qua hành động
+
+### Hiểu Lầm Chết Người Về Cảm Hứng
+
+--
+
+- Đúc kết cốt lõi: Cái bí quyết mà tôi mất nhiều thời gian để nhận ra, nó lại nằm ở việc tháo gỡ một hiểu lầm cực kỳ căn bản mà hầu hết chúng ta đều mắc phải
+- Câu nói quen thuộc: Chúng ta lớn lên với câu không có hứng, và vô tình mặc định rằng: Phải có hứng thì mới làm được
+- Hậu quả tai hại: Vì tin như vậy, chúng ta cứ ngồi chờ hứng, và vì hứng không đến (đặc biệt với việc khó), nên chúng ta không làm
+- Đây là một cái bẫy tư duy tai hại! Chúng ta đã đảo ngược quy trình tự nhiên. Chúng ta chờ đợi một cảm xúc (động lực) để khởi động hành động, trong khi thực tế thường ngược lại
+
+### Hành Động Tạo Ra Cảm Hứng
+
+--
+
+- Quy luật vận hành: Sự thật là, sự hứng thú, cái động lực, nó chỉ đến sau khi chúng ta bắt tay vào làm một cái gì đó, chứ nó không đến trước như ta vẫn nghĩ
+- Đây là sự thật: Nó là cách cơ thể và não bộ chúng ta vận hành, dù ta có muốn hay không. Hành động tạo ra động lực, chứ không phải động lực tạo ra hành động (ít nhất là lúc bắt đầu)
+- Hệ quả của việc chờ đợi: Nếu cứ ngồi chờ động lực xuất hiện rồi mới làm, thì chúng ta sẽ mãi mãi không làm được gì hết
+- Đây là một quy luật tâm lý cực kỳ quan trọng. Khi bạn bắt đầu hành động, dù nhỏ, bạn bắt đầu tạo ra những tiến bộ nhỏ, bạn bắt đầu thấy rõ vấn đề hơn, và chính những điều này kích hoạt hệ thống tưởng thưởng (dopamine) và cảm giác tự chủ trong não bộ, từ đó sinh ra động lực và hứng thú
+
+### Tiêu Cực Và Tích Cực
+
+Vòng lặp tiêu cực
+
+- Cơ chế: Không có hứng &rarr; Không làm &rarr; Càng không có hứng &rarr; Càng không làm &rarr; ...
+- Kết quả: Mắc kẹt, không làm được bất cứ việc gì
+- Đây là vòng xoáy đi xuống, nơi sự ì ạch tự nuôi dưỡng chính nó. Cảm giác tội lỗi và bất lực tăng lên, càng làm giảm hứng
+
+Vòng lặp tích cực
+
+- Cơ chế: Ép mình làm (dù không hứng) &rarr; Sau 10-15 phút tập trung &rarr; Bắt đầu bị cuốn vào công việc &rarr; Vấn đề dần có hướng giải quyết/dẫn tới giải pháp khác &rarr; Hứng thú xuất hiện &rarr; Càng làm càng có hứng &rarr; Càng có hứng càng làm tiếp &rarr; ...
+- Kết quả: Hoàn thành công việc, cảm thấy thỏa mãn và tràn đầy năng lượng
+- Khi ta bị cuốn vào, ta đang tiến vào trạng thái dòng chảy - một trạng thái tâm lý tối ưu nơi ta hoàn toàn đắm chìm và tận hưởng công việc. Vòng lặp tích cực giúp ta đạt được trạng thái này
+
+### 5 Đến 10 Phút Đầu Tiên
+
+--
+
+- Điểm mấu chốt: Để thoát khỏi vòng lặp tiêu cực và bước sang vòng lặp tích cực, điểm then chốt chính là khoảng thời gian 5-10 phút ban đầu
+- Rào cản lớn nhất: Đây là lúc khó nhất, khi cơ thể và tâm trí bị ghì lại bởi sức ì, bởi sự không có hứng
+- Vượt qua và thành quả: Nếu bằng cách nào đó ta ép được bản thân mình vượt qua khoảnh khắc này, thì sau đó mọi thứ sẽ trở nên dễ dàng hơn rất nhiều. Ta sẽ bị cuốn đi
+- Minh chứng: Khi đang vào guồng, nếu bị ngắt quãng, ta thường cảm thấy khó chịu và chỉ muốn làm cho xong
+- Kết luận: Cái khó nhất không phải là độ khó của công việc, mà là cái khó của việc bắt đầu
+- Vượt qua 5-10 phút đầu tiên chính là việc chiến thắng lực cản khởi động. Giống như đẩy một chiếc xe, lúc đầu rất nặng, nhưng khi nó đã lăn bánh thì nhẹ hơn nhiều
+
+### Niềm Tin Và Thủ Thuật Đánh Lừa
+
+Sức mạnh của niềm tin
+
+- Câu trả lời nằm ngay trong câu hỏi: Cứ ép bản thân mình ngồi xuống, với một niềm tin rằng: Chỉ cần làm 5-10 phút thôi, mọi việc sẽ thú vị hơn.
+- Niềm tin này không phải là sự tự huyễn hoặc, mà là dựa trên sự hiểu biết về quy luật vận hành của chính mình
+
+Thủ thuật đánh lừa bản thân
+
+- Mục đích: Đánh lừa cơ thể để nó chịu vào việc
+- Cách làm: Nếu việc quá phức tạp, hãy chọn ra 1-2 đầu việc đơn giản nhất
+- Tự nhủ: OK, chỉ cần làm xong vài việc nhỏ này thôi, 5-10 phút thôi, rồi nghỉ cũng được
+- Hiệu quả: Thường thì, sau khi đã bắt đầu, bạn sẽ bị hút vào vòng lặp tích cực và tự nó sẽ kéo bạn đi cho đến khi xong việc
+- Đây chính là áp dụng quy tắc 2 phút hoặc nguyên tắc chia nhỏ công việc. Bằng cách giảm thiểu rào cản bắt đầu, bạn làm cho việc hành động trở nên dễ dàng hơn rất nhiều
+
+Xây dựng thói quen
+
+- Cứ bắt đầu với thủ thuật này
+- Dần dần bạn sẽ quen và không cần lừa mình nữa
+- Bạn sẽ tập được thói quen làm việc ngay cả khi không có hứng, vì bạn biết rằng hứng thú sẽ đến sau
+- Đây là quá trình xây dựng một bản sắc mới - bạn không còn là người chờ cảm hứng mà trở thành người hành động. Thói quen này mạnh hơn cảm hứng rất nhiều
+
+### Hành Trình Cá Nhân - Từ Chật Vật Đến Làm Chủ
+
+--
+
+- Kinh nghiệm xương máu: Tất cả những gì tôi vừa chia sẻ không phải là lý thuyết suông, mà chính là kinh nghiệm đến từ chính hành trình phát triển của cá nhân tôi
+- Quá khứ: Sau khi còn trẻ, tôi cũng đã có một khoảng thời gian dài chật vật, khổ sở với việc trì hoãn này
+- Sự ngộ ra: Cho tới khi tôi dần nhận ra mấu chốt: Hứng thú chỉ đến sau khi ta ngồi xuống bắt tay vào làm. Nếu đợi có hứng mới làm, nó hiếm khi tới lắm
+- Quá trình thực hành: Ban đầu, tôi dùng những thủ thuật đánh lừa bản thân như đã chia sẻ
+- Hiện tại: Giờ đây, tôi không cần dùng những thủ thuật đó nữa. Tôi đã xây dựng được thói quen. Tôi biết chắc rằng chỉ cần tôi ngồi xuống, một lúc sau công việc sẽ làm tôi hứng thú
+- Kết quả: Cả ngày của tôi có thể đi từ việc này sang việc khác mà vẫn tràn đầy hứng thú - vì tôi liên tục tạo ra hứng thú cho chính mình
+- Đây là minh chứng cho sức mạnh của tính khả biến thần kinh. Bằng cách lặp đi lặp lại hành động bắt đầu dù không hứng, chúng ta đang đi dây lại bộ não, tạo ra những đường mòn thần kinh mới, biến một nỗ lực ban đầu thành một thói quen tự nhiên. Chúng ta đang chuyển từ việc bị cảm xúc chi phối sang việc chủ động tạo ra trạng thái mong muốn
+
+### Liệu Có Hiệu Quả Với Việc Tôi Không Thích?
+
+--
+
+- Câu hỏi phổ biến: Nhưng đó là anh làm việc anh thích. Em làm việc em không thích thì cách này có hiệu quả không?
+- Câu trả lời: CÓ!
+- Lý giải: Bất kỳ một việc gì, một khi chúng ta đã dành thời gian để tìm hiểu về nó đủ sâu, dù là việc gì đi nữa, nó cũng sẽ đều đem lại sự hứng thú nhất định
+- Xác nhận cá nhân: Cá nhân tôi cũng có nhiều việc không thích làm nhưng vẫn phải làm. Và tôi xác nhận rằng, chỉ cần ta dành cho nó sự tập trung và quan tâm nhất định, chắc chắn nó sẽ đủ để tạo ra hứng thú
+- Điều này chạm đến khái niệm về sự làm chủ và sự chuyên nghiệp. Khi bạn cố gắng làm tốt nhất có thể, dù là việc nhỏ nhất hay không thích nhất, bạn bắt đầu tìm thấy niềm vui trong chính quá trình làm chủ kỹ năng đó. Hứng thú có thể không đến từ bản chất công việc, mà đến từ cách bạn thực hiện nó và cảm giác hoàn thành nó một cách xuất sắc
+
+### Lời Kết Và Hy Vọng
+
+--
+
+- Tầm quan trọng: Đây là một kinh nghiệm nhỏ, nghe có vẻ đơn giản, nhưng nó đã giúp ích rất nhiều cho cuộc sống của tôi. Có thể nói, nó là một trong những thành phần rất quan trọng mang lại những thành quả tôi có được ngày hôm nay
+- Sức mạnh của việc vượt qua trì hoãn không chỉ nằm ở việc hoàn thành công việc, mà còn ở việc xây dựng lòng tự trọng, cảm giác tự chủ, và niềm tin vào khả năng của bản thân. Nó là nền tảng cho mọi thành công khác

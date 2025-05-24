@@ -66,7 +66,7 @@ Tokens include metadata such as
 
 - Accessor
 - Policies
-- TTL / Max TTL
+- TTL/Max TTL
 - Number of uses left
 - Orphan token
 - Renewal status

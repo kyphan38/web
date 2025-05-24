@@ -38,9 +38,9 @@ Fun fact: A directory is a just a file containing the names of other files
 | Process Management            | ps, top, htop, kill, killall                          |
 | System Information            | uname, uptime, df -h, du -sh, free -h                 |
 | Hardware Information          | lscpu, lsblk, lspci, lsusb                            |
-| Networking                    | ping, ip / ifconfig, ssh, scp, wget, curl             |
+| Networking                    | ping, ip/ifconfig, ssh, scp, wget, curl             |
 | Archiving & Compression       | tar, gzip, gunzip, zip, unzip                         |
-| Package Management            | apt / dnf / yum / pacman (install, remove, update)    |
+| Package Management            | apt/dnf/yum/pacman (install, remove, update)    |
 | User & Group Management       | sudo, su, useradd, usermod, passwd, whoami, id        |
 | Disk Management               | lsblk, df -h, mount, umount, fdisk -l                 |
 | System Services (systemd)     | systemctl (start, stop, status, enable, disable)      |

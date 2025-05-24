@@ -60,7 +60,7 @@ Components on frame
 - Payload: The data encapsulated within the frame
 - FCS: Check to detect any transmission errors
 
-CSMA/CD - Carrier-sense Multiple Access / Collision Detection
+CSMA/CD - Carrier-sense Multiple Access/Collision Detection
 
 - Challenge
 
