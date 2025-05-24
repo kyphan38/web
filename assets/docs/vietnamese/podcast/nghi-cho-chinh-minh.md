@@ -1,6 +1,6 @@
 # nghĩ cho chính mình
 
-## Tác giả - Tri The Way
+## Tác Giả - Tri the Way
 
 ### Cập Nhật Về Podcast
 
