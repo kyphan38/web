@@ -10,7 +10,7 @@
 - Lời cam kết: Hãy thực sự lắng nghe lần này. Đây không phải là những lời sáo rỗng hay chiến thuật kỳ diệu. Mình sẽ đưa cho bạn một công cụ, một phương pháp thực tế, đơn giản, hiệu quả
 - Bằng chứng sống: Phương pháp này đã giúp chính mình biến đổi: từ một người mất phương hướng, tù quẫn, không thỏa mãn &rarr; trở thành người sở hữu business riêng, thu nhập 9 chữ số/tháng, đạt mọi mục tiêu
 
-### Xã Hội Đang Mất Kiểm Soát – Cơ Hội Của Bạn Là Đây!
+### Xã Hội Đang Mất Kiểm Soát
 
 Thực trạng đáng báo động
 
@@ -35,7 +35,7 @@ Tiêu chuẩn thấp là lợi thế của bạn
 - Ví dụ: Cố gắng như David Goggins (thức 2h sáng chạy 100km) &rarr; Bạn sẽ thử 1 lần &rarr; Thấy kinh khủng &rarr; Bỏ cuộc ngay lập tức
 - Việc thay đổi đột ngột, quá sức sẽ kích hoạt cơ chế kháng cự mạnh mẽ nhất của não bộ. Nó xem đây là một cú sốc, một mối đe dọa, và sẽ làm mọi cách để đưa bạn về trạng thái quen thuộc
 
-### Phương Pháp Đúng Đắng - Sức Mạnh Của Sự Tích Lũy (Kaizen)
+### Sức Mạnh Của Sự Tích Lũy (Kaizen)
 
 --
 

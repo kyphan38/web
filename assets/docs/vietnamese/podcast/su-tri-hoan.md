@@ -276,7 +276,7 @@ Xây dựng thói quen
 - Bạn sẽ tập được thói quen làm việc ngay cả khi không có hứng, vì bạn biết rằng hứng thú sẽ đến sau
 - Đây là quá trình xây dựng một bản sắc mới - bạn không còn là người chờ cảm hứng mà trở thành người hành động. Thói quen này mạnh hơn cảm hứng rất nhiều
 
-### Hành Trình Cá Nhân - Từ Chật Vật Đến Làm Chủ
+### Hành Trình Cá Nhân
 
 --
 
