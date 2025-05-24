@@ -6,7 +6,7 @@ mkdir -p ~/vault-certs/read/.key
 
 Generate a self-signed CA certificate
 
-Create a CA private key and certificate:
+Create a CA private key and certificate
 
 ```bash
 openssl genrsa -out ~/vault-certs/read/ca.key 2048
@@ -15,14 +15,14 @@ openssl req -x509 -new -nodes -key ~/vault-certs/read/ca.key -sha256 -days 365 -
 
 Generate a client certificate and key
 
-Create a client private key and certificate signing request (CSR):
+Create a client private key and certificate signing request (CSR)
 
 ```bash
 openssl genrsa -out ~/vault-certs/read/.key/client.key 2048
 openssl req -new -key ~/vault-certs/read/.key/client.key -out ~/vault-certs/read/client.csr -subj "/CN=vault-client"
 ```
 
-Sign the client certificate with the CA:
+Sign the client certificate with the CA
 
 ```bash
 openssl x509 -req -in ~/vault-certs/read/client.csr -CA ~/vault-certs/read/ca.pem -CAkey ~/vault-certs/read/ca.key -CAcreateserial -out ~/vault-certs/read/client.crt -days 365 -sha256

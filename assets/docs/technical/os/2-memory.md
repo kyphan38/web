@@ -233,7 +233,7 @@ physical address = virtual address + base
 - Simplest page table: Linear page table
 - Page table is an array of page table entries, one per virtual page
 - VPN (virtual page number) is the index into this array
-- Each PTE contains PFN (physical frame number) and a few other bits:
+- Each PTE contains PFN (physical frame number) and a few other bits
   - Valid bit: Is this page used by the process?
   - Protection bits: Read/write permissions
   - Present bit: Is this page in memory?
@@ -257,7 +257,7 @@ physical address = virtual address + base
 --
 
 - The CPU requests code or data at a virtual address
-- MMU must translate VA to PA:
+- MMU must translate VA to PA
   - First, access memory to read the page table entry
   - Translate VA to PA
   - Then, access memory to fetch code/data
@@ -348,7 +348,7 @@ physical address = virtual address + base
 - CPU issues a load to a VA for code or data
   - Checks the CPU cache first
   - Goes to main memory in case of a cache miss
-- The MMU looks up the TLB for the VA:
+- The MMU looks up the TLB for the VA
   - If TLB hit, the PA is obtained, and the memory location is fetched and returned to the CPU (via CPU caches)
   - If TLB miss, the MMU accesses memory, walks the page table, and obtains the page table entry
     - If the present bit is set in the PTE, the memory is accessed
@@ -492,7 +492,7 @@ physical address = virtual address + base
 --
 
 - Memory allocation algorithms are much simpler with fixed-size allocations
-- Page-sized fixed allocations in the kernel:
+- Page-sized fixed allocations in the kernel
   - Has a free list of pages
   - A pointer to the next page is stored in the free page itself
 - For some smaller allocations (eg, PCB), the kernel uses a slab allocator

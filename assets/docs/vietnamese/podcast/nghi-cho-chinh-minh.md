@@ -1,8 +1,10 @@
 # nghĩ cho chính mình
 
-## Cập Nhật Về Podcast
+## Tác giả - Tri The Way
 
-Quan điểm về "Người Nghe Trung Thành"
+### Cập Nhật Về Podcast
+
+Quan điểm về người nghe trung thành
 
 - Trí không thích dùng từ "loyal listener" (người nghe trung thành)
 - Lý do: Sự trung thành cần đến từ "win-win" - Trí cho đi và các bạn nhận được, rồi giúp lại Trí. Hiện tại, Trí cảm thấy chưa làm được điều đó ở phạm vi podcast
@@ -10,19 +12,19 @@ Quan điểm về "Người Nghe Trung Thành"
 - Tuy nhiên, Trí vẫn tôn trọng những người nghe vì thói quen, vì yêu thích, và mong các bạn nghe nhiều hơn
 - Mục tiêu cuối cùng: Giúp mọi người tổ chức cuộc sống tốt hơn, có những dịch chuyển thực tế, hữu ích và ghi chép được sự phát triển của bản thân
 
-## Chủ Đề Chính
+### Chủ Đề Chính
 
-Tầm quan trọng của việc "Nghĩ Cho Chính Mình"
+Tầm quan trọng của việc nghĩ cho chính mình
 
 - Đây là cụm từ Trí nhắc đi nhắc lại nhiều lần, dự định làm tập này từ năm ngoái nhưng "ngâm" đến giờ để có đủ chất liệu
 - Lý do quan trọng: Giúp mình thật sự nghĩ được và giải thích được bản thân, mô tả được suy nghĩ, cảm xúc. Đây là mảnh ghép thiết yếu trong đời sống phát triển cá nhân, để chiêm nghiệm, thay đổi, và "upgrade" bản thân
 
-Bài học từ Nietzsche: "Slave Morality" (Đạo Đức Nô Lệ)
+Bài học từ Nietzsche - slave morality (đạo đức nô lệ)
 
 - Phân biệt "Slave Mentality" (Tư duy nô lệ) và "Slave Morality" (Đạo đức nô lệ)
   - Slave Mentality (ban đầu Trí nghĩ là vậy): Là tinh thần/tư duy nô lệ. Bạn sợ thử thách hệ giá trị được áp đặt, sợ người khác không đồng tình. Nỗi sợ này kìm hãm bạn. Có thể thay đổi khi bạn hết sợ, có đủ dũng khí, năng lực
   - Slave Morality (khái niệm chính xác của Nietzsche): Là đạo đức nô lệ. Bạn không chỉ sợ, mà bạn biện minh cho việc tuân theo hệ giá trị đó, cho rằng đó là đúng đắn. Ví dụ: "Người ta nói vậy là đúng rồi, mình phải sống như vậy mới là đúng."
-    - Đạo đức là nhận thức về đúng/sai, có dấu ấn lương tâm và lời biện minh.
+    - Đạo đức là nhận thức về đúng/sai, có dấu ấn lương tâm và lời biện minh
     - Với "slave morality", bạn coi việc làm theo kỳ vọng của người khác là "cái đúng" của mình. Rất khó thay đổi vì nó đã trở thành một phần của "sự thật" trong bạn
   - Cảnh báo của Nietzsche: Ông cảnh giác mọi người về trạng thái này. Con người cần vượt qua chính mình, trở thành "Übermensch" (Siêu nhân) - người có tư duy độc lập, chính kiến, phát triển riêng, vượt qua mọi hệ giá trị không phải của mình
 - Liên hệ: Khi "nghĩ cho chính mình", bạn đang neo mình lại, chống lại dòng chảy kéo bạn ra khỏi những gì thực sự là về bạn, dành cho bạn, cần thiết cho bạn
@@ -75,7 +77,7 @@ Sức mạnh của ngôn ngữ trong việc "Nghĩ Cho Chính Mình"
   - Hậu quả: Chấp nhận tình trạng đó, sống chung với cảm giác không tốt, không thể thay đổi hình thái mối quan hệ (kể cả quyết định chia tay hay tiếp tục) vì không diễn tả được. Cứ "go with the flow"
 - Quy trình để thay đổi
   - Mô tả, giải bày bản thân bằng ngôn ngữ (gọi tên cảm xúc, phơi bày nó ra)
-  - Từ đó, giải thích được lý lẽ (logic) đằng sau.
+  - Từ đó, giải thích được lý lẽ (logic) đằng sau
   - Từ lý lẽ, logic đó, mới tiến tới quyết định
 - Rèn luyện khả năng này: Cần thời gian, sự chiêm nghiệm, đọc sách, học hỏi từ chia sẻ của người đi trước, tiếp xúc với ngôn ngữ có chiều sâu để tích lũy khả năng mô tả bản thân tốt hơn
 - Khi diễn tả bản thân tốt, việc giải quyết các mối quan hệ, đưa ra quyết định sẽ dễ dàng hơn, có lý lẽ rõ ràng, không sợ người khác hiểu sai
