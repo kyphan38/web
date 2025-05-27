@@ -12,6 +12,6 @@ Professional
 
 Specialty
 
-- Specialties are a 50% / 50% split between the specialty skill covered and AWS skills between the associate and professional level
+- Specialties are a 50%/50% split between the specialty skill covered and AWS skills between the associate and professional level
 
 ![img](./img/1.png)

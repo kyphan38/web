@@ -21,7 +21,7 @@ Three main jobs
 Key features
 
 - No cost
-- Global service / Global resilience
+- Global service/Global resilience
 - Allow or deny its identities on its AWS account
 - No direct control on external accounts or users
 - Identity federation and MFA

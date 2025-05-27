@@ -45,7 +45,7 @@ def rename_files_with_spaces_or_underscores():
 if __name__ == "__main__":
   try:
     rename_files_with_spaces_or_underscores()
-    print("\nRenaming process complete.")
+    print("\nRenaming process complete")
   except FileNotFoundError as e:
     print(f"Error: {e}")
   except Exception as e:
