@@ -2,7 +2,7 @@
 
 ## Tác Giả - Hoang Phuc
 
-### Lời Hứa Táo Bạo và Nền Tảng Thực Tế
+### Lời Hứa Táo Bạo Và Nền Tảng Thực Tế
 
 --
 
@@ -47,7 +47,7 @@ Tiêu chuẩn thấp là lợi thế của bạn
   - Đây chính là sức mạnh của lãi suất kép áp dụng vào phát triển bản thân, hay triết lý Kaizen của người Nhật. Những thay đổi nhỏ bé (Atomic Habits) có vẻ không đáng kể trong ngắn hạn, nhưng khi tích lũy qua thời gian, chúng tạo ra những kết quả khổng lồ
 - Lợi thế cạnh tranh: Khi 90% người khác không làm gì cả, việc bạn thực sự hành động, xuất hiện mỗi ngày sẽ giúp bạn tiến xa hơn họ rất nhiều
 
-### Phá Vỡ Giới Hạn và Đối Mặt Kháng Cự
+### Phá Vỡ Giới Hạn Và Đối Mặt Kháng Cự
 
 Phá vỡ giới hạn (bước ra khỏi vùng an toàn)
 
@@ -88,7 +88,7 @@ Biến khó khăn thành cơ hội
   - Chủ động tìm kiếm thử thách: Đừng chờ! Hãy tự đưa mình vào hoàn cảnh khó khăn. Muốn mạnh &rarr; tạ nặng hơn. Muốn phát triển &rarr; nhận việc khó hơn. Mỗi lần như vậy là bạn đang rèn luyện sức chịu đựng và mở rộng giới hạn. Đây là luyện tập có chủ đích
   - Hành động khi chưa sẵn sàng: Chờ hoàn hảo = không bao giờ bắt đầu. Tiến bộ chỉ xảy ra khi bạn bước ra khỏi vùng an toàn. Hãy ôm lấy sự tổn thương và hành động
 
-### Kế Hoạch 6-12 Tháng và Sự Thăng Tiến Nhanh Chóng
+### Kế Hoạch 6-12 Tháng Và Sự Thăng Tiến Nhanh Chóng
 
 Đừng đánh giá thấp sức mạnh của sự tập trung
 
