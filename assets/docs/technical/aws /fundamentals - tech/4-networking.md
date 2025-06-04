@@ -155,9 +155,9 @@ Summary
 - IP uses source and destination IP addresses for communication
 - IP packets may be delivered out of order
 
-### Layer 4 - Transport - Segment - Continue Here 0033
+### Layer 4 - Transport - Segment
 
-Problems
+Problems - Layer 3
 
 ![img](./img/36.png)
 
@@ -166,6 +166,16 @@ TCP and UDP
 ![img](./img/37.png)
 
 - TCP segments
+  - Source port: Identifies the port number of the sending application, enabling the recipient to know which application sent the data
+  - Destination port: Identifies the port number of the receiving application, allowing the recipient's operating system to direct the segment to the correct application
+  - Sequence number: A 32-bit number used to ensure correct ordering of data segments and to acknowledge received data
+  - Acknowledgment number: A 32-bit number used by the receiver to indicate the next sequence number it expects to receive, confirming receipt of previous segments
+  - Flags 'N' things (*): A set of 1-bit flags (e.g., SYN, ACK, FIN, RST, PSH, URG) that control the state and management of the TCP connection
+  - Window: A 16-bit field that specifies the number of data bytes the sender of this segment is willing to accept from the other end (flow control)
+  - Checksum: A 16-bit field used for error checking of the TCP header and data to ensure integrity
+  - Urgent pointer: A 16-bit field that, if the URG flag is set, indicates the offset from the current sequence number to the last byte of urgent data
+  - Options: A variable-length field used to convey additional information not covered in the standard header, such as Maximum Segment Size (MSS)
+  - Padding: Zero bits added to the end of the options field to ensure the TCP header ends on a 32-bit boundary
 
 ![img](./img/38.png)
 
@@ -182,3 +192,5 @@ TCP connection 3-way handshake
 Session and state
 
 ![img](./img/41.png)
+
+## Network Address Translation (NAT)

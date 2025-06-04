@@ -1,13 +1,9 @@
 # array
 
-To do list
-
-- Easy
-  - 724 Find Pivot Index
 - Medium
-- 36 Valid Sudoku
-- 238 Product of Array Except Self
-- 122 Best Time to Buy and Sell Stock II
+  - 36 Valid Sudoku
+  - 238 Product of Array Except Self
+  - 122 Best Time to Buy and Sell Stock II
 
 ## Easy
 
@@ -248,6 +244,28 @@ class Solution:
 ### 605. Can Place Flowers
 
 [605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/description/)
+
+### 724. Find Pivot Index
+
+[724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/)
+
+Solution - Sum
+
+- Time complexity:
+- Space complexity:
+
+```python
+class Solution:
+  def pivotIndex(self, nums: List[int]) -> int:
+    total_sum = sum(nums)
+    sum_left = 0
+    for i in range(len(nums)):
+      sum_right = total_sum - sum_left - nums[i]
+      if (sum_right == sum_left):
+        return i
+      sum_left += nums[i]
+  return -1
+```
 
 ## Medium
 
