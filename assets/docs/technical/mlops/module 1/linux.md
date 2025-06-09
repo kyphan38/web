@@ -24,59 +24,7 @@ Learn more
 
 ![img](./img/1.png)
 
-## Basic Commands
-
-Fun fact: A directory is a just a file containing the names of other files
-
-| Category                      | Popular Commands                                      |
-| :---------------------------- | :---------------------------------------------------- |
-| File System Navigation        | cd, pwd, ls                                           |
-| File & Directory Mgmt         | cp, mv, rm, mkdir, touch, ln -s                       |
-| Viewing & Editing Files       | cat, less, head, tail, nano, vim                      |
-| Searching Files & Text        | find, grep, locate, wc                                |
-| Permissions & Ownership       | chmod, chown, chgrp                                   |
-| Process Management            | ps, top, htop, kill, killall                          |
-| System Information            | uname, uptime, df -h, du -sh, free -h                 |
-| Hardware Information          | lscpu, lsblk, lspci, lsusb                            |
-| Networking                    | ping, ip/ifconfig, ssh, scp, wget, curl             |
-| Archiving & Compression       | tar, gzip, gunzip, zip, unzip                         |
-| Package Management            | apt/dnf/yum/pacman (install, remove, update)    |
-| User & Group Management       | sudo, su, useradd, usermod, passwd, whoami, id        |
-| Disk Management               | lsblk, df -h, mount, umount, fdisk -l                 |
-| System Services (systemd)     | systemctl (start, stop, status, enable, disable)      |
-| Job Scheduling                | crontab -e, crontab -l, at                            |
-| Shell Environment             | echo, export, alias, source, env                      |
-| Command History & Help        | history, man, --help, apropos                         |
-| System Control                | shutdown, reboot, clear, hostname                     |
-| Development Tools             | git, make, gcc/g++                                    |
-| Miscellaneous Utilities       | watch, tee, sleep, which, type, xargs                 |
-
-### Practice
-
-```bash
-#
-ssh
-
-#
-telnet google 80
-
-#
-man telnet
-
-#
-telnet --help
-
-#
-which telnet
-
-#
-ls /usr/bin | grep telnet
-
-#
-docker ps -a | awk 'NR>2 {print $2}'
-```
-
-## Shell, Console, and Terminal - Continue - 1:19:13
+## Shell, Console, and Terminal
 
 Console
 
@@ -89,3 +37,64 @@ Terminal
 Shell
 
 - A command line interpreter that receives and executes commands
+
+## Basic Commands
+
+Fun fact
+
+- A directory is a just a file containing the names of other files
+- Sudo: Superuser do
+
+| Category                    | Popular Commands                                                                  |
+| :-------------------------- | :-------------------------------------------------------------------------------- |
+| File & Directory Management | ls, cd, pwd, cp, mv, rm, mkdir, touch, ln -s                                      |
+| Viewing & Editing Files     | cat, less, head, tail, nano, vim                                                  |
+| Searching Files & Text      | find, grep, locate, wc                                                            |
+| User & Group Management     | sudo, su, useradd, usermod, userdel, groupadd, passwd, id, who, whoami, last, w   |
+| Permissions & Security      | chmod, chown, chgrp, visudo, getfacl, setfacl, openssl, fail2ban                  |
+| Process & Performance       | ps, top, htop, kill, killall, vmstat, iostat, free, lsof, ulimit -a               |
+| Disk & Filesystem           | df -h, du -sh, lsblk, mount, umount, fdisk -l, mkfs                               |
+| System & Hardware Info      | uname, uptime, hostname, lscpu, lsblk, lspci, lsusb, lshw, dmidecode              |
+| Networking                  | ping, ip/ifconfig, ssh, scp, wget, curl, ss, netstat, traceroute, nmap, dig, host |
+| System Services (systemd)   | systemctl (start, stop, enable, status), journalctl, shutdown, reboot             |
+| Firewall Management         | iptables, firewalld (firewall-cmd), ufw                                           |
+| Archiving & Backup          | tar, gzip, gunzip, zip, unzip, rsync, dd, dump, restore                           |
+| Package Management          | apt/dnf/yum/pacman (install, remove, update, search)                              |
+| Remote Administration       | ssh, scp, tmux, screen, watch                                                     |
+| System Logging              | journalctl, dmesg, tail -f /var/log/syslog, logrotate                             |
+| Job Scheduling              | crontab -e, crontab -l, at                                                        |
+| Shell & Environment         | echo, export, alias, source, env, history, man, --help, clear                     |
+| Development & Misc. Tools   | git, make, gcc/g++, tee, sleep, which, type, xargs                                |
+| Web & Database Services     | apachectl, nginx -s, mysql, psql                                                  |
+| Containerization            | docker/podman (ps, images, run, stop), virsh, kvm                                 |
+
+### Practice
+
+```bash
+telnet google 80
+man telnet
+telnet --help
+which telnet
+
+ls /usr/bin | grep telnet
+
+docker ps -a | awk 'NR>2 {print $2}'
+
+find . -type f -size +1G
+find . -type d -size +1G
+
+du -sh *
+df -h
+
+top
+
+su kyphan -s /bin/bash
+chmod o-rx tmp
+chmod -R o-rx tmp
+
+cd /etc
+cat passwd
+cat group
+cat hosts
+cat sudoers
+```

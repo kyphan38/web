@@ -194,3 +194,80 @@ Session and state
 ![img](./img/41.png)
 
 ## Network Address Translation (NAT)
+
+--
+
+- NAT is designed to overcome IPv4 shortages
+- Provides some security benefits
+- Translates private IPv4 addresses to public
+- Static NAT - 1 private to 1 (fixed) public address (IGW)
+- Dynamic NAT - 1 private to 1st available Public
+- Port Address Translation (PAT) - many private to 1 public (NATGW)
+- IPv4 only ... makes no sense with IPv6
+
+### Static
+
+--
+
+- The router (NAT Device) maintains a NAT table, it maps private IP : public IP (1:1)
+- In AWS, this is how Internet Gateway (IGW) functions
+
+![img](./img/42.png)
+
+### Dynamic
+
+--
+
+- The router (NAT Device) maintains a NAT table, it maps private IP : public IP
+- Public IP allocations are temporary allocations from a public IP pool
+
+![img](./img/43.png)
+
+### Port Address Translation (PAT)
+
+--
+
+- In AWS, this is how the NAT Gateway (NATGW) functions, a (many : 1) (private IP : public IP) architecture
+- The NAT Device records the source - private IP and source port. It replaces the source IP with the single public IP and a public source port allocated from a pool which allows IP overloading (many to one)
+
+![img](./img/44.png)
+
+## Addressing
+
+--
+
+- IPv4 standard created in 1981, defined in RFC791
+- 0.0.0.0 &rarr; 255.255.255.255 = 4,294,967,296 addresses
+- Originally, directly managed by Internet Assigned Numbers Authority (IANA)
+- Parts now delegated to regional authorities (ARIN, RIPE NCC, APNIC, LACNIC, AFRINIC)
+- All public IPv4 addressing is allocated
+- Part of the address space is private and can be used/reused freely
+
+### IPv4 Address Space
+
+![img](./img/45.png)
+
+### Private IPv4
+
+--
+
+- Defined by a standard RFC1918
+- 10.0.0.0 - 10.255.255.255 (1 x Class A network)
+  - 16,777,216 IPV4 addresses
+- 172.16.0.0 - 172.31.255.255 (16 x Class B networks)
+  - 16 x 65,536 IPV4 addresses
+- 192.168.0.0 - 192.168.255.255 (256 x Class C networks)
+  - 256 × 256 IPv4 addresses
+
+### IPv6 Address Space
+
+![img](./img/46.png)
+
+- Quadrillion: 1 followed by 15 zeros
+- Octillion: 1 followed by 27 zeros
+
+## Subnetting
+
+![img](./img/47.png)
+
+![img](./img/48.png)

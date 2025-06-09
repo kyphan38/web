@@ -70,5 +70,3 @@ Example
 - An example involves hiding the message "HI" in a puppy image by adjusting pixel values: The decimal values for "H" (72) and "I" (73) are encoded by altering two pixels by 8 and 9, respectively
 - Advanced steganography algorithms make the hidden data extremely difficult to detect without a specific key or pattern
 - While this method is basic, real-world steganography algorithms are far more complex and harder to detect
-
-## Security - Pending
