@@ -393,12 +393,160 @@ ln –s Pictures/family_dog.jpg relative_picture_shortcut
 - If the target file or directory is deleted, moved, or renamed, the symbolic link is not automatically updated or removed
 - It continues to point to the original path, which now leads nowhere. Such links are called "broken" or "dangling" links - "No such file or directory" error
 
-Limitiations and considerations
+Limitations and considerations
 
 - Softlink to files and folders
 - Softlink to files on different filesystem as well
 
-## List, Set, and Change Standard Ugo/RWX Permissions -- Continue
+## List, Set, and Change Standard Ugo/RWX Permissions
+
+Owners and groups
+
+```bash
+chgrp kyphan family_dog.jpg
+sudo chown kpfamily family_dog.jpg
+
+ls -l
+---
+-rw-r-----. 1 kyphan kpfamily 49 Oct 27 14:41 family_dog.jpg
+
+sudo chown kyphan1:kpfamily1 family_dog.jpg
+
+ls -l
+---
+-rw-r-----. 1 kyphan1 kpfamily1 49 Oct 27 14:41 family_dog.jpg
+```
+
+File and directory permissions
+
+- First character
+  - Directory: d
+  - Regular file: -
+  - Character device: c
+  - Link: l
+  - Socket file: s
+  - Pipe: p
+  - Block device: b
+- Next ones (owner, group, others)
+  - r: read
+  - w: write
+  - x: execute
+  - -: no permission
+- Directory
+  - r: ls, etc.
+  - w: mkdir, rm, etc.
+  - x: cd, etc.
+
+Evaluating permissions
+
+- Permissions are checked in order: Owner, group, and Others, and the system applies the permissions from the first match
+
+```bash
+ls -l
+---
+-r--rw----. 1 kyphan family 49 family_dog.jpg
+
+echo “Add this content to file” >> family_dog.jpg
+---
+bash: family_dog.jpg: Permission denied
+```
+
+Adding permissions
+
+- user: u+x / u+rw / u+rwx
+- group: g+w / g+rw / g+rwx
+- others: o+w / o+rw / o+rwx
+
+```bash
+chmod u+w family_dog.jpg
+```
+
+Removing permissions
+
+- user: u-x / u-rw / u-rwx
+- group: g-w / g-rw / g-rwx
+- others: o-w / o-rw / o-rwx
+
+```bash
+chmod o-r family_dog.jpg
+```
+
+Setting exact permissions
+
+- user: u=x / u=rw / u=rwx
+- group: g=w / g=rw / g=rwx
+- others: o=w / o=rw / o=rwx
+
+```bash
+chmod g=r family_dog.jpg
+chmod g=rw family_dog.jpg
+chmod g= family_dog.jpg
+chmod g-rwx family_dog.jpg
+```
+
+Chaining permissions
+
+```bash
+chmod u+rw,g=r,o= family_dog.jpg
+chmod u=rw,g-w family_dog.jpg
+```
+
+Octal permissions
+
+```bash
+stat family_dog.jpg
+---
+File: family_dog.jpg
+Size: 49 Blocks: 8 IO Block: 4096 regular file
+Device: fd00h/64768d Inode: 52946177 Links: 1
+Access: (0640/-rw-r-----) Uid: ( 1000/ kyphan) Gid: ( 10/ wheel)
+
+chmod 640 family_dog.jpg
+```
+
+## SUID, SGID, and Sticky Bit
+
+SUID
+
+- Set User Identification
+- When an executable file has the SUID bit set, any user who runs that file temporarily gains the privileges of the file's owner during its execution
+- This allows regular users to perform specific actions that would normally require higher privileges
+
+```bash
+chmod u+s family_dog.jpg
+chmod 4755 family_dog.jpg
+```
+
+SGID
+
+- When set on an executable file, the process runs with the privileges of the file's group. This is similar to SUID but operates at the group level
+- This is the more common and significant use of SGID. When a directory has the SGID bit set, any new files or subdirectories created within it will automatically inherit the group ownership of the parent directory, rather than the primary group of the user who created the file
+- This is particularly useful for shared project directories where multiple users need to collaborate on a set of files. All new files will belong to the designated project group, ensuring consistent access for all team members
+
+```bash
+chmod g+s family_folder
+chmod 2755 family_folder
+```
+
+Sticky bit
+
+- When the sticky bit is set on a directory, it restricts file deletion
+- Even if a user has write permissions to the directory, they can only delete or rename files that they personally own
+- The directory owner and the root user are exceptions and can delete or rename any file within the directory
+
+```bash
+chmod 777 family_folder
+chmod +t family_folder
+
+chmod 1777 family_folder
+```
+
+Note
+
+- Lowercase s or t: The special permission is set, and the underlying execute (x) permission is also set for that user/group/other. This is the correct and effective state
+- Uppercase S or T: The special permission is set, but the underlying execute (x) permission is not set. In this state, the special permission has no effect
+
+## Search for Files
 
 ## Lab
 
@@ -407,23 +555,16 @@ Limitiations and considerations
 ```bash
 man ssh | grep version
 ssh -V
-
 apropos hostname
 hostnamectl
-
 mandb
-
 man ssh | grep verbose
 ssh -v alex@localhost
-
 ls -la /home/bob/data
-
 ssh bob@dev-host01
 touch myfile
-
 apropos ssh
 sudo mandb
-
 apropos "NFS mounts"
 touch nfsmount.conf
 ```
@@ -432,28 +573,16 @@ touch nfsmount.conf
 
 ```bash
 mkdir -p /home/bob/lfcs
-
 touch /home/bob/lfcs/lfcs.txt
-
 cp -r /tmp/Invoice/ /home/bob/
-
 cp -a /home/bob/myfile.txt /home/bob/data/
-
 cp -r /home/bob/lfcs /home/bob/old-data
-
 rm /home/bob/lfcs/lfcs.txt
-
 mv /home/bob/lfcs/ /home/bob/new-data/
-
 rm -rf /home/bob/lfcs
-
 ln -s /tmp /home/bob/link_to_tmp
-
 ln /opt/hlink /home/bob/hlink
-
 mv /home/bob/new_file /home/bob/old_file
-
 mkdir -p /tmp/1/2/3/4/5/6/7/8/9
-
 ls --full-time
 ```
