@@ -548,6 +548,199 @@ Note
 
 ## Search for Files
 
+![img](./img/3.png)
+
+```bash
+# find [/path/to/directory] [search_parameters]
+
+find /usr/share/ -name ’*.jpg’
+find /lib64/ -size +10M
+find /dev/ -mmin -1
+find /bin/ -name file1.txt
+```
+
+Name
+
+```bash
+find -name felix
+find -iname felix
+find -name "f*"
+```
+
+Modified
+
+- Modification = Create or Edit
+- Modified Time != Change Time
+
+```bash
+# find -mmin [minute] # modified minute
+
+
+find -mmin 5
+
+find -mmin -5
+
+find -mmin +5
+
+find -mtime 2
+
+find -cmin -5
+```
+
+Size
+
+```bash
+find -size [size]
+felix freya fin
+find -size 512k
+c bytes
+k kilobytes
+M megabytes
+G gigabytes
+find -size +512k
+find -size -512k
+```
+
+Search expressions
+
+```bash
+find -size [size]
+felix freya fin
+find -size 512k
+c bytes
+k kilobytes
+M megabytes
+G gigabytes
+find -size +512k
+find -size -512k
+# Exactly 512 kb
+# Greater than 512 kb
+# Less than 512 kb
+
+find -size [size]
+felix freya fin
+james john jacob
+bob bean ben
+10 kb 512 kb 1024 kb
+10 kb 512 kb 1024 kb
+10 kb 512 kb 1024 kb
+find -name "f*"
+find -size 512k
+find -name "f*" -size 512k # AND operator
+find -name "f*" -o -size 512k # OR operator
+
+find –not -name "f*"
+felix freya fin
+james john jacob
+bob bean ben
+find \! -name “f*"
+# NOT operator
+# alternate NOT operator
+
+find –perm 664
+find –perm -664
+find -perm /664
+# find files with exactly 664 permissions
+# find files with at least 664 permissions
+# find files with any of these permissions
+find –perm u=rw,g=rw,o=r
+find –perm –u=rw,g=rw,o=r
+find –perm /u=rw,g=rw,o=r
+# find files with exactly 664 permissions
+# find files with at least 664 permissions
+# find files with any of these permissions
+
+find -perm 600
+find -perm -100
+find \! -perm –o=r
+find -perm /u=r,g=r,o=
+```
+
+## Compare and Manipulate File Content
+
+tac
+
+```bash
+cat /home/users.txt
+---
+user1
+user2
+user3
+user4
+user5
+user6
+
+tac /home/users.txt
+---
+user6
+user5
+user4
+user3
+user2
+user1
+```
+
+tail
+
+```bash
+tail /var/log/dnf.log
+tail -n 20 /var/log/dnf.log
+
+head /var/log/dnf.log
+head –n 20 /var/log/dnf.log
+```
+
+Transforming text: sed
+
+```bash
+sed 's/canda/canada/g' userinfo.txt
+
+sed 's/canda/canada/' userinfo.txt
+
+sed 's/canda/canada' userinfo.txt
+
+# --in-place
+sed –i 's/canda/canada/g' userinfo.txt
+```
+
+cut
+
+```bash
+cut –d ' ' –f 1 userinfo.txt
+
+cut –d ',' –f 3 userinfo.txt > countries.txt
+```
+
+uniq and sort
+
+```bash
+uniq countries.txt
+
+sort countries.txt
+
+sort countries.txt | uniq
+```
+
+Comparing files
+
+```bash
+diff file1 file2
+
+# Context
+diff –c file1 file2
+
+# Side-by-side diff
+diff –y file1 file2
+sdiff file1 file2
+
+# Search files with grep
+
+Sear
+
+```
+
+##
+
 ## Lab
 
 ### Logging in and System Documentation
@@ -585,4 +778,10 @@ ln /opt/hlink /home/bob/hlink
 mv /home/bob/new_file /home/bob/old_file
 mkdir -p /tmp/1/2/3/4/5/6/7/8/9
 ls --full-time
+```
+
+### File, Permissions, Search for Files
+
+```bash
+sd
 ```
