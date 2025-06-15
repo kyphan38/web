@@ -1,6 +1,6 @@
 # security
 
-## DDOS
+## Ddos
 
 ## TLS
 
