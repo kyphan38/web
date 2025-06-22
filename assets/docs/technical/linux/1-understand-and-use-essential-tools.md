@@ -1,6 +1,6 @@
 # understand and use essential tool
 
-## Command Line Basics
+## Basics
 
 Login methods
 
@@ -20,12 +20,14 @@ SSH
 - Computer (SSH Client) &rarr; Server (SSH daemon)
 
 ```bash
-ssh aaron@192.168.0.17
----
-aaron@192.168.0.17's password:
+# Show all network interface configurations
+ip a
+
+# Connect to the remote server as the user "kyphan"
+ssh kyphan@192.168.0.17
 ```
 
-## Logging in and Switching Users
+## User and Group
 
 Security features
 
@@ -34,85 +36,68 @@ Security features
 - Network security: Protects systems from network-based threats
 - SSH hardening: Secures the secure shell service for remote access
 - SELinux: Enforces stricter security policies
-- Others
 
 Account types
 
 | Account Type         | Purpose                                                                 | Examples              | Attributes                                                                                                                                   | Typical UID Range                |
 |----------------------|-------------------------------------------------------------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| User Account         | Standard accounts for interactive login by humans                        | bob, michael, dave    | Username, Password (stored securely), User ID (UID), Group ID (GID), Home Directory, Login Shell                                           | Often starts at 1000 (>= 1000)   |
-| Superuser Account    | Full administrative access to the system                                | root                  | Username: root, UID: always 0                                                                                                                 | UID is 0                        |
-| System Account       | Used by system services or daemons running in the background            | sshd, mail, daemon    | Username, User ID (UID), Group ID (GID), Home Directory, typically no login capabilities                                                    | Reserved range, often below 1000|
-| Service Account      | Dedicated accounts for specific applications or services to run under    | nginx, postgres       | Username, User ID (UID), Group ID (GID), Home Directory, service-specific permissions                                                        | Often within system account range or user range|
+| User account         | Standard accounts for interactive login by humans                        | bob, michael, dave    | Username, Password (stored securely), User ID (UID), Group ID (GID), Home directory, Login Shell                                           | Often starts at 1000 (>= 1000)   |
+| Superuser account    | Full administrative access to the system                                | root                  | Username: root, UID: always 0                                                                                                                 | UID is 0                        |
+| System account       | Used by system services or daemons running in the background            | sshd, mail, daemon    | Username, User ID (UID), Group ID (GID), Home directory, typically no login capabilities                                                    | Reserved range, often below 1000|
+| Service account      | Dedicated accounts for specific applications or services to run under    | nginx, postgres       | Username, User ID (UID), Group ID (GID), Home directory, service-specific permissions                                                        | Often within system account range or user range|
 
-Groups
-
-- A collection of users, primarily used to manage permissions efficiently. Users can belong to multiple groups
-
-Essential commands
-
-- User
+User
 
 ```bash
-# Display user account database
+# Display the content of the user account file
 cat /etc/passwd
 ---
-root:*:0:0:System Administrator:/var/root:/bin/sh
-daemon:*:1:1:System Services:/var/root:/usr/bin/false
+root:x:0:0:root:/root:/bin/bash
+sara:x:1001:1001:Sara Lee:/home/sara:/bin/bash
 
-# Display user and group identity
-id kyphan
+# Display user and group information for specific users
+id sara
 ---
-uid=1001(kyphan) gid=1001(kyphan) groups=1001(kyphan),27(sudo)
+uid=1001(sara) gid=1001(sara) groups=1001(sara),27(sudo)
 
-# Display currently logged-in users
+# Show who is currently logged into the system
 who
 ---
-kyphan   tty1         2025-04-16 09:30
-kyphan   pts/0        2025-04-16 10:15 (192.168.1.10)
+sara pts/0 2025-06-11 07:08 (192.168.1.15)
+john pts/1 2025-06-11 07:05 (10.0.0.84)
 
-# Display history of last logged-in users
-last
+# Show the history of last logged in users
+last -n 2
 ---
-kyphan   pts/0        192.168.1.10     Wed Apr 16 10:15   still logged in
-kyphan   tty1                          Wed Apr 16 09:30   still logged in
-reboot   system boot  5.15.0-generic   Wed Apr 16 09:25   - 10:30  (01:05)
+sara pts/0 192.168.1.15 Wed Jun 11 07:08 still logged in
+john pts/1 10.0.0.84    Wed Jun 11 07:05 - 07:06 (00:01)
 
-# Search for information and home directory
-grep -i kyphan /etc/passwd
+# Search for specific users (case-insensitive) in the user account file
+grep -i "sara" /etc/passwd
 ---
-kyphan:x:1001:1001::/home/kyphan:/bin/bash
+sara:x:1001:1001:Sara Lee:/home/sara:/bin/bash
 ```
-
-- Group
-
-```bash
-# Display group database
-cat /etc/group
----
-root:x:0:
-sudo:x:27:kyphan
-kyphan:x:1001:
-```
-
-Switch users
 
 - `su`
   - Switches to another user account. If no user is specified, it defaults to root
   - Requires the target user's password with `su -`
-  - Directly using su to become root for extended periods or sharing the root password is often discouraged for security reasons
+  - Directly using `su` to become root for extended periods or sharing the root password is often discouraged for security reasons
 
 ```bash
 # Switch to the root user
 su -
 ---
-Password:
+Password: 
 
-# Execute a single command as root
+# Switch to a different user account (e.g., sara)
+su - sara
+---
+Password: 
+
+# Execute a single command as the root user
 su -c "whoami"
 ---
 Password:
-root
 ```
 
 - `sudo`
@@ -124,11 +109,12 @@ root
 # Execute a command with root privileges
 sudo apt-get update
 ---
-[sudo] password for kyphan:
+[sudo] password for sara: 
 
 # Display the sudoers configuration file
-cat /etc/sudoers
+sudo cat /etc/sudoers
 ---
+[sudo] password for sara: 
 root    ALL=(ALL:ALL) ALL
 %admin ALL=(ALL) ALL
 %sudo   ALL=(ALL:ALL) ALL
@@ -139,100 +125,112 @@ root    ALL=(ALL:ALL) ALL
   - Enhances security by forcing administrative tasks through mechanisms like sudo or requiring a switch from a standard user account
 
 ```bash
-# Check the login shell for the root user
+# Find the specific entry for the 'root' user at the beginning of a line
 grep '^root:' /etc/passwd
 ---
 root:x:0:0:root:/root:/bin/bash
+
+# Find all users who have /bin/bash as their shell
+grep '/bin/bash$' /etc/passwd
+---
+root:x:0:0:root:/root:/bin/bash
+sara:x:1001:1001:Sara Lee:/home/sara:/bin/bash
 ```
 
-## Using System Documentation
+Groups
 
-Commands
-
-- `--help`: Displays a brief summary of their usage and options
+- A collection of users, primarily used to manage permissions efficiently
+- Users can belong to multiple groups
 
 ```bash
-ls --help
-
-# Pager
-journalctl --help
+# Display group database
+cat /etc/group
+---
+root:x:0:
+sara:x:1001:
 ```
 
+## System Documentation
+
+--
+
+- `--help`: Displays a brief summary of their usage and options
 - `man`: Displays a comprehensive manual pages
 
 ```bash
+# Display the manual page for the journalctl command
 man journalctl
-man man
-man 1 printf
+
+# Display the section 3 manual page for the 'printf' C library function
 man 3 printf
 ```
 
 - `apropos`: Searches the names and short descriptions of all manual pages for a specific keyword
 
 ```bash
+# Search all manual pages for the keyword "director"
 apropos director
-apropos -s 1,8 director
+---
+chdir (2) - change working directory
+dir (1)   - list directory contents
 
-# Update the manual page index database
+# Search only sections 1 and 8 of the manuals for "director"
+apropos -s 1,8 director
+---
+dir (1)              - list directory contents
+mkdir (1)            - make directories
+
+# Update the manual page database
 sudo mandb
 ```
-
-## Additional System Documentation
 
 - `info`: Accesses documentation in the GNU Info format
 
 ```bash
+# Display the detailed 'info' documentation for bash
 info bash
 ```
 
 - `/usr/share/doc`: Contains supplementary documentation provided by installed packages
 
 ```bash
+# Change the current directory to the bash documentation folder
 cd /usr/share/doc/bash
 
+# View the 'INTRO' file using the 'less' pager
 less INTRO
 
+# Find and display all lines containing "command" in the 'INTRO' file
 grep "command" INTRO
 ```
 
-## Working With Files and Directories
+## File and Directory
 
 List files and directories
 
 - `ls`: Lists the contents of a directory
 
-```bash
-ls
-ls -a
-ls -l /var/log
-ls -lah
-```
-
 Filesystem tree
 
-- Current working directory
-- Relative path
-- Absolute path
+- Current working directory: `/home/userx/documents`
+- Relative path: `notes.txt`
+- Absolute path: `/home/userx/documents/notes.txt`
 
 ```bash
-cd /var/log
+# Change to the previous working directory
 cd -
-cd ..
 ```
 
 Create files
 
 - `touch`: Creates an empty file if it doesn't exist, or updates the access and modification timestamps of an existing file
 
-```bash
-touch /home/kyphan/text.txt
-```
-
 Create directories
 
 - `mkdir`
 
 ```bash
+# Create a directory, including any parent directories if they don't exist
 mkdir -p /home/kyphan/folder
 ```
 
@@ -241,12 +239,14 @@ Copy files and directories
 - `cp`: Copies files or entire directory structures
 
 ```bash
+# Copy a file into a directory
 cp hello.text folder/
+
+# Copy a file and give the copy a new name
 cp hello.txt folder/hello_copy.txt
 
-# If hello does not exist, it copies only the contents, if not, it copies the entire folder/ to be hello/folder/
+# Recursively copy the contents of a directory into another directory
 cp -r folder/ hello/
-
 ```
 
 Move files
@@ -254,22 +254,26 @@ Move files
 - `mv`: Moves files/directories to a different location or renames them
 
 ```bash
+# Move a file into a directory
 mv abc.txt hello/
+
+# Rename a file
 mv abc.txt abcd.txt
+
+# Rename a directory
 mv folder/ new_folder/
 ```
 
 Delete files and directories
 
-- `mv`: Removes files and directories
+- `rm`: Removes files and directories
 
 ```bash
-rm abc.txt
-
+# Recursively remove a directory and all of its contents
 rm -r folder
 ```
 
-## Working With Hard Links
+## Hard Links
 
 Inodes
 
@@ -279,21 +283,20 @@ Inodes
 - Key metadata includes file type, permissions, owner, file size, timestamps, link count, pointers, etc.
 
 ```bash
-# Create the file and write text into it
-echo "Picture of Milo the dog" > Pictures/family_dog.jpg
+# Create a new file with some text content
+echo "Picture of Milo the dog" > /home/sara/Pictures/family_dog.jpg
 
-# Display detailed status information
-stat Pictures/family_dog.jpg
+# Display detailed file status, including the Inode number
+stat /home/sara/Pictures/family_dog.jpg
 ---
-File: Pictures/family_dog.jpg
-Size: 49 Blocks: 8 IO Block: 4096 regular file
-Device: fd00h/64768d Inode: 52946177 Links: 1
-Access: (0640/-rw-r-----) Uid: ( 1000/ aaron) Gid: ( 1005/ family)
-...
+File: /home/sara/Pictures/family_dog.jpg
+Size: 24 Blocks: 8 IO Block: 4096 regular file
+Device: 10302h/66306d Inode: 12345 Links: 1
+Access: (0664/-rw-rw-r--) Uid: (1000/sara) Gid: (1000/sara)
 ```
 
 - How it works
-  - When accessing a path like Pictures/family_dog.jpg, the system locates the Pictures directory
+  - When accessing a path like `Pictures/family_dog.jpg`, the system locates the Pictures directory
   - It searches the directory's contents for the entry family_dog.jpg
   - This entry contains the corresponding inode number
   - The system uses the inode number to find the inode structure itself
@@ -314,11 +317,11 @@ Hard links
 ```bash
 # ln path_to_target_file path_to_link_file
 
-# Recursively copy the contents of Aaron's Pictures directory to Jane's
-cp –r /home/aaron/Pictures/ /home/jane/Pictures/
+# Recursively copy the contents of sara's Pictures directory to Jane's
+cp –r /home/sara/Pictures/ /home/jane/Pictures/
 
-# Create a hard link: Jane's path now points to the same inode as Aaron's path
-ln /home/aaron/Pictures/family_dog.jpg /home/jane/Pictures/family_dog.jpg
+# Create a hard link: Jane's path now points to the same inode as sara's path
+ln /home/sara/Pictures/family_dog.jpg /home/jane/Pictures/family_dog.jpg
 
 # Display detailed status information
 stat Pictures/family_dog.jpg
@@ -326,11 +329,11 @@ stat Pictures/family_dog.jpg
 File: Pictures/family_dog.jpg
 Size: 49 Blocks: 8 IO Block: 4096 regular file
 Device: fd00h/64768d Inode: 52946177 Links: 2
-Access: (0640/-rw-r-----) Uid: ( 1000/ aaron) Gid: ( 1005/ family)
+Access: (0640/-rw-r-----) Uid: ( 1000/ sara) Gid: ( 1005/ family)
 ...
 
 # The link count for inode 52946177 decreases from 2 to 1
-rm /home/aaron/Pictures/family_dog.jpg
+rm /home/sara/Pictures/family_dog.jpg
 
 # The link count for inode 52946177 decreases from 1 to 0
 rm /home/jane/Pictures/family_dog.jpg
@@ -346,17 +349,17 @@ Limitiations and considerations
 - Only hardlink to files on the same filesystem
 
 ```bash
-# Add existing user 'aaron' to the supplementary group 'family'
-useradd -a -G family aaron
+# Add existing user 'sara' to the supplementary group 'family'
+useradd -a -G family sara
 
 # Add existing user 'jane' to the supplementary group 'family'
 useradd -a -G family jane
 
 # Change file permissions: owner=read/write, group=read/write, others=none
-chmod 660 /home/aaron/Pictures/family_dog.jpg
+chmod 660 /home/sara/Pictures/family_dog.jpg
 ```
 
-## Working With Soft Links
+## Soft Links
 
 Soft (symbolic) links
 
@@ -368,16 +371,16 @@ Soft (symbolic) links
 ```bash
 # ln -s path_to_target_file path_to_link_file
 
-# Create a symbolic link named 'family_dog_shortcut.jpg' and points to the absolute path '/home/aaron/Pictures/family_dog.jpg'
-ln –s /home/aaron/Pictures/family_dog.jpg family_dog_shortcut.jpg
+# Create a symbolic link named 'family_dog_shortcut.jpg' and points to the absolute path '/home/sara/Pictures/family_dog.jpg'
+ln –s /home/sara/Pictures/family_dog.jpg family_dog_shortcut.jpg
 
 ls -l
 ---
-lrwxrwxrwx. 1 aaron aaron family_dog_shortcut.jpg -> /home/aaron/Pictures..
+lrwxrwxrwx. 1 sara sara family_dog_shortcut.jpg -> /home/sara/Pictures..
 
 readlink family_dog_shortcut.jpg
 ---
-/home/aaron/Pictures/family_dog.jpg
+/home/sara/Pictures/family_dog.jpg
 
 echo "Test" >> fstab_shortcut
 ---
@@ -385,7 +388,7 @@ bash: fstab_shortcut: Permission denied
 
 ls -l
 ---
-lrwxrwxrwx. 1 aaron aaron family_dog_shortcut.jpg -> /home/aaron/Pictures..
+lrwxrwxrwx. 1 sara sara family_dog_shortcut.jpg -> /home/sara/Pictures..
 
 ln –s Pictures/family_dog.jpg relative_picture_shortcut
 ```
@@ -398,7 +401,7 @@ Limitations and considerations
 - Softlink to files and folders
 - Softlink to files on different filesystem as well
 
-## List, Set, and Change Standard Ugo/RWX Permissions
+## Permissions
 
 Owners and groups
 
@@ -504,7 +507,7 @@ Access: (0640/-rw-r-----) Uid: ( 1000/ kyphan) Gid: ( 10/ wheel)
 chmod 640 family_dog.jpg
 ```
 
-## SUID, SGID, and Sticky Bit
+## Special Bits
 
 SUID
 
@@ -546,7 +549,226 @@ Note
 - Lowercase s or t: The special permission is set, and the underlying execute (x) permission is also set for that user/group/other. This is the correct and effective state
 - Uppercase S or T: The special permission is set, but the underlying execute (x) permission is not set. In this state, the special permission has no effect
 
-## Search for Files
+## File Search
+
+![img](./img/3.png)
+
+```bash
+# find [/path/to/directory] [search_parameters]
+
+find /usr/share/ -name ’*.jpg’
+find /lib64/ -size +10M
+find /dev/ -mmin -1
+find /bin/ -name file1.txt
+```
+
+Name
+
+```bash
+find -name felix
+find -iname felix
+find -name "f*"
+```
+
+Modified
+
+- Modification = Create or Edit
+- Modified Time != Change Time
+
+```bash
+# find -mmin [minute] # modified minute
+
+
+find -mmin 5
+
+find -mmin -5
+
+find -mmin +5
+
+find -mtime 2
+
+find -cmin -5
+```
+
+Size
+
+```bash
+find -size [size]
+felix freya fin
+find -size 512k
+c bytes
+k kilobytes
+M megabytes
+G gigabytes
+find -size +512k
+find -size -512k
+```
+
+Search expressions
+
+```bash
+find -size [size]
+felix freya fin
+find -size 512k
+c bytes
+k kilobytes
+M megabytes
+G gigabytes
+find -size +512k
+find -size -512k
+# Exactly 512 kb
+# Greater than 512 kb
+# Less than 512 kb
+
+find -size [size]
+felix freya fin
+james john jacob
+bob bean ben
+10 kb 512 kb 1024 kb
+10 kb 512 kb 1024 kb
+10 kb 512 kb 1024 kb
+find -name "f*"
+find -size 512k
+find -name "f*" -size 512k # AND operator
+find -name "f*" -o -size 512k # OR operator
+
+find –not -name "f*"
+felix freya fin
+james john jacob
+bob bean ben
+find \! -name “f*"
+# NOT operator
+# alternate NOT operator
+
+find –perm 664
+find –perm -664
+find -perm /664
+# find files with exactly 664 permissions
+# find files with at least 664 permissions
+# find files with any of these permissions
+find –perm u=rw,g=rw,o=r
+find –perm –u=rw,g=rw,o=r
+find –perm /u=rw,g=rw,o=r
+# find files with exactly 664 permissions
+# find files with at least 664 permissions
+# find files with any of these permissions
+
+find -perm 600
+find -perm -100
+find \! -perm –o=r
+find -perm /u=r,g=r,o=
+```
+
+## File Content
+
+tac
+
+```bash
+cat /home/users.txt
+---
+user1
+user2
+user3
+user4
+user5
+user6
+
+tac /home/users.txt
+---
+user6
+user5
+user4
+user3
+user2
+user1
+```
+
+tail
+
+```bash
+tail /var/log/dnf.log
+tail -n 20 /var/log/dnf.log
+
+head /var/log/dnf.log
+head –n 20 /var/log/dnf.log
+```
+
+Transforming text: sed
+
+```bash
+sed 's/canda/canada/g' userinfo.txt
+
+sed 's/canda/canada/' userinfo.txt
+
+sed 's/canda/canada' userinfo.txt
+
+# --in-place
+sed –i 's/canda/canada/g' userinfo.txt
+```
+
+cut
+
+```bash
+cut –d ' ' –f 1 userinfo.txt
+
+cut –d ',' –f 3 userinfo.txt > countries.txt
+```
+
+uniq and sort
+
+```bash
+uniq countries.txt
+
+sort countries.txt
+
+sort countries.txt | uniq
+```
+
+Comparing files
+
+```bash
+diff file1 file2
+
+# Contextlibsystemd0:amd64 257.4-1ubuntu3
+2025-06-10 07:34:28 status unpacked libsyste
+diff –c file1 file2
+
+# Side-by-side diff
+diff –y file1 file2
+sdiff file1 file2
+
+# Search files with grep
+
+Sear
+
+```
+
+## Text Editors
+
+less ... dnf.log
+search: / &rarr; N (next instance)
+ignore case: -i
+
+more
+space for next page
+
+vim
+search: /
+ignore case: `/<word>\c`
+specific line: `:<line_number>`
+copy: `yy`
+paste: `p`
+cut: `dd`
+
+## Regular Expressions
+
+## Archiving
+
+## Redirection
+
+## Remote Backup
+
+## File Transfer
 
 ## Lab
 
@@ -569,7 +791,7 @@ apropos "NFS mounts"
 touch nfsmount.conf
 ```
 
-### Files, Directories, Hard and Soft Links
+### File Links
 
 ```bash
 mkdir -p /home/bob/lfcs
@@ -585,4 +807,16 @@ ln /opt/hlink /home/bob/hlink
 mv /home/bob/new_file /home/bob/old_file
 mkdir -p /tmp/1/2/3/4/5/6/7/8/9
 ls --full-time
+```
+
+### File Permissions
+
+```bash
+sd
+```
+
+### Content Analysis
+
+```bash
+
 ```

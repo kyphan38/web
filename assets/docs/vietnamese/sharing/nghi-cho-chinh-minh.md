@@ -1,8 +1,8 @@
 # nghĩ cho chính mình
 
-## Tác Giả - Tri the Way
+Youtube: [Link](https://youtu.be/UUW4HkOLepk?si=6DsMXv74xlc05gDD)
 
-### Cập Nhật Về Podcast
+## Cập Nhật Về Podcast
 
 Quan điểm về người nghe trung thành
 
@@ -12,7 +12,7 @@ Quan điểm về người nghe trung thành
 - Tuy nhiên, Trí vẫn tôn trọng những người nghe vì thói quen, vì yêu thích, và mong các bạn nghe nhiều hơn
 - Mục tiêu cuối cùng: Giúp mọi người tổ chức cuộc sống tốt hơn, có những dịch chuyển thực tế, hữu ích và ghi chép được sự phát triển của bản thân
 
-### Chủ Đề Chính
+## Chủ Đề Chính
 
 Tầm quan trọng của việc nghĩ cho chính mình
 

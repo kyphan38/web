@@ -1,6 +1,6 @@
 # ảnh hưởng ai đến dev
 
-## Tác động chính
+## Tác Động Chính
 
 --
 
@@ -10,7 +10,7 @@
 - Thay đổi vai trò và yêu cầu kỹ năng: Công việc của lập trình viên sẽ dịch chuyển từ việc chỉ viết mã đơn thuần sang các vai trò đòi hỏi tư duy chiến lược, giải quyết vấn đề phức tạp, thiết kế hệ thống và giám sát hoạt động của AI. Nhu cầu về các kỹ năng liên quan đến AI và học máy cũng sẽ tăng cao
 - Tạo ra các cơ hội việc làm mới: Mặc dù một số tác vụ có thể được tự động hóa, AI cũng tạo ra những vị trí công việc mới liên quan đến phát triển, triển khai, giám sát và bảo trì các hệ thống AI
 
-## Lưu ý
+## Lưu Ý
 
 --
 

@@ -1,8 +1,8 @@
 # cách vượt qua người khác
 
-## Tác Giả - Hoang Phuc
+Youtube: [Link](https://youtu.be/8CFQS3DgrP4?si=FxvAxkYq12eN_Ioe)
 
-### Lời Hứa Táo Bạo Và Nền Tảng Thực Tế
+## Nền Tảng Thực Tế
 
 --
 
@@ -10,7 +10,7 @@
 - Lời cam kết: Hãy thực sự lắng nghe lần này. Đây không phải là những lời sáo rỗng hay chiến thuật kỳ diệu. Mình sẽ đưa cho bạn một công cụ, một phương pháp thực tế, đơn giản, hiệu quả
 - Bằng chứng sống: Phương pháp này đã giúp chính mình biến đổi: từ một người mất phương hướng, tù quẫn, không thỏa mãn &rarr; trở thành người sở hữu business riêng, thu nhập 9 chữ số/tháng, đạt mọi mục tiêu
 
-### Xã Hội Đang Mất Kiểm Soát
+## Xã Hội Hiện Tại
 
 Thực trạng đáng báo động
 
@@ -26,7 +26,7 @@ Tiêu chuẩn thấp là lợi thế của bạn
 - Ví von: Nếu thành công là cuộc đua leo núi, đa số thậm chí còn chưa đặt chân lên bậc thang đầu tiên
 - Cơ hội vàng: Chính vì tiêu chuẩn thấp đến mức này, bạn chỉ cần đi đúng – không cần chiến lược quá phức tạp – là đã có thể vượt lên trên đa số. Bạn đang tham gia một cuộc đua mà hầu hết đối thủ đang đi lùi hoặc đứng yên
 
-### Đừng Cố Một Đêm Hóa Rồng
+## Đừng Cố Một Đêm
 
 --
 
@@ -35,7 +35,7 @@ Tiêu chuẩn thấp là lợi thế của bạn
 - Ví dụ: Cố gắng như David Goggins (thức 2h sáng chạy 100km) &rarr; Bạn sẽ thử 1 lần &rarr; Thấy kinh khủng &rarr; Bỏ cuộc ngay lập tức
 - Việc thay đổi đột ngột, quá sức sẽ kích hoạt cơ chế kháng cự mạnh mẽ nhất của não bộ. Nó xem đây là một cú sốc, một mối đe dọa, và sẽ làm mọi cách để đưa bạn về trạng thái quen thuộc
 
-### Sức Mạnh Của Sự Tích Lũy (Kaizen)
+## Sự Tích Lũy (Kaizen)
 
 --
 
@@ -47,7 +47,7 @@ Tiêu chuẩn thấp là lợi thế của bạn
   - Đây chính là sức mạnh của lãi suất kép áp dụng vào phát triển bản thân, hay triết lý Kaizen của người Nhật. Những thay đổi nhỏ bé (Atomic Habits) có vẻ không đáng kể trong ngắn hạn, nhưng khi tích lũy qua thời gian, chúng tạo ra những kết quả khổng lồ
 - Lợi thế cạnh tranh: Khi 90% người khác không làm gì cả, việc bạn thực sự hành động, xuất hiện mỗi ngày sẽ giúp bạn tiến xa hơn họ rất nhiều
 
-### Phá Vỡ Giới Hạn Và Đối Mặt Kháng Cự
+## Đối Mặt Kháng Cự
 
 Phá vỡ giới hạn (bước ra khỏi vùng an toàn)
 
@@ -88,7 +88,7 @@ Biến khó khăn thành cơ hội
   - Chủ động tìm kiếm thử thách: Đừng chờ! Hãy tự đưa mình vào hoàn cảnh khó khăn. Muốn mạnh &rarr; tạ nặng hơn. Muốn phát triển &rarr; nhận việc khó hơn. Mỗi lần như vậy là bạn đang rèn luyện sức chịu đựng và mở rộng giới hạn. Đây là luyện tập có chủ đích
   - Hành động khi chưa sẵn sàng: Chờ hoàn hảo = không bao giờ bắt đầu. Tiến bộ chỉ xảy ra khi bạn bước ra khỏi vùng an toàn. Hãy ôm lấy sự tổn thương và hành động
 
-### Kế Hoạch 6-12 Tháng Và Sự Thăng Tiến Nhanh Chóng
+## Kế Hoạch
 
 Đừng đánh giá thấp sức mạnh của sự tập trung
 
