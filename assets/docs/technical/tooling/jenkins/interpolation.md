@@ -88,10 +88,8 @@ Shell processing: The shell executes this command.
 It sees $BRANCH_NAME and expands it to its value (e.g., "main").
 The rest of the string is printed literally.
 
-## Cases
+<!-- ## Cases
 
-### Case 1: Double Quotes inside Single Quotes
+### Case 1: Double Quotes Inside Single Quotes
 
-`sh 'echo "User is $USER, Greeting is ${params.GREETING}"'`
-
-- Groovy: 
+`sh 'echo "User is $USER, Greeting is ${params.GREETING}"'` -->

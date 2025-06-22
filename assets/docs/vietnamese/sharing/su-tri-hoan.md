@@ -1,8 +1,10 @@
 # sự trì hoãn
 
-## Tác Giả - Hoang Phuc
+## Hoang Phuc
 
-### Nghịch Lý Của Sự Trì Hoãn
+Youtube: [Link](https://youtu.be/nH1idi9Nzas?si=zhIatwekx2Fe8OgX)
+
+### Nghịch Lý
 
 --
 
@@ -11,7 +13,7 @@
 - Câu chuyện thực tế: Giống như anh bạn của mình, biết rõ cần học kỹ năng mới, xây dựng thói quen tốt, bắt đầu dự án riêng, ... nhưng ngày qua ngày vẫn mắc kẹt với đủ thứ lý do
   - Đây chính là biểu hiện kinh điển của sự kháng cự - một lực cản nội tâm mạnh mẽ luôn tìm cách giữ chúng ta ở lại vùng an toàn, ngay cả khi chúng ta biết mình cần phải tiến lên
 
-### Cuộc Sống Là Chuỗi Bài Kiểm Tra Không Báo Trước
+### Bài Kiểm Tra
 
 Bản năng con người và mục tiêu
   
@@ -42,7 +44,7 @@ Hậu quả và tần suất
 - Quy luật: Mục tiêu càng lớn &rarr; Bài kiểm tra càng khó
   - Những bài kiểm tra này không phải để hạ gục bạn, mà để nâng tầm bạn. Chúng khó hơn vì bạn đang nhắm đến những đỉnh cao hơn. Chúng là những bài tập cho ý chí và bản lĩnh của bạn. Vượt qua chúng, bạn không chỉ đạt mục tiêu mà còn trở nên mạnh mẽ hơn
 
-### Đau Đớn Là Một Phần Của Cuộc Sống
+### Đau Đớn
 
 Không có lối thoát khỏi nỗi đau
 
@@ -76,7 +78,7 @@ Nghich lý của sự thoải mái
 - Như Victor Frankl nói: Nếu cuộc sống có ý nghĩa, thì sự chịu đựng cũng phải có ý nghĩa
 - Đây là quy luật nhân quả áp dụng vào đời sống hàng ngày. Mỗi hành động dễ dãi hôm nay là bạn đang vay mượn sự dễ chịu từ tương lai, và lãi suất của nó rất cao. Ngược lại, mỗi nỗ lực khó khăn hôm nay là bạn đang gửi tiết kiệm cho một tương lai vững vàng hơn
 
-### Quy Luật Của Sự Kháng Cự
+### Sự Kháng Cự
 
 Bản chất và mục đích
 
@@ -116,7 +118,7 @@ Cái bẫy của giải pháp bề nổi và nhu cầu đi và gốc rễ
 - Chúng ta không thể chỉ giải quyết triệu chứng. Chúng ta phải thực sự giải quyết cái nguyên nhân gốc rễ của mình
 - Việc tìm mẹo vặt giống như uống thuốc giảm đau khi bạn bị gãy xương. Nó có thể làm bạn dễ chịu tạm thời, nhưng không chữa lành vết thương. Nguyên nhân gốc rễ có thể là gì? Đó là những nỗi sợ sâu thẳm, những niềm tin giới hạn, sự thiếu hụt giá trị bản thân, hay việc chưa tìm thấy lẽ sống đủ mạnh mẽ. Chỉ khi chạm tới được tầng sâu này, chúng ta mới có thể tìm thấy sức mạnh thực sự để tiến lên
 
-### Bắt Đầu Từ Nhận Thức Và Hành Động
+### Hành Động
 
 Tái định khung nhận thức - nó không khó như bạn nghĩ
 
@@ -145,7 +147,7 @@ Hành động cụ thể
   - Chân lý: Những người thành công không phải là người ít kháng cự, mà là người giỏi nhận ra và biết cách vượt qua nó
   - Việc bắt quả tang này sẽ hiệu quả hơn nữa nếu bạn tạo ra các ý định thực thi. Ví dụ: Nếu tôi thấy mình muốn mở tab mạng xã hội khi đang viết báo cáo, thì tôi sẽ hít thở sâu 3 lần và viết thêm 1 câu nữa. Bạn đang lập trình trước cho bộ não cách phản ứng tích cực thay vì phản ứng bản năng. Bạn đang xây dựng bản sắc của một người hành động
 
-### Lời Kêu Gọi Hành Động Và Triết Lý Sống
+### Triết Lý Sống
 
 Sức mạnh của sự kiên trì
 
@@ -170,7 +172,9 @@ Lời nhắn nhủ cuối cùng
 - Trực tiếp đối diện với bài kiểm tra, vượt qua kháng cự &rarr; Bạn sẽ trở nên bất khả chiến bại
 - Bất khả chiến bại không có nghĩa là không bao giờ vấp ngã hay sợ hãi, mà là có đủ sự rõ ràng để nhận ra trận chiến, đủ lòng can đảm để đối mặt, và đủ sự kiên định để đứng dậy mỗi khi vấp ngã. Đó là sức mạnh đến từ việc làm chủ chính mình, thay vì để sự kháng cự làm chủ
 
-## Tác Giả - Hieu Nguyen
+## Hieu Nguyen
+
+Youtube: [Link](https://youtu.be/Bdsf3asTyyQ?si=AFcHgzAkfxDrnvyD)
 
 ### Rào Cản Tâm Lý Đầu Tiên
 
@@ -190,7 +194,7 @@ Lời nhắn nhủ cuối cùng
 - Giây phút cuối cùng: Lúc đó, ta mới hối hả ngồi vào bàn. Nhưng trớ trêu thay, ngay cả lúc đó, ta vẫn dễ dàng bị cuốn vào những thứ khác: Mở Facebook xem chút rồi làm, đọc nốt bài báo này rồi làm, ...
 - Cảm xúc mâu thuẫn: Đi kèm với đó là cảm giác tội lỗi (sao mình biết việc cần làm mà vẫn ngồi đây?), nhưng song song đó, vẫn không có một chút hứng thú nào để bắt tay vào việc. Đây là cuộc chiến giữa lý trí và cảm xúc, giữa mục tiêu dài hạn và sự thỏa mãn tức thời
 
-### Học Tiếng Anh Và Những Thành Công Bị Bỏ Lỡ
+### Học Tiếng Anh
 
 --
 
@@ -211,7 +215,7 @@ Lời nhắn nhủ cuối cùng
 - Góc nhìn cá nhân: Tôi không dám nhận mình thành công lớn, nhưng qua những gì đã làm, tôi xin khẳng định: Tôi cũng như anh chị, cũng có lúc mệt mỏi, cũng thích nghỉ ngơi, không phải siêu nhân
 - Người thành công không phải không có sự trì hoãn hay lười biếng, mà họ đã xây dựng được những cơ chế, những hệ thống, và quan trọng nhất là một tư duy để đối phó và vượt qua nó một cách hiệu quả hơn. Họ không đợi cảm hứng, họ tạo ra nó thông qua hành động
 
-### Hiểu Lầm Chết Người Về Cảm Hứng
+### Hiểu Lầm Về Cảm Hứng
 
 --
 
@@ -220,7 +224,7 @@ Lời nhắn nhủ cuối cùng
 - Hậu quả tai hại: Vì tin như vậy, chúng ta cứ ngồi chờ hứng, và vì hứng không đến (đặc biệt với việc khó), nên chúng ta không làm
 - Đây là một cái bẫy tư duy tai hại! Chúng ta đã đảo ngược quy trình tự nhiên. Chúng ta chờ đợi một cảm xúc (động lực) để khởi động hành động, trong khi thực tế thường ngược lại
 
-### Hành Động Tạo Ra Cảm Hứng
+### Hành Động Và Cảm Hứng
 
 --
 
@@ -288,7 +292,7 @@ Xây dựng thói quen
 - Kết quả: Cả ngày của tôi có thể đi từ việc này sang việc khác mà vẫn tràn đầy hứng thú - vì tôi liên tục tạo ra hứng thú cho chính mình
 - Đây là minh chứng cho sức mạnh của tính khả biến thần kinh. Bằng cách lặp đi lặp lại hành động bắt đầu dù không hứng, chúng ta đang đi dây lại bộ não, tạo ra những đường mòn thần kinh mới, biến một nỗ lực ban đầu thành một thói quen tự nhiên. Chúng ta đang chuyển từ việc bị cảm xúc chi phối sang việc chủ động tạo ra trạng thái mong muốn
 
-### Liệu Có Hiệu Quả Với Việc Tôi Không Thích?
+### Việc Không Thích
 
 --
 
