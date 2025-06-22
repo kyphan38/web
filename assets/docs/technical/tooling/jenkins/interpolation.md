@@ -17,7 +17,7 @@ In Jenkins, there are two primary contexts where you will encounter interpolatio
 ```groovy
 def myVar = 'World'
 echo "Hello, ${myVar}!"
-echo "1. Param value: ${params.MY_PARAM}"
+echo "1. Param value: \${params.MY_PARAM}"
 echo "2. Env variable: ${env.BUILD_NUMBER}"
 echo "3. Simple math: 2 + 3 is ${2 + 3}"
 echo "4. A method call: Your username is ${env.BUILD_USER_ID.toLowerCase()}"
@@ -75,14 +75,14 @@ The resulting string (with the Groovy variable now embedded as a literal) is sen
 The shell then performs its own expansion on any remaining $ characters.
 
 ```groovy
-sh "echo 'Report for branch $BRANCH_NAME will be saved to ${params.FILENAME}'"
+sh "echo 'Report for branch $BRANCH_NAME will be saved to \${params.FILENAME}'"
 ```
 
 Execution Analysis:
 
 Groovy processing: Jenkins evaluates the double-quoted string.
 It sees $BRANCH_NAME but finds no Groovy variable with that name, so it leaves it as is.
-It sees ${params.FILENAME} and substitutes its value, "report.txt".
+It sees `\${params.FILENAME}` and substitutes its value, "report.txt".
 String sent to shell: The final string sent to the agent's shell is: echo 'Report for branch $BRANCH_NAME will be saved to report.txt'
 Shell processing: The shell executes this command.
 It sees $BRANCH_NAME and expands it to its value (e.g., "main").
