@@ -1,15 +1,17 @@
 # array
 
-## Array
+## Static vs. dynamic arrays
 
-Static vs. dynamic arrays
+--
 
 - Static: fixed size
   - Examples: C++ (`int[]`), Java (`double[]`)
 - Dynamic: resizable (can add/remove elements)
   - Examples: C++ (`std::vector`), Java (`ArrayList`), Python (`list`)
 
-How dynamic arrays work
+### How dynamic arrays work
+
+--
 
 - Initial allocation
   - Created on the heap (unlike static arrays on the stack)
@@ -30,7 +32,9 @@ How dynamic arrays work
 - Access
   - Elements are contiguous in memory, enabling O(1) index-based access
 
-Complexity
+## Complexity
+
+--
 
 - Random access: O(1)
 - Add/remove at end (dynamic only): O(1) amortized
