@@ -65,8 +65,6 @@ bat 'echo The value is: %VARIABLE_NAME%'
 - Values returned from env are always of the String data type
 - If you declare a build parameter and also define an environment variable with the exact same name in an environment block, the value from the environment block will be used when you access it via `env.PARAMETER_NAME`
 
-
-
 ```groovy
 echo "The Git branch is: ${env['GIT_BRANCH']}"
 ```
@@ -91,7 +89,6 @@ bat 'echo The value is: %VARIABLE_NAME%'
 `System.getenv()`
 
 - Accesses the environment variables of the Java process running the Jenkins agent
-- 
 
 ```groovy
 script {
