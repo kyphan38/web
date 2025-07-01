@@ -109,7 +109,7 @@ Meaning
 
 Explaining the formula `n! = n * (n-1)!`
 
-- This formula describes the factorial recursively. Let's break it down with the `5!` example:
+- This formula describes the factorial recursively. Let's break it down with the `5!` example
   - According to the formula, `5! = 5 * (5-1)! = 5 * 4!`
   - Similarly, to calculate`4!`, we apply the formula again: `4! = 4 * (4-1)! = 4 * 3!`
   - This continues as follows: `3! = 3 * 2!` and `2! = 2 * 1!` and `1! = 1 * 0!`
