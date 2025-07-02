@@ -1,6 +1,6 @@
 # array
 
-## Static vs. dynamic arrays
+## Static vs. Dynamic Arrays
 
 --
 
@@ -9,7 +9,7 @@
 - Dynamic: resizable (can add/remove elements)
   - Examples: C++ (`std::vector`), Java (`ArrayList`), Python (`list`)
 
-### How dynamic arrays work
+### How Dynamic Arrays Work
 
 --
 

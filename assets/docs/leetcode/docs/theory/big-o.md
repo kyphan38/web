@@ -1,4 +1,4 @@
-# Big-O Notation Guide
+# big-o
 
 ## Introduction to Big-O
 
@@ -109,7 +109,7 @@ Function: g(n) = n^2
 - When n increases from 10 to 11, g(n) goes from 100 to 121 (increase by 21)
 - Conclusion: Growth accelerates rapidly; larger n causes bigger jumps (O(n^2))
 
-## Practical Insights from T(n) = O(n^2)
+## Practical Insights From T(n) = O(n^2)
 
 --
 
@@ -191,7 +191,7 @@ The gap arises from flexibility in choosing c in f(n) ≤ c × g(n)
   - c = 2 or 100: n ≤ 2n or n ≤ 100n (larger gap)
 - Conclusion: Big-O requires only a valid c, not the tightest, allowing a buffer for simpler proofs
 
-### Why c × g(n) is the Upper Bound
+### Why C × G(n) Is the Upper Bound
 
 c × g(n) is the specific upper bound function—the ceiling f(n) never crosses for n ≥ n₀. O(g(n)) is the complexity class, indicating f(n) has an upper bound of the form c × g(n)
 
@@ -200,7 +200,7 @@ c × g(n) is the specific upper bound function—the ceiling f(n) never crosses 
 - Guarantee: Ensures performance won’t exceed the bound, critical for stable systems
 - Prediction: Helps estimate scaling (e.g., O(n^2) means a 10x input increase leads to ~100x runtime increase)
 
-### Why Ignore the Constant c?
+### Why Ignore the Constant C?
 
 Big-O ignores c to focus on growth type, not exact speed
 
