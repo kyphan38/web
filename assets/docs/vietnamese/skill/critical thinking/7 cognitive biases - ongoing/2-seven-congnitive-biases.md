@@ -42,7 +42,7 @@ Triệu chứng
 
 - Trông mắt mà bắt hình dong
 - Có sao nói vậy
-- Thường nhau cú ẩu cũng tròn (dựa trên tình cảm)
+- Thương nhau củ ấu cũng tròn (dựa trên tình cảm)
 
 Nguyên nhân
 
@@ -127,7 +127,7 @@ Nguyên nhân
 Tóm tắt
 
 - Chúng ta ra các quyết định sai, hay bị người khác dẫn dắt, lôi kéo vì có thể chúng ta mắc 1 hay nhiều căn bệnh
-- Hãy cảnh giác với 7 căn bệnh: Cảm tính, cà tin, chà biết tin ai, phiền diện, thích thuyết âm mưu, thiếu chính kiến, thiếu thuyết phục
+- Hãy cảnh giác với 7 căn bệnh: Cảm tính, cả tin, chả biết tin ai, phiền diện, thích thuyết âm mưu, thiếu chính kiến, thiếu thuyết phục
 
 ## Thực Hành
 
@@ -148,7 +148,7 @@ Bài học
 - Lắng nghe và quan sát đa chiều sẽ cải thiện chất lượng góc nhìn của chúng ta
 - Sự thật không dễ nắm bắt
 
-Trung thực vs. sự thật
+Trung thực và sự thật
 
 - Trung thực chưa phải là sự thật
 - Trung thực là khi chúng ta trình bày đúng những gì mà mình biết được, cảm nhận được về 1 sự việc, mà không đổi trá, cố tình bóp méo, nói sai những gì ta biết

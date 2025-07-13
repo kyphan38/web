@@ -1,43 +1,38 @@
 # jenkins upgrade
 
-## Install Jenkins
+## Install
 
-Update the system
+Update system
 
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
-Install Java because Jenkins requires it
-
-- Check supported versions: [Jenkins Java Support Policy](https://www.jenkins.io/doc/book/platform-information/support-policy-java)
+Install Java (Java 17 or 21)
 
 ```bash
-sudo apt install default-jre
+sudo apt install openjdk-21-jre -y
+java -version
 ```
 
-Add Jenkins repository
+Add repository
 
 ```bash
-sudo wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
-
-echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 ```
 
-Check available version
+Check available versions
 
 ```bash
-sudo apt-cache adison jenkins
+sudo apt-cache madison jenkins
 ```
 
-Install specific version - `2.426-1`
+Install specific (e.g., 2.504.3)
 
 ```bash
-sudo apt-get install -y jenkins=2.426.1
-```
-
-```bash
-sydo systemctl enable jenkins
+sudo apt-get install -y jenkins=2.504.3
+sudo systemctl enable jenkins
 ```
 
 ## Backup Jenkins
@@ -45,10 +40,8 @@ sydo systemctl enable jenkins
 Locate the Jenkins home directory
 
 - Check `JENKINS_HOME` variable
-- Or, go to Manage Jenkins > System Information > user.home
-- In this case it is `/var/lib/jenkin`
 
-Important directory to backup
+Key directories
 
 - `config.xml`: The main configuration file (global settings, security, etc.)
 - `jobs/`: Contains subdirectories for each job, including their config.xml (job settings) and builds/ (build history)
@@ -61,6 +54,55 @@ Stop Jenkins
 sudo systemctl stop jenkins
 ```
 
-## Upgrade Jenkins
+## Backup
 
-## Rollback Jenkins
+```bash
+sudo cp -r /var/lib/jenkins /backup/path/
+```
+
+## Upgrade
+
+Update packages
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade jenkins -y
+```
+
+Or specific version
+
+```bash
+sudo apt-get install jenkins=NEW.VERSION
+```
+
+Restart
+
+```bash
+sudo systemctl restart jenkins
+```
+
+## Rollback
+
+Stop service
+
+```bash
+sudo systemctl stop jenkins
+```
+
+Restore backup
+
+```bash
+sudo cp -r /backup/path/jenkins /var/lib/
+```
+
+Reinstall previous version
+
+```bash
+sudo apt-get install jenkins=OLD.VERSION
+```
+
+Restart
+
+```bash
+sudo systemctl restart jenkins
+```

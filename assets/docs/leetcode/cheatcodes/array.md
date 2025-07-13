@@ -23,9 +23,9 @@
 
 | Number | Note |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
-| [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | |
-| [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | |
-| [15. 3Sum](https://leetcode.com/problems/3sum/description/) | |
+| [2. (linked - list) Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | |
+| [11. (two pointer) Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | two pointer, left right, check min height, find max space, increase or decrease when which one is smaller |
+| [15. 3Sum](https://leetcode.com/problems/3sum/description/) | sort, fix each + 2 pointer, check two consecutive in fix and check two consecutive in pointer (yes, increase left) |
 | [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | |
 | [39. Combination Sum](https://leetcode.com/problems/combination-sum/description/) | |
 | [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | |

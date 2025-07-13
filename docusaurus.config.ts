@@ -50,6 +50,12 @@ const config: Config = {
     ],
   ],
 
+  themes: ['@docusaurus/theme-mermaid'],
+
+  markdown: {
+    mermaid: true,
+  },
+
   themeConfig: {
     navbar: {
       title: 'kp',
@@ -77,6 +83,9 @@ const config: Config = {
       defaultMode: 'dark',
       disableSwitch: false,
       respectPrefersColorScheme: false,
+    },
+    mermaid: {
+      theme: { light: 'default'},
     },
   } satisfies Preset.ThemeConfig,
 };

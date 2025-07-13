@@ -2,40 +2,37 @@
 
 ## SSH Authentication
 
-Securely access a remote system without typing passwords
+Access remote systems without passwords
 
-- You put your public key on the remote server
-- You keep your private key on your machine
-- When connecting, SSH uses cryptography to verify you have the private key
+- Public key on remote server
+- Private key on local machine
+- SSH verifies via cryptography
 
-Common tools: `ssh`, `ssh-keygen`
+Tools: `ssh, ssh-keygen`
 
-Key formats: `.pub` (public), `.pem` (private)
+Keys: `.pub` (public), `.pem` (private)
 
-### Step 1: Generate SSH Key on Local Machine
+### Step 1: Generate Key (Local)
 
 Execute the following command
 
 ```bash
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/server-ssh
----
-server-ssh (private key)  server-ssh.pub (public key)
+# Generates: server-ssh (private), server-ssh.pub (public)
 ```
 
-### Step 2: Copy Public Key to Remote Server
+### Step 2: Copy Public Key (Remote)
 
-Append public key to `~/.ssh/authorized_keys` in remote server
+Append to `~/.ssh/authorized_keys` on remote
 
 ```bash
-vim ~/.ssh/authorized_keys
+vim ~/.ssh/authorized_keys  # Paste public key
 chmod 600 ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
 ```
 
-### Step 3: SSH Login From Local Machine
-
-Now, you should be logged in without entering your password
+### Step 3: Login (Local)
 
 ```bash
-ssh username@your.remote.server
+ssh -i ~/.ssh/server-ssh username@remote.server
 ```

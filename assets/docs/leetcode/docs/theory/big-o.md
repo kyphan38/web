@@ -8,7 +8,7 @@ Purpose
 
 - Compare algorithms: Enables objective efficiency comparisons for large datasets
 - Analyze scalability: Predicts performance as input size increases, critical for scalable systems
-- Abstract details: Focuses on the algorithm’s core structure, independent of hardware or language specifics
+- Abstract details: Focuses on the algorithm's core structure, independent of hardware or language specifics
 
 ## Core Concepts
 
@@ -23,20 +23,20 @@ Big-O examines how an algorithm performs as n approaches infinity, using asympto
 
 Big-O simplifies complex functions (e.g., T(n) = 5n^2 + 1000n + 5000) to the fastest-growing term (O(n^2))
 
-- Car engine analogy: The dominant term (n^2) is like a car’s engine (e.g., V8), defining performance, while constants (5) and lower-order terms (1000n, 5000) are like a stereo or paint job—minor in the long run
+- Car engine analogy: The dominant term (n^2) is like a car's engine (e.g., V8), defining performance, while constants (5) and lower-order terms (1000n, 5000) are like a stereo or paint job—minor in the long run
 
 ### Upper Bound
 
 Big-O provides a worst-case performance guarantee
 
-- Elevator analogy: Like a "Max Load: 500 kg" sign, O(n) guarantees an algorithm’s operations won’t exceed a linear function for large n, though best-case performance (e.g., O(1)) may be better
+- Elevator analogy: Like a "Max Load: 500 kg" sign, O(n) guarantees an algorithm's operations won't exceed a linear function for large n, though best-case performance (e.g., O(1)) may be better
 - Definition: A function f(n) is O(g(n)) if there exist positive constants c and n₀ such that f(n) ≤ c × g(n) for all n ≥ n₀
 
 ## Proving Big-O
 
 Lock and Key Analogy
 
-- Lock: The Big-O definition tests if a function’s growth stays at or below g(n)
+- Lock: The Big-O definition tests if a function's growth stays at or below g(n)
 - Key: A pair (c, n₀) satisfying the inequality
 - Proof: Finding one valid (c, n₀) confirms f(n) is O(g(n))
 
@@ -51,7 +51,7 @@ Example: Proving T(n) = n^2 + 1000n + 6000 is O(n^2)
 
 ## Why Constants Are Ignored
 
-Constants (e.g., 5 in 5n^2) are scaling factors that don’t affect growth rates
+Constants (e.g., 5 in 5n^2) are scaling factors that don't affect growth rates
 
 - Zoologist analogy: A Corgi (n^2) and Husky (5n^2) differ in size but belong to the same "Dog" species (O(n^2))
 - Reasoning
@@ -197,7 +197,7 @@ c × g(n) is the specific upper bound function—the ceiling f(n) never crosses 
 
 #### Benefits of Upper Bounds
 
-- Guarantee: Ensures performance won’t exceed the bound, critical for stable systems
+- Guarantee: Ensures performance won't exceed the bound, critical for stable systems
 - Prediction: Helps estimate scaling (e.g., O(n^2) means a 10x input increase leads to ~100x runtime increase)
 
 ### Why Ignore the Constant C?

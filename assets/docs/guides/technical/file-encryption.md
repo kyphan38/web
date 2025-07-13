@@ -3,204 +3,166 @@
 ## Requirements
 
 - OpenSSL
-- A Linux remote server
+- Linux remote servers
 
 ## Symmetric Encryption
 
-Let's walk through the steps of implementing a simple symmetric encryption to better understand the process
+Uses single shared key for encryption/decryption
 
-- Server A is to encrypt
-- Server B is to decrypt
+- Server A: Encrypts
+- Server B: Decrypts
 
-### Step 1: Generate a Symmetric Key
+```mermaid
+flowchart TD
+    A[Server A] -->|Generate Key| B1[secret.key]
+    A -->|Create File| B2[text.txt]
+    B1 -->|Encrypt| B3[text_encrypted.dat]
+    B2 -->|Encrypt| B3
+    B3 -->|Transfer File & Key| C[Server B]
+    C -->|Decrypt| D[text_decrypted.txt]
+```
 
-**Sever: A**
-
-We need to generate a random key for encryption. The key should be 256 bits (32 bytes) which is the standard size for AES-256 encryption
+### Step 1: Generate Key (Server A)
 
 ``` bash
 openssl rand -out secret.key 32
 ```
 
-### Step 2: Create a Simple File
+- Generate a random key for encryption
+- The key should be 256 bits (32 bytes) which is the standard size for AES-256 encryption
 
-**Sever: A**
+### Step 2: Create File (Server A)
 
-Create a plain text file for encryption
-
-``` bash
+```bash
 echo "This is a simple line of code" > text.txt
 ```
 
-### Step 3: Encrypt the File
-
-**Sever: A**
-
-Use the above `secret.key` to encrypt the `text.txt`
+### Step 3: Encrypt File (Server A)
 
 ``` bash
 openssl enc -aes-256-cbc -pbkdf2 -in text.txt -out text_encrypted.dat -pass file:./secret.key
 ```
 
-### Step 4: Transfer the Key to Server B
+- Use the above `secret.key` to encrypt the `text.txt`
 
-**Sever: B**
-
-This step is optional as it depends on the specific circumstances
-
-:::tip
-For better security, transfer files using SSH rather than manually entering passwords
-:::
-
-Assuming
-
-- The IP address of Server B is `52.221.181.100`
-- The username on Server B is `abc`
-
-Use scp (secure copy) to transfer the encrypted file and key
+### Step 4: Transfer to Server B
 
 ``` bash
-scp ./text_encrypted.dat ./secret.key abc@52.221.181.100:/home/abc/
+scp text_encrypted.dat secret.key abc@52.221.181.100:/home/abc/
 ```
 
-### Step 5: Decrypt the File
+- Use SCP (assuming Server B IP: 52.221.181.100, username: abc)
 
-**Sever: B**
+:::tip
+Use SSH/SCP for secure transfer, avoid manual passwords
+:::
 
-Use the secret key to decrypt the file
+### Step 5: Decrypt File (Server B)
 
 ``` bash
 openssl enc -d -aes-256-cbc -pbkdf2 -in text_encrypted.dat -out text_decrypted.txt -pass file:./secret.key
 ```
 
+- Use the secret key to decrypt the file
+
 ### Drawbacks
 
 While symmetric encryption is fast and efficient, it does have some drawbacks, especially when it comes to key distribution and security
 
-- In large system, securely sharing symmetric keys between many different users can be a logistical nightmare
-- Both the sender and receiver must securely exchange the key beforehand. If the key is intercepted, any can decrypt the data
+- Key sharing insecure in large systems
+- Intercepted key compromises all data
 
 ## Asymmetric Encryption
 
-Asymmetric encryption is commonly used in communication between multiple users and a sever to ensure data confidentiality, integrity, and authenticity
+Uses public/private key pairs for secure communication
 
-- It is typically implemented in the context of protocols like SSL/TLS (used in HTTPS) or for secure communication
+- Server: Generates keys, shares public key
+- User: Generates keys, shares public key
+- Encrypt with recipient's public key; decrypt with own private key
+
+User to Server
+
+```mermaid
+flowchart TD
+  S[Server] -->|Gen Private/Public| SPri[server_private_key.pem]
+  S -->|Gen Private/Public| SPub[server_public_key.pem]
+  U[User] -->|Gen Private/Public| UPri[user_private_key.pem]
+  U -->|Gen Private/Public| UPub[user_public_key.pem]
+  SPub -->|Exchange| U
+  UPub -->|Exchange| S
+  U -->|Create & Encrypt with SPub| UE[user_text_encrypted.dat]
+  UE -->|Transfer| S
+  S -->|Decrypt with SPri| UD[user_text_decrypted.txt]
+```
+
+### Step 1: Generate Keys
 
 Server
 
-- Generate a private key and a public key
-- Share the public key with all users
-- Use the user's public key to encrypt and the server's private key to decrypt
-
-Each User
-
-- Generates their own private and public key
-- Sends their own public key to the server
-- Use the server's public key to encrypt and their own private key to decrypt
-
-### Step 1: Generate a Private and a Public Key
-
-**Server**
-
-Generate the private key using the following command. You will be prompted to enter a passphrase to protect the private key, which will be required for decryption later
-
-``` bash
+```bash
 openssl genpkey -algorithm RSA -aes256 -out server_private_key.pem
-```
-
-Generate the public key from the private key
-
-``` bash
 openssl rsa -pubout -in server_private_key.pem -out server_public_key.pem
 ```
 
-**User**
+User
 
-The process is the same for User
-
-``` bash
+```bash
 openssl genpkey -algorithm RSA -aes256 -out user_private_key.pem
-```
-
-``` bash
 openssl rsa -pubout -in user_private_key.pem -out user_public_key.pem
 ```
 
-### Step 2: Transfer Public Keys
+### Step 2: Exchange Public Keys
 
-Assuming
+User to Server (Server IP: 52.221.181.100, username: abc)
 
-- The IP address of Server is `52.221.181.100`
-- The username on Server is `abc`
-
-User sends their `user_public_key.pem` to Server
-
-``` bash
-scp ./user_public_key.pem abc@52.221.181.100:/home/abc/user_public_key.pem
+```bash
+scp user_public_key.pem abc@52.221.181.100:/home/abc/
 ```
 
-Sever sends their `server_public_key.pem` to User
+Server to User
 
-``` bash
-scp abc@52.221.181.100:/home/abc/server_public_key.pem ./server_public_key.pem
+```bash
+scp server_public_key.pem user@UserIP:/path/to/user/  # Adjust UserIP/path
 ```
 
-### Step 3: User Creates and Encrypts File
+### Step 3: User Encrypts File
 
-Create a plain text file for encryption
-
-``` bash
+```bash
 echo "Is this correct?" > user_text.txt
+openssl pkeyutl -encrypt -inkey server_public_key.pem -pubin -in user_text.txt -out user_text_encrypted.dat
 ```
 
-Use `server_public_key.pem` to encrypt the file
+### Step 4: User Transfers to Server
 
 ``` bash
-openssl pkeyutl -encrypt -inkey server_public_key.pem -pubin -in text.txt -out user_text_encrypted.dat
+scp user_text_encrypted.dat abc@52.221.181.100:/home/abc/
 ```
 
-### Step 4: User Transfers File to Server
-
-Transfer the encrypted file to Server
-
-``` bash
-scp ./user_text_encrypted.dat abc@58.222.188.111:/home/abc/user_text_encrypted.dat
-```
-
-### Step 5: Server Decrypts File
-
-Use `server_private_key.pem` to decrypt the file
+### Step 5: Server Decrypts
 
 ``` bash
 openssl pkeyutl -decrypt -inkey server_private_key.pem -in user_text_encrypted.dat -out user_text_decrypted.txt
 ```
 
-### Step 6: Sever Creates and Encrypts File
+- Use `server_private_key.pem` to decrypt the file
 
-Create a plain text file for a response
-
-``` bash
-echo "This is correct!" > text.txt
-```
-
-Use `user_public_key.pem` to encrypt the file
+### Step 6: Server Encrypts Response
 
 ``` bash
-openssl pkeyutl -encrypt -inkey user_public_key.pem -pubin -in text.txt -out server_text_encrypted.dat
+echo "This is correct!" > server_text.txt
+openssl pkeyutl -encrypt -inkey user_public_key.pem -pubin -in server_text.txt -out server_text_encrypted.dat
 ```
 
-### Step 7: Server Transfers File to User
-
-Transfer the encrypted file to User
+### Step 7: Server Transfers to User
 
 ``` bash
-scp abc@58.222.188.111:/home/abc/server_text_encrypted.dat ./server_text_encrypted.dat
+scp server_text_encrypted.dat user@UserIP:/path/to/user/  # Adjust UserIP/path
 ```
 
-### Step 8: User Decrypts File
-
-Use `user_private_key.pem` to decrypt the file
+### Step 8: User Decrypts
 
 ``` bash
 openssl pkeyutl -decrypt -inkey user_private_key.pem -in server_text_encrypted.dat -out server_text_decrypted.txt
 ```
+
+- Use `user_private_key.pem` to decrypt the file
