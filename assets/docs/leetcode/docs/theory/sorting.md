@@ -170,8 +170,6 @@ def quick_sort(arr, left, right):
 
 ## Sorting Functions
 
---
-
 - C++:std::sort()
 - Python: sort()
 - Java

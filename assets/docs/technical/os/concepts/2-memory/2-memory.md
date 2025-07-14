@@ -4,8 +4,6 @@
 
 ### Why Virtualize Memory?
 
---
-
 - Because the real view of memory is messy
 - Earlier, memory had only code of one running process (and the OS code)
 - Now, multiple active processes timeshare the CPU
@@ -19,8 +17,6 @@
 
 ### Abstraction: (Virtual) Address Space
 
---
-
 - Virtual address space: Each process believes it has a large, continuous block of memory, starting from address 0 up to a maximum limit
   - In reality, this memory may not be fully available or contiguous in physical RAM. The virtual memory system creates the illusion of a seamless memory space for each process
 - Components
@@ -32,8 +28,6 @@
 ![img](./img/18.png)
 
 ### How Is Actual Memory Reached?
-
---
 
 - Address Translation: Converts virtual addresses (VA) used by a process into physical addresses (PA) in actual memory
   - The CPU sends load/store commands using virtual addresses, but the memory hardware works with physical addresses
@@ -50,8 +44,6 @@
 
 ### Example: Paging
 
---
-
 - The OS splits the virtual address space into equal-sized chunks called pages, and physical memory (RAM) into matching chunks called frames
 - To assign memory, the OS maps a virtual page to an available physical frame
 - A table that keeps track of these mappings for each process (e.g., virtual page 0 might map to physical frame 3)
@@ -61,15 +53,11 @@
 
 ### Goals of Memory Virtualization
 
---
-
 - Transparency: User programs should not be aware of the messy details
 - Efficiency: Minimize overhead and wastage in terms of memory space and access time
 - Isolation and protection: A user process should not be able to access anything outside its address space
 
 ### How Can a User Allocate Memory?
-
---
 
 - OS allocates a set of pages to the memory image of the process
 - Within this image
@@ -81,8 +69,6 @@
 
 ### Memory Allocation System Calls
 
---
-
 - malloc implemented by C library
   - Algorithms for efficient memory allocation and free space management
 - To grow heap, libc uses the brk/sbrk system call
@@ -93,8 +79,6 @@
 
 ### A Subtle Point: What Is the Address Space of the OS?
 
---
-
 - OS is not a separate process with its own address space
 - Instead, OS code is part of the address space of every process
 - A process sees OS as part of its code (e.g., library)
@@ -104,8 +88,6 @@
 
 ### How Does the OS Allocate Memory?
 
---
-
 - OS needs memory for its data structures
 - For large allocations, OS allocates a page
 - For smaller allocations, OS uses various memory allocation algorithms (more later)
@@ -114,8 +96,6 @@
 ## Address Translation Mechanism
 
 ### A Simple Example
-
---
 
 - Consider a simple C function
 
@@ -140,8 +120,6 @@ void func() {
 
 ### Address Translation
 
---
-
 - Simplified OS: Places the entire memory image in one chunk
 - The following translation from VA to PA is needed
   - 128 to 32896 (32KB + 128)
@@ -151,8 +129,6 @@ void func() {
 ![img](./img/25.png)
 
 ### Who Performs Address Translation?
-
---
 
 - In this simple example, OS tells the hardware the base (starting address) and bound (total size of process) values
 
@@ -170,16 +146,12 @@ physical address = virtual address + base
 
 ### Role of Hardware in Translation
 
---
-
 - CPU provides a privileged mode of execution
 - Instruction set has privileged instructions to set translation information (e.g., base, bound)
 - Hardware (MMU) uses this information to perform translation on every memory access
 - MMU generates faults and traps to the OS when access is illegal (e.g., VA is out of bounds)
 
 ### Role of OS in Translation
-
---
 
 - OS maintains a free list of memory
 - Allocates space to a process during creation (and when requested) and cleans up when done
@@ -189,8 +161,6 @@ physical address = virtual address + base
 - Handles traps due to illegal memory access
 
 ### Segmentation
-
---
 
 - Generalized base and bounds
 - Each segment of the memory image is placed separately
@@ -205,8 +175,6 @@ physical address = virtual address + base
 
 ### What Is It?
 
---
-
 - Allocate memory in fixed-size chunks ("pages")
 - Avoids external fragmentation (no small "holes")
 - Has internal fragmentation (partially filled pages)
@@ -214,8 +182,6 @@ physical address = virtual address + base
 ![img](./img/27.png)
 
 ### Page Table
-
---
 
 - Per-process data structure to help VA-PA translation
 - An array stores mappings from the virtual page number (VPN) to the physical frame number (PFN)
@@ -227,8 +193,6 @@ physical address = virtual address + base
 ![img](./img/28.png)
 
 ### Page Table Entry (PTE)
-
---
 
 - Simplest page table: Linear page table
 - Page table is an array of page table entries, one per virtual page
@@ -242,8 +206,6 @@ physical address = virtual address + base
 
 ### Address Translation in Hardware
 
---
-
 - Most significant bits of VA give the VPN
 - Page table maps VPN to PFN
 - PA is obtained from PFN and offset within a page
@@ -253,8 +215,6 @@ physical address = virtual address + base
 ![img](./img/29.png)
 
 ### What Happens on Memory Access?
-
---
 
 - The CPU requests code or data at a virtual address
 - MMU must translate VA to PA
@@ -276,8 +236,6 @@ physical address = virtual address + base
 
 ### How Are Page Tables Stored in Memory?
 
---
-
 - What is the typical size of a page table?
   - 32-bit VA, 4 KB pages, so 2^32/2^12 = 2^20 entries
   - If each PTE is 4 bytes, then the page table is 4MB
@@ -289,16 +247,12 @@ physical address = virtual address + base
 
 ### Multilevel Page Tables (1)
 
---
-
 - A page table is spread over many pages
 - An "outer" page table or page directory tracks the PFNs of the page table pages
 
 ![img](./img/30.png)
 
 ### Multilevel Page Tables (2)
-
---
 
 - Depending on how large the page table is, more than 2 levels may be needed
   - 64-bit architectures may need 7 levels
@@ -313,8 +267,6 @@ physical address = virtual address + base
 
 ### Is Main Memory Always Enough?
 
---
-
 - Are all pages of all active processes always in main memory?
   - Not necessary, especially with large address spaces
 - OS uses a part of disk (swap space) to store pages that are not in active use
@@ -323,16 +275,12 @@ physical address = virtual address + base
 
 ### Page Fault
 
---
-
 - Present bit in the page table entry indicates if a page of a process resides in memory or not
 - When translating VA to PA, the MMU reads the present bit
 - If the page is present in memory, it is directly accessed
 - If the page is not in memory, the MMU raises a trap to the OS - this is a page fault
 
 ### Page Fault Handling
-
---
 
 - A page fault traps the OS and moves the CPU to kernel mode
 - OS fetches the disk address of the page and issues a read to the disk
@@ -342,8 +290,6 @@ physical address = virtual address + base
 - When the process is scheduled again, the OS restarts the instruction that caused the page fault
 
 ### Summary: What Happens on Memory Access
-
---
 
 - CPU issues a load to a VA for code or data
   - Checks the CPU cache first
@@ -357,8 +303,6 @@ physical address = virtual address + base
 
 ### More Complications in a Page Fault
 
---
-
 - When servicing page fault, what if OS finds that there is no free page to swap in the faulting page?
 - OS must swap out an existing page (if it has been modified, ie, dirty) and then swap in the faulting page - too much work!
 - OS may proactively swap out pages to keep a list of free pages handy
@@ -366,15 +310,11 @@ physical address = virtual address + base
 
 ### Page Replacement Policies
 
---
-
 - Optimal: Replace the page not needed for the longest time in the future (not practical!)
 - FIFO: Replace the page that was brought into memory earliest (may replace a popular page)
 - LRU/LFU: Replace the page that was least recently (or frequently) used in the past
 
 ### Example: Optimal Policy
-
---
 
 - Example: 3 frames for 4 pages (0, 1, 2, 3)
 - The first few accesses are cold (compulsory) misses
@@ -383,8 +323,6 @@ physical address = virtual address + base
 
 ### Example: FIFO
 
---
-
 - Usually worse than optimal
 - Belady's anomaly: Performance may get worse when memory size increases!
 
@@ -392,16 +330,12 @@ physical address = virtual address + base
 
 ### Example: LRU
 
---
-
 - Equivalent to optimal in this simple example
 - Works well due to locality of references
 
 ![img](./img/35.png)
 
 ### How Is LRU Implemented?
-
---
 
 - OS is not involved in every memory access, so how does it know which page is LRU?
 - Hardware help and approximations are used
@@ -414,8 +348,6 @@ physical address = virtual address + base
 
 ### Variable Sized Allocation
 
---
-
 - Given a block of memory, how do we allocate it to satisfy various memory allocation requests?
 - This problem must be solved in the C library
   - Allocates one or more pages from the kernel via brk/sbrk or mmap system calls
@@ -425,8 +357,6 @@ physical address = virtual address + base
 
 ### Variable Sized Allocation: Headers
 
---
-
 - Consider a simple implementation of malloc
 - Every allocated chunk has a header with information like the size of the chunk
   - Why store size? We should know how much to free when free() is called
@@ -434,8 +364,6 @@ physical address = virtual address + base
 ![img](./img/36.png)
 
 ### Free List
-
---
 
 - Free space is managed as a list
   - A pointer to the next free chunk is embedded within the free chunk
@@ -446,8 +374,6 @@ physical address = virtual address + base
 
 ### External Fragmentation
 
---
-
 - Suppose 3 allocations of size 100 bytes each occur. Then, the middle chunk pointed to by sptr is freed
 - The free list now has two non-contiguous elements
 - Free space may be scattered around due to fragmentation
@@ -456,8 +382,6 @@ physical address = virtual address + base
 ![img](./img/38.png)
 
 ### Splitting and Coalescing
-
---
 
 - Suppose all three chunks are freed
 - The list now has several free chunks that are adjacent
@@ -468,8 +392,6 @@ physical address = virtual address + base
 
 ### Buddy Allocation for Easy Coalescing
 
---
-
 - Allocate memory in sizes that are powers of 2
   - For example, for a request of 7000 bytes, allocate an 8 KB chunk
 - Why? Two adjacent power-of-2 chunks can be merged to form a bigger power-of-2 chunk
@@ -479,8 +401,6 @@ physical address = virtual address + base
 
 ### Variable Size Allocation Strategies
 
---
-
 - First fit: Allocate the first free chunk that is sufficient
 - Best fit: Allocate the free chunk that is closest in size
 - Worst fit: Allocate the free chunk that is farthest in size
@@ -488,8 +408,6 @@ physical address = virtual address + base
 ![img](./img/41.png)
 
 ### Fixed Size Allocations
-
---
 
 - Memory allocation algorithms are much simpler with fixed-size allocations
 - Page-sized fixed allocations in the kernel

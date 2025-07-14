@@ -6,13 +6,9 @@ Youtube: [Link](https://youtu.be/d4C8A5N7Py4\?si\=Li9Z2WG9LisbRjWA)
 
 ### Giới Thiệu
 
---
-
 - Nguồn cảm hứng: Video này ra đời sau khi mình nhận được hàng trăm yêu cầu từ các bạn trên Instagram, sau khi mình chia sẻ câu chuyện đã giúp chồng mình (một người rất thiếu tập trung) lấy lại sự tập trung và làm việc hiệu quả
 
 ### Tư Duy Nền Tảng
-
---
 
 - Câu hỏi cốt lõi: Liệu khả năng tập trung có thể cải thiện qua luyện tập không? Hay sinh ra đã mất tập trung thì đành chịu?
 - Câu trả lời dứt khoát: Bạn CHẮC CHẮN có thể cải thiện được. Tập trung là một KỸ NĂNG mà mình có thể học và rèn luyện được
@@ -124,8 +120,6 @@ Luyện tập tính kiên nhẫn
 
 ### Lời Kết
 
---
-
 - Đúc kết cuối cùng: Cô luôn tin rằng
   - "Kiên nhẫn với người khác và kiên nhẫn với chính mình là cách duy nhất để có thể trưởng thành, tập trung và sống một cuộc sống hiệu năng hơn."
 - Góc nhìn sâu hơn: Sự kiên nhẫn với bản thân ở đây chính là Lòng Trắc Ẩn với Bản thân (Self-Compassion). Trên hành trình rèn luyện, sẽ có những ngày tốt, ngày xấu. Thay vì chỉ trích mình khi thất bại, lòng kiên nhẫn và sự tử tế sẽ giúp bạn đứng dậy và đi tiếp
@@ -135,8 +129,6 @@ Luyện tập tính kiên nhẫn
 Youtube: [Link](https://youtu.be/d4C8A5N7Py4\?si\=Li9Z2WG9LisbRjWA)
 
 ### Giới Thiệu
-
---
 
 - Nguồn cảm hứng: Trong các video trước, mình thấy các bạn rất yêu thích và ứng dụng thành công phương pháp "Batching" (Làm việc theo nhóm). Vì vậy, hôm nay mình muốn làm một video đi sâu hơn về nó và một "người anh em" không thể tách rời: "Blocking" (Làm việc theo khối)
 
@@ -239,8 +231,6 @@ Youtube: [Link](https://youtu.be/6YyEbsUg1ww?si=hDXxEYpv1JAOTzVy)
 
 ### Giới Thiệu
 
---
-
 - Định nghĩa
   - Đây là một khái niệm nổi tiếng trong tâm lý học, chỉ một trạng thái tập trung hoàn toàn vào một công việc
   - Khi đó, bạn hăng say đến mức mọi thứ xung quanh dường như mờ đi, không gian và thời gian như ngưng lại, và bạn hoàn toàn đắm chìm vào công việc. Bạn thực sự "feel", bay bổng trong dòng chảy đó
@@ -249,8 +239,6 @@ Youtube: [Link](https://youtu.be/6YyEbsUg1ww?si=hDXxEYpv1JAOTzVy)
   - Nghiên cứu chỉ ra rằng những người tài năng, thành công và hiệu quả nhất thường xuyên đạt được trạng thái này. Đây là lúc họ cảm thấy hạnh phúc và sung mãn nhất
 
 ### Câu Chuyện Cá Nhân
-
---
 
 Hành trình của cô Chi Nguyễn
 

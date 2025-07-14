@@ -2,8 +2,6 @@
 
 ## Binary Search
 
---
-
 - Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half
 - The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N)
 - Conditions for when to apply Binary Search
@@ -40,8 +38,6 @@ def binarySearch(arr, low, high, x):
 ```
 
 ### Applications
-
---
 
 - Find x in the array
 - Find the smallest number which is larger than x in the array

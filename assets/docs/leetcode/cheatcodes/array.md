@@ -4,7 +4,6 @@
 
 | Number | Note |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
-| [1. Two Sum](https://leetcode.com/problems/two-sum/description/) | optimize if else (in or not in?), subtraction |
 | [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/description/) | check case related to 0 and smaller 10, find reverted_number - multiply 10 and 10 and 10 ... but need to compare only half (for odd or even, handle the return) |
 | [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) | range n-1 and find the last one manually, check the curr and next by comparing but manipulate the curr only |
 | [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | starting from k=1 and check curr nums[i] with previous nums[k] |
@@ -28,7 +27,6 @@
 | [15. 3Sum](https://leetcode.com/problems/3sum/description/) | sort, fix each + 2 pointer, check two consecutive in fix and check two consecutive in pointer (yes, increase left) |
 | [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | |
 | [39. Combination Sum](https://leetcode.com/problems/combination-sum/description/) | |
-| [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | |
 | [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | |
 | [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) | |
 | [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/) | |

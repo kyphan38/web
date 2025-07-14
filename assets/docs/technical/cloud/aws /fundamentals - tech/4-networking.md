@@ -195,8 +195,6 @@ Session and state
 
 ## Network Address Translation (NAT)
 
---
-
 - NAT is designed to overcome IPv4 shortages
 - Provides some security benefits
 - Translates private IPv4 addresses to public
@@ -207,16 +205,12 @@ Session and state
 
 ### Static
 
---
-
 - The router (NAT Device) maintains a NAT table, it maps private IP : public IP (1:1)
 - In AWS, this is how Internet Gateway (IGW) functions
 
 ![img](./img/42.png)
 
 ### Dynamic
-
---
 
 - The router (NAT Device) maintains a NAT table, it maps private IP : public IP
 - Public IP allocations are temporary allocations from a public IP pool
@@ -225,16 +219,12 @@ Session and state
 
 ### Port Address Translation (PAT)
 
---
-
 - In AWS, this is how the NAT Gateway (NATGW) functions, a (many : 1) (private IP : public IP) architecture
 - The NAT Device records the source - private IP and source port. It replaces the source IP with the single public IP and a public source port allocated from a pool which allows IP overloading (many to one)
 
 ![img](./img/44.png)
 
 ## Addressing
-
---
 
 - IPv4 standard created in 1981, defined in RFC791
 - 0.0.0.0 &rarr; 255.255.255.255 = 4,294,967,296 addresses
@@ -248,8 +238,6 @@ Session and state
 ![img](./img/45.png)
 
 ### Private IPv4
-
---
 
 - Defined by a standard RFC1918
 - 10.0.0.0 - 10.255.255.255 (1 x Class A network)

@@ -2,8 +2,6 @@
 
 ## Computer Systems
 
---
-
 - Real-world computer systems are complex
   - They consist of multiple components/tiers distributed across several machines
   - They handle a high number of user requests efficiently and reliably
@@ -16,8 +14,6 @@
 
 ## The Building Blocks
 
---
-
 - A single computer system is the building block for all large, distributed computer systems that run real-world applications
 - What does a computer system contain?
   - Hardware: CPU, memory, I/O devices, etc.
@@ -26,8 +22,6 @@
 - Understanding the basic building blocks of a single system is essential before building large-scale systems for real applications
 
 ## Why Study Operating Systems?
-
---
 
 - Knowledge of hardware (architecture) and system software (OS), and how user programs interact with these lower layers, is essential for writing high-performance, reliable user programs
 - Key questions addressed by studying OS
@@ -40,8 +34,6 @@
 
 ## Beyond OS to Real Systems and Future Courses
 
---
-
 - Architecture + OS: Provides the foundation for understanding how a user program runs on a single machine
 - Networking: Explores how programs communicate across machines
 - Databases and data storage: Covers how applications store data efficiently and reliably across one or more machines
@@ -50,8 +42,6 @@
 - Other topics: Virtualization, cloud computing, security, etc.
 
 ## What Is an Operating System?
-
---
 
 - Middleware between user programs and system hardware
   - Not user application software, but system software
@@ -64,15 +54,11 @@
 
 ## Goals of Operating Systems
 
---
-
 - Abstracts detailed hardware resources for user programs
 - Optimizes the use of the CPU, memory, and other resources
 - Ensures separation between multiple processes
 
 ## History of Operating Systems
-
---
 
 - Initially, OS was a library providing common functionality to access hardware via function calls from user programs
   - Convenient, as users did not need to write code to manage hardware
@@ -85,15 +71,11 @@
 
 ## Key Concepts in Operating Systems
 
---
-
 - Virtualization: The OS provides a "virtual" or logical view of the hardware, hiding the complex physical view, giving each user/program the illusion of having entire hardware to itself
 - Concurrency: The OS runs multiple user programs simultaneously (at the same time), sharing system resources efficiently and securely
 - Persistence: The OS stores user data persistently on external I/O devices
 
 ## What Is a Program?
-
---
 
 - Consist of code (CPU instructions) and data for a specific task
 - Store program concept
@@ -135,8 +117,6 @@ CPU execution context
 
 ## Role of OS in Running a Process
 
---
-
 - Allocates memory for the new process in RAM
   - Loads code and data from the disk executable
   - Allocates memory for stack and heap
@@ -148,8 +128,6 @@ CPU execution context
 ![img](./img/3.png)
 
 ## Concurrent Execution and CPU Virtualization
-
---
 
 - The CPU runs multiple programs concurrently
   - The OS switches between processes, running one for a short time before switching to another
@@ -169,8 +147,6 @@ CPU execution context
 
 ## Memory Image of a Process
 
---
-
 - Memory image: The code and data of a process in memory
   - Code: CPU instructions in the program
   - Compile-time data: Global/static variables in the program executable
@@ -181,8 +157,6 @@ CPU execution context
 
 ## Address Space of a Process
 
---
-
 - The OS gives each process the illusion that its memory image is laid out contiguously from address 0 (virtual address space)
 - In reality, processes are allocated memory in chunks across RAM at physical addresses, which the programmer does not see
   - Pointer addresses in a program are virtual, not physical
@@ -192,8 +166,6 @@ CPU execution context
 ![img](./img/5.png)
 
 ## Isolation and Privilege Levels
-
---
 
 - Protecting concurrent processes
   - Can one process interfere with another's code or data?
@@ -206,8 +178,6 @@ CPU execution context
   - High privilege (e.g., ring 0): Both privileged and unprivileged instructions
 
 ## User Mode and Kernel Mode
-
---
 
 - User programs run in user mode (unprivileged)
   - The CPU executes only unprivileged instructions
@@ -222,8 +192,6 @@ CPU execution context
 
 ## System Calls
 
---
-
 - A system call is made when a user program requires an OS service (e.g., reading from a hard disk)
   - Why? User processes cannot execute privileged instructions to access hardware, ensuring one user cannot harm another
   - The CPU jumps to OS code to handle the system call and returns to user code afterward
@@ -231,15 +199,11 @@ CPU execution context
 
 ## Interrupts
 
---
-
 - The CPU handles external events (e.g., mouse clicks, keyboard input) via interrupts
 - An interrupt is an external signal from an I/O device requesting CPU attention
 - Example: A program requests disk data, and the disk raises an interrupt when the data is ready (avoiding program waiting)
 
 ## Interrupt Handling
-
---
 
 - Process - How are interrupts handled?
   - The CPU is running process P when an interrupt arrives
@@ -252,8 +216,6 @@ CPU execution context
 
 ## I/O Devices
 
---
-
 - The CPU and memory are connected via a high-speed system (memory) bus
 - I/O devices connect to the CPU and memory via separate buses
   - I/O devices interface with the external world
@@ -263,8 +225,6 @@ CPU execution context
 ![img](./img/7.png)
 
 ## Device Controller and Device Driver
-
---
 
 - Each I/O device is managed by a device controller (a microcontroller communicating with the CPU/memory over a bus)
 - Device driver: Special OS software with device-specific knowledge to handle I/O operations

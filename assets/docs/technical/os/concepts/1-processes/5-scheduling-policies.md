@@ -2,16 +2,12 @@
 
 ## What Is a Scheduling Policy?
 
---
-
 - During a context switch, which process should run next from the set of ready processes?
 - The OS scheduler manages the CPU requests (bursts) of processes
   - CPU burst: The CPU time used by a process in a continuous stretch
   - A process returning after an I/O wait starts a new CPU burst
 
 ## What Are We Trying to Optimize?
-
---
 
 - Maximize utilization: The fraction of time the CPU is used
 - Minimize average turnaround time: The time from a process's arrival to its completion
@@ -74,8 +70,6 @@ RR assigns each process a fixed time slice, preempting and cycling through a que
 <!-- ![img](./img/23.png) -->
 
 ## Schedulers in Real Systems
-
---
 
 - Real-world schedulers are more complex
 - For example, Linux uses a Multi-Level Feedback Queue (MLFQ)

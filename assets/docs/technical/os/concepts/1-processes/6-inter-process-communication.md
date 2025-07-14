@@ -3,16 +3,12 @@
 
 ## Inter-Process Communication (IPC)
 
---
-
 - Processes do not share memory with each other
   - Each process has its own separate memory space
 - Some processes need to collaborate on tasks, requiring them to communicate information
 - IPC mechanisms enable information sharing between processes
 
 ## Shared Memory
-
---
 
 - Processes can access the same region of memory using the `shmget()` system call
   - `int shmget (key_t key, int size, int shmflg)`
@@ -24,8 +20,6 @@
 <!-- ![img](./img/24.png) -->
 
 ## Signals
-
---
 
 - A certain set of signals is supported by the OS
   - Some signals have a fixed meaning (e.g., terminating a process)
@@ -51,8 +45,6 @@
 
 ## Sockets
 
---
-
 - Sockets enable communication between processes on the same or different machines
   - TCP/UDP sockets for communication across machines
     - To do this, a socket needs a unique address, which is a combination of an IP address (which computer to find) and a port number (which application on that computer to talk to)
@@ -69,8 +61,6 @@
 
 ## Pipes // Tomorrow
 
---
-
 - The pipe system call returns two file descriptors
   - A read handle and a write handle
   - Pipes provide half-duplex (one-way) communication
@@ -85,16 +75,12 @@
 
 ## Message Queues
 
---
-
 - Provide a mailbox abstraction
   - A process can open a mailbox at a specified location
   - Processes can send and receive messages through the mailbox
 - The OS buffers messages between send and receive operations
 
 ## Blocking vs. Non-Blocking Communication
-
---
 
 - Some IPC actions can block
   - Reading from an empty socket, pipe, or message queue

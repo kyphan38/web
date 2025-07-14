@@ -2,8 +2,6 @@
 
 ## User Mode vs. Kernel Mode
 
---
-
 - The CPU typically runs user code in user mode (low privilege)
 - The CPU switches to kernel mode for
   - System calls from a process
@@ -57,8 +55,6 @@ Interrupt Descriptor Table (IDT)
 
 ## Hardware Trap Instruction
 
---
-
 - User code invokes a special "trap instruction" to make a system call
 - Example: int n in x86, where n is an index into the IDT for the corresponding OS function
 - When the CPU executes a trap instruction
@@ -72,8 +68,6 @@ Interrupt Descriptor Table (IDT)
 
 ## Trap Handling and Return From Trap
 
---
-
 - The basic trap mechanism involves saving context on the kernel stack, finding the OS handler address in the IDT, and running the OS code
 - After handling a trap, the OS executes a "return-from-trap" instruction
 - This instruction
@@ -84,8 +78,6 @@ Interrupt Descriptor Table (IDT)
 - Before returning to user mode, the OS may decide to perform a context switch to another process
 
 ## Why Switch Between Processes?
-
---
 
 - The OS cannot return to the same process if it has
   - Exited or been terminated (e.g., segmentation fault)
@@ -98,8 +90,6 @@ Interrupt Descriptor Table (IDT)
 
 ## OS Scheduler
 
---
-
 - The OS maintains a list of active processes as Process Control Blocks (PCBs)
   - Processes are added on fork() and removed after wait()
 - The OS scheduler is code that periodically selects a process to run
@@ -110,8 +100,6 @@ Interrupt Descriptor Table (IDT)
   - This cycle repeats continuously
 
 ## Scheduling and Context Switching
-
---
 
 - OS scheduling involves two tasks
   - Policy: Deciding which process to run next
@@ -145,8 +133,6 @@ Phase 4: Restoring context and resuming execution
 - The context switch is now complete
 
 ## Understanding Saving and Restoring Context
-
---
 
 - Context (PC and registers) is saved on the kernel stack in two scenarios
   - User-to-Kernel transition: The trap instruction saves the user context

@@ -95,8 +95,6 @@ Vòng này đánh giá kỹ năng mềm và sự phù hợp của bạn với đ
 
 ## Các Hình Thức Phỏng Vấn Đặc Biệt
 
---
-
 - Phỏng vấn "Marathon": Một số công ty có quy trình phỏng vấn Onsite rất căng thẳng, gồm nhiều buổi diễn ra liên tục trong một ngày (ví dụ: 4 buổi/4 tiếng tại Axon, 3 buổi tại Caladan)
 - Bài toán thực tế và Debugging
   - Yêu cầu debug một chương trình trên môi trường lạ (Linux) chỉ bằng command line, không có IDE (Caladan)

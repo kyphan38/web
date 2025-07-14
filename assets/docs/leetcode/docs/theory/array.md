@@ -1,8 +1,13 @@
 # array
 
-## Static vs. Dynamic Arrays
+## What is an Array?
 
---
+- Stores a collection of values in a contiguous block of memory
+- Elements are located one after another with no space in between
+
+## How Data is Stored in Memory
+
+## Static vs. Dynamic Arrays
 
 - Static: fixed size
   - Examples: C++ (`int[]`), Java (`double[]`)
@@ -10,8 +15,6 @@
   - Examples: C++ (`std::vector`), Java (`ArrayList`), Python (`list`)
 
 ### How Dynamic Arrays Work
-
---
 
 - Initial allocation
   - Created on the heap (unlike static arrays on the stack)
@@ -33,8 +36,6 @@
   - Elements are contiguous in memory, enabling O(1) index-based access
 
 ## Complexity
-
---
 
 - Random access: O(1)
 - Add/remove at end (dynamic only): O(1) amortized

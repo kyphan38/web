@@ -6,14 +6,10 @@ Youtube: [Link](https://youtu.be/UjbKZvPw1MU?si=wc8_V3l5ApXIbdG1)
 
 ### Vấn Đề
 
---
-
 - Mình nhận được rất nhiều bình luận nói rằng: "Em đã thử chia đôi vở, đã cố gắng ghi chú bên lề sách như chị hướng dẫn, nhưng em không thể nghĩ ra được câu hỏi nào, không có liên tưởng hay phản biện gì để ghi lại cả."
 - Chẩn đoán: Điều này cho thấy một vấn đề sâu sắc hơn, một kỹ năng mà nhiều bạn trẻ Việt Nam còn thiếu, đó chính là Tư Duy Phản Biện (Critical Thinking)
 
 ### Nguyên Nhân Gốc Rễ
-
---
 
 - Vấn đề muôn thuở: Khi còn ngồi trên ghế nhà trường ở Việt Nam, chúng ta quen với một nền văn hóa giáo dục là nghe lời thầy cô, người lớn. Chúng ta được dạy để lắng nghe và gật đầu chấp nhận, chứ không được khuyến khích, không được dạy cách, hoặc thậm chí là không dám phản biện lại
 - Hệ quả: Khi công việc hay bài tập đòi hỏi tư duy độc lập, khả năng phản biện để làm dự án tốt hơn, để thực sự hiểu sâu một cuốn sách... thì các bạn bị "khựng lại", không biết làm thế nào
@@ -21,16 +17,12 @@ Youtube: [Link](https://youtu.be/UjbKZvPw1MU?si=wc8_V3l5ApXIbdG1)
 
 ### Định Nghĩa Cốt Lõi
 
---
-
 - Định nghĩa phức tạp: Có rất nhiều định nghĩa học thuật về tư duy phản biện
 - Định nghĩa thực tế và đơn giản: Để đơn giản hóa, cô đúc kết nó trong một câu chìa khóa mà cô luôn nói với sinh viên của mình
   - "Critical thinking is all about asking questions" (Tư duy phản biện chính là việc luôn đặt ra những câu hỏi)
 - Góc nhìn sâu hơn: Đây chính là tinh hoa của Phương pháp Socrates (Socratic Method) cổ xưa – dùng chuỗi câu hỏi để đào sâu vào sự thật, khám phá những giả định ngầm và đi đến sự hiểu biết thực sự, thay vì chỉ chấp nhận thông tin bề mặt
 
 ### Cách Rèn Luyện
-
---
 
 - Thay đổi tư thế: Đừng chỉ nhận thông tin một cách thụ động (nghe xong để đó, đọc xong gật đầu). Hãy nhận nó với những câu hỏi luôn thường trực trong đầu
 - Bộ câu hỏi quyền năng (5W1H và hơn thế nữa)
@@ -49,8 +41,6 @@ Youtube: [Link](https://youtu.be/UjbKZvPw1MU?si=wc8_V3l5ApXIbdG1)
 - Góc nhìn sâu hơn: Quá trình này chính là việc bạn chủ động tạo ra Xung đột Nhận thức (Cognitive Dissonance). Thay vì lảng tránh khi thông tin mới mâu thuẫn với hiểu biết cũ, bạn dùng chính sự mâu thuẫn đó làm điểm tựa để đặt câu hỏi và tìm hiểu sâu hơn
 
 ### Mục Tiêu Cuối Cùng
-
---
 
 - Mục đích của việc đặt câu hỏi
   - Giữ cho não bộ luôn hoạt động, không bị "chết" hay ở trong tư thế bị động
@@ -90,8 +80,6 @@ Không phải là bới lông tìm vết (Nitpicking)
 - Bạn có thể góp ý, nhưng đó không phải là trọng tâm của việc phản biện
 
 ### Bài Toán Trang Giấy Trắng
-
---
 
 - Vấn đề chung: Rất nhiều bạn (cả ở Việt Nam và Mỹ) hỏi: "Làm sao để em đặt được một câu hỏi tốt? Em nhìn vào bài giảng/cuốn sách và thấy trống trơn, em đồng ý với tất cả mọi thứ."
 - Giải pháp: Cô Chi Nguyễn đưa ra 2 cách để bạn "mồi" tư duy, dựa vào những gì bạn có
@@ -164,8 +152,6 @@ Trong cuộc sống hằng ngày (Kỹ năng sinh tồn)
 
 ### Câu Chuyện Cá Nhân
 
---
-
 - Sự may mắn: Cô cảm thấy may mắn vì lớn lên trong gia đình có mẹ là nhà báo với tư duy phản biện sắc bén, người luôn dạy cô cách đặt câu hỏi và tìm giải pháp tốt hơn
 - Sự kiên trì: Dù giáo dục Việt Nam ngày xưa có xu hướng "đàn áp", muốn học sinh phải nghe lời, nhưng vì đã có sẵn tư duy phản biện trong đầu, nên khi có cơ hội, cô luôn biết cách thể hiện bản thân
 - Thành quả: Chính điều này đã giúp cô rất nhiều khi đi du học và thành công trong sự nghiệp giảng dạy ở nước ngoài
@@ -176,8 +162,6 @@ Trong cuộc sống hằng ngày (Kỹ năng sinh tồn)
 Youtube: [Link](https://youtu.be/Zlk8zxiy8pI?si=6zQU9mwPHmK7Lcc-)
 
 ### Vấn Đề
-
---
 
 - Nhiều bạn đã hiểu tư duy phản biện là gì, nhưng lại gặp khó khăn trong việc diễn đạt lời phản biện của mình
 - Nỗi lo chung: Làm sao để góp ý, phản bác ý kiến mà không khiến người nghe cảm thấy mình vô duyên, bất lịch sự, vô lễ, hay thậm chí là bất hiếu (đặc biệt khi người nghe là thầy cô, bố mẹ, sếp...)
@@ -264,8 +248,6 @@ Nhạy cảm với môi trường xung quanh
   - Góc nhìn sâu hơn: Một lời phản biện, dù đúng đến đâu, nếu được đưa ra sai thời điểm, sai không gian, nó sẽ thất bại. Ngược lại, một lời góp ý khiêm tốn được đưa ra đúng lúc, đúng chỗ có thể tạo ra ảnh hưởng lớn. Bối cảnh (Context) cũng quan trọng như nội dung (Content)
 
 ### Sức Mạnh Lâu Dài
-
---
 
 - Giá trị của việc làm chủ kỹ năng phản biện
   - Nó sẽ giúp bạn đi rất xa trong tương lai

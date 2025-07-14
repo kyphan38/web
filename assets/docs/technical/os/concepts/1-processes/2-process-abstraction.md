@@ -2,8 +2,6 @@
 
 ## The Process Abstraction
 
---
-
 - A process is a running program.
 - When a program runs, the OS creates a process, allocates memory, initializes its CPU context, and starts it in user mode.
 - User programs run on the CPU until the OS intervenes for system calls, interrupts, or faults.
@@ -11,8 +9,6 @@
 ![img](./img/9.png)
 
 ## What Defines a Process?
-
---
 
 - A unique process identifier (PID).
 - Its memory image in RAM, containing:
@@ -45,8 +41,6 @@ An active process can be in one of the following states:
 
 ## Process Control Block (PCB)
 
---
-
 - The PCB is a kernel data structure storing all process information.
 - It contains
   - PID and process state.
@@ -57,15 +51,11 @@ An active process can be in one of the following states:
 
 ## CPU Scheduler
 
---
-
 - The OS maintains a list of all PCBs.
 - The scheduler loops through this list, picking a ready process to run on each CPU core.
 - It periodically performs context switches between processes.
 
 ## Booting
-
---
 
 - On boot, the BIOS runs from non-volatile memory to set up hardware.
 - BIOS locates and runs the boot loader from a boot disk (e.g., hard disk).
@@ -73,8 +63,6 @@ An active process can be in one of the following states:
 - The OS then starts and allows users to run programs.
 
 ## Booting Real Systems
-
---
 
 - Modern bootloaders are too complex for the first disk sector.
 - They need to read large kernel images from disk or network.

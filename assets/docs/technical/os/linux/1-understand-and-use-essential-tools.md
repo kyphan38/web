@@ -152,8 +152,6 @@ sara:x:1001:
 
 ## System Documentation
 
---
-
 - `--help`: Displays a brief summary of their usage and options
 - `man`: Displays a comprehensive manual pages
 

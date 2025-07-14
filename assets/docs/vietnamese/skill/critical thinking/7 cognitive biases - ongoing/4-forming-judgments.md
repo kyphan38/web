@@ -55,8 +55,6 @@ Thế nào là nhận định không mạnh?
 
 ### Dùng F Và O
 
---
-
 - Cảm tính
   - Hình thành nhận định mà không dựa trên dữ kiện
 - Cả tin

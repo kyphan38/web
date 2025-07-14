@@ -64,8 +64,6 @@ private static void deposit() {
 
 ### Thread Safety
 
---
-
 - A data type or a function is thread-safe if it always executes correctly when used by multiple threads, regardless of how the threads are executed
 - In Java, there are classes that support thread-safety in addition to regular classes
   - Example: StringBuffer is thread-safe, while StringBuilder does not support thread-safe operations
@@ -76,8 +74,6 @@ private static void deposit() {
 
 ### Client and Server Pattern
 
---
-
 - The client and server pattern communicates via message passing
 - Consists of two main types of processes: client and server
 - The client initiates communication and establishes a connection to the server. The client sends requests to the server, and the server sends back responses. The client closes the connection
@@ -86,8 +82,6 @@ private static void deposit() {
 - On the internet, client and server processes run on different machines and connect through a network
 
 ### Network Concepts
-
---
 
 - IP address: Used to identify a network interface. IPv4 has 32 bits
   - Examples: 1.2.3.4 or 127.0.0.1 (localhost)
@@ -100,8 +94,6 @@ private static void deposit() {
   - Some common protocols: HTTP, SMTP
 
 ## Git
-
---
 
 - Git is a version control system
 - A version control system helps record changes to files over time. It can
@@ -155,8 +147,6 @@ JUnit
 ## Code Review
 
 Reference: [Link](https://mtlynch.io/code-review-love/)
-
---
 
 - Code Review is performed whenever there is any change to the source code
   - Example: You work on task A, and to complete task A, you will make changes (add, edit, delete code) on your machine. These changes will then be pushed to a review system (e.g., GitHub, GitLab) for reviewers to read, provide feedback, and approve
@@ -237,8 +227,6 @@ Introduction
 - Spring has contributors from big names in technology, including: Amazon, Google, Microsoft, Alibaba
 
 ## Build Tools
-
---
 
 Build tools are used to
 

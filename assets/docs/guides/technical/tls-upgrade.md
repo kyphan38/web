@@ -2,8 +2,6 @@
 
 ## Prerequisites
 
---
-
 - Ubuntu server with sudo, network
 - Tools: Nginx, OpenSSL
 - IP: 192.168.64.9

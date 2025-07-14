@@ -2,8 +2,6 @@
 
 ## Mở Đầu: Tư Duy Hằng Ngày Và Siêu Nhận Thức
 
---
-
 - Tư duy là hoạt động chúng ta làm hằng ngày, thường trong vô thức
 - Siêu nhận thức (metacognition) là việc nghĩ về quá trình suy nghĩ của chính mình, ví dụ như cách bạn đưa ra quyết định ăn gì hay khi nào dậy đi làm
 - Nhận thức được cách hình thành suy nghĩ là bước đầu tiên để phát triển kỹ năng tư duy phản biện
@@ -48,8 +46,6 @@ Thiên kiến xác nhận
 
 ## Phát Triển Kỹ Năng Tư Duy Phản Biện
 
---
-
 - Tư duy phản biện không phải là kỹ năng bẩm sinh, chúng ta phải học hỏi và luyện tập. Tin tốt là ai cũng có thể học được
 - Bắt đầu bằng việc nhận ra những lỗi sai trong chính cách suy nghĩ của bạn
   - Kiểm tra những ngụy biện logic (lỗi sai trong quá trình hợp lý hóa suy nghĩ)
@@ -76,8 +72,6 @@ Thiên kiến xác nhận
 
 ## Đặc Điểm Của Người Có Tư Duy Phản Biện Tốt
 
---
-
 - Chìa khóa chính là sự tự nhận thức. Bạn cần phải đánh giá trung thực những điều bạn từng nghĩ là đúng và quá trình suy nghĩ dẫn đến kết luận đó
 - Nếu lý lẽ không hợp lý hoặc bị ảnh hưởng bởi kinh nghiệm, cảm xúc, hãy cân nhắc sử dụng tư duy phản biện
 - Những người tư duy phản biện nổi tiếng thường có chung các đặc điểm sau
@@ -99,8 +93,6 @@ Thiên kiến xác nhận
   - Chia sẻ và đánh giá kiến thức một cách phê bình giúp mở rộng tâm trí và bước ra khỏi vùng an toàn
 
 ## Kết Luận: Mục Tiêu Cuối Cùng Của Tư Duy Phản Biện
-
---
 
 - Tư duy phản biện không phải là chỉ biết vài thứ hay xác nhận những điều bạn đã biết
 - Thay vào đó, nó xoay quanh việc tìm kiếm sự thật – và biến chúng trở thành thứ mà bạn biết

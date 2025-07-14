@@ -4,8 +4,6 @@ Youtube: [Link](https://youtu.be/8CFQS3DgrP4?si=FxvAxkYq12eN_Ioe)
 
 ## Nền Tảng Thực Tế
 
---
-
 - Câu hỏi khơi mào: Nếu mình nói bạn có thể vượt lên trên 99% số người khác, và điều đó dễ hơn bạn nghĩ rất nhiều, bạn có tin không?
 - Lời cam kết: Hãy thực sự lắng nghe lần này. Đây không phải là những lời sáo rỗng hay chiến thuật kỳ diệu. Mình sẽ đưa cho bạn một công cụ, một phương pháp thực tế, đơn giản, hiệu quả
 - Bằng chứng sống: Phương pháp này đã giúp chính mình biến đổi: từ một người mất phương hướng, tù quẫn, không thỏa mãn &rarr; trở thành người sở hữu business riêng, thu nhập 9 chữ số/tháng, đạt mọi mục tiêu
@@ -28,16 +26,12 @@ Tiêu chuẩn thấp là lợi thế của bạn
 
 ## Đừng Cố Một Đêm
 
---
-
 - Cạm bẫy: 99% người khác mắc phải sai lầm này: Cố gắng thay đổi mọi thứ chỉ trong một đêm
 - Sự thật: Những câu chuyện đổi đời sau một đêm gần như không tồn tại
 - Ví dụ: Cố gắng như David Goggins (thức 2h sáng chạy 100km) &rarr; Bạn sẽ thử 1 lần &rarr; Thấy kinh khủng &rarr; Bỏ cuộc ngay lập tức
 - Việc thay đổi đột ngột, quá sức sẽ kích hoạt cơ chế kháng cự mạnh mẽ nhất của não bộ. Nó xem đây là một cú sốc, một mối đe dọa, và sẽ làm mọi cách để đưa bạn về trạng thái quen thuộc
 
 ## Sự Tích Lũy (Kaizen)
-
---
 
 - Học từ vận động viên: Họ tăng khối lượng chịu đựng theo thời gian. Không ai nâng 100kg ngay ngày đầu
 - Nguyên tắc cốt lõi: Nếu bạn tăng từng chút một, việc đạt được mục tiêu lớn (như nâng 100kg) chỉ còn là vấn đề thời gia

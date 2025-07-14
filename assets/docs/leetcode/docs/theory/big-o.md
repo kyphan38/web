@@ -111,15 +111,11 @@ Function: g(n) = n^2
 
 ## Practical Insights From T(n) = O(n^2)
 
---
-
 - Scalability: Runtime grows approximately 100x if n grows 10x (10^2)
 - Bottleneck: Nested loops likely cause the n^2 complexity
 - Ranking: Less efficient than O(n log n) but better than O(n^3)
 
 ## Common Big-O Classes
-
---
 
 - Logarithmic Time: O(log n)  
   - Example: Binary Search

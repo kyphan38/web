@@ -2,8 +2,6 @@
 
 ## Introduction
 
---
-
 - We know that accessing an index of an array is O(1) operation if we know the memory address of an array
 - Now we want to build a data structure to store key, value pairs for fast insertion and lookup
 - Example: in a company, each employee has a name and a unique id

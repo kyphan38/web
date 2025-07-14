@@ -2,8 +2,6 @@
 
 ## API for Process Management
 
---
-
 - The OS provides an API of functions for user programs
   - This API consists of system calls, which execute in privileged kernel mode
   - Privileged operations (e.g., hardware access) require this higher privilege level
@@ -11,16 +9,12 @@
 
 ## Portability of Code Across OS
 
---
-
 - The POSIX API standardizes system calls for code portability across compliant operating systems
   - Recompilation may still be needed for different hardware architectures
 - Language libraries (e.g., C's printf) often wrap system calls (e.g., write)
 - The Application Binary Interface (ABI) defines the interface between machine code and hardware
 
 ## Process Related System Calls (In Unix)
-
---
 
 - fork(): Creates a new child process
   - All processes are forked from a parent
@@ -30,8 +24,6 @@
 - Language libraries provide variants of these calls
 
 ## Process Creation: Fork()
-
---
 
 - A parent's call to fork() creates a new child process with a new PID
 - The child gets a copy of the parent's memory image
@@ -47,8 +39,6 @@
 
 ## Exit() System Call
 
---
-
 - A process calls exit() to terminate
   - The OS never runs the process again
   - In C, exit() is called automatically at the end of main()
@@ -56,8 +46,6 @@
 - A terminated process becomes a "zombie"
 
 ## Wait() System Call
-
---
 
 - A parent calls wait() to "reap" (clean up) a zombie child
 - wait() cleans up one terminated child's resources
@@ -72,8 +60,6 @@
 
 ## Exec() System Call
 
---
-
 - exec() replaces the current process's code and memory with a new program
 - It takes an executable file as an argument
 - The process's memory image is completely replaced by the new executable's
@@ -81,8 +67,6 @@
 - An unsuccessful exec() returns an error, and the original program continues
 
 ## Shell and Terminal
-
---
 
 - The init process is the first process on boot and spawns a shell (e.g., bash)
 - All other processes are forked from existing ones
@@ -93,8 +77,6 @@
 
 ## Foreground and Background Execution
 
---
-
 - Foreground commands block the shell until they finish
 - For background commands (&), the shell forks but does not wait(), returning to the prompt immediately
 - The shell reaps background processes later, sometimes using non-blocking wait() calls
@@ -102,15 +84,11 @@
 
 ## I/O Redirection
 
---
-
 - Every process has default file descriptors: STDIN, STDOUT, and STDERR
 - The shell can manipulate a child's file descriptors before exec() to redirect I/O
 - Example (ls > foo.txt): The shell closes the child's STDOUT and opens foo.txt, which takes the same file descriptor number
 
 ## Shell Commands With Pipes
-
---
 
 - The shell can pipe the output of one command to the input of another
 - This connects one child's STDOUT to another's STDIN using a kernel pipe
