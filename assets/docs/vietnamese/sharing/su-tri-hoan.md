@@ -6,8 +6,6 @@ Youtube: [Link](https://youtu.be/nH1idi9Nzas?si=zhIatwekx2Fe8OgX)
 
 ### Nghịch Lý
 
---
-
 - Vấn đề nan giải: Có một sự thật, đôi khi, việc biết rất rõ mình cần làm gì, vạch ra từng bước cụ thể, lại chính là lúc chúng ta dễ thuyết phục bản thân trì hoãn nhất
   - Điều này nghe thật trớ trêu, nhưng lại rất phổ biến. Có thể chính sự rõ ràng đó lại làm nảy sinh áp lực phải hoàn hảo, hoặc nỗi sợ vô hình về việc thất bại (hay thành công), khiến chúng ta tìm kiếm bất kỳ lý do nào, dù nhỏ nhất, để trì hoãn
 - Câu chuyện thực tế: Giống như anh bạn của mình, biết rõ cần học kỹ năng mới, xây dựng thói quen tốt, bắt đầu dự án riêng, ... nhưng ngày qua ngày vẫn mắc kẹt với đủ thứ lý do
@@ -178,15 +176,11 @@ Youtube: [Link](https://youtu.be/Bdsf3asTyyQ?si=AFcHgzAkfxDrnvyD)
 
 ### Rào Cản Tâm Lý Đầu Tiên
 
---
-
 - Tình huống quen thuộc: Chắc hẳn ai cũng từng trải qua cảm giác này: Hôm nay không có hứng. Chúng ta biết rõ có việc cần làm - bài tập, báo cáo - nhưng cái hứng nó cứ lặn mất tăm
 - Khi có việc khó: Đặc biệt với những việc khó nhằn, phức tạp, những việc mà chỉ nghĩ đến thôi đã thấy ngán, thì cái hứng lại càng xa xỉ. Càng khó, càng ngại, càng không có hứng
   - Đây thực chất là một cơ chế tự vệ của não bộ. Nó muốn né tránh cảm giác khó chịu, sự không chắc chắn, hoặc nỗi sợ thất bại tiềm ẩn khi đối mặt với việc khó. Não bộ ưu tiên sự dễ chịu, và không có hứng là một lý do hoàn hảo để trì hoãn, một cách để điều chỉnh cảm xúc tạm thời
 
 ### Khi Nước Đến Chân Vẫn Chưa Muốn Nhảy
-
---
 
 - Cơ chế hoạt động: Chừng nào còn thời gian, chúng ta còn cho phép mình hẹn. Việc cuối tuần cần xong, nhưng mới đầu tuần thì ta hẹn đến giữa tuần, rồi thứ Sáu, thứ Bảy, ...
   - Chúng ta tuân thủ định luật Parkinson một cách vô thức: Công việc sẽ phình ra để lấp đầy thời gian được cho phép
@@ -195,8 +189,6 @@ Youtube: [Link](https://youtu.be/Bdsf3asTyyQ?si=AFcHgzAkfxDrnvyD)
 - Cảm xúc mâu thuẫn: Đi kèm với đó là cảm giác tội lỗi (sao mình biết việc cần làm mà vẫn ngồi đây?), nhưng song song đó, vẫn không có một chút hứng thú nào để bắt tay vào việc. Đây là cuộc chiến giữa lý trí và cảm xúc, giữa mục tiêu dài hạn và sự thỏa mãn tức thời
 
 ### Học Tiếng Anh
-
---
 
 - Biết rõ lợi ích: Ai cũng biết giỏi tiếng Anh sẽ giúp ích rất nhiều
 - Biết rõ cách làm: Ai cũng biết cách duy nhất là phải ngồi xuống trau dồi, luyện tập
@@ -217,16 +209,12 @@ Youtube: [Link](https://youtu.be/Bdsf3asTyyQ?si=AFcHgzAkfxDrnvyD)
 
 ### Hiểu Lầm Về Cảm Hứng
 
---
-
 - Đúc kết cốt lõi: Cái bí quyết mà tôi mất nhiều thời gian để nhận ra, nó lại nằm ở việc tháo gỡ một hiểu lầm cực kỳ căn bản mà hầu hết chúng ta đều mắc phải
 - Câu nói quen thuộc: Chúng ta lớn lên với câu không có hứng, và vô tình mặc định rằng: Phải có hứng thì mới làm được
 - Hậu quả tai hại: Vì tin như vậy, chúng ta cứ ngồi chờ hứng, và vì hứng không đến (đặc biệt với việc khó), nên chúng ta không làm
 - Đây là một cái bẫy tư duy tai hại! Chúng ta đã đảo ngược quy trình tự nhiên. Chúng ta chờ đợi một cảm xúc (động lực) để khởi động hành động, trong khi thực tế thường ngược lại
 
 ### Hành Động Và Cảm Hứng
-
---
 
 - Quy luật vận hành: Sự thật là, sự hứng thú, cái động lực, nó chỉ đến sau khi chúng ta bắt tay vào làm một cái gì đó, chứ nó không đến trước như ta vẫn nghĩ
 - Đây là sự thật: Nó là cách cơ thể và não bộ chúng ta vận hành, dù ta có muốn hay không. Hành động tạo ra động lực, chứ không phải động lực tạo ra hành động (ít nhất là lúc bắt đầu)
@@ -248,8 +236,6 @@ Vòng lặp tích cực
 - Khi ta bị cuốn vào, ta đang tiến vào trạng thái dòng chảy - một trạng thái tâm lý tối ưu nơi ta hoàn toàn đắm chìm và tận hưởng công việc. Vòng lặp tích cực giúp ta đạt được trạng thái này
 
 ### 5 Đến 10 Phút Đầu Tiên
-
---
 
 - Điểm mấu chốt: Để thoát khỏi vòng lặp tiêu cực và bước sang vòng lặp tích cực, điểm then chốt chính là khoảng thời gian 5-10 phút ban đầu
 - Rào cản lớn nhất: Đây là lúc khó nhất, khi cơ thể và tâm trí bị ghì lại bởi sức ì, bởi sự không có hứng
@@ -282,8 +268,6 @@ Xây dựng thói quen
 
 ### Hành Trình Cá Nhân
 
---
-
 - Kinh nghiệm xương máu: Tất cả những gì tôi vừa chia sẻ không phải là lý thuyết suông, mà chính là kinh nghiệm đến từ chính hành trình phát triển của cá nhân tôi
 - Quá khứ: Sau khi còn trẻ, tôi cũng đã có một khoảng thời gian dài chật vật, khổ sở với việc trì hoãn này
 - Sự ngộ ra: Cho tới khi tôi dần nhận ra mấu chốt: Hứng thú chỉ đến sau khi ta ngồi xuống bắt tay vào làm. Nếu đợi có hứng mới làm, nó hiếm khi tới lắm
@@ -294,8 +278,6 @@ Xây dựng thói quen
 
 ### Việc Không Thích
 
---
-
 - Câu hỏi phổ biến: Nhưng đó là anh làm việc anh thích. Em làm việc em không thích thì cách này có hiệu quả không?
 - Câu trả lời: CÓ!
 - Lý giải: Bất kỳ một việc gì, một khi chúng ta đã dành thời gian để tìm hiểu về nó đủ sâu, dù là việc gì đi nữa, nó cũng sẽ đều đem lại sự hứng thú nhất định
@@ -303,8 +285,6 @@ Xây dựng thói quen
 - Điều này chạm đến khái niệm về sự làm chủ và sự chuyên nghiệp. Khi bạn cố gắng làm tốt nhất có thể, dù là việc nhỏ nhất hay không thích nhất, bạn bắt đầu tìm thấy niềm vui trong chính quá trình làm chủ kỹ năng đó. Hứng thú có thể không đến từ bản chất công việc, mà đến từ cách bạn thực hiện nó và cảm giác hoàn thành nó một cách xuất sắc
 
 ### Lời Kết Và Hy Vọng
-
---
 
 - Tầm quan trọng: Đây là một kinh nghiệm nhỏ, nghe có vẻ đơn giản, nhưng nó đã giúp ích rất nhiều cho cuộc sống của tôi. Có thể nói, nó là một trong những thành phần rất quan trọng mang lại những thành quả tôi có được ngày hôm nay
 - Sức mạnh của việc vượt qua trì hoãn không chỉ nằm ở việc hoàn thành công việc, mà còn ở việc xây dựng lòng tự trọng, cảm giác tự chủ, và niềm tin vào khả năng của bản thân. Nó là nền tảng cho mọi thành công khác

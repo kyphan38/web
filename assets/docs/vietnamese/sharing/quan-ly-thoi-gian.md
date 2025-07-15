@@ -4,8 +4,6 @@ Youtube: [Link](https://youtu.be/bf2cw7HgaCU?si=T7ZUjCl_HcVe8Q5o)
 
 ## Giới Thiệu
 
---
-
 - Giới thiệu: Mình là Chi Nguyễn, tiến sĩ, hiện đang làm Chuyên viên Phân tích Dữ liệu (full-time) tại một trường đại học ở Mỹ
 - Bối cảnh thực tế: Ngoài công việc chính, mình còn sản xuất nội dung (Youtube, Podcast, Blog), có gia đình và con nhỏ, sống ở nước ngoài không có sự trợ giúp của ông bà hay nhà trẻ (đặc biệt trong thời kỳ dịch bệnh)
 - Câu hỏi thường gặp: "Tại sao Chi có nhiều thời gian để làm nhiều việc như thế?"
@@ -32,8 +30,6 @@ Tư duy đúng đắn: Chủ Nghĩa Tối Giản (Minimalism)
 
 ### Quy Luật 80/20 (Nguyên Lý Pareto)
 
---
-
 - Nền tảng: Tất cả những quy tắc và phương pháp mình chia sẻ sau đây đều được xây dựng dựa trên tư duy tối giản ở trên
 - Định nghĩa: 80% kết quả (output) thường được tạo ra bởi chỉ 20% nỗ lực (input)
 - Áp dụng vào quản lý thời gian
@@ -48,8 +44,6 @@ Tư duy đúng đắn: Chủ Nghĩa Tối Giản (Minimalism)
 - Góc nhìn sâu hơn: Ví dụ, một sinh viên có thể nhận ra 20% thời gian học (ví dụ: 1 giờ tập trung giải bài tập khó) mang lại 80% điểm số, trong khi 80% thời gian còn lại (ví dụ: 4 giờ đọc lại giáo trình một cách thụ động) chỉ mang lại 20% hiệu quả. Khi đó, họ sẽ biết cần ưu tiên và bảo vệ khoảng thời gian "vàng" kia như thế nào
 
 ### Thuyết 4 Lò Lửa (The 4 Burners Theory)
-
---
 
 - Nguồn gốc: Mình học được thuyết này từ James Clear (tác giả cuốn "Thói Quen Tí Hon")
 - Khái niệm: Tưởng tượng cuộc sống của bạn như một cái bếp có 4 lò lửa, mỗi lò là một khía cạnh
@@ -69,8 +63,6 @@ Tư duy đúng đắn: Chủ Nghĩa Tối Giản (Minimalism)
 
 ### Luật Parkinson (Parkinson's Law)
 
---
-
 - Định nghĩa: Công việc sẽ tự "nở" ra để choán hết khoảng thời gian bạn dành cho nó
 - Ví dụ kinh điển: Bài tập được cho hạn 1 tháng thì bạn sẽ làm cả tháng không xong. Nhưng đến đêm trước ngày nộp, bạn có thể hoàn thành chỉ trong vài giờ
 - Cách ứng dụng: Hãy chủ động tạo ra áp lực thời gian cho chính mình
@@ -81,8 +73,6 @@ Tư duy đúng đắn: Chủ Nghĩa Tối Giản (Minimalism)
 ## Hành Động
 
 ### Ma Trận Eisenhower (The Eisenhower Matrix)
-
---
 
 - Mục đích: Là một trong những cách tốt nhất để sắp xếp thứ tự ưu tiên cho danh sách công việc (to-do list) của bạn
 - Mô hình: Một ma trận gồm 4 ô, chia theo 2 tiêu chí: Khẩn cấp và quan trọng
@@ -104,8 +94,6 @@ Tư duy đúng đắn: Chủ Nghĩa Tối Giản (Minimalism)
 
 ### Nhiệm Vụ Quan Trọng Nhất (MIT - Most Important Task)
 
---
-
 - Nguyên tắc: Mỗi ngày, chỉ nên tập trung vào 1-3 đầu việc quan trọng nhất
 - Xác định MIT: Đây thường là những việc thuộc ô "Khẩn cấp và quan trọng" trong ma trận Eisenhower
 - Cách thực hiện: Hãy làm những việc này đầu tiên trong ngày
@@ -118,8 +106,6 @@ Tư duy đúng đắn: Chủ Nghĩa Tối Giản (Minimalism)
 
 ### Kỹ Thuật Pomodoro (Quả Cà Chua)
 
---
-
 - Nguyên tắc: Làm việc tập trung cao độ trong một khoảng thời gian ngắn, sau đó nghỉ ngắn
 - Công thức phổ biến: Làm 25 phút, nghỉ 5 phút, và lặp lại chu trình
 - Lợi ích
@@ -128,16 +114,12 @@ Tư duy đúng đắn: Chủ Nghĩa Tối Giản (Minimalism)
 
 ### Quy Tắc 2 Phút (The 2-Minute Rule)
 
---
-
 - Nguồn gốc: Từ cuốn sách kinh điển "Getting Things Done" của David Allen
 - Nguyên tắc: Rất đơn giản: Nếu một công việc chỉ tốn dưới 2 phút để hoàn thành, hãy LÀM NGAY và không trì hoãn
 - Kinh nghiệm cá nhân: Từ khi áp dụng, mình ra quyết định nhanh hơn rất nhiều. Thay vì phân vân "làm hay để sau?", mình chỉ cần nhẩm tính "việc này có tốn dưới 2 phút không?". Nếu có, mình làm ngay
 - Góc nhìn sâu hơn: Quy tắc này cực kỳ hiệu quả trong việc xử lý những "rác" công việc nhỏ nhặt, giúp giảm bớt "sự bừa bộn trong tâm trí" (mental clutter). Những việc nhỏ không được giải quyết sẽ tạo ra một áp lực ngầm, tiêu tốn năng lượng của bạn
 
 ### Làm Theo Nhóm (Batching)
-
---
 
 - Nguồn gốc: Từ cuốn sách "Tuần Làm Việc 4 Giờ" của Tim Ferriss
 - Nguyên tắc: Gom những công việc có tính chất tương tự lại và làm tất cả trong một lần, thay vì làm rải rác trong ngày

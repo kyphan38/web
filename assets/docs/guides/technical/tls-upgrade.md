@@ -2,14 +2,14 @@
 
 ## Prerequisites
 
-- System: Ubuntu Server with root or sudo access and network connectivity
+- Ubuntu server with sudo, network
 - Tools: Nginx, OpenSSL
-- Server IP: 192.168.64.9
-- Firewall: Ensure port 443 (HTTPS) is allowed
+- IP: 192.168.64.9
+- Firewall: Allow port 443
 
 ## Setup TLS 1.0
 
-Update system packages
+Update packages
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -19,7 +19,6 @@ Install, enable, and start Nginx
 
 ```bash
 sudo apt install nginx -y
-
 sudo systemctl enable nginx
 sudo systemctl start nginx
 sudo systemctl status nginx
@@ -38,7 +37,7 @@ Create SSL directory
 sudo mkdir -p /etc/nginx/ssl
 ```
 
-Generate the certificate and private key
+Generate cert and key
 
 ```bash
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
@@ -53,80 +52,67 @@ Generate Diffie-Hellman parameters
 sudo openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
 ```
 
-Modify the default Nginx site configuration file
+Config /etc/nginx/sites-available/default
 
 ```bash
 sudo rm -f /etc/nginx/sites-enabled/default
-
 sudo vim /etc/nginx/sites-available/default
----
+```
+
+Content
+
+```bash
 server {
   listen 80 default_server;
   listen [::]:80 default_server;
-    server_name _;
-
+  server_name _;
   root /var/www/html;
   index index.html index.htm index.nginx-debian.html;
-  location / {
-    try_files $uri $uri/ =404;
-  }
+  location / { try_files $uri $uri/ =404; }
 }
 
 server {
   listen 443 ssl default_server;
   listen [::]:443 ssl default_server;
   server_name 192.168.64.9;
-  
   ssl_certificate /etc/nginx/ssl/nginx-selfsigned.crt;
   ssl_certificate_key /etc/nginx/ssl/nginx-selfsigned.key;
   ssl_dhparam /etc/nginx/ssl/dhparam.pem;
   ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
   ssl_prefer_server_ciphers off;
-
   root /var/www/html;
   index index.html index.htm index.nginx-debian.html;
-  
-  location / {
-    try_files $uri $uri/ =404;
-  }
+  location / { try_files $uri $uri/ =404; }
 }
 ```
 
-Link the configure files
+Link
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 ```
 
-Test Nginx configuration syntax
+Test
 
 ```bash
 sudo nginx -t
 ```
 
-Modify OpenSSL configuration file to enable lower TLS version
+Modify OpenSSL (/etc/ssl/openssl.cnf)
 
-```bash
-openssl version -d
-
-sudo vim /etc/ssl/openssl.cnf
-```
-
-- At the very top of the file, adding
+- Add at top
 
 ```bash
 openssl_conf = default_conf
 ```
 
-- At the very bottom of the file, adding
+- At bottom
 
 ```bash
-[ default_conf ]
-
+[default_conf]
 ssl_conf = ssl_sect
 
 [ssl_sect]
-
 system_default = system_default_sect
 
 [system_default_sect]
@@ -134,90 +120,73 @@ MinProtocol = TLSv1
 CipherString = DEFAULT:@SECLEVEL=1
 ```
 
-Restart Nginx to apply OpenSSL changes
+Restart
 
 ```bash
 sudo systemctl restart nginx
 ```
 
-Verify TLS 1.0
+Verify
 
 ```bash
 openssl s_client -connect 192.168.64.9:443 -tls1
 ```
 
-## Backup TLS
+## Backup
 
 Create a timestamped backup directory
 
 ```bash
 TIMESTAMP=$(date +%Y%m%d%H%M%S)
 BACKUP_DIR="/home/ubuntu/config_backups/tls1_setup_$TIMESTAMP"
-mkdir -p "$BACKUP_DIR/nginx"
-mkdir -p "$BACKUP_DIR/ssl_configs"
-mkdir -p "$BACKUP_DIR/nginx_certs"
+mkdir -p "$BACKUP_DIR/nginx" "$BACKUP_DIR/ssl_configs" "$BACKUP_DIR/nginx_certs"
 ```
 
-- Backup Nginx site configuration
+- Backup
 
 ```bash
 sudo cp /etc/nginx/sites-available/default "$BACKUP_DIR/nginx/"
-```
-
-- Backup OpenSSL configuration file
-
-```bash
 sudo cp /etc/ssl/openssl.cnf "$BACKUP_DIR/ssl_configs/"
-```
-
-- Backup Nginx SSL certificates files
-
-```bash
 sudo cp -a /etc/nginx/ssl/* "$BACKUP_DIR/nginx_certs/"
 ```
 
 ## Disable TLS 1.0 and Enable TLS 1.2
 
-Modify OpenSSL configuration
+OpenSSL (/etc/ssl/openssl.cnf)
 
 ```bash
-sudo vim /etc/ssl/openssl.cnf
----
 MinProtocol = TLSv1.2
 ```
 
-Modify Nginx site configuration
+Nginx config
 
 ```bash
-sudo vim /etc/nginx/sites-available/default
----
 ssl_protocols TLSv1.2 TLSv1.3;
 ssl_prefer_server_ciphers on;
 ```
 
-Test Nginx configuration syntax
+Test
 
 ```bash
 sudo nginx -t
 ```
 
-Restart Nginx to apply all changes
+Restart
 
 ```bash
 sudo systemctl restart nginx
 ```
 
-Verify TLS 1.0 and 1.2
+Verify
 
 ```bash
-openssl s_client -connect 192.168.64.9:443 -tls1    # Not working
-
-openssl s_client -connect 192.168.64.9:443 -tls1_2  # Working
+openssl s_client -connect 192.168.64.9:443 -tls1    # Fails
+openssl s_client -connect 192.168.64.9:443 -tls1_2  # Works
 ```
 
 ## Rollback TLS
 
-Identify backup directory path
+Set directory
 
 ```bash
 export BACKUP_DIR_PATH="/home/ubuntu/config_backups/tls1_setup_20250415223857"
@@ -231,33 +200,28 @@ sudo systemctl stop nginx
 
 Restore configurations from backup
 
-- Restore Nginx site configuration
+- Restore
 
 ```bash
 sudo cp "$BACKUP_DIR_PATH/nginx/default" /etc/nginx/sites-available/default
-```
-
-- Restore OpenSSL configuration
-
-```bash
 sudo cp "$BACKUP_DIR_PATH/ssl_configs/openssl.cnf" /etc/ssl/openssl.cnf
 ```
 
-Test Nginx configuration syntax
+Test
 
 ```bash
 sudo nginx -t
 ```
 
-Restart Nginx to apply all changes
+Restart
 
 ```bash
 sudo systemctl restart nginx
 ```
 
-Verify TLS 1.0 and 1.2
+Verify
 
 ```bash
-openssl s_client -connect 192.168.64.9:443 -tls1    # Working
-
-openssl s_client -connect 192.168.64.9:443 -tls1_2  # Working
+openssl s_client -connect 192.168.64.9:443 -tls1    # Works
+openssl s_client -connect 192.168.64.9:443 -tls1_2  # Works
+```

@@ -2,8 +2,6 @@
 
 ## Tư Duy Và Chuẩn Bị
 
---
-
 - Đặt mục tiêu rõ ràng: Xác định công ty và mục tiêu nghề nghiệp cụ thể để có định hướng học tập và chuẩn bị tốt hơn
 - Lên lộ trình học tập rõ ràng: Có thể tham khảo các lộ trình đã được xây dựng bài bản
 - Lập kế hoạch rõ ràng: Xác định lộ trình học tập và đặt ra các mục tiêu cụ thể cho từng giai đoạn
@@ -20,8 +18,6 @@
 
 ## Xây Dựng Hồ Sơ
 
---
-
 - Chuẩn bị CV cẩn thận: Có một CV rõ ràng, chuyên nghiệp, làm nổi bật được các dự án và đóng góp của bản thân là rất quan trọng
 - Đừng "nổ" CV: Chỉ ghi những gì mình thực sự hiểu sâu. Ghi ít nhưng chất lượng và có thể giải thích cặn kẽ sẽ gây ấn tượng tốt hơn
 - Liên tục cập nhật CV: Lấy phản hồi từ các nhà tuyển dụng để hoàn thiện
@@ -30,8 +26,6 @@
 
 ## Mạng Lưới
 
---
-
 - Tham gia cộng đồng học tập: Kết nối với các nhóm lập trình, mentor, và bạn bè để nhận hướng dẫn, góp ý, và động lực. Cộng đồng chất lượng như Engineer Pro giúp tránh mất phương hướng và mở rộng cơ hội
 - Xây dựng mạng lưới (Networking): Tạo mối quan hệ với giảng viên, mentor, hoặc đồng nghiệp để nhận lời khuyên, referral, và chia sẻ kinh nghiệm. Referral là yếu tố quan trọng khi ứng tuyển
 - Tìm mentor: Kết nối với người có kinh nghiệm để chỉ ra lỗi sai và thúc đẩy tiến bộ
@@ -39,8 +33,6 @@
 ## Kỹ Thuật Cốt Lõi
 
 ### Thuật Toán Và Coding
-
---
 
 - Luyện tập Thuật toán (DSA): Không có cách nào khác ngoài việc luyện tập thật nhiều. Nên bám sát các danh sách bài tập phổ biến như "Blind 75" rồi mở rộng ra
 - Rèn luyện kỹ năng Coding: Cần luyện tập thường xuyên và luôn tìm cách tối ưu hóa bài toán, không chỉ dừng lại ở việc giải được
@@ -51,16 +43,12 @@
 
 ### Thiết Kế Hệ Thống
 
---
-
 - Chuẩn bị cho System Design: Đọc càng nhiều càng tốt, nghiên cứu case study thực tế, nhưng quan trọng nhất là phải hệ thống hóa kiến thức thành một mô hình tư duy của riêng mình
 - Học System Design qua bài tập: Nên làm càng nhiều bài tập mẫu về thiết kế hệ thống càng tốt để nhanh chóng nắm bắt kiến thức thực tế
 - Nếu sợ System Design, hãy học về nó: Đừng né tránh điểm yếu. Hãy đối mặt, học hỏi và rèn luyện mỗi ngày, bạn sẽ dần thấy tự tin và yêu thích nó hơn
 - Học cách phân rã vấn đề lớn: Và giải quyết các đánh đổi (trade-off) trong thiết kế
 
 ### Kiến Thức Nền Tảng
-
---
 
 - Nắm vững kiến thức nền tảng: Hiểu sâu về thuật toán, cấu trúc dữ liệu, và thiết kế hệ thống (system design) từ gốc rễ, tránh học vẹt. Các công ty lớn như Axon, Meta, TikTok kiểm tra kiến thức khoa học máy tính rất kỹ, đòi hỏi khả năng giải thích tại sao giải pháp hoạt động
 - Nắm vững kiến thức cơ bản (Fundamental): Luôn suy nghĩ mọi vấn đề từ góc độ gốc rễ. Hiểu "tại sao nó chạy được" thay vì chỉ biết "nó chạy được"
@@ -72,8 +60,6 @@
 
 ### Kỹ Năng Giao Tiếp
 
---
-
 - Rèn luyện kỹ năng trả lời và "kể chuyện": Biến trải nghiệm cá nhân thành một thông điệp rõ ràng, logic, có sức thuyết phục
 - Cải thiện kỹ năng giao tiếp: Nhiều bạn giỏi coding nhưng lại yếu ở khâu trình bày, giải thích suy nghĩ của mình. Đây là kỹ năng rất quan trọng
 - Diễn đạt rõ ràng quá trình suy nghĩ: Đây là yếu tố then chốt, giúp người phỏng vấn hiểu rõ năng lực của bạn
@@ -83,8 +69,6 @@
 
 ### Hành Vi Và Văn Hoá
 
---
-
 - Tìm hiểu sâu về văn hóa công ty: Mỗi công ty có một hệ giá trị riêng. Hãy thực sự hiểu văn hóa của công ty bạn ứng tuyển để trả lời cho phù hợp
 - Chuẩn bị câu trả lời theo phương pháp STAR: (Situation - Task - Action - Result) để cấu trúc câu trả lời một cách mạch lạc và thuyết phục
 - Chuẩn bị câu chuyện thực tế: Dùng các ví dụ cá nhân với số liệu và kết quả cụ thể để câu trả lời có sức thuyết phục và tạo ấn tượng mạnh
@@ -92,8 +76,6 @@
 - Thực hành phỏng vấn thử (Mock Interview): Giúp cải thiện kỹ năng giao tiếp, làm quen với áp lực và khả năng phản xạ khi đối mặt với các câu hỏi khó
 
 ### Tâm Lý
-
---
 
 - Đặt mục tiêu và lộ trình rõ ràng: Xác định công ty, vị trí, và điểm yếu để xây dựng kế hoạch học tập bài bản
 - Tự tin và không ngại thử sức: Đừng chờ "đủ giỏi" mới ứng tuyển. Thất bại là cơ hội học hỏi, đặc biệt với ứng viên nữ, cần vượt qua định kiến giới

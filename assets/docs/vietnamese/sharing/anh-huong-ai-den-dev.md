@@ -2,8 +2,6 @@
 
 ## Tác Động Chính
 
---
-
 - Tự động hóa các tác vụ lặp đi lặp lại: AI có khả năng tự động hóa các công việc tốn thời gian và mang tính lặp lại cao như viết mã cho các giao diện cơ bản, kiểm thử đơn vị (unit testing), tạo tài liệu kỹ thuật, hay thậm chí là quản lý dự án ở một mức độ nào đó. Điều này giúp giải phóng lập trình viên khỏi những công việc nhàm chán, để họ tập trung vào các khía cạnh phức tạp và sáng tạo hơn
 - Nâng cao hiệu suất và chất lượng công việc: Các công cụ AI như GitHub Copilot có thể gợi ý mã nguồn, giúp lập trình viên viết mã nhanh hơn và ít lỗi hơn. AI cũng có thể hỗ trợ trong việc phân tích mã, phát hiện lỗi tiềm ẩn và đề xuất các giải pháp tối ưu hóa
 - Hỗ trợ học hỏi và tiếp thu kiến thức mới: AI có thể đóng vai trò như một người trợ lý thông minh, cung cấp các gợi ý về mã, tài liệu liên quan hoặc đề xuất các công nghệ mới phù hợp với dự án. Điều này đặc biệt hữu ích cho các lập trình viên ít kinh nghiệm muốn học hỏi và nâng cao tay nghề
@@ -11,8 +9,6 @@
 - Tạo ra các cơ hội việc làm mới: Mặc dù một số tác vụ có thể được tự động hóa, AI cũng tạo ra những vị trí công việc mới liên quan đến phát triển, triển khai, giám sát và bảo trì các hệ thống AI
 
 ## Lưu Ý
-
---
 
 - Không ngừng học hỏi và nâng cao kỹ năng
   - Nắm vững kiến thức nền tảng: Các kiến thức cốt lõi về cấu trúc dữ liệu, thuật toán, các mô hình lập trình và tư duy logic vẫn vô cùng quan trọng

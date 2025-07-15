@@ -2,8 +2,6 @@
 
 ## What Is Recursion?
 
---
-
 - Recursion is solving a problem by breaking it down to smaller instances of the same problem
   - Factorial function: `n! = n * (n-1)!`
   - Fibonacci sequence: `f(n) = f(n-1) + f(n-2)`
