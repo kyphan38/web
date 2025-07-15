@@ -3,7 +3,7 @@
 ## Easy
 
 | Number | Note |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
+|--------|------|
 | [202. Happy Number](https://leetcode.com/problems/happy-number/description/) | one fuction for calculating total of next, one function for handle specfic one to support seen and call from that function from main and both in function, seen is used to avoid cycle |
 | [326. Power of Three](https://leetcode.com/problems/power-of-three/description/) | order of it function, equals to 1, smaller equal zero and cannot divided to three |
 | [342. Power of Four](https://leetcode.com/problems/power-of-four/description/) |  order of it function, equals to 1, smaller equal zero and cannot divded to three, and add a edge case of maximum limits |
