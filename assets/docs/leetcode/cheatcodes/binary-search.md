@@ -1,4 +1,4 @@
-# Binary Search
+# binary search
 
 ## Easy
 
