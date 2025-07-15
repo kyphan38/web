@@ -68,7 +68,7 @@ Example (size 8 array)
   - 8 insertions
   - 7 copy operations during resizes (1 for size 1 &rarr; 2, 2 for 2 &rarr; 4, 4 for 4 &rarr; 8)
   - Total cost: 8 (insertions) + 7 (copies) = 15 operations
-  - 15 <= 2 * 8 (16), so total cost for n elements is ~ O(2n)
+  - 15 `<=` 2 * 8 (16), so total cost for n elements is ~ O(2n)
 
 O(2n) vs. O(n)
 
