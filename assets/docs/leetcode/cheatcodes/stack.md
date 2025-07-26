@@ -4,7 +4,7 @@
 
 | Number | Note |
 |--------|------|
-| [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | |
+| [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | not stack is empty, append open ones, then check closed opens whether stack is empty or pop is not correct => return false, outside, return not stack (true) |
 | [155. Min Stack](https://leetcode.com/problems/min-stack/description/) | |
 | [225. Implement Stack Using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) | |
 | [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | |

@@ -4,9 +4,9 @@
 
 | Number | Note |
 |--------|------|
-| [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) | |
+| [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) | let's think return left or right? |
 | [367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/description/) | |
-| [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | |
+| [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | remember increment left vs decrement right based on mid |
 | [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/description/) | |
 | [704. Binary Search](https://leetcode.com/problems/binary-search/description/) | |
 

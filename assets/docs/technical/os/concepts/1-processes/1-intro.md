@@ -1,45 +1,11 @@
 # intro
 
-## Computer Systems
+## The Computer System
 
-- Real-world computer systems are complex
-  - They consist of multiple components/tiers distributed across several machines
-  - They handle a high number of user requests efficiently and reliably
-- Example: An e-commerce application
-  - Clients access multi-tier applications hosted in data centers or public clouds
-  - Front-end components (e.g., web servers) receive user requests, respond to users, and consult various application servers to build responses
-  - Application servers contain business logic to process different types of user requests
-  - Application data is stored in several database servers in the backend
-  - Each of these components is built on one or more computers
-
-## The Building Blocks
-
-- A single computer system is the building block for all large, distributed computer systems that run real-world applications
 - What does a computer system contain?
-  - Hardware: CPU, memory, I/O devices, etc.
-  - System software: Operating System (OS), etc.
   - User software: User applications (browser, email client, games, application servers, databases, AI/ML algorithms, etc.)
-- Understanding the basic building blocks of a single system is essential before building large-scale systems for real applications
-
-## Why Study Operating Systems?
-
-- Knowledge of hardware (architecture) and system software (OS), and how user programs interact with these lower layers, is essential for writing high-performance, reliable user programs
-- Key questions addressed by studying OS
-  - What happens when you run a user program?
-  - How can you make your program run faster and more efficiently?
-  - How can you make your programs more secure, reliable, and tolerant to failures?
-  - Why is your program running slowly, and how can you fix it?
-  - How much CPU/memory is your program consuming, and why?
-- OS expertise is one of the most critical skills for building high-performance, robust, and complex real-world systems
-
-## Beyond OS to Real Systems and Future Courses
-
-- Architecture + OS: Provides the foundation for understanding how a user program runs on a single machine
-- Networking: Explores how programs communicate across machines
-- Databases and data storage: Covers how applications store data efficiently and reliably across one or more machines
-- Performance engineering: Focuses on making programs run faster
-- Distributed systems: Examines how multiple applications across multiple machines work together to perform tasks reliably
-- Other topics: Virtualization, cloud computing, security, etc.
+  - System software: Operating System (OS), etc.
+  - Hardware: CPU, memory, I/O devices, etc.
 
 ## What Is an Operating System?
 
@@ -234,3 +200,25 @@ CPU execution context
   - Handle interrupts from the device (e.g., when data is ready)
 
 ![img](./img/8.png)
+
+## Advice
+
+### Why Study Operating Systems?
+
+- Knowledge of hardware (architecture) and system software (OS), and how user programs interact with these lower layers, is essential for writing high-performance, reliable user programs
+- Key questions addressed by studying OS
+  - What happens when you run a user program?
+  - How can you make your program run faster and more efficiently?
+  - How can you make your programs more secure, reliable, and tolerant to failures?
+  - Why is your program running slowly, and how can you fix it?
+  - How much CPU/memory is your program consuming, and why?
+- OS expertise is one of the most critical skills for building high-performance, robust, and complex real-world systems
+
+### Beyond OS to Real Systems and Future Courses
+
+- Architecture + OS: Provides the foundation for understanding how a user program runs on a single machine
+- Networking: Explores how programs communicate across machines
+- Databases and data storage: Covers how applications store data efficiently and reliably across one or more machines
+- Performance engineering: Focuses on making programs run faster
+- Distributed systems: Examines how multiple applications across multiple machines work together to perform tasks reliably
+- Other topics: Virtualization, cloud computing, security, etc.
